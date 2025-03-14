@@ -12,3 +12,6 @@ data/ecosystem_cascade_results.csv
 .DS_Store
 data/ecosystem_cascade_results_no_shock.csv
 data/ecosystem_cascade_results_with_shock.csv
+data/shock_log_high.csv
+data/shock_log_low.csv
+data/shock_log_mid.csv

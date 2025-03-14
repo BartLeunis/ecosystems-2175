@@ -49,9 +49,8 @@ cascade_effects = {
     'Polar': {'Arctic Sea Ice': 1.1}
 }
 
-# Black swan shock parameters
-shock_annual_prob = 0.05  # 5% chance per decade
-shock_magnitude = {'positive': -0.02, 'negative': 0.03}  # Adjust loss rates: -2% or +3%
+shock_annual_prob = 0.05
+shock_magnitude = {'positive': -0.02, 'negative': 0.03}
 
 transform_threshold = 0.5
 transform_targets = {
@@ -69,11 +68,19 @@ final_baselines = {
     'Tundra': 0.30, 'Montane': 0.40, 'Freshwater': 0.20, 'Polar': 0.40
 }
 
+species_weights = {
+    'Amazon Rainforest': 0.125, 'Coral Reefs': 0.07, 'Arctic Sea Ice': 0.0075,
+    'Boreal Forests': 0.065, 'Savanna Grasslands': 0.06, 'Wetlands': 0.08,
+    'Oceans': 0.20, 'Temperate Forests': 0.10, 'Deserts': 0.05, 'Tundra': 0.02,
+    'Montane': 0.08, 'Freshwater': 0.10, 'Polar': 0.01
+}
+
 def run_ecosystem_simulation(scenario, include_shocks=False):
     loss_dict = {eco: np.zeros((n_iter, len(years))) for eco in ecosystems}
     transformed = {eco: np.zeros(n_iter, dtype=bool) for eco in ecosystems}
     shock_events = np.random.binomial(1, shock_annual_prob, size=(n_iter, len(years))) if include_shocks else np.zeros((n_iter, len(years)))
     shock_types = np.random.choice(['positive', 'negative'], size=(n_iter, len(years))) if include_shocks else np.full((n_iter, len(years)), 'none')
+    shock_log = []  # Log shocks: iteration, year, type
 
     for t, year in enumerate(years):
         for eco in ecosystems:
@@ -83,14 +90,19 @@ def run_ecosystem_simulation(scenario, include_shocks=False):
             mean_loss = (base_loss_means[eco][scenario] if not np.any(transformed[eco])
                          else (base_loss_means[target_eco][scenario] if target_eco else base_loss_means[eco][scenario]))
             
-            # Apply black swan shock if present
             shock_adjust = np.where(shock_events[:, t], 
                                   np.where(shock_types[:, t] == 'positive', shock_magnitude['positive'], shock_magnitude['negative']), 
                                   0)
-            adjusted_mean_loss = np.clip(mean_loss + shock_adjust, 0, 0.15)  # Cap to avoid unrealistic rates
+            adjusted_mean_loss = np.clip(mean_loss + shock_adjust, 0, 0.15)
             
             annual_loss = stats.norm(loc=adjusted_mean_loss, scale=base_loss_std).rvs(n_iter)
             loss_dict[eco][:, t] = loss_dict[eco][:, t-1] + annual_loss if t > 0 else annual_loss
+            
+            # Log shocks for this timestep
+            if include_shocks:
+                for i in range(n_iter):
+                    if shock_events[i, t]:
+                        shock_log.append({'iteration': i, 'year': year, 'type': shock_types[i, t]})
             
             for source_eco, targets in cascade_effects.items():
                 if eco in targets:
@@ -104,20 +116,15 @@ def run_ecosystem_simulation(scenario, include_shocks=False):
             max_loss = 1.0 - final_baselines[eco]
             loss_dict[eco][:, t] = np.minimum(loss_dict[eco][:, t], max_loss)
     
-    return loss_dict
+    return loss_dict, shock_log
 
-# Run simulations: no shocks and with shocks
-results_no_shock = {scenario: run_ecosystem_simulation(scenario, include_shocks=False) for scenario in ['Low', 'Mid', 'High']}
-results_with_shock = {scenario: run_ecosystem_simulation(scenario, include_shocks=True) for scenario in ['Low', 'Mid', 'High']}
+# Run simulations
+results_no_shock = {scenario: run_ecosystem_simulation(scenario, include_shocks=False)[0] for scenario in ['Low', 'Mid', 'High']}
+results_with_shock, shock_logs = {}, {}
+for scenario in ['Low', 'Mid', 'High']:
+    results_with_shock[scenario], shock_logs[scenario] = run_ecosystem_simulation(scenario, include_shocks=True)
 
-species_weights = {
-    'Amazon Rainforest': 0.125, 'Coral Reefs': 0.07, 'Arctic Sea Ice': 0.0075,
-    'Boreal Forests': 0.065, 'Savanna Grasslands': 0.06, 'Wetlands': 0.08,
-    'Oceans': 0.20, 'Temperate Forests': 0.10, 'Deserts': 0.05, 'Tundra': 0.02,
-    'Montane': 0.08, 'Freshwater': 0.10, 'Polar': 0.01
-}
-
-# Calculate total loss for both runs
+# Calculate total loss
 total_loss_no_shock = {scenario: np.zeros((n_iter, len(years))) for scenario in ['Low', 'Mid', 'High']}
 total_loss_with_shock = {scenario: np.zeros((n_iter, len(years))) for scenario in ['Low', 'Mid', 'High']}
 
@@ -150,7 +157,7 @@ for scenario in ['Low', 'Mid', 'High']:
     if total_mean_2175 > 70:
         print(f"WARNING: {total_mean_2175:.1f}% loss by 2175 exceeds 70% - survival threat.")
 
-# Plot total loss (with shocks only, since no-shock plot exists)
+# Plot total loss with shocks
 plt.figure(figsize=(12, 8))
 sns.set(style="whitegrid")
 for scenario in ['Low', 'Mid', 'High']:
@@ -192,4 +199,11 @@ results_df_with_shock = pd.concat(all_data_with_shock, ignore_index=True)
 os.makedirs(DATA_DIR, exist_ok=True)
 results_df_no_shock.to_csv(os.path.join(DATA_DIR, 'ecosystem_cascade_results_no_shock.csv'), index=False)
 results_df_with_shock.to_csv(os.path.join(DATA_DIR, 'ecosystem_cascade_results_with_shock.csv'), index=False)
+
+# Save shock logs
+for scenario in ['Low', 'Mid', 'High']:
+    shock_df = pd.DataFrame(shock_logs[scenario])
+    shock_df.to_csv(os.path.join(DATA_DIR, f'shock_log_{scenario.lower()}.csv'), index=False)
+
 print(f"Results saved to '{os.path.join(DATA_DIR, 'ecosystem_cascade_results_no_shock.csv')}' and '{os.path.join(DATA_DIR, 'ecosystem_cascade_results_with_shock.csv')}'")
+print(f"Shock logs saved to '{os.path.join(DATA_DIR, 'shock_log_high.csv')}' (and Low/Mid)")
