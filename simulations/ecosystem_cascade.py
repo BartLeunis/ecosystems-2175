@@ -57,31 +57,64 @@ transform_baselines = {
     'Oceans': 0.40,             # Warmer, less diverse
     'Temperate Forests': 0.50   # Drier woodland
 }
+# Transformation mappings (ecosystem → new state)
+transform_targets = {
+    'Amazon Rainforest': 'Savanna Grasslands',  # Rainforest to steppe
+    'Coral Reefs': 'Oceans',                    # Reefs to algae-dominated sea
+    'Arctic Sea Ice': 'Oceans',                 # Ice to open water
+    'Boreal Forests': 'Savanna Grasslands',     # Taiga to shrubland
+    'Savanna Grasslands': None,                 # Already transformed-like
+    'Wetlands': 'Savanna Grasslands',           # Drained to dryland
+    'Oceans': None,                             # Stays oceanic, just warmer
+    'Temperate Forests': 'Savanna Grasslands'   # Forest to woodland
+}
+
+# Final degraded baselines
+final_baselines = {
+    'Amazon Rainforest': 0.10, 'Coral Reefs': 0.05, 'Arctic Sea Ice': 0.20,
+    'Boreal Forests': 0.20, 'Savanna Grasslands': 0.40, 'Wetlands': 0.15,
+    'Oceans': 0.25, 'Temperate Forests': 0.30
+}
 
 def run_ecosystem_simulation(scenario):
     loss_dict = {eco: np.zeros((n_iter, len(years))) for eco in ecosystems}
+    transformed = {eco: np.zeros(n_iter, dtype=bool) for eco in ecosystems}
     for t, year in enumerate(years):
         for eco in ecosystems:
-            mean_loss = base_loss_means[eco][scenario]
-            annual_loss = stats.norm(loc=mean_loss, scale=base_loss_std).rvs(n_iter)
+            # Check transformation using ecosystem's specific threshold
+            if t > 0:
+                transformed[eco] = loss_dict[eco][:, t-1] >= transform_baselines[eco]
+            # Determine target ecosystem and mean loss
+            target_eco = transform_targets[eco]
+            # Apply target loss rate only to transformed simulations
+            current_means = np.full(n_iter, base_loss_means[eco][scenario])
+            if target_eco:
+                transformed_mask = transformed[eco]
+                current_means[transformed_mask] = base_loss_means[target_eco][scenario]
+            annual_loss = stats.norm(loc=current_means, scale=base_loss_std).rvs()
             loss_dict[eco][:, t] = loss_dict[eco][:, t-1] + annual_loss if t > 0 else annual_loss
+            # Apply nuclear effect
             if t > 0 and np.any(nuclear_occurs):
                 nuclear_effect = nuclear_occurs * nuclear_loss * (t / len(years))
                 loss_dict[eco][:, t] += nuclear_effect
+            # Apply cascade effects
             for source_eco, targets in cascade_effects.items():
-                if source_eco != eco and eco in targets and np.mean(loss_dict[source_eco][:, t]) > 0.5:
-                    loss_dict[eco][:, t] *= targets[eco]
-            # Cap loss at transformed state
-            max_loss = 1.0 - transform_baselines[eco]
+                if eco in targets:
+                    source_losses = loss_dict[source_eco][:, t]
+                    multiplier = targets[eco]
+                    # Check if source ecosystem has transformed in each simulation
+                    source_transformed = source_losses >= transform_baselines[source_eco]
+                    reduced_multiplier = multiplier * 0.8
+                    # Apply reduced multiplier where source is transformed
+                    cascade_multipliers = np.where(source_transformed, reduced_multiplier, multiplier)
+                    loss_dict[eco][:, t] *= cascade_multipliers
+            # Cap losses at ecosystem's maximum allowed loss
+            max_loss = 1.0 - final_baselines[eco]
             loss_dict[eco][:, t] = np.minimum(loss_dict[eco][:, t], max_loss)
     return loss_dict
 
+
 results = {scenario: run_ecosystem_simulation(scenario) for scenario in ['Low', 'Mid', 'High']}
-for scenario in results:
-    for eco in ecosystems:
-        mean_loss_2175 = np.mean(results[scenario][eco][:, -1]) * 100
-        ci_2175 = np.percentile(results[scenario][eco][:, -1], [2.5, 97.5]) * 100
-        print(f"{eco}: Net Loss 2175 = {mean_loss_2175:.1f}%, 95% CI = {ci_2175[0]:.1f}–{ci_2175[1]:.1f}%")
 
 species_weights = {
     'Amazon Rainforest': 0.125, 'Coral Reefs': 0.07, 'Arctic Sea Ice': 0.0075,
@@ -90,21 +123,35 @@ species_weights = {
 }
 
 total_loss = {scenario: np.zeros((n_iter, len(years))) for scenario in ['Low', 'Mid', 'High']}
-for scenario in results:
-    for t in range(len(years)):
-        total_loss[scenario][:, t] = sum(results[scenario][eco][:, t] * species_weights[eco] 
-                                        for eco in ecosystems)
-    total_mean_2175 = np.mean(total_loss[scenario][:, -1]) * 100
-    global_mean_2175 = total_mean_2175 * 0.7075
-    print(f"Total Modeled Net Loss 2175: {total_mean_2175:.1f}% (~{global_mean_2175:.1f}% global)")
+
 
 for scenario in ['Low', 'Mid', 'High']:
+    for t in range(len(years)):
+        # Weighted sum across ecosystems
+        total_loss[scenario][:, t] = sum(
+            results[scenario][eco][:, t] * species_weights[eco] 
+            for eco in ecosystems
+        )
+
+for scenario in ['Low', 'Mid', 'High']:
+    print(f"\n---- {scenario} Scenario Results ----")
+    
+    # Ecosystem-specific results
+    for eco in ecosystems:
+        mean_loss_2175 = np.mean(results[scenario][eco][:, -1]) * 100
+        ci_2175 = np.percentile(results[scenario][eco][:, -1], [2.5, 97.5]) * 100
+        print(f"{eco}: Net Loss 2175 = {mean_loss_2175:.1f}%, 95% CI = {ci_2175[0]:.1f}–{ci_2175[1]:.1f}%")
+    
+    # Total/global results
     total_mean_2175 = np.mean(total_loss[scenario][:, -1]) * 100
     total_ci_2175 = np.percentile(total_loss[scenario][:, -1], [2.5, 97.5]) * 100
     global_mean_2175 = total_mean_2175 * 0.7075  # Modeled contribution
     global_ci_2175 = total_ci_2175 * 0.7075
-    print(f"Total Modeled Loss 2175: {total_mean_2175:.1f}%, 95% CI = {total_ci_2175[0]:.1f}–{total_ci_2175[1]:.1f}%")
-    print(f"Est. Global Loss 2175: {global_mean_2175:.1f}%, 95% CI = {global_ci_2175[0]:.1f}–{global_ci_2175[1]:.1f}% (modeled 70% only)")
+    
+    print(f"\nTotal Modeled Loss 2175: {total_mean_2175:.1f}%, 95% CI = {total_ci_2175[0]:.1f}–{total_ci_2175[1]:.1f}%")
+    print(f"Est. Global Loss 2175: {global_mean_2175:.1f}%, 95% CI = {global_ci_2175[0]:.1f}–{global_ci_2175[1]:.1f}%")
+
+    # Threshold checks
     mean_2125 = np.mean(total_loss[scenario][:, -6]) * 100
     global_2125 = mean_2125 * 0.7075
     if global_2125 > 50:
