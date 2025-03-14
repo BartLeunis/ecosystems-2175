@@ -46,6 +46,18 @@ nuclear_prob = 1 - np.exp(-nuclear_annual_risk * nuclear_years)
 nuclear_occurs = np.random.binomial(1, nuclear_prob, n_iter)
 nuclear_loss = 0.25
 
+# Add transformation baselines (rough estimates, refine with refs)
+transform_baselines = {
+    'Amazon Rainforest': 0.25,  # Savanna-like
+    'Coral Reefs': 0.15,        # Algae-dominated
+    'Arctic Sea Ice': 0.35,     # Open water
+    'Boreal Forests': 0.40,     # Shrubland
+    'Savanna Grasslands': 0.60, # Degraded but stable
+    'Wetlands': 0.30,           # Drained marsh
+    'Oceans': 0.40,             # Warmer, less diverse
+    'Temperate Forests': 0.50   # Drier woodland
+}
+
 def run_ecosystem_simulation(scenario):
     loss_dict = {eco: np.zeros((n_iter, len(years))) for eco in ecosystems}
     for t, year in enumerate(years):
@@ -59,21 +71,32 @@ def run_ecosystem_simulation(scenario):
             for source_eco, targets in cascade_effects.items():
                 if source_eco != eco and eco in targets and np.mean(loss_dict[source_eco][:, t]) > 0.5:
                     loss_dict[eco][:, t] *= targets[eco]
-            loss_dict[eco][:, t] = np.minimum(loss_dict[eco][:, t], 1.0)
+            # Cap loss at transformed state
+            max_loss = 1.0 - transform_baselines[eco]
+            loss_dict[eco][:, t] = np.minimum(loss_dict[eco][:, t], max_loss)
     return loss_dict
 
 results = {scenario: run_ecosystem_simulation(scenario) for scenario in ['Low', 'Mid', 'High']}
+for scenario in results:
+    for eco in ecosystems:
+        mean_loss_2175 = np.mean(results[scenario][eco][:, -1]) * 100
+        ci_2175 = np.percentile(results[scenario][eco][:, -1], [2.5, 97.5]) * 100
+        print(f"{eco}: Net Loss 2175 = {mean_loss_2175:.1f}%, 95% CI = {ci_2175[0]:.1f}–{ci_2175[1]:.1f}%")
 
 species_weights = {
     'Amazon Rainforest': 0.125, 'Coral Reefs': 0.07, 'Arctic Sea Ice': 0.0075,
     'Boreal Forests': 0.065, 'Savanna Grasslands': 0.06, 'Wetlands': 0.08,
     'Oceans': 0.20, 'Temperate Forests': 0.10
 }
+
 total_loss = {scenario: np.zeros((n_iter, len(years))) for scenario in ['Low', 'Mid', 'High']}
 for scenario in results:
     for t in range(len(years)):
         total_loss[scenario][:, t] = sum(results[scenario][eco][:, t] * species_weights[eco] 
                                         for eco in ecosystems)
+    total_mean_2175 = np.mean(total_loss[scenario][:, -1]) * 100
+    global_mean_2175 = total_mean_2175 * 0.7075
+    print(f"Total Modeled Net Loss 2175: {total_mean_2175:.1f}% (~{global_mean_2175:.1f}% global)")
 
 for scenario in ['Low', 'Mid', 'High']:
     total_mean_2175 = np.mean(total_loss[scenario][:, -1]) * 100
@@ -88,7 +111,7 @@ for scenario in ['Low', 'Mid', 'High']:
         print(f"WARNING: {global_2125:.1f}% global loss by 2125 exceeds 50% - risks to food/health.")
     if global_mean_2175 > 70:
         print(f"WARNING: {global_mean_2175:.1f}% global loss by 2175 exceeds 70% - survival threat.")
-        
+
 plt.figure(figsize=(12, 8))
 sns.set(style="whitegrid")
 for scenario in ['Low', 'Mid', 'High']:
