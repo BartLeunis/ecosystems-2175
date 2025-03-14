@@ -9,3 +9,4 @@ venv/
 .DS_Store  # macOS-specific
 *.idea/
 data/ecosystem_cascade_results.csv
+.DS_Store
