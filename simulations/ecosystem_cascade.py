@@ -76,21 +76,19 @@ for scenario in results:
                                         for eco in ecosystems)
 
 for scenario in ['Low', 'Mid', 'High']:
-    print(f"\n--- {scenario.upper()} SCENARIO (NO INTERVENTION) ---")
-    for eco in ecosystems:
-        mean_loss_2175 = np.mean(results[scenario][eco][:, -1]) * 100
-        ci_2175 = np.percentile(results[scenario][eco][:, -1], [2.5, 97.5]) * 100
-        print(f"{eco}: Mean 2175 Loss = {mean_loss_2175:.1f}%, 95% CI = {ci_2175[0]:.1f}–{ci_2175[1]:.1f}%")
     total_mean_2175 = np.mean(total_loss[scenario][:, -1]) * 100
     total_ci_2175 = np.percentile(total_loss[scenario][:, -1], [2.5, 97.5]) * 100
-    print(f"Total Modeled Biodiversity Loss 2175: Mean = {total_mean_2175:.1f}%, 95% CI = {total_ci_2175[0]:.1f}–{total_ci_2175[1]:.1f}%")
-    # Threshold warnings
-    mean_2125 = np.mean(total_loss[scenario][:, -6]) * 100  # 2125 (6th last year)
-    if mean_2125 > 50:
-        print(f"WARNING: {mean_2125:.1f}% loss by 2125 exceeds 50% threshold - risks to food security and health.")
-    if total_mean_2175 > 70:
-        print(f"WARNING: {total_mean_2175:.1f}% loss by 2175 exceeds 70% threshold - critical collapse threatens human survival.")
-
+    global_mean_2175 = total_mean_2175 * 0.7075  # Modeled contribution
+    global_ci_2175 = total_ci_2175 * 0.7075
+    print(f"Total Modeled Loss 2175: {total_mean_2175:.1f}%, 95% CI = {total_ci_2175[0]:.1f}–{total_ci_2175[1]:.1f}%")
+    print(f"Est. Global Loss 2175: {global_mean_2175:.1f}%, 95% CI = {global_ci_2175[0]:.1f}–{global_ci_2175[1]:.1f}% (modeled 70% only)")
+    mean_2125 = np.mean(total_loss[scenario][:, -6]) * 100
+    global_2125 = mean_2125 * 0.7075
+    if global_2125 > 50:
+        print(f"WARNING: {global_2125:.1f}% global loss by 2125 exceeds 50% - risks to food/health.")
+    if global_mean_2175 > 70:
+        print(f"WARNING: {global_mean_2175:.1f}% global loss by 2175 exceeds 70% - survival threat.")
+        
 plt.figure(figsize=(12, 8))
 sns.set(style="whitegrid")
 for scenario in ['Low', 'Mid', 'High']:
