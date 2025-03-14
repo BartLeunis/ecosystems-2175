@@ -1,1 +1,0 @@
-{"ecosystems": ["Amazon Rainforest", "Coral Reefs", "Arctic Sea Ice", "Boreal Forests", "Savanna Grasslands", "Wetlands", "Oceans", "Temperate Forests"], "transform_baselines": {"Amazon Rainforest": 0.25, "Coral Reefs": 0.15, "Arctic Sea Ice": 0.35, "Boreal Forests": 0.4, "Savanna Grasslands": 0.6, "Wetlands": 0.3, "Oceans": 0.4, "Temperate Forests": 0.5}}

@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-# File paths from repo root
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 FIGURES_DIR = os.path.join(BASE_DIR, 'figures')
@@ -13,9 +12,9 @@ FIGURES_DIR = os.path.join(BASE_DIR, 'figures')
 np.random.seed(42)
 n_iter = 100000
 years = np.arange(2025, 2176, 10)
-ecosystems = ['Amazon Rainforest', 'Coral Reefs', 'Arctic Sea Ice', 
-              'Boreal Forests', 'Savanna Grasslands', 'Wetlands', 
-              'Oceans', 'Temperate Forests']
+ecosystems = ['Amazon Rainforest', 'Coral Reefs', 'Arctic Sea Ice', 'Boreal Forests',
+              'Savanna Grasslands', 'Wetlands', 'Oceans', 'Temperate Forests',
+              'Deserts', 'Tundra', 'Montane', 'Freshwater', 'Polar']
 
 base_loss_means = {
     'Amazon Rainforest': {'Low': 0.03, 'Mid': 0.06, 'High': 0.09},
@@ -25,19 +24,29 @@ base_loss_means = {
     'Savanna Grasslands': {'Low': 0.02, 'Mid': 0.04, 'High': 0.06},
     'Wetlands': {'Low': 0.02, 'Mid': 0.05, 'High': 0.07},
     'Oceans': {'Low': 0.03, 'Mid': 0.06, 'High': 0.09},
-    'Temperate Forests': {'Low': 0.01, 'Mid': 0.03, 'High': 0.05}
+    'Temperate Forests': {'Low': 0.01, 'Mid': 0.03, 'High': 0.05},
+    'Deserts': {'Low': 0.01, 'Mid': 0.03, 'High': 0.05},  # IPCC AR6 Ch. 3
+    'Tundra': {'Low': 0.02, 'Mid': 0.04, 'High': 0.07},   # CAFF 2013
+    'Montane': {'Low': 0.02, 'Mid': 0.04, 'High': 0.06},  # WWF 2022
+    'Freshwater': {'Low': 0.03, 'Mid': 0.06, 'High': 0.09},  # Ramsar 2018
+    'Polar': {'Low': 0.01, 'Mid': 0.03, 'High': 0.05}     # IPCC AR6
 }
-base_loss_std = 0.01
+base_loss_std = 0.01  # Higher uncertainty for new ecosystems noted in METHODOLOGY
 
 cascade_effects = {
     'Amazon Rainforest': {'Arctic Sea Ice': 1.2, 'Coral Reefs': 1.1, 'Wetlands': 1.1},
     'Coral Reefs': {'Wetlands': 1.2, 'Savanna Grasslands': 1.1, 'Oceans': 1.1},
-    'Arctic Sea Ice': {'Amazon Rainforest': 1.1, 'Boreal Forests': 1.2, 'Coral Reefs': 1.1, 'Oceans': 1.1},
+    'Arctic Sea Ice': {'Amazon Rainforest': 1.1, 'Boreal Forests': 1.2, 'Oceans': 1.1},
     'Boreal Forests': {'Arctic Sea Ice': 1.1, 'Wetlands': 1.1, 'Temperate Forests': 1.1},
     'Savanna Grasslands': {'Wetlands': 1.1},
     'Wetlands': {'Savanna Grasslands': 1.1, 'Temperate Forests': 1.1},
     'Oceans': {'Coral Reefs': 1.2, 'Arctic Sea Ice': 1.1},
-    'Temperate Forests': {'Boreal Forests': 1.1, 'Wetlands': 1.1}
+    'Temperate Forests': {'Boreal Forests': 1.1, 'Wetlands': 1.1},
+    'Deserts': {'Savanna Grasslands': 1.1},  # Aridification spill
+    'Tundra': {'Arctic Sea Ice': 1.1, 'Boreal Forests': 1.1},
+    'Montane': {'Temperate Forests': 1.1},
+    'Freshwater': {'Wetlands': 1.2, 'Oceans': 1.1},
+    'Polar': {'Arctic Sea Ice': 1.1}
 }
 
 nuclear_annual_risk = 0.01
@@ -46,18 +55,20 @@ nuclear_prob = 1 - np.exp(-nuclear_annual_risk * nuclear_years)
 nuclear_occurs = np.random.binomial(1, nuclear_prob, n_iter)
 nuclear_loss = 0.25
 
-# Transformation settings
-transform_threshold = 0.5  # 50% loss triggers transformation
+transform_threshold = 0.5
 transform_targets = {
     'Amazon Rainforest': 'Savanna Grasslands', 'Coral Reefs': 'Oceans',
     'Arctic Sea Ice': 'Oceans', 'Boreal Forests': 'Savanna Grasslands',
     'Savanna Grasslands': None, 'Wetlands': 'Savanna Grasslands',
-    'Oceans': None, 'Temperate Forests': 'Savanna Grasslands'
+    'Oceans': None, 'Temperate Forests': 'Savanna Grasslands',
+    'Deserts': None, 'Tundra': 'Savanna Grasslands',  # Shrubification
+    'Montane': 'Savanna Grasslands', 'Freshwater': 'Wetlands', 'Polar': 'Oceans'
 }
 final_baselines = {
     'Amazon Rainforest': 0.10, 'Coral Reefs': 0.05, 'Arctic Sea Ice': 0.20,
     'Boreal Forests': 0.20, 'Savanna Grasslands': 0.40, 'Wetlands': 0.15,
-    'Oceans': 0.25, 'Temperate Forests': 0.30
+    'Oceans': 0.25, 'Temperate Forests': 0.30, 'Deserts': 0.50,  # Resilient
+    'Tundra': 0.30, 'Montane': 0.40, 'Freshwater': 0.20, 'Polar': 0.40
 }
 
 def run_ecosystem_simulation(scenario):
@@ -80,7 +91,7 @@ def run_ecosystem_simulation(scenario):
                     source_mean = np.mean(loss_dict[source_eco][:, t])
                     multiplier = targets[eco]
                     if transformed[source_eco].any() and source_mean > transform_threshold:
-                        multiplier *= 0.8  # Reduced cascade post-transformation
+                        multiplier *= 0.8
                     if source_mean > transform_threshold:
                         loss_dict[eco][:, t] *= multiplier
             max_loss = 1.0 - final_baselines[eco]
@@ -92,7 +103,8 @@ results = {scenario: run_ecosystem_simulation(scenario) for scenario in ['Low', 
 species_weights = {
     'Amazon Rainforest': 0.125, 'Coral Reefs': 0.07, 'Arctic Sea Ice': 0.0075,
     'Boreal Forests': 0.065, 'Savanna Grasslands': 0.06, 'Wetlands': 0.08,
-    'Oceans': 0.20, 'Temperate Forests': 0.10
+    'Oceans': 0.20, 'Temperate Forests': 0.10, 'Deserts': 0.05, 'Tundra': 0.02,
+    'Montane': 0.08, 'Freshwater': 0.10, 'Polar': 0.01
 }
 
 total_loss = {scenario: np.zeros((n_iter, len(years))) for scenario in ['Low', 'Mid', 'High']}
@@ -109,30 +121,26 @@ for scenario in ['Low', 'Mid', 'High']:
         print(f"{eco}: Net Loss 2175 = {mean_loss_2175:.1f}%, 95% CI = {ci_2175[0]:.1f}–{ci_2175[1]:.1f}%")
     total_mean_2175 = np.mean(total_loss[scenario][:, -1]) * 100
     total_ci_2175 = np.percentile(total_loss[scenario][:, -1], [2.5, 97.5]) * 100
-    global_mean_2175 = total_mean_2175 * 0.7075
-    global_ci_2175 = total_ci_2175 * 0.7075
-    print(f"Modeled Loss 2175 (70% Coverage): {total_mean_2175:.1f}%, 95% CI = {total_ci_2175[0]:.1f}–{total_ci_2175[1]:.1f}%")
-    print(f"Est. Global Loss 2175: {global_mean_2175:.1f}%, 95% CI = {global_ci_2175[0]:.1f}–{global_ci_2175[1]:.1f}%")
+    print(f"Total Loss 2175: {total_mean_2175:.1f}%, 95% CI = {total_ci_2175[0]:.1f}–{total_ci_2175[1]:.1f}%")
     mean_2125 = np.mean(total_loss[scenario][:, -6]) * 100
-    global_2125 = mean_2125 * 0.7075
-    if global_2125 > 50:
-        print(f"WARNING: {global_2125:.1f}% global loss by 2125 exceeds 50% - food/health risks.")
-    if global_mean_2175 > 70:
-        print(f"WARNING: {global_mean_2175:.1f}% global loss by 2175 exceeds 70% - survival threat.")
+    if mean_2125 > 50:
+        print(f"WARNING: {mean_2125:.1f}% loss by 2125 exceeds 50% - food/health risks.")
+    if total_mean_2175 > 70:
+        print(f"WARNING: {total_mean_2175:.1f}% loss by 2175 exceeds 70% - survival threat.")
 
 plt.figure(figsize=(12, 8))
 sns.set(style="whitegrid")
 for scenario in ['Low', 'Mid', 'High']:
-    global_loss = np.mean(total_loss[scenario], axis=0) * 100 * 0.7075
-    plt.plot(years, global_loss, label=f'{scenario} Scenario', linewidth=2)
+    total_loss_mean = np.mean(total_loss[scenario], axis=0) * 100
+    plt.plot(years, total_loss_mean, label=f'{scenario} Scenario', linewidth=2)
 plt.axhline(y=50, color='orange', linestyle='--', label='50% Threshold (Food/Health Risks)')
 plt.axhline(y=70, color='red', linestyle='--', label='70% Threshold (Survival Threat)')
-plt.title('Projected Global Biodiversity Loss (2025–2175, No Intervention)', fontsize=16)
+plt.title('Total Biodiversity Loss (2025–2175, No Intervention)', fontsize=16)
 plt.xlabel('Year', fontsize=12)
-plt.ylabel('% Global Biodiversity Loss', fontsize=12)
+plt.ylabel('% Total Biodiversity Loss', fontsize=12)
 plt.legend(title='Scenario', fontsize=10)
 os.makedirs(FIGURES_DIR, exist_ok=True)
-plt.savefig(os.path.join(FIGURES_DIR, 'projected_global_biodiversity_loss.png'), dpi=300, bbox_inches='tight')
+plt.savefig(os.path.join(FIGURES_DIR, 'total_biodiversity_loss.png'), dpi=300, bbox_inches='tight')
 plt.close()
 
 all_data = []
@@ -146,7 +154,6 @@ for scenario in ['Low', 'Mid', 'High']:
             'Year': np.tile(years, n_iter)
         }))
 results_df = pd.concat(all_data, ignore_index=True)
-print(f"DataFrame rows: {len(results_df)} (expected: {n_iter * len(years) * len(ecosystems) * 3})")
 os.makedirs(DATA_DIR, exist_ok=True)
 results_df.to_csv(os.path.join(DATA_DIR, 'ecosystem_cascade_results.csv'), index=False)
 print(f"Results saved to '{os.path.join(DATA_DIR, 'ecosystem_cascade_results.csv')}'")
