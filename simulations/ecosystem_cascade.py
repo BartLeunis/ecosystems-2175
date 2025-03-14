@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
+import json
 
 # Ensure correct file paths from repo root
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -75,6 +76,16 @@ final_baselines = {
     'Boreal Forests': 0.20, 'Savanna Grasslands': 0.40, 'Wetlands': 0.15,
     'Oceans': 0.25, 'Temperate Forests': 0.30
 }
+# Save ecosystems and transform_baselines to config.json
+config = {
+    'ecosystems': ecosystems,
+    'transform_baselines': transform_baselines
+}
+config_path = os.path.join(DATA_DIR, 'config.json')
+with open(config_path, 'w') as f:
+    json.dump(config, f)
+
+print(f"Config saved to: {config_path}")
 
 def run_ecosystem_simulation(scenario):
     loss_dict = {eco: np.zeros((n_iter, len(years))) for eco in ecosystems}
@@ -134,6 +145,13 @@ for scenario in ['Low', 'Mid', 'High']:
         )
 
 for scenario in ['Low', 'Mid', 'High']:
+    # Convert modeled loss to global scale (70% coverage)
+    global_loss = total_loss[scenario] * 0.7075  # 70% coverage factor
+    
+    # Calculate thresholds for comparison
+    threshold_50_global = 50  # Absolute 50% of global biodiversity
+    threshold_70_global = 70  # Absolute 70% of global biodiversity
+for scenario in ['Low', 'Mid', 'High']:
     print(f"\n---- {scenario} Scenario Results ----")
     
     # Ecosystem-specific results
@@ -145,33 +163,43 @@ for scenario in ['Low', 'Mid', 'High']:
     # Total/global results
     total_mean_2175 = np.mean(total_loss[scenario][:, -1]) * 100
     total_ci_2175 = np.percentile(total_loss[scenario][:, -1], [2.5, 97.5]) * 100
-    global_mean_2175 = total_mean_2175 * 0.7075  # Modeled contribution
+    
+    # Global biodiversity impact (modeled portion only)
+    global_mean_2175 = total_mean_2175 * 0.7075
     global_ci_2175 = total_ci_2175 * 0.7075
     
-    print(f"\nTotal Modeled Loss 2175: {total_mean_2175:.1f}%, 95% CI = {total_ci_2175[0]:.1f}–{total_ci_2175[1]:.1f}%")
-    print(f"Est. Global Loss 2175: {global_mean_2175:.1f}%, 95% CI = {global_ci_2175[0]:.1f}–{global_ci_2175[1]:.1f}%")
+    print(f"\nModeled Ecosystems Loss (70% Coverage): {total_mean_2175:.1f}%, 95% CI = {total_ci_2175[0]:.1f}–{total_ci_2175[1]:.1f}%")
+    print(f"Projected Global Impact: {global_mean_2175:.1f}%, 95% CI = {global_ci_2175[0]:.1f}–{global_ci_2175[1]:.1f}%")
 
-    # Threshold checks
-    mean_2125 = np.mean(total_loss[scenario][:, -6]) * 100
-    global_2125 = mean_2125 * 0.7075
-    if global_2125 > 50:
-        print(f"WARNING: {global_2125:.1f}% global loss by 2125 exceeds 50% - risks to food/health.")
+    # Threshold checks (using global scale)
+    if global_mean_2175 > 50:
+        print(f"WARNING: Projected {global_mean_2175:.1f}% projected global loss exceeds 50% threshold - food/health systems at risk.")
     if global_mean_2175 > 70:
-        print(f"WARNING: {global_mean_2175:.1f}% global loss by 2175 exceeds 70% - survival threat.")
+        print(f"CRITICAL: Projected {global_mean_2175:.1f}% projected global loss exceeds 70% threshold - survival-level risks.")
 
+    # Threshold checks (adjusted for 70% coverage)
+    threshold_50_global = 50 / 0.7075  #≈ 70.7% of modeled loss = 50% of global
+    threshold_70_global = 70 / 0.7075  #≈ 98.9% of modeled loss = 70% of global
+
+    if global_mean_2175 > threshold_50_global:
+        print(f"WARNING: Modeled ecosystems loss {global_mean_2175:.1f}% ({global_mean_2175*0.7075:.1f}% global) exceeds 50% threshold.")
+    if global_mean_2175 > threshold_70_global:
+        print(f"WARNING: Modeled ecosystems loss {global_mean_2175:.1f}% ({global_mean_2175*0.7075:.1f}% global) exceeds 70% threshold.")
+
+# Plot projected global impact (scaled to 100% biodiversity)
 plt.figure(figsize=(12, 8))
-sns.set(style="whitegrid")
 for scenario in ['Low', 'Mid', 'High']:
-    mean_loss = np.mean(total_loss[scenario], axis=0) * 100
-    plt.plot(years, mean_loss, label=f'{scenario} Scenario', linewidth=2)
+    global_loss = np.mean(total_loss[scenario], axis=0) * 100 * 0.7075
+    plt.plot(years, global_loss, label=f'{scenario} Scenario', linewidth=2)
+
 plt.axhline(y=50, color='orange', linestyle='--', label='50% Threshold (Food/Health Risks)')
 plt.axhline(y=70, color='red', linestyle='--', label='70% Threshold (Survival Threat)')
-plt.title('Projected Biodiversity Loss in Modeled Ecosystems (2025–2175, No Intervention)', fontsize=16)
+plt.title('Projected Global Biodiversity Loss (2025–2175, No Intervention)', fontsize=16)
 plt.xlabel('Year', fontsize=12)
-plt.ylabel('% Biodiversity Loss (Modeled Ecosystems)', fontsize=12)
+plt.ylabel('% Projected Global Biodiversity Loss', fontsize=12)
 plt.legend(title='Scenario', fontsize=10)
 os.makedirs(FIGURES_DIR, exist_ok=True)
-plt.savefig(os.path.join(FIGURES_DIR, 'total_biodiversity_loss.png'), dpi=300, bbox_inches='tight')
+plt.savefig(os.path.join(FIGURES_DIR, 'projected_global_biodiversity_loss.png'), dpi=300, bbox_inches='tight')
 plt.close()
 
 all_data = []
