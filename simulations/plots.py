@@ -45,31 +45,59 @@ df_no_shock = pd.read_csv(results_no_shock_path)
 df_with_shock = pd.read_csv(results_with_shock_path)
 shock_log = pd.read_csv(shock_log_path)
 
+# Inspect the DataFrame structure for debugging
+print("No-Shock DataFrame columns:", df_no_shock.columns)
+print("With-Shock DataFrame columns:", df_with_shock.columns)
+print("Sample of No-Shock DataFrame:\n", df_no_shock.head())
+
 sns.set(style="whitegrid")
 
-# --- Plot 1: Shock vs. No-Shock Overlay with CI ---
+# --- Plot 1: Total Biodiversity Loss by Scenario with Shock vs. No-Shock and 95% CI ---
 plt.figure(figsize=(12, 8))
-years = np.unique(df_no_shock['Year'])  # Should be 15 (2025–2175, step 10)
-for scenario in ['High']:
-    no_shock_mean = df_no_shock[df_no_shock['Scenario'] == scenario].groupby('Year')['Loss'].mean() * 100
-    no_shock_ci_low = df_no_shock[df_no_shock['Scenario'] == scenario].groupby('Year')['Loss'].quantile(0.025) * 100
-    no_shock_ci_high = df_no_shock[df_no_shock['Scenario'] == scenario].groupby('Year')['Loss'].quantile(0.975) * 100
-    with_shock_mean = df_with_shock[df_with_shock['Scenario'] == scenario].groupby('Year')['Loss'].mean() * 100
-    with_shock_ci_low = df_with_shock[df_with_shock['Scenario'] == scenario].groupby('Year')['Loss'].quantile(0.025) * 100
-    with_shock_ci_high = df_with_shock[df_with_shock['Scenario'] == scenario].groupby('Year')['Loss'].quantile(0.975) * 100
-    
-    plt.plot(years, no_shock_mean, label=f'{scenario} (No Shock)', linestyle='--', color='gray', linewidth=2)
-    plt.fill_between(years, no_shock_ci_low, no_shock_ci_high, color='gray', alpha=0.2)
-    plt.plot(years, with_shock_mean, label=f'{scenario} (With Shock)', linestyle='-', color='blue', linewidth=2)
-    plt.fill_between(years, with_shock_ci_low, with_shock_ci_high, color='lightblue', alpha=0.3)
+years = np.unique(df_no_shock['Year'])  # Should be 2025 to 2175 (151 years)
+color_map = {'Low': 'green', 'Mid': 'orange', 'High': 'red'}
 
-plt.axhline(y=50, color='orange', linestyle='--', label='50% Threshold')
-plt.axhline(y=70, color='red', linestyle='--', label='70% Threshold')
-plt.title('High Scenario Biodiversity Loss: Shock vs. No-Shock with 95% CI (2025–2175)', fontsize=16)
+# Compute total biodiversity loss for each iteration and year
+def compute_total_biodiversity_loss(df, scenario):
+    # Filter by scenario
+    df_scen = df[df['Scenario'] == scenario]
+    # Group by RunID and Year, then pivot to get Loss per Ecosystem
+    grouped = df_scen.groupby(['RunID', 'Year', 'Ecosystem'])['Loss'].mean().reset_index()
+    pivoted = grouped.pivot(index=['RunID', 'Year'], columns='Ecosystem', values='Loss')
+    # Ensure all ecosystems are present
+    for eco in ecosystems:
+        if eco not in pivoted.columns:
+            pivoted[eco] = 0.0
+    # Compute weighted total loss for each RunID and Year
+    total_loss = np.zeros((len(np.unique(df_scen['RunID'])), len(years)))
+    for run_idx, run_id in enumerate(np.unique(df_scen['RunID'])):
+        for year_idx, year in enumerate(years):
+            row = pivoted.loc[(run_id, year)] if (run_id, year) in pivoted.index else pd.Series(0.0, index=ecosystems)
+            total_loss[run_idx, year_idx] = np.sum(row * pd.Series(species_weights)) * 100
+    # Compute mean and CI
+    mean_loss = np.mean(total_loss, axis=0)
+    ci_low = np.percentile(total_loss, 2.5, axis=0)
+    ci_high = np.percentile(total_loss, 97.5, axis=0)
+    return mean_loss, ci_low, ci_high
+
+for scenario in ['Low', 'Mid', 'High']:
+    # No-Shock
+    mean_loss_no, ci_low_no, ci_high_no = compute_total_biodiversity_loss(df_no_shock, scenario)
+    plt.plot(years, mean_loss_no, label=f'{scenario} (No Shock)', linestyle='--', color=color_map[scenario], linewidth=2)
+    plt.fill_between(years, ci_low_no, ci_high_no, color=color_map[scenario], alpha=0.2)
+
+    # With-Shock
+    mean_loss_with, ci_low_with, ci_high_with = compute_total_biodiversity_loss(df_with_shock, scenario)
+    plt.plot(years, mean_loss_with, label=f'{scenario} (With Shock)', linestyle='-', color=color_map[scenario], linewidth=2)
+    plt.fill_between(years, ci_low_with, ci_high_with, color=color_map[scenario], alpha=0.2)
+
+plt.axhline(y=50, color='yellow', linestyle='--', label='50% Threshold')
+plt.axhline(y=70, color='purple', linestyle='--', label='70% Threshold')
+plt.title('Total Biodiversity Loss by Scenario: Shock vs. No-Shock with 95% CI (2025–2175)', fontsize=16)
 plt.xlabel('Year', fontsize=12)
 plt.ylabel('% Total Biodiversity Loss', fontsize=12)
 plt.legend(title='Scenario', fontsize=10, loc='upper left')
-plt.savefig(os.path.join(FIGURES_DIR, 'shock_vs_no_shock_overlay_with_ci.png'), dpi=300, bbox_inches='tight')
+plt.savefig(os.path.join(FIGURES_DIR, 'total_biodiversity_loss_with_shocks.png'), dpi=300, bbox_inches='tight')
 plt.close()
 
 # --- Plot 2: Ecosystem Breakdown with Transformation Flags ---
@@ -89,8 +117,8 @@ for bar, is_transformed in zip(bars, transformed):
     if is_transformed:
         bar.set_hatch('//')
 
-plt.axhline(y=50, color='orange', linestyle='--', label='50% Threshold')
-plt.axhline(y=90, color='red', linestyle='--', label='90% Near-Collapse')
+plt.axhline(y=50, color='yellow', linestyle='--', label='50% Threshold')
+plt.axhline(y=90, color='purple', linestyle='--', label='90% Near-Collapse')
 plt.title('Ecosystem Loss in High Scenario with Shocks (2175)', fontsize=16)
 plt.xlabel('Ecosystem', fontsize=12)
 plt.ylabel('% Loss of Ecosystem Function', fontsize=12)
@@ -104,24 +132,22 @@ plt.close()
 plt.figure(figsize=(14, 8))
 sample_runs = 5
 high_shock_df = df_with_shock[df_with_shock['Scenario'] == 'High']
-n_years = len(years)  # 15
+n_years = len(np.unique(high_shock_df['Year']))  # 151 years
 n_ecosystems = len(ecosystems)  # 13
 rows_per_run = n_years * n_ecosystems
 total_runs = len(high_shock_df) // rows_per_run
 run_ids = np.random.choice(total_runs, sample_runs, replace=False)
 
 for run_id in run_ids:
-    start_idx = run_id * rows_per_run
-    end_idx = (run_id + 1) * rows_per_run
-    run_data = high_shock_df.iloc[start_idx:end_idx]
+    run_data = high_shock_df[high_shock_df['RunID'] == run_id]
     if len(run_data) == rows_per_run:
         # Weighted total loss per year
         weighted_loss = np.zeros(n_years)
-        for i, year in enumerate(years):
+        year_indices = np.unique(run_data['Year'].values)
+        for i, year in enumerate(year_indices):
             year_data = run_data[run_data['Year'] == year]
-            weighted_loss[i] = sum(year_data[year_data['Ecosystem'] == eco]['Loss'].mean() * species_weights[eco]
-                                  for eco in ecosystems) * 100
-        plt.plot(years, weighted_loss, label=f'Run {run_id}', alpha=0.7, linewidth=1.5)
+            weighted_loss[i] = np.sum([year_data[year_data['Ecosystem'] == eco]['Loss'].mean() * species_weights[eco] for eco in ecosystems]) * 100
+        plt.plot(year_indices, weighted_loss, label=f'Run {run_id}', alpha=0.7, linewidth=1.5)
         
         # Exact shock years from log
         run_shocks = shock_log[shock_log['iteration'] == run_id]
@@ -129,8 +155,8 @@ for run_id in run_ids:
             color = 'green' if shock['type'] == 'positive' else 'purple'
             plt.axvline(x=shock['year'], color=color, linestyle='--', alpha=0.5)
 
-plt.axhline(y=50, color='orange', linestyle='--', label='50% Threshold')
-plt.axhline(y=70, color='red', linestyle='--', label='70% Threshold')
+plt.axhline(y=50, color='yellow', linestyle='--', label='50% Threshold')
+plt.axhline(y=70, color='purple', linestyle='--', label='70% Threshold')
 plt.title('Shock Impacts on Weighted Total Loss (High Scenario, Sample Runs)', fontsize=16)
 plt.xlabel('Year', fontsize=12)
 plt.ylabel('% Total Biodiversity Loss (Weighted)', fontsize=12)

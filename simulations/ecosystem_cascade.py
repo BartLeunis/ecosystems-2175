@@ -174,39 +174,54 @@ for scenario in ['Low', 'Mid', 'High']:
         print(f"WARNING: {mean_2125:.1f}% loss by 2125 exceeds 50% - food/health risks.")
     if total_mean_2175 > 70:
         print(f"WARNING: {total_mean_2175:.1f}% loss by 2175 exceeds 70% - survival threat.")
-    
-    
-# Plot total loss with shocks
+
+# Enhanced plotting with CI
 plt.figure(figsize=(12, 8))
 sns.set(style="whitegrid")
 
-# Define color mapping for scenarios
-color_map = {
-    'Low': 'green',
-    'Mid': 'orange',
-    'High': 'red'
-}
+color_map = {'Low': 'green', 'Mid': 'orange', 'High': 'red'}
 
 for scenario in ['Low', 'Mid', 'High']:
-    # Plot no-shocks (dashed lines)
+    # No-Shock mean and CI
     total_loss_mean_no = np.mean(total_loss_no_shock[scenario], axis=0) * 100
-    plt.plot(years, total_loss_mean_no, label=f'{scenario} (No Shocks)', linestyle='--', color=color_map[scenario])
-    
-    # Plot with-shocks (solid lines)
+    total_loss_ci_no = np.percentile(total_loss_no_shock[scenario], [2.5, 97.5], axis=0) * 100
+    plt.plot(years, total_loss_mean_no, label=f'{scenario} (No Shock)', linestyle='--', color=color_map[scenario], linewidth=2)
+    plt.fill_between(years, total_loss_ci_no[0], total_loss_ci_no[1], color=color_map[scenario], alpha=0.2)
+
+    # With-Shock mean and CI
     total_loss_mean = np.mean(total_loss_with_shock[scenario], axis=0) * 100
-    plt.plot(years, total_loss_mean, label=f'{scenario} Scenario (w/ Shocks)', linewidth=2, color=color_map[scenario])
+    total_loss_ci = np.percentile(total_loss_with_shock[scenario], [2.5, 97.5], axis=0) * 100
+    plt.plot(years, total_loss_mean, label=f'{scenario} (With Shock)', linestyle='-', color=color_map[scenario], linewidth=2)
+    plt.fill_between(years, total_loss_ci[0], total_loss_ci[1], color=color_map[scenario], alpha=0.2)
 
 plt.axhline(y=50, color='yellow', linestyle='--', label='50% Threshold (Food/Health Risks)')
-plt.axhline(y=70, color='red', linestyle='--', label='70% Threshold (Survival Threat)')
-plt.title('Total Biodiversity Loss with Boosted Shocks (2025–2175, No Intervention)', fontsize=16)
+plt.axhline(y=70, color='purple', linestyle='--', label='70% Threshold (Survival Threat)')
+plt.title('Total Biodiversity Loss by Scenario: Shock vs. No-Shock with 95% CI (2025–2175)', fontsize=16)
 plt.xlabel('Year', fontsize=12)
 plt.ylabel('% Total Biodiversity Loss', fontsize=12)
-plt.legend(title='Scenario', fontsize=10)
+plt.legend(title='Scenario', fontsize=10, loc='upper left')
 os.makedirs(FIGURES_DIR, exist_ok=True)
 plt.savefig(os.path.join(FIGURES_DIR, 'total_biodiversity_loss_with_shocks.png'), dpi=300, bbox_inches='tight')
 plt.close()
 
-# Save results
+# Optional: Save per-iteration total loss data for separate plotting
+save_iteration_data = False
+if save_iteration_data:
+    total_loss_data = []
+    for scenario in ['Low', 'Mid', 'High']:
+        for i in range(n_iter):
+            total_loss_data.append({
+                'RunID': i,
+                'Scenario': scenario,
+                'Year': np.tile(years, 1),
+                'TotalLoss_NoShock': total_loss_no_shock[scenario][i] * 100,
+                'TotalLoss_WithShock': total_loss_with_shock[scenario][i] * 100
+            })
+    total_loss_df = pd.DataFrame([item for sublist in total_loss_data for item in sublist])
+    total_loss_df.to_csv(os.path.join(DATA_DIR, 'total_loss_results.csv'), index=False)
+    print(f"Per-iteration total loss data saved to '{os.path.join(DATA_DIR, 'total_loss_results.csv')}'")
+
+# Save ecosystem-level results
 all_data_no_shock = []
 all_data_with_shock = []
 for scenario in ['Low', 'Mid', 'High']:
