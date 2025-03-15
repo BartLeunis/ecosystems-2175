@@ -54,7 +54,7 @@ shock_annual_prob = 0.10  # 10% chance per decade
 shock_magnitude = {'positive': -0.10, 'negative': 0.10}  # ±10% loss rate adjustment
 shock_targets = ['Oceans', 'Coral Reefs', 'Wetlands']  # Multi-ecosystem hit
 
-transform_threshold = 0.5
+transform_threshold = stats.beta(a=2, b=5).rvs()  # 0-1 scale
 transform_targets = {
     'Amazon Rainforest': 'Savanna Grasslands', 'Coral Reefs': 'Oceans',
     'Arctic Sea Ice': 'Oceans', 'Boreal Forests': 'Savanna Grasslands',
@@ -100,7 +100,7 @@ def run_ecosystem_simulation(scenario, include_shocks=False):
                                       0)
             adjusted_mean_loss = np.clip(mean_loss + shock_adjust, 0, 0.20)  # Raised cap for bigger shocks
             
-            annual_loss = stats.norm(loc=adjusted_mean_loss, scale=base_loss_std).rvs(n_iter)
+            annual_loss = stats.t(df=3, loc=adjusted_mean_loss, scale=base_loss_std).rvs(n_iter)
             loss_dict[eco][:, t] = loss_dict[eco][:, t-1] + annual_loss if t > 0 else annual_loss
             
             # Log shocks for target ecosystems
