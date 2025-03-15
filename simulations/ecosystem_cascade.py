@@ -10,28 +10,28 @@ DATA_DIR = os.path.join(BASE_DIR, 'data')
 FIGURES_DIR = os.path.join(BASE_DIR, 'figures')
 
 np.random.seed(42)
-n_iter = 100000
-years = np.arange(2025, 2176, 10)
+n_iter = 10000
+years = np.arange(2025, 2176, 1)
 ecosystems = ['Amazon Rainforest', 'Coral Reefs', 'Arctic Sea Ice', 'Boreal Forests',
               'Savanna Grasslands', 'Wetlands', 'Oceans', 'Temperate Forests',
               'Deserts', 'Tundra', 'Montane', 'Freshwater', 'Polar']
 
 base_loss_means = {
-    'Amazon Rainforest': {'Low': 0.03, 'Mid': 0.06, 'High': 0.09},
-    'Coral Reefs': {'Low': 0.04, 'Mid': 0.08, 'High': 0.12},
-    'Arctic Sea Ice': {'Low': 0.03, 'Mid': 0.06, 'High': 0.09},
-    'Boreal Forests': {'Low': 0.02, 'Mid': 0.04, 'High': 0.06},
-    'Savanna Grasslands': {'Low': 0.02, 'Mid': 0.04, 'High': 0.06},
-    'Wetlands': {'Low': 0.02, 'Mid': 0.05, 'High': 0.07},
-    'Oceans': {'Low': 0.03, 'Mid': 0.06, 'High': 0.09},
-    'Temperate Forests': {'Low': 0.01, 'Mid': 0.03, 'High': 0.05},
-    'Deserts': {'Low': 0.01, 'Mid': 0.03, 'High': 0.05},
-    'Tundra': {'Low': 0.02, 'Mid': 0.04, 'High': 0.07},
-    'Montane': {'Low': 0.02, 'Mid': 0.04, 'High': 0.06},
-    'Freshwater': {'Low': 0.03, 'Mid': 0.06, 'High': 0.09},
-    'Polar': {'Low': 0.01, 'Mid': 0.03, 'High': 0.05}
+    'Amazon Rainforest': {'Low': 0.003, 'Mid': 0.006, 'High': 0.009},
+    'Coral Reefs': {'Low': 0.004, 'Mid': 0.008, 'High': 0.012},
+    'Arctic Sea Ice': {'Low': 0.003, 'Mid': 0.006, 'High': 0.009},
+    'Boreal Forests': {'Low': 0.002, 'Mid': 0.004, 'High': 0.006},
+    'Savanna Grasslands': {'Low': 0.002, 'Mid': 0.004, 'High': 0.006},
+    'Wetlands': {'Low': 0.002, 'Mid': 0.005, 'High': 0.007},
+    'Oceans': {'Low': 0.003, 'Mid': 0.006, 'High': 0.009},
+    'Temperate Forests': {'Low': 0.001, 'Mid': 0.003, 'High': 0.005},
+    'Deserts': {'Low': 0.001, 'Mid': 0.003, 'High': 0.005},
+    'Tundra': {'Low': 0.002, 'Mid': 0.004, 'High': 0.007},
+    'Montane': {'Low': 0.002, 'Mid': 0.004, 'High': 0.006},
+    'Freshwater': {'Low': 0.003, 'Mid': 0.006, 'High': 0.009},
+    'Polar': {'Low': 0.001, 'Mid': 0.003, 'High': 0.005}
 }
-base_loss_std = 0.01
+base_loss_std = 0.001
 
 cascade_effects = {
     'Amazon Rainforest': {'Arctic Sea Ice': 1.2, 'Coral Reefs': 1.1, 'Wetlands': 1.1},
@@ -50,9 +50,9 @@ cascade_effects = {
 }
 
 # Boosted shock parameters
-shock_annual_prob = 0.10  # 10% chance per decade
-shock_magnitude = {'positive': -0.10, 'negative': 0.10}  # ±10% loss rate adjustment
-shock_targets = ['Oceans', 'Coral Reefs', 'Wetlands']  # Multi-ecosystem hit
+shock_annual_prob = 0.03  # 4-5 shocks per run
+shock_magnitude = {'positive': -0.1, 'negative': 0.1}  # ±10% loss rate adjustment
+shock_targets = ecosystems  # Shocks hit all
 
 transform_threshold = stats.beta(a=2, b=5).rvs()  # 0-1 scale
 transform_targets = {
@@ -64,9 +64,9 @@ transform_targets = {
     'Montane': 'Savanna Grasslands', 'Freshwater': 'Wetlands', 'Polar': 'Oceans'
 }
 final_baselines = {
-    'Amazon Rainforest': 0.10, 'Coral Reefs': 0.05, 'Arctic Sea Ice': 0.20,
+    'Amazon Rainforest': 0.10, 'Coral Reefs': 0.01, 'Arctic Sea Ice': 0.20,
     'Boreal Forests': 0.20, 'Savanna Grasslands': 0.40, 'Wetlands': 0.15,
-    'Oceans': 0.25, 'Temperate Forests': 0.30, 'Deserts': 0.50,
+    'Oceans': 0.15, 'Temperate Forests': 0.30, 'Deserts': 0.50,
     'Tundra': 0.30, 'Montane': 0.40, 'Freshwater': 0.20, 'Polar': 0.40
 }
 
@@ -98,7 +98,7 @@ def run_ecosystem_simulation(scenario, include_shocks=False):
                 shock_adjust = np.where(shock_events[:, t], 
                                       np.where(shock_types[:, t] == 'positive', shock_magnitude['positive'], shock_magnitude['negative']), 
                                       0)
-            adjusted_mean_loss = np.clip(mean_loss + shock_adjust, 0, 0.20)  # Raised cap for bigger shocks
+            adjusted_mean_loss = np.clip(mean_loss + shock_adjust, 0, 0.15)  # Raised cap for bigger shocks
             
             annual_loss = stats.t(df=3, loc=adjusted_mean_loss, scale=base_loss_std).rvs(n_iter)
             loss_dict[eco][:, t] = loss_dict[eco][:, t-1] + annual_loss if t > 0 else annual_loss
@@ -146,7 +146,7 @@ for scenario in ['Low', 'Mid', 'High']:
     total_mean_2175 = np.mean(total_loss_no_shock[scenario][:, -1]) * 100
     total_ci_2175 = np.percentile(total_loss_no_shock[scenario][:, -1], [2.5, 97.5]) * 100
     print(f"Total Loss 2175: {total_mean_2175:.1f}%, 95% CI = {total_ci_2175[0]:.1f}–{total_ci_2175[1]:.1f}%")
-    mean_2125 = np.mean(total_loss_no_shock[scenario][:, -6]) * 100
+    mean_2125 = np.mean(total_loss_no_shock[scenario][:, 100]) * 100
     if mean_2125 > 50:
         print(f"WARNING: {mean_2125:.1f}% loss by 2125 exceeds 50% - food/health risks.")
     if total_mean_2175 > 70:
@@ -156,7 +156,7 @@ for scenario in ['Low', 'Mid', 'High']:
     total_mean_2175 = np.mean(total_loss_with_shock[scenario][:, -1]) * 100
     total_ci_2175 = np.percentile(total_loss_with_shock[scenario][:, -1], [2.5, 97.5]) * 100
     print(f"Total Loss 2175: {total_mean_2175:.1f}%, 95% CI = {total_ci_2175[0]:.1f}–{total_ci_2175[1]:.1f}%")
-    mean_2125 = np.mean(total_loss_with_shock[scenario][:, -6]) * 100
+    mean_2125 = np.mean(total_loss_with_shock[scenario][:, 100]) * 100
     if mean_2125 > 50:
         print(f"WARNING: {mean_2125:.1f}% loss by 2125 exceeds 50% - food/health risks.")
     if total_mean_2175 > 70:
