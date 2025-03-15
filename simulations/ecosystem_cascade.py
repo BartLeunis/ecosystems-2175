@@ -175,7 +175,7 @@ for scenario in ['Low', 'Mid', 'High']:
     if total_mean_2175 > 70:
         print(f"WARNING: {total_mean_2175:.1f}% loss by 2175 exceeds 70% - survival threat.")
 
-# Enhanced plotting with CI
+# --- Plot 1: Total Biodiversity Loss by Scenario with Shock vs. No-Shock and 95% CI ---
 plt.figure(figsize=(12, 8))
 sns.set(style="whitegrid")
 
@@ -204,22 +204,70 @@ os.makedirs(FIGURES_DIR, exist_ok=True)
 plt.savefig(os.path.join(FIGURES_DIR, 'total_biodiversity_loss_with_shocks.png'), dpi=300, bbox_inches='tight')
 plt.close()
 
-# Optional: Save per-iteration total loss data for separate plotting
-save_iteration_data = False
-if save_iteration_data:
-    total_loss_data = []
-    for scenario in ['Low', 'Mid', 'High']:
-        for i in range(n_iter):
-            total_loss_data.append({
-                'RunID': i,
-                'Scenario': scenario,
-                'Year': np.tile(years, 1),
-                'TotalLoss_NoShock': total_loss_no_shock[scenario][i] * 100,
-                'TotalLoss_WithShock': total_loss_with_shock[scenario][i] * 100
-            })
-    total_loss_df = pd.DataFrame([item for sublist in total_loss_data for item in sublist])
-    total_loss_df.to_csv(os.path.join(DATA_DIR, 'total_loss_results.csv'), index=False)
-    print(f"Per-iteration total loss data saved to '{os.path.join(DATA_DIR, 'total_loss_results.csv')}'")
+# --- Plot 2: Ecosystem Breakdown with Transformation Flags (High With-Shocks, 2175) ---
+plt.figure(figsize=(14, 8))
+sns.set(style="whitegrid")
+
+# Compute mean and CI for each ecosystem in High With-Shocks at 2175
+scenario = 'High'
+year_idx = -1  # 2175 (last year)
+mean_losses = np.zeros(len(ecosystems))
+ci_low = np.zeros(len(ecosystems))
+ci_high = np.zeros(len(ecosystems))
+
+for eco_idx, eco in enumerate(ecosystems):
+    losses = results_with_shock[scenario][eco][:, year_idx] * 100
+    mean_losses[eco_idx] = np.mean(losses)
+    ci_low[eco_idx], ci_high[eco_idx] = np.percentile(losses, [2.5, 97.5])
+transformed = mean_losses >= (transform_threshold * 100)
+
+lower_errors = np.maximum(mean_losses - ci_low, 0)
+upper_errors = ci_high - mean_losses
+errors = [lower_errors, upper_errors]
+
+bars = plt.bar(ecosystems, mean_losses, yerr=errors, capsize=5, color='skyblue', edgecolor='black')
+for bar, is_transformed in zip(bars, transformed):
+    if is_transformed:
+        bar.set_hatch('//')
+
+plt.axhline(y=50, color='yellow', linestyle='--', label='50% Threshold')
+plt.axhline(y=90, color='purple', linestyle='--', label='90% Near-Collapse')
+plt.title('Ecosystem Loss in High Scenario with Shocks (2175)', fontsize=16)
+plt.xlabel('Ecosystem', fontsize=12)
+plt.ylabel('% Loss of Ecosystem Function', fontsize=12)
+plt.xticks(rotation=45, ha='right')
+plt.legend(fontsize=10)
+plt.tight_layout()
+plt.savefig(os.path.join(FIGURES_DIR, 'ecosystem_breakdown_2175_high_shock.png'), dpi=300, bbox_inches='tight')
+plt.close()
+
+# --- Plot 3: Shock Impact with Weighted Total Loss (Sample Runs, High With-Shocks) ---
+plt.figure(figsize=(14, 8))
+sns.set(style="whitegrid")
+
+sample_runs = 5
+scenario = 'High'
+run_ids = np.random.choice(n_iter, sample_runs, replace=False)
+
+for run_id in run_ids:
+    weighted_loss = total_loss_with_shock[scenario][run_id] * 100
+    plt.plot(years, weighted_loss, label=f'Run {run_id}', alpha=0.7, linewidth=1.5)
+
+    # Overlay shocks for this run
+    run_shocks = pd.DataFrame(shock_logs[scenario])
+    run_shocks = run_shocks[run_shocks['iteration'] == run_id]
+    for _, shock in run_shocks.iterrows():
+        color = 'green' if shock['type'] == 'positive' else 'purple'
+        plt.axvline(x=shock['year'], color=color, linestyle='--', alpha=0.5)
+
+plt.axhline(y=50, color='yellow', linestyle='--', label='50% Threshold')
+plt.axhline(y=70, color='purple', linestyle='--', label='70% Threshold')
+plt.title('Shock Impacts on Weighted Total Loss (High Scenario, Sample Runs)', fontsize=16)
+plt.xlabel('Year', fontsize=12)
+plt.ylabel('% Total Biodiversity Loss (Weighted)', fontsize=12)
+plt.legend(title='Sample Runs', fontsize=10, loc='upper left')
+plt.savefig(os.path.join(FIGURES_DIR, 'shock_impact_sample_runs_weighted.png'), dpi=300, bbox_inches='tight')
+plt.close()
 
 # Save ecosystem-level results
 all_data_no_shock = []
@@ -248,10 +296,11 @@ os.makedirs(DATA_DIR, exist_ok=True)
 results_df_no_shock.to_csv(os.path.join(DATA_DIR, 'ecosystem_cascade_results_no_shock.csv'), index=False)
 results_df_with_shock.to_csv(os.path.join(DATA_DIR, 'ecosystem_cascade_results_with_shock.csv'), index=False)
 
-# Save shock logs
+#Save shock logs
 for scenario in ['Low', 'Mid', 'High']:
     shock_df = pd.DataFrame(shock_logs[scenario])
     shock_df.to_csv(os.path.join(DATA_DIR, f'shock_log_{scenario.lower()}.csv'), index=False)
 
 print(f"Results saved to '{os.path.join(DATA_DIR, 'ecosystem_cascade_results_no_shock.csv')}' and '{os.path.join(DATA_DIR, 'ecosystem_cascade_results_with_shock.csv')}'")
 print(f"Shock logs saved to '{os.path.join(DATA_DIR, 'shock_log_high.csv')}' (and Low/Mid)")
+print(f"Plots saved to '{FIGURES_DIR}'")
