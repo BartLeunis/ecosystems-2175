@@ -49,8 +49,10 @@ cascade_effects = {
     'Polar': {'Arctic Sea Ice': 1.1}
 }
 
-shock_annual_prob = 0.05
-shock_magnitude = {'positive': -0.02, 'negative': 0.03}
+# Boosted shock parameters
+shock_annual_prob = 0.10  # 10% chance per decade
+shock_magnitude = {'positive': -0.10, 'negative': 0.10}  # ±10% loss rate adjustment
+shock_targets = ['Oceans', 'Coral Reefs', 'Wetlands']  # Multi-ecosystem hit
 
 transform_threshold = 0.5
 transform_targets = {
@@ -80,7 +82,7 @@ def run_ecosystem_simulation(scenario, include_shocks=False):
     transformed = {eco: np.zeros(n_iter, dtype=bool) for eco in ecosystems}
     shock_events = np.random.binomial(1, shock_annual_prob, size=(n_iter, len(years))) if include_shocks else np.zeros((n_iter, len(years)))
     shock_types = np.random.choice(['positive', 'negative'], size=(n_iter, len(years))) if include_shocks else np.full((n_iter, len(years)), 'none')
-    shock_log = []  # Log shocks: iteration, year, type
+    shock_log = []
 
     for t, year in enumerate(years):
         for eco in ecosystems:
@@ -90,19 +92,22 @@ def run_ecosystem_simulation(scenario, include_shocks=False):
             mean_loss = (base_loss_means[eco][scenario] if not np.any(transformed[eco])
                          else (base_loss_means[target_eco][scenario] if target_eco else base_loss_means[eco][scenario]))
             
-            shock_adjust = np.where(shock_events[:, t], 
-                                  np.where(shock_types[:, t] == 'positive', shock_magnitude['positive'], shock_magnitude['negative']), 
-                                  0)
-            adjusted_mean_loss = np.clip(mean_loss + shock_adjust, 0, 0.15)
+            # Apply boosted shocks to target ecosystems
+            shock_adjust = 0
+            if include_shocks and eco in shock_targets:
+                shock_adjust = np.where(shock_events[:, t], 
+                                      np.where(shock_types[:, t] == 'positive', shock_magnitude['positive'], shock_magnitude['negative']), 
+                                      0)
+            adjusted_mean_loss = np.clip(mean_loss + shock_adjust, 0, 0.20)  # Raised cap for bigger shocks
             
             annual_loss = stats.norm(loc=adjusted_mean_loss, scale=base_loss_std).rvs(n_iter)
             loss_dict[eco][:, t] = loss_dict[eco][:, t-1] + annual_loss if t > 0 else annual_loss
             
-            # Log shocks for this timestep
-            if include_shocks:
+            # Log shocks for target ecosystems
+            if include_shocks and eco in shock_targets:
                 for i in range(n_iter):
                     if shock_events[i, t]:
-                        shock_log.append({'iteration': i, 'year': year, 'type': shock_types[i, t]})
+                        shock_log.append({'iteration': i, 'year': year, 'type': shock_types[i, t], 'ecosystem': eco})
             
             for source_eco, targets in cascade_effects.items():
                 if eco in targets:
@@ -165,7 +170,7 @@ for scenario in ['Low', 'Mid', 'High']:
     plt.plot(years, total_loss_mean, label=f'{scenario} Scenario (w/ Shocks)', linewidth=2)
 plt.axhline(y=50, color='orange', linestyle='--', label='50% Threshold (Food/Health Risks)')
 plt.axhline(y=70, color='red', linestyle='--', label='70% Threshold (Survival Threat)')
-plt.title('Total Biodiversity Loss with Black Swan Shocks (2025–2175, No Intervention)', fontsize=16)
+plt.title('Total Biodiversity Loss with Boosted Shocks (2025–2175, No Intervention)', fontsize=16)
 plt.xlabel('Year', fontsize=12)
 plt.ylabel('% Total Biodiversity Loss', fontsize=12)
 plt.legend(title='Scenario', fontsize=10)
