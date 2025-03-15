@@ -51,7 +51,7 @@ cascade_effects = {
 
 # Boosted shock parameters
 shock_annual_prob = 0.03  # 4-5 shocks per run
-shock_magnitude = {'positive': -0.1, 'negative': 0.1}  # ±10% loss rate adjustment
+shock_magnitude = {'positive': -0.05, 'negative': 0.05}  # ±10% loss rate adjustment
 shock_targets = ecosystems  # Shocks hit all
 
 transform_threshold = stats.beta(a=2, b=5).rvs()  # 0-1 scale
@@ -64,9 +64,9 @@ transform_targets = {
     'Montane': 'Savanna Grasslands', 'Freshwater': 'Wetlands', 'Polar': 'Oceans'
 }
 final_baselines = {
-    'Amazon Rainforest': 0.10, 'Coral Reefs': 0.01, 'Arctic Sea Ice': 0.20,
-    'Boreal Forests': 0.20, 'Savanna Grasslands': 0.40, 'Wetlands': 0.15,
-    'Oceans': 0.15, 'Temperate Forests': 0.30, 'Deserts': 0.50,
+    'Amazon Rainforest': 0.05, 'Coral Reefs': 0.01, 'Arctic Sea Ice': 0.20,
+    'Boreal Forests': 0.20, 'Savanna Grasslands': 0.40, 'Wetlands': 0.05,
+    'Oceans': 0.15, 'Temperate Forests': 0.30, 'Deserts': 0.80,
     'Tundra': 0.30, 'Montane': 0.40, 'Freshwater': 0.20, 'Polar': 0.40
 }
 
@@ -161,7 +161,8 @@ for scenario in ['Low', 'Mid', 'High']:
         print(f"WARNING: {mean_2125:.1f}% loss by 2125 exceeds 50% - food/health risks.")
     if total_mean_2175 > 70:
         print(f"WARNING: {total_mean_2175:.1f}% loss by 2175 exceeds 70% - survival threat.")
-
+    total_loss_mean_no = np.mean(total_loss_no_shock[scenario], axis=0) * 100
+    plt.plot(years, total_loss_mean_no, label=f'{scenario} (No Shocks)', linestyle='--')
 # Plot total loss with shocks
 plt.figure(figsize=(12, 8))
 sns.set(style="whitegrid")
