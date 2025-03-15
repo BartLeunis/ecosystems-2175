@@ -10,7 +10,7 @@ DATA_DIR = os.path.join(BASE_DIR, 'data')
 FIGURES_DIR = os.path.join(BASE_DIR, 'figures')
 
 np.random.seed(42)
-n_iter = 100000
+n_iter = 50000
 years = np.arange(2025, 2176, 1)
 ecosystems = ['Amazon Rainforest', 'Coral Reefs', 'Arctic Sea Ice', 'Boreal Forests',
               'Savanna Grasslands', 'Wetlands', 'Oceans', 'Temperate Forests',
