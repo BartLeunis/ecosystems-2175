@@ -17,11 +17,11 @@ ecosystems = ['Amazon Rainforest', 'Coral Reefs', 'Arctic Sea Ice', 'Boreal Fore
               'Deserts', 'Tundra', 'Montane', 'Freshwater', 'Polar']
 
 base_loss_means = {
-    'Amazon Rainforest': {'Low': 0.003, 'Mid': 0.006, 'High': 0.009},
-    'Coral Reefs': {'Low': 0.004, 'Mid': 0.008, 'High': 0.012},
-    'Arctic Sea Ice': {'Low': 0.003, 'Mid': 0.006, 'High': 0.009},
+    'Amazon Rainforest': {'Low': 0.003, 'Mid': 0.005, 'High': 0.005},
+    'Coral Reefs': {'Low': 0.006, 'Mid': 0.008, 'High': 0.015},
+    'Arctic Sea Ice': {'Low': 0.004, 'Mid': 0.008, 'High': 0.04},
     'Boreal Forests': {'Low': 0.002, 'Mid': 0.004, 'High': 0.006},
-    'Savanna Grasslands': {'Low': 0.002, 'Mid': 0.004, 'High': 0.006},
+    'Savanna Grasslands': {'Low': 0.002, 'Mid': 0.004, 'High': 0.005},
     'Wetlands': {'Low': 0.002, 'Mid': 0.005, 'High': 0.007},
     'Oceans': {'Low': 0.003, 'Mid': 0.006, 'High': 0.009},
     'Temperate Forests': {'Low': 0.001, 'Mid': 0.003, 'High': 0.005},
@@ -34,27 +34,25 @@ base_loss_means = {
 base_loss_std = 0.001
 
 cascade_effects = {
-    'Amazon Rainforest': {'Arctic Sea Ice': 1.2, 'Coral Reefs': 1.1, 'Wetlands': 1.1},
-    'Coral Reefs': {'Wetlands': 1.2, 'Savanna Grasslands': 1.1, 'Oceans': 1.1},
-    'Arctic Sea Ice': {'Amazon Rainforest': 1.1, 'Boreal Forests': 1.2, 'Oceans': 1.1},
+    'Amazon Rainforest': {'Arctic Sea Ice': 1.05, 'Coral Reefs': 1.05, 'Wetlands': 1.05},
+    'Coral Reefs': {'Wetlands': 1.2, 'Savanna Grasslands': 1.05, 'Oceans': 1.1},
+    'Arctic Sea Ice': {'Amazon Rainforest': 1.05, 'Boreal Forests': 1.2, 'Oceans': 1.1},
     'Boreal Forests': {'Arctic Sea Ice': 1.1, 'Wetlands': 1.1, 'Temperate Forests': 1.1},
-    'Savanna Grasslands': {'Wetlands': 1.1},
-    'Wetlands': {'Savanna Grasslands': 1.1, 'Temperate Forests': 1.1},
+    'Savanna Grasslands': {'Wetlands': 1.05},
+    'Wetlands': {'Savanna Grasslands': 1.05, 'Temperate Forests': 1.1},
     'Oceans': {'Coral Reefs': 1.1, 'Arctic Sea Ice': 1.1},
     'Temperate Forests': {'Boreal Forests': 1.1, 'Wetlands': 1.1},
-    'Deserts': {'Savanna Grasslands': 1.1},
+    'Deserts': {'Savanna Grasslands': 1.05},
     'Tundra': {'Arctic Sea Ice': 1.1, 'Boreal Forests': 1.1},
     'Montane': {'Temperate Forests': 1.1},
     'Freshwater': {'Wetlands': 1.2, 'Oceans': 1.1},
     'Polar': {'Arctic Sea Ice': 1.1}
 }
 
-# Boosted shock parameters
-shock_annual_prob = 0.03  # 4-5 shocks per run
-shock_magnitude = {'positive': -0.1, 'negative': 0.1}  # ±10% loss rate adjustment
-shock_targets = ecosystems  # Shocks hit all
+shock_annual_prob = 0.02
+shock_magnitude = {'positive': -0.05, 'negative': 0.05}
+shock_targets = ecosystems
 
-transform_threshold = stats.beta(a=2, b=5).rvs()  # 0-1 scale
 transform_targets = {
     'Amazon Rainforest': 'Savanna Grasslands', 'Coral Reefs': 'Oceans',
     'Arctic Sea Ice': 'Oceans', 'Boreal Forests': 'Savanna Grasslands',
@@ -69,69 +67,96 @@ final_baselines = {
     'Oceans': 0.15, 'Temperate Forests': 0.30, 'Deserts': 0.80,
     'Tundra': 0.30, 'Montane': 0.40, 'Freshwater': 0.20, 'Polar': 0.40
 }
-
 species_weights = {
-    'Amazon Rainforest': 0.125, 'Coral Reefs': 0.07, 'Arctic Sea Ice': 0.0075,
+    'Amazon Rainforest': 0.25, 'Coral Reefs': 0.15, 'Arctic Sea Ice': 0.0075,
     'Boreal Forests': 0.065, 'Savanna Grasslands': 0.06, 'Wetlands': 0.08,
     'Oceans': 0.20, 'Temperate Forests': 0.10, 'Deserts': 0.05, 'Tundra': 0.02,
     'Montane': 0.08, 'Freshwater': 0.10, 'Polar': 0.01
 }
 
+biodiversity_density_ratios = {
+    'Amazon Rainforest': 1.0, 'Savanna Grasslands': 0.128, 'Coral Reefs': 0.5,
+    'Arctic Sea Ice': 0.05, 'Boreal Forests': 0.3, 'Wetlands': 0.4,
+    'Oceans': 0.2, 'Temperate Forests': 0.25, 'Deserts': 0.02,
+    'Tundra': 0.05, 'Montane': 0.3, 'Freshwater': 0.35, 'Polar': 0.03
+}
+
 def run_ecosystem_simulation(scenario, include_shocks=False):
     loss_dict = {eco: np.zeros((n_iter, len(years))) for eco in ecosystems}
-    transformed = {eco: np.zeros(n_iter, dtype=bool) for eco in ecosystems}
+    transformed_fraction = {eco: np.zeros((n_iter, len(years))) for eco in ecosystems}
+    # Track when each ecosystem is fully transformed (per iteration)
+    fully_transformed = {eco: np.zeros(n_iter, dtype=bool) for eco in ecosystems}
     shock_events = np.random.binomial(1, shock_annual_prob, size=(n_iter, len(years))) if include_shocks else np.zeros((n_iter, len(years)))
     shock_types = np.random.choice(['positive', 'negative'], size=(n_iter, len(years))) if include_shocks else np.full((n_iter, len(years)), 'none')
     shock_log = []
+    debug_logs = []
 
     for t, year in enumerate(years):
         for eco in ecosystems:
-            if t > 0:
-                transformed[eco] = loss_dict[eco][:, t-1] >= transform_threshold
-            target_eco = transform_targets[eco]
-            mean_loss = (base_loss_means[eco][scenario] if not np.any(transformed[eco])
-                         else (base_loss_means[target_eco][scenario] if target_eco else base_loss_means[eco][scenario]))
-            
-            # Apply boosted shocks to target ecosystems
+            mean_loss = base_loss_means[eco][scenario]
             shock_adjust = 0
             if include_shocks and eco in shock_targets:
-                shock_adjust = np.where(shock_events[:, t], 
-                                      np.where(shock_types[:, t] == 'positive', shock_magnitude['positive'], shock_magnitude['negative']), 
+                shock_magnitude_adjusted = shock_magnitude.copy()
+                if eco in ['Coral Reefs', 'Arctic Sea Ice']:
+                    shock_magnitude_adjusted = {'positive': -0.15, 'negative': 0.15}
+                shock_adjust = np.where(shock_events[:, t],
+                                      np.where(shock_types[:, t] == 'positive', shock_magnitude_adjusted['positive'],
+                                               shock_magnitude_adjusted['negative']),
                                       0)
-            adjusted_mean_loss = np.clip(mean_loss + shock_adjust, 0, 0.15)
-            
+            adjusted_mean_loss = mean_loss + shock_adjust
             annual_loss = stats.t(df=3, loc=adjusted_mean_loss, scale=base_loss_std).rvs(n_iter)
+            annual_loss = np.maximum(0, annual_loss)
+
             if t > 0:
-                transformed[eco] = loss_dict[eco][:, t-1] >= transform_threshold
-                loss_dict[eco][:, t] = np.where(transformed[eco],
-                                               np.maximum(loss_dict[eco][:, t-1], loss_dict[eco][:, t-1] + annual_loss),
-                                               loss_dict[eco][:, t-1] + annual_loss)
+                loss_dict[eco][:, t] = loss_dict[eco][:, t-1] + annual_loss
             else:
                 loss_dict[eco][:, t] = annual_loss
-            
-            # Cap before cascades
+
             max_loss = 1.0 - final_baselines[eco]
             loss_dict[eco][:, t] = np.minimum(loss_dict[eco][:, t], max_loss)
-            
-            # Apply cascades
+
+            # Update fully transformed status (per iteration)
+            fully_transformed[eco] = loss_dict[eco][:, t] >= max_loss
+
+            target_eco = transform_targets[eco]
+            if target_eco and not np.all(fully_transformed[eco]):
+                # Only apply transformation if the ecosystem is not fully transformed
+                transformed_fraction[eco][:, t] = loss_dict[eco][:, t]
+                transformed_amount = transformed_fraction[eco][:, t] * (1.0 - final_baselines[eco])
+                bio_density_ratio = biodiversity_density_ratios[target_eco] / biodiversity_density_ratios[eco]
+                scaled_transformed_amount = transformed_amount * bio_density_ratio
+                # Apply offset only to iterations where eco is not fully transformed
+                mask = ~fully_transformed[eco]
+                loss_dict[target_eco][mask, t] -= scaled_transformed_amount[mask]
+                loss_dict[target_eco][:, t] = np.clip(loss_dict[target_eco][:, t], 0, 1)
+
+        for eco in ecosystems:
             for source_eco, targets in cascade_effects.items():
                 if eco in targets:
-                    source_mean = np.mean(loss_dict[source_eco][:, t])
-                    multiplier = targets[eco]
-                    if transformed[source_eco].any() and source_mean > transform_threshold:
-                        multiplier *= 0.8
-                    if source_mean > transform_threshold:
-                        loss_dict[eco][:, t] *= multiplier
-            
-            # Reapply cap after cascades
+                    for i in range(n_iter):
+                        source_loss = loss_dict[source_eco][i, t]
+                        multiplier = targets[eco]
+                        if source_loss > 0:
+                            loss_dict[eco][i, t] *= multiplier
+
+            max_loss = 1.0 - final_baselines[eco]
             loss_dict[eco][:, t] = np.minimum(loss_dict[eco][:, t], max_loss)
-            
-            # Log shocks for target ecosystems
-            if include_shocks and eco in shock_targets:
-                for i in range(n_iter):
-                    if shock_events[i, t]:
-                        shock_log.append({'iteration': i, 'year': year, 'type': shock_types[i, t], 'ecosystem': eco})
-    
+
+        if include_shocks and eco in shock_targets:
+            for i in range(n_iter):
+                if shock_events[i, t]:
+                    shock_log.append({'iteration': i, 'year': year, 'type': shock_types[i, t], 'ecosystem': eco})
+
+    key_years = [2025, 2050, 2100, 2175]
+    for year in key_years:
+        t = np.where(years == year)[0][0]
+        for eco in ['Coral Reefs', 'Arctic Sea Ice', 'Amazon Rainforest', 'Savanna Grasslands']:
+            mean_loss = np.mean(loss_dict[eco][:, t]) * 100
+            debug_logs.append(f"Year {year}, {eco}: Mean Loss = {mean_loss:.1f}%")
+
+    for log in debug_logs:
+        print(log)
+
     return loss_dict, shock_log
 
 # Run simulations
@@ -182,13 +207,11 @@ sns.set(style="whitegrid")
 color_map = {'Low': 'green', 'Mid': 'orange', 'High': 'red'}
 
 for scenario in ['Low', 'Mid', 'High']:
-    # No-Shock mean and CI
     total_loss_mean_no = np.mean(total_loss_no_shock[scenario], axis=0) * 100
     total_loss_ci_no = np.percentile(total_loss_no_shock[scenario], [2.5, 97.5], axis=0) * 100
     plt.plot(years, total_loss_mean_no, label=f'{scenario} (No Shock)', linestyle='--', color=color_map[scenario], linewidth=2)
     plt.fill_between(years, total_loss_ci_no[0], total_loss_ci_no[1], color=color_map[scenario], alpha=0.2)
 
-    # With-Shock mean and CI
     total_loss_mean = np.mean(total_loss_with_shock[scenario], axis=0) * 100
     total_loss_ci = np.percentile(total_loss_with_shock[scenario], [2.5, 97.5], axis=0) * 100
     plt.plot(years, total_loss_mean, label=f'{scenario} (With Shock)', linestyle='-', color=color_map[scenario], linewidth=2)
@@ -208,9 +231,8 @@ plt.close()
 plt.figure(figsize=(14, 8))
 sns.set(style="whitegrid")
 
-# Compute mean and CI for each ecosystem in High With-Shocks at 2175
 scenario = 'High'
-year_idx = -1  # 2175 (last year)
+year_idx = -1
 mean_losses = np.zeros(len(ecosystems))
 ci_low = np.zeros(len(ecosystems))
 ci_high = np.zeros(len(ecosystems))
@@ -219,11 +241,18 @@ for eco_idx, eco in enumerate(ecosystems):
     losses = results_with_shock[scenario][eco][:, year_idx] * 100
     mean_losses[eco_idx] = np.mean(losses)
     ci_low[eco_idx], ci_high[eco_idx] = np.percentile(losses, [2.5, 97.5])
-transformed = mean_losses >= (transform_threshold * 100)
+    ci_low[eco_idx] = max(0, ci_low[eco_idx])
+    ci_high[eco_idx] = max(mean_losses[eco_idx], ci_high[eco_idx])
 
-lower_errors = np.maximum(mean_losses - ci_low, 0)
+transformed = np.zeros(len(ecosystems), dtype=bool)
+for eco_idx, eco in enumerate(ecosystems):
+    transformed[eco_idx] = results_with_shock[scenario][eco][:, year_idx].mean() > 0
+
+lower_errors = mean_losses - ci_low
+lower_errors = np.maximum(0, lower_errors)
 upper_errors = ci_high - mean_losses
-errors = [lower_errors, upper_errors]
+upper_errors = np.maximum(0, upper_errors)
+errors = np.array([lower_errors, upper_errors])
 
 bars = plt.bar(ecosystems, mean_losses, yerr=errors, capsize=5, color='skyblue', edgecolor='black')
 for bar, is_transformed in zip(bars, transformed):
@@ -253,12 +282,12 @@ for run_id in run_ids:
     weighted_loss = total_loss_with_shock[scenario][run_id] * 100
     plt.plot(years, weighted_loss, label=f'Run {run_id}', alpha=0.7, linewidth=1.5)
 
-    # Overlay shocks for this run
-    run_shocks = pd.DataFrame(shock_logs[scenario])
-    run_shocks = run_shocks[run_shocks['iteration'] == run_id]
-    for _, shock in run_shocks.iterrows():
-        color = 'green' if shock['type'] == 'positive' else 'purple'
-        plt.axvline(x=shock['year'], color=color, linestyle='--', alpha=0.5)
+    shock_df = pd.DataFrame(shock_logs[scenario])
+    if not shock_df.empty and 'iteration' in shock_df.columns:
+        run_shocks = shock_df[shock_df['iteration'] == run_id]
+        for _, shock in run_shocks.iterrows():
+            color = 'green' if shock['type'] == 'positive' else 'purple'
+            plt.axvline(x=shock['year'], color=color, linestyle='--', alpha=0.5)
 
 plt.axhline(y=50, color='yellow', linestyle='--', label='50% Threshold')
 plt.axhline(y=70, color='purple', linestyle='--', label='70% Threshold')
@@ -267,6 +296,63 @@ plt.xlabel('Year', fontsize=12)
 plt.ylabel('% Total Biodiversity Loss (Weighted)', fontsize=12)
 plt.legend(title='Sample Runs', fontsize=10, loc='upper left')
 plt.savefig(os.path.join(FIGURES_DIR, 'shock_impact_sample_runs_weighted.png'), dpi=300, bbox_inches='tight')
+plt.close()
+
+# --- Plot 4: Ecosystem-Specific Loss Trajectories in 4x4 Grid ---
+plt.figure(figsize=(20, 20))
+sns.set(style="whitegrid")
+
+# Define colors and linestyles
+color_map = {'Low': 'green', 'Mid': 'orange', 'High': 'red'}
+linestyles = {'No Shock': '--', 'With Shock': '-'}
+
+# 4x4 grid (16 subplots)
+for idx, eco in enumerate(ecosystems + [None] * 3):  # Pad with None for 16 slots
+    row = idx // 4
+    col = idx % 4
+    plt.subplot(4, 4, idx + 1)
+    
+    if eco is None:
+        plt.axis('off')  # Skip empty subplots
+        continue
+    
+    # Plot for each scenario
+    for scenario in ['Low', 'Mid', 'High']:
+        # No Shock
+        mean_loss_no = np.mean(results_no_shock[scenario][eco], axis=0) * 100
+        ci_no = np.percentile(results_no_shock[scenario][eco], [2.5, 97.5], axis=0) * 100
+        plt.plot(years, mean_loss_no, label=f'{scenario} (No Shock)', linestyle=linestyles['No Shock'],
+                 color=color_map[scenario], linewidth=2, alpha=0.7)
+        plt.fill_between(years, ci_no[0], ci_no[1], color=color_map[scenario], alpha=0.2)
+        
+        # With Shock
+        mean_loss_with = np.mean(results_with_shock[scenario][eco], axis=0) * 100
+        ci_with = np.percentile(results_with_shock[scenario][eco], [2.5, 97.5], axis=0) * 100
+        plt.plot(years, mean_loss_with, label=f'{scenario} (With Shock)', linestyle=linestyles['With Shock'],
+                 color=color_map[scenario], linewidth=2, alpha=0.7)
+        plt.fill_between(years, ci_with[0], ci_with[1], color=color_map[scenario], alpha=0.2)
+
+    # Threshold lines
+    plt.axhline(y=50, color='yellow', linestyle='--', label='50% Threshold', alpha=0.5)
+    plt.axhline(y=90, color='purple', linestyle='--', label='90% Near-Collapse', alpha=0.5)
+
+    # Customize each subplot
+    plt.title(f'{eco} Loss', fontsize=10)
+    plt.xlabel('Year', fontsize=8)
+    plt.ylabel('% Loss', fontsize=8)
+    plt.ylim(0, 100)
+    plt.grid(True, alpha=0.3)
+    if col == 0:
+        plt.ylabel('% Loss of Ecosystem Function', fontsize=8)
+    if row == 3:
+        plt.xlabel('Year', fontsize=8)
+    if idx == 0:  # Only show legend on first plot to avoid clutter
+        plt.legend(title='Scenario', fontsize=6, loc='upper left', bbox_to_anchor=(1.05, 1), borderaxespad=0.)
+
+plt.suptitle('Ecosystem-Specific Loss Trajectories (2025–2175)', fontsize=16)
+plt.tight_layout(rect=[0, 0, 0.9, 0.95])  # Adjust layout to accommodate legend
+os.makedirs(FIGURES_DIR, exist_ok=True)
+plt.savefig(os.path.join(FIGURES_DIR, 'ecosystem_specific_loss_trajectories.png'), dpi=300, bbox_inches='tight')
 plt.close()
 
 # Save ecosystem-level results
@@ -296,7 +382,6 @@ os.makedirs(DATA_DIR, exist_ok=True)
 results_df_no_shock.to_csv(os.path.join(DATA_DIR, 'ecosystem_cascade_results_no_shock.csv'), index=False)
 results_df_with_shock.to_csv(os.path.join(DATA_DIR, 'ecosystem_cascade_results_with_shock.csv'), index=False)
 
-#Save shock logs
 for scenario in ['Low', 'Mid', 'High']:
     shock_df = pd.DataFrame(shock_logs[scenario])
     shock_df.to_csv(os.path.join(DATA_DIR, f'shock_log_{scenario.lower()}.csv'), index=False)
