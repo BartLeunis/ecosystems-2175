@@ -15,6 +15,7 @@ aquatic_kelp_forests_california_stressors["Ocean Warming"]["Impact on Biodiversi
 aquatic_kelp_forests_california_stressors["Ocean Warming"]["Influenced By"] = ['Global Greenhouse Gas Emissions: Primary driver.', 'El Niño-Southern Oscillation (ENSO): El Niño events can bring warmer waters to the California coast.', '**Influences (Stressors):**', 'Sea Urchin Barrens Formation.', 'Disease outbreaks', '**Logic Description:** Rising ocean temperatures, and *especially* marine heatwaves, are a *major* threat to California kelp forests, causing widespread kelp mortality and ecosystem shifts.']
 aquatic_kelp_forests_california_stressors["Ocean Warming"]["Influences"] = ['Sea Urchin Barrens Formation.', 'Disease outbreaks', '**Logic Description:** Rising ocean temperatures, and *especially* marine heatwaves, are a *major* threat to California kelp forests, causing widespread kelp mortality and ecosystem shifts.']
 aquatic_kelp_forests_california_stressors["Ocean Warming"]["Logic Description"] = '---'
+aquatic_kelp_forests_california_stressors["Ocean Warming"]["Impact Function"] = "impact_ocean_warming_aquatic_kelp_forests_california"
 
 # --- Sea Urchin Grazing / "Urchin Barrens" ---
 aquatic_kelp_forests_california_stressors["Sea Urchin Grazing / "Urchin Barrens""]["Metric"] = 'Sea urchin density (number of urchins per square meter); kelp cover (percentage); presence/absence of sea otters.'
@@ -24,6 +25,7 @@ aquatic_kelp_forests_california_stressors["Sea Urchin Grazing / "Urchin Barrens"
 aquatic_kelp_forests_california_stressors["Sea Urchin Grazing / "Urchin Barrens""]["Influenced By"] = ['Sea Otter Decline/Absence: Sea otters are a keystone predator of sea urchins. Their decline (historically due to hunting, now recovering in some areas) is a *major* factor.', 'Overfishing of Other Urchin Predators: (e.g., sheephead fish, lobsters).', 'Ocean Warming: Can favor urchin reproduction in some cases.', '**Influences (Stressors):**', 'Kelp Forest Cover (primary impact).', '**Logic Description:** The interplay between sea otters, sea urchins, and kelp is a classic example of a trophic cascade.  Without sufficient otter predation (or predation from other species), urchin populations can explode and overgraze kelp forests, leading to the formation of urchin barrens.']
 aquatic_kelp_forests_california_stressors["Sea Urchin Grazing / "Urchin Barrens""]["Influences"] = ['Kelp Forest Cover (primary impact).', '**Logic Description:** The interplay between sea otters, sea urchins, and kelp is a classic example of a trophic cascade.  Without sufficient otter predation (or predation from other species), urchin populations can explode and overgraze kelp forests, leading to the formation of urchin barrens.']
 aquatic_kelp_forests_california_stressors["Sea Urchin Grazing / "Urchin Barrens""]["Logic Description"] = '---'
+aquatic_kelp_forests_california_stressors["Sea Urchin Grazing / "Urchin Barrens""]["Impact Function"] = "impact_sea_urchin_grazing_/_"urchin_barrens"_aquatic_kelp_forests_california"
 
 # --- Water Pollution ---
 aquatic_kelp_forests_california_stressors["Water Pollution"]["Metric"] = 'Concentrations of nutrients (nitrogen, phosphorus), sediments, and pollutants (e.g., pesticides) in coastal waters.'
@@ -33,4 +35,5 @@ aquatic_kelp_forests_california_stressors["Water Pollution"]["Impact on Biodiver
 aquatic_kelp_forests_california_stressors["Water Pollution"]["Influenced By"] = ['Agricultural Runoff.', 'Urban Runoff.', 'Deforestation (increased sediment runoff).', '**Influences (Stressors):**', 'Kelp Growth and Survival.', 'Water Clarity.', '**Logic Description:** Runoff from agriculture, urban areas, and deforested areas carries pollutants into coastal waters, reducing water quality and impacting kelp forest health.']
 aquatic_kelp_forests_california_stressors["Water Pollution"]["Influences"] = ['Kelp Growth and Survival.', 'Water Clarity.', '**Logic Description:** Runoff from agriculture, urban areas, and deforested areas carries pollutants into coastal waters, reducing water quality and impacting kelp forest health.']
 aquatic_kelp_forests_california_stressors["Water Pollution"]["Logic Description"] = '---'
+aquatic_kelp_forests_california_stressors["Water Pollution"]["Impact Function"] = "impact_water_pollution_aquatic_kelp_forests_california"
 

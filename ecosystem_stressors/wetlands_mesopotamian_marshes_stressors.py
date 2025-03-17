@@ -16,6 +16,7 @@ wetlands_mesopotamian_marshes_stressors["Water Diversion"]["Impact on Biodiversi
 wetlands_mesopotamian_marshes_stressors["Water Diversion"]["Influenced By"] = ['Upstream Dam Construction: *Extensive* dam construction on the Tigris and Euphrates rivers in Turkey, Syria, Iraq, and Iran. This is the *primary* driver.', "Water Management Practices: Drainage of the marshes for agriculture and oil exploration (especially under Saddam Hussein's regime).", 'Irrigation Projects: Upstream water use for agriculture.', '**Influences (Stressors):**', 'Habitat Availability.', 'Water Quality (increased salinity due to reduced freshwater inflow).', '**Logic Description:** The Mesopotamian Marshes have been dramatically reduced in size due to massive water diversions from the Tigris and Euphrates rivers, primarily for upstream dam construction and irrigation. Intentional drainage of the marshes also played a significant role. This is arguably the most impactful example of large-scale wetland destruction in modern history.']
 wetlands_mesopotamian_marshes_stressors["Water Diversion"]["Influences"] = ['Habitat Availability.', 'Water Quality (increased salinity due to reduced freshwater inflow).', '**Logic Description:** The Mesopotamian Marshes have been dramatically reduced in size due to massive water diversions from the Tigris and Euphrates rivers, primarily for upstream dam construction and irrigation. Intentional drainage of the marshes also played a significant role. This is arguably the most impactful example of large-scale wetland destruction in modern history.']
 wetlands_mesopotamian_marshes_stressors["Water Diversion"]["Logic Description"] = '---'
+wetlands_mesopotamian_marshes_stressors["Water Diversion"]["Impact Function"] = "impact_water_diversion_wetlands_mesopotamian_marshes"
 
 # --- Pollution ---
 wetlands_mesopotamian_marshes_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., salts, heavy metals, pesticides, oil) in water and sediment.'
@@ -25,6 +26,7 @@ wetlands_mesopotamian_marshes_stressors["Pollution"]["Impact on Biodiversity"] =
 wetlands_mesopotamian_marshes_stressors["Pollution"]["Influenced By"] = ['Agricultural Runoff: From upstream agriculture.', 'Industrial Discharge: (potentially, from industries along the rivers).', 'Oil Industry Activities: Spills and leaks.', 'Untreated Sewage: From cities and towns.', 'Military Activities: Past conflicts have left pollutants.', '**Influences (Stressors):**', 'Water Quality.', 'Wildlife Health.', '**Logic Description:** Pollution from various sources degrades water quality, impacting both wildlife and human populations.']
 wetlands_mesopotamian_marshes_stressors["Pollution"]["Influences"] = ['Water Quality.', 'Wildlife Health.', '**Logic Description:** Pollution from various sources degrades water quality, impacting both wildlife and human populations.']
 wetlands_mesopotamian_marshes_stressors["Pollution"]["Logic Description"] = '---'
+wetlands_mesopotamian_marshes_stressors["Pollution"]["Impact Function"] = "impact_pollution_wetlands_mesopotamian_marshes"
 
 # --- Climate Change ---
 wetlands_mesopotamian_marshes_stressors["Climate Change"]["Metric"] = 'Temperature increase (°C); changes in precipitation (mm/year, seasonality); increased frequency of drought.'
@@ -34,6 +36,7 @@ wetlands_mesopotamian_marshes_stressors["Climate Change"]["Impact on Biodiversit
 wetlands_mesopotamian_marshes_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Water Availability', '**Logic Description:** Climate change is expected to exacerbate existing water stress in the region, further impacting the marshes.']
 wetlands_mesopotamian_marshes_stressors["Climate Change"]["Influences"] = ['* Water Availability', '**Logic Description:** Climate change is expected to exacerbate existing water stress in the region, further impacting the marshes.']
 wetlands_mesopotamian_marshes_stressors["Climate Change"]["Logic Description"] = '---'
+wetlands_mesopotamian_marshes_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_wetlands_mesopotamian_marshes"
 
 # --- Salinization ---
 wetlands_mesopotamian_marshes_stressors["Salinization"]["Metric"] = 'Salinity levels'
@@ -42,4 +45,5 @@ wetlands_mesopotamian_marshes_stressors["Salinization"]["Impact on Biodiversity"
 wetlands_mesopotamian_marshes_stressors["Salinization"]["Influenced By"] = ['* Mesopotamian Marshes - Water Diversion', '**Influences (Stressors):**', '* Water quality', '**Logic Description:** Reduced freshwater inflow leads to increased salinity.']
 wetlands_mesopotamian_marshes_stressors["Salinization"]["Influences"] = ['* Water quality', '**Logic Description:** Reduced freshwater inflow leads to increased salinity.']
 wetlands_mesopotamian_marshes_stressors["Salinization"]["Logic Description"] = '---'
+wetlands_mesopotamian_marshes_stressors["Salinization"]["Impact Function"] = "impact_salinization_wetlands_mesopotamian_marshes"
 

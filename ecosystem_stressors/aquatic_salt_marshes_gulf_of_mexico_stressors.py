@@ -16,6 +16,7 @@ aquatic_salt_marshes_gulf_of_mexico_stressors["Sea Level Rise and Subsidence"]["
 aquatic_salt_marshes_gulf_of_mexico_stressors["Sea Level Rise and Subsidence"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Land Subsidence: *Extremely* significant in Louisiana due to sediment compaction, fluid withdrawal, and faulting.', '**Influences (Stressors):**', 'Coastal Erosion.', 'Habitat Loss (the dominant impact).', '**Logic Description:** The combination of sea level rise and *high rates of land subsidence* makes the Gulf Coast, *especially Louisiana*, extremely vulnerable to marsh loss. This is one of the highest rates of coastal wetland loss in the world.']
 aquatic_salt_marshes_gulf_of_mexico_stressors["Sea Level Rise and Subsidence"]["Influences"] = ['Coastal Erosion.', 'Habitat Loss (the dominant impact).', '**Logic Description:** The combination of sea level rise and *high rates of land subsidence* makes the Gulf Coast, *especially Louisiana*, extremely vulnerable to marsh loss. This is one of the highest rates of coastal wetland loss in the world.']
 aquatic_salt_marshes_gulf_of_mexico_stressors["Sea Level Rise and Subsidence"]["Logic Description"] = '---'
+aquatic_salt_marshes_gulf_of_mexico_stressors["Sea Level Rise and Subsidence"]["Impact Function"] = "impact_sea_level_rise_and_subsidence_aquatic_salt_marshes_gulf_of_mexico"
 
 # --- Altered Hydrology and Sediment Deprivation ---
 aquatic_salt_marshes_gulf_of_mexico_stressors["Altered Hydrology and Sediment Deprivation"]["Metric"] = 'Changes in freshwater and sediment inflow; presence of levees and canals.'
@@ -25,6 +26,7 @@ aquatic_salt_marshes_gulf_of_mexico_stressors["Altered Hydrology and Sediment De
 aquatic_salt_marshes_gulf_of_mexico_stressors["Altered Hydrology and Sediment Deprivation"]["Influenced By"] = ['Mississippi River Levees: Prevent sediment from reaching marshes.', 'Canals and Dredging: Alter hydrology and can lead to saltwater intrusion.', 'Upstream Dams and Diversions.', '**Influences (Stressors):**', 'Sedimentation (or lack thereof).', 'Salinity.', 'Habitat Loss.', "**Logic Description:** The levee system on the Mississippi River, while providing flood protection, prevents the natural deposition of sediment that is crucial for building and maintaining Louisiana's coastal marshes. This sediment deprivation, combined with sea level rise and subsidence, is the primary driver of land loss."]
 aquatic_salt_marshes_gulf_of_mexico_stressors["Altered Hydrology and Sediment Deprivation"]["Influences"] = ['Sedimentation (or lack thereof).', 'Salinity.', 'Habitat Loss.', "**Logic Description:** The levee system on the Mississippi River, while providing flood protection, prevents the natural deposition of sediment that is crucial for building and maintaining Louisiana's coastal marshes. This sediment deprivation, combined with sea level rise and subsidence, is the primary driver of land loss."]
 aquatic_salt_marshes_gulf_of_mexico_stressors["Altered Hydrology and Sediment Deprivation"]["Logic Description"] = '---'
+aquatic_salt_marshes_gulf_of_mexico_stressors["Altered Hydrology and Sediment Deprivation"]["Impact Function"] = "impact_altered_hydrology_and_sediment_deprivation_aquatic_salt_marshes_gulf_of_mexico"
 
 # --- Oil Spills ---
 aquatic_salt_marshes_gulf_of_mexico_stressors["Oil Spills"]["Metric"] = 'Frequency and size of oil spills; amount of oil reaching marshes.'
@@ -34,6 +36,7 @@ aquatic_salt_marshes_gulf_of_mexico_stressors["Oil Spills"]["Impact on Biodivers
 aquatic_salt_marshes_gulf_of_mexico_stressors["Oil Spills"]["Influenced By"] = ['Oil and Gas Extraction: The Gulf of Mexico is a major oil and gas producing region.', 'Shipping.', '**Influences (Stressors):**', 'Marsh Health.', 'Wildlife Mortality.', '**Logic Description:** Oil spills, both large (like Deepwater Horizon) and small, pose a recurring threat to Gulf Coast salt marshes.']
 aquatic_salt_marshes_gulf_of_mexico_stressors["Oil Spills"]["Influences"] = ['Marsh Health.', 'Wildlife Mortality.', '**Logic Description:** Oil spills, both large (like Deepwater Horizon) and small, pose a recurring threat to Gulf Coast salt marshes.']
 aquatic_salt_marshes_gulf_of_mexico_stressors["Oil Spills"]["Logic Description"] = '---'
+aquatic_salt_marshes_gulf_of_mexico_stressors["Oil Spills"]["Impact Function"] = "impact_oil_spills_aquatic_salt_marshes_gulf_of_mexico"
 
 # --- Pollution ---
 aquatic_salt_marshes_gulf_of_mexico_stressors["Pollution"]["Metric"] = 'Concentrations of nitrogen and phosphorus in water.'
@@ -43,4 +46,5 @@ aquatic_salt_marshes_gulf_of_mexico_stressors["Pollution"]["Impact on Biodiversi
 aquatic_salt_marshes_gulf_of_mexico_stressors["Pollution"]["Influenced By"] = ['* Agricultural Runoff (from the Mississippi River watershed).', '* Urban Runoff', '**Influences (Stressors):**', '* Marsh health and stability.', '**Logic Description:** Nutrient pollution, primarily from agricultural runoff carried by the Mississippi River, can impact marsh vegetation.']
 aquatic_salt_marshes_gulf_of_mexico_stressors["Pollution"]["Influences"] = ['* Marsh health and stability.', '**Logic Description:** Nutrient pollution, primarily from agricultural runoff carried by the Mississippi River, can impact marsh vegetation.']
 aquatic_salt_marshes_gulf_of_mexico_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_salt_marshes_gulf_of_mexico_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_salt_marshes_gulf_of_mexico"
 

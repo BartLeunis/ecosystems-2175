@@ -18,6 +18,7 @@ forests_temperate_forests_appalachian_stressors["Infrastructure Development"]["I
 forests_temperate_forests_appalachian_stressors["Infrastructure Development"]["Influenced By"] = ['Economic Growth: Demand for energy and resources.', 'Population Growth (in some areas).', 'Government Policies: Energy policy, transportation planning.', '**Influences (Stressors):**', 'Deforestation (though often localized around infrastructure).', 'Water Pollution.', 'Air pollution', '**Logic Description:** Infrastructure, including roads and energy development (mining, fracking), fragments habitat and leads to direct habitat loss, impacting biodiversity.']
 forests_temperate_forests_appalachian_stressors["Infrastructure Development"]["Influences"] = ['Deforestation (though often localized around infrastructure).', 'Water Pollution.', 'Air pollution', '**Logic Description:** Infrastructure, including roads and energy development (mining, fracking), fragments habitat and leads to direct habitat loss, impacting biodiversity.']
 forests_temperate_forests_appalachian_stressors["Infrastructure Development"]["Logic Description"] = '---'
+forests_temperate_forests_appalachian_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_forests_temperate_forests_appalachian"
 
 # --- Deforestation ---
 forests_temperate_forests_appalachian_stressors["Deforestation"]["Metric"] = 'Area of forest cleared per year (ha/year) (although net forest loss may be low or even negative in some areas due to regrowth, *localized* deforestation is still a stressor).'
@@ -27,6 +28,7 @@ forests_temperate_forests_appalachian_stressors["Deforestation"]["Impact on Biod
 forests_temperate_forests_appalachian_stressors["Deforestation"]["Influenced By"] = ['Infrastructure Development.', 'Urban Sprawl.', 'Agricultural Expansion (limited in some areas).', 'Timber Harvesting (depending on management practices).', '**Influences (Stressors):**', 'Changes in forest age and structure affecting biodiversity', '**Logic Description:** While overall forest cover in the Appalachians may be stable or even increasing in some areas due to reforestation, *localized* deforestation due to development, agriculture, and unsustainable timber harvesting continues to be a stressor, impacting habitat quality and biodiversity.']
 forests_temperate_forests_appalachian_stressors["Deforestation"]["Influences"] = ['Changes in forest age and structure affecting biodiversity', '**Logic Description:** While overall forest cover in the Appalachians may be stable or even increasing in some areas due to reforestation, *localized* deforestation due to development, agriculture, and unsustainable timber harvesting continues to be a stressor, impacting habitat quality and biodiversity.']
 forests_temperate_forests_appalachian_stressors["Deforestation"]["Logic Description"] = '---'
+forests_temperate_forests_appalachian_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_forests_temperate_forests_appalachian"
 
 # --- Temperature Increase ---
 forests_temperate_forests_appalachian_stressors["Temperature Increase"]["Metric"] = 'Average annual temperature increase (°C).'
@@ -36,6 +38,7 @@ forests_temperate_forests_appalachian_stressors["Temperature Increase"]["Impact 
 forests_temperate_forests_appalachian_stressors["Temperature Increase"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Changes in Precipitation.', 'Increased pest and pathogen outbreaks.', '**Logic Description:** Climate change leads to warming temperatures, impacting species distributions, physiology, and increasing vulnerability to other stressors.']
 forests_temperate_forests_appalachian_stressors["Temperature Increase"]["Influences"] = ['Changes in Precipitation.', 'Increased pest and pathogen outbreaks.', '**Logic Description:** Climate change leads to warming temperatures, impacting species distributions, physiology, and increasing vulnerability to other stressors.']
 forests_temperate_forests_appalachian_stressors["Temperature Increase"]["Logic Description"] = '---'
+forests_temperate_forests_appalachian_stressors["Temperature Increase"]["Impact Function"] = "impact_temperature_increase_forests_temperate_forests_appalachian"
 
 # --- Changes in Precipitation ---
 forests_temperate_forests_appalachian_stressors["Changes in Precipitation"]["Metric"] = 'Change in annual precipitation (mm/year); changes in seasonality (e.g., more intense rainfall events, longer dry periods).'
@@ -45,6 +48,7 @@ forests_temperate_forests_appalachian_stressors["Changes in Precipitation"]["Imp
 forests_temperate_forests_appalachian_stressors["Changes in Precipitation"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Water quality in streams', '**Logic Description:** Climate change alters precipitation patterns, leading to shifts in species composition and impacting water resources.']
 forests_temperate_forests_appalachian_stressors["Changes in Precipitation"]["Influences"] = ['Water quality in streams', '**Logic Description:** Climate change alters precipitation patterns, leading to shifts in species composition and impacting water resources.']
 forests_temperate_forests_appalachian_stressors["Changes in Precipitation"]["Logic Description"] = '---'
+forests_temperate_forests_appalachian_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_forests_temperate_forests_appalachian"
 
 # --- Invasive Species ---
 forests_temperate_forests_appalachian_stressors["Invasive Species"]["Metric"] = 'Abundance and distribution of key invasive species (e.g., emerald ash borer, hemlock woolly adelgid, gypsy moth, garlic mustard).'
@@ -54,6 +58,7 @@ forests_temperate_forests_appalachian_stressors["Invasive Species"]["Impact on B
 forests_temperate_forests_appalachian_stressors["Invasive Species"]["Influenced By"] = ['Global Trade and Travel (introduction of new species).', 'Climate Change (may favor some invasive species).', 'Disturbance (e.g., logging, which can create opportunities for invasives).', '**Influences (Stressors):**', '* Forest Composition and structure', '**Logic Description:** Invasive species, often introduced through human activities, can cause significant damage to forests, leading to the decline of native species and altering ecosystem function. Climate change may exacerbate the impacts of some invasives.']
 forests_temperate_forests_appalachian_stressors["Invasive Species"]["Influences"] = ['* Forest Composition and structure', '**Logic Description:** Invasive species, often introduced through human activities, can cause significant damage to forests, leading to the decline of native species and altering ecosystem function. Climate change may exacerbate the impacts of some invasives.']
 forests_temperate_forests_appalachian_stressors["Invasive Species"]["Logic Description"] = '---'
+forests_temperate_forests_appalachian_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_forests_temperate_forests_appalachian"
 
 # --- Air Pollution ---
 forests_temperate_forests_appalachian_stressors["Air Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., ozone, nitrogen oxides, sulfur dioxide) (parts per billion - ppb, micrograms per cubic meter - µg/m³).'
@@ -63,4 +68,5 @@ forests_temperate_forests_appalachian_stressors["Air Pollution"]["Impact on Biod
 forests_temperate_forests_appalachian_stressors["Air Pollution"]["Influenced By"] = ['Industrial Activity.', 'Fossil Fuel Combustion (power plants, vehicles).', 'Agricultural Practices (fertilizer use).', '**Influences (Stressors):**', '* Water Quality', '* Forest Health', '**Logic Description:** Air pollution, from industrial activity and fossil fuel combustion, damages trees, reduces forest productivity, and can acidify soils and water.']
 forests_temperate_forests_appalachian_stressors["Air Pollution"]["Influences"] = ['* Water Quality', '* Forest Health', '**Logic Description:** Air pollution, from industrial activity and fossil fuel combustion, damages trees, reduces forest productivity, and can acidify soils and water.']
 forests_temperate_forests_appalachian_stressors["Air Pollution"]["Logic Description"] = '---'
+forests_temperate_forests_appalachian_stressors["Air Pollution"]["Impact Function"] = "impact_air_pollution_forests_temperate_forests_appalachian"
 

@@ -17,6 +17,7 @@ aquatic_salt_marshes_san_francisco_bay_stressors["Historical Habitat Loss"]["Imp
 aquatic_salt_marshes_san_francisco_bay_stressors["Historical Habitat Loss"]["Influenced By"] = ['Historical Diking and Filling: For agriculture, salt production, and urban development.  This is the *overwhelming* historical driver.', '**Influences (Stressors):**', 'Current Habitat Availability (the primary legacy).', "**Logic Description:** The San Francisco Bay has lost a *vast* majority of its historical salt marshes due to diking and filling for agriculture, salt ponds, and urban development. This historical loss is the *defining* characteristic of the ecosystem's current state and its vulnerability."]
 aquatic_salt_marshes_san_francisco_bay_stressors["Historical Habitat Loss"]["Influences"] = ['Current Habitat Availability (the primary legacy).', "**Logic Description:** The San Francisco Bay has lost a *vast* majority of its historical salt marshes due to diking and filling for agriculture, salt ponds, and urban development. This historical loss is the *defining* characteristic of the ecosystem's current state and its vulnerability."]
 aquatic_salt_marshes_san_francisco_bay_stressors["Historical Habitat Loss"]["Logic Description"] = '---'
+aquatic_salt_marshes_san_francisco_bay_stressors["Historical Habitat Loss"]["Impact Function"] = "impact_historical_habitat_loss_aquatic_salt_marshes_san_francisco_bay"
 
 # --- Sea Level Rise ---
 aquatic_salt_marshes_san_francisco_bay_stressors["Sea Level Rise"]["Metric"] = 'Rate of sea level rise (mm/year); marsh elevation; accretion rates.'
@@ -26,6 +27,7 @@ aquatic_salt_marshes_san_francisco_bay_stressors["Sea Level Rise"]["Impact on Bi
 aquatic_salt_marshes_san_francisco_bay_stressors["Sea Level Rise"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Local Subsidence (in some areas).', '**Influences (Stressors):**', 'Coastal Erosion.', 'Habitat Loss.', '**Logic Description:** Sea level rise is a growing threat, exacerbating the impacts of historical habitat loss and making restoration efforts more challenging.  Many remaining marshes are "squeezed" between rising seas and development.']
 aquatic_salt_marshes_san_francisco_bay_stressors["Sea Level Rise"]["Influences"] = ['Coastal Erosion.', 'Habitat Loss.', '**Logic Description:** Sea level rise is a growing threat, exacerbating the impacts of historical habitat loss and making restoration efforts more challenging.  Many remaining marshes are "squeezed" between rising seas and development.']
 aquatic_salt_marshes_san_francisco_bay_stressors["Sea Level Rise"]["Logic Description"] = '---'
+aquatic_salt_marshes_san_francisco_bay_stressors["Sea Level Rise"]["Impact Function"] = "impact_sea_level_rise_aquatic_salt_marshes_san_francisco_bay"
 
 # --- Invasive Species ---
 aquatic_salt_marshes_san_francisco_bay_stressors["Invasive Species"]["Metric"] = 'Extent and density of invasive *Spartina* (cordgrass) stands.'
@@ -35,6 +37,7 @@ aquatic_salt_marshes_san_francisco_bay_stressors["Invasive Species"]["Impact on 
 aquatic_salt_marshes_san_francisco_bay_stressors["Invasive Species"]["Influenced By"] = ['Intentional Introduction:  *Spartina alterniflora* was intentionally introduced for erosion control.', 'Hybridization: Hybridization with native *Spartina foliosa* has created more aggressive forms.', 'Disturbance: Altered hydrology and disturbed areas can favor *Spartina* invasion.', '**Influences (Stressors):**', 'Native Plant Communities.', 'Sediment Dynamics.', 'Habitat Structure.', '**Logic Description:** Invasive *Spartina* species, particularly hybrids between the introduced *Spartina alterniflora* and the native *Spartina foliosa*, are a major problem in San Francisco Bay, outcompeting native plants, altering mudflat and marsh habitats, and impacting wildlife.']
 aquatic_salt_marshes_san_francisco_bay_stressors["Invasive Species"]["Influences"] = ['Native Plant Communities.', 'Sediment Dynamics.', 'Habitat Structure.', '**Logic Description:** Invasive *Spartina* species, particularly hybrids between the introduced *Spartina alterniflora* and the native *Spartina foliosa*, are a major problem in San Francisco Bay, outcompeting native plants, altering mudflat and marsh habitats, and impacting wildlife.']
 aquatic_salt_marshes_san_francisco_bay_stressors["Invasive Species"]["Logic Description"] = '---'
+aquatic_salt_marshes_san_francisco_bay_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_aquatic_salt_marshes_san_francisco_bay"
 
 # --- Pollution ---
 aquatic_salt_marshes_san_francisco_bay_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (nutrients, heavy metals, legacy contaminants) in water and sediment.'
@@ -44,6 +47,7 @@ aquatic_salt_marshes_san_francisco_bay_stressors["Pollution"]["Impact on Biodive
 aquatic_salt_marshes_san_francisco_bay_stressors["Pollution"]["Influenced By"] = ['* Urban Runoff.', '* Industrial Discharge (historical and ongoing).', '* Legacy Pollutants: Contaminants from past industrial activities are still present in sediments.', '* Agricultural Runoff.', '**Influences (Stressors):**', '* Water and sediment quality.', '* Marsh health.', '**Logic Description:** The San Francisco Bay is surrounded by a large urban and industrial area, and pollution from runoff, industrial discharge, and legacy contaminants is a concern.']
 aquatic_salt_marshes_san_francisco_bay_stressors["Pollution"]["Influences"] = ['* Water and sediment quality.', '* Marsh health.', '**Logic Description:** The San Francisco Bay is surrounded by a large urban and industrial area, and pollution from runoff, industrial discharge, and legacy contaminants is a concern.']
 aquatic_salt_marshes_san_francisco_bay_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_salt_marshes_san_francisco_bay_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_salt_marshes_san_francisco_bay"
 
 # --- Altered Hydrology ---
 aquatic_salt_marshes_san_francisco_bay_stressors["Altered Hydrology"]["Metric"] = 'Changes to tidal and freshwater flows'
@@ -53,4 +57,5 @@ aquatic_salt_marshes_san_francisco_bay_stressors["Altered Hydrology"]["Impact on
 aquatic_salt_marshes_san_francisco_bay_stressors["Altered Hydrology"]["Influenced By"] = ['* Water diversions', '* Levees', '**Influences (Stressors):**', '* Salinity and Sedimentation', '**Logic Description:** Alterations to water flow impacts the system.']
 aquatic_salt_marshes_san_francisco_bay_stressors["Altered Hydrology"]["Influences"] = ['* Salinity and Sedimentation', '**Logic Description:** Alterations to water flow impacts the system.']
 aquatic_salt_marshes_san_francisco_bay_stressors["Altered Hydrology"]["Logic Description"] = '---'
+aquatic_salt_marshes_san_francisco_bay_stressors["Altered Hydrology"]["Impact Function"] = "impact_altered_hydrology_aquatic_salt_marshes_san_francisco_bay"
 

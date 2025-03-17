@@ -17,6 +17,7 @@ forests_rainforest_atlantic_forest_stressors["Infrastructure Development"]["Impa
 forests_rainforest_atlantic_forest_stressors["Infrastructure Development"]["Influenced By"] = ['Economic Growth.', 'Population Growth (high population density in the region).', 'Government Policies.', '**Influences (Stressors):**', 'Deforestation.', 'Wildfires.', '**Logic Description:** Further fragmentation of an already highly fragmented ecosystem, increasing edge effects and isolating populations.']
 forests_rainforest_atlantic_forest_stressors["Infrastructure Development"]["Influences"] = ['Deforestation.', 'Wildfires.', '**Logic Description:** Further fragmentation of an already highly fragmented ecosystem, increasing edge effects and isolating populations.']
 forests_rainforest_atlantic_forest_stressors["Infrastructure Development"]["Logic Description"] = '---'
+forests_rainforest_atlantic_forest_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_forests_rainforest_atlantic_forest"
 
 # --- Deforestation ---
 forests_rainforest_atlantic_forest_stressors["Deforestation"]["Metric"] = 'Area of forest cleared per year (ha/year).'
@@ -26,6 +27,7 @@ forests_rainforest_atlantic_forest_stressors["Deforestation"]["Impact on Biodive
 forests_rainforest_atlantic_forest_stressors["Deforestation"]["Influenced By"] = ['Infrastructure Development.', 'Economic Growth: Agriculture (sugarcane, coffee, cattle).', 'Urban Expansion.', '* Government Policies', '**Influences (Stressors):**', 'Wildfires.', '**Logic Description:** Continued deforestation, driven by agriculture and urban expansion, further reduces the remaining fragments of this highly threatened ecosystem.']
 forests_rainforest_atlantic_forest_stressors["Deforestation"]["Influences"] = ['Wildfires.', '**Logic Description:** Continued deforestation, driven by agriculture and urban expansion, further reduces the remaining fragments of this highly threatened ecosystem.']
 forests_rainforest_atlantic_forest_stressors["Deforestation"]["Logic Description"] = '---'
+forests_rainforest_atlantic_forest_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_forests_rainforest_atlantic_forest"
 
 # --- Temperature Increase ---
 forests_rainforest_atlantic_forest_stressors["Temperature Increase"]["Metric"] = 'Average annual temperature increase (°C).'
@@ -35,6 +37,7 @@ forests_rainforest_atlantic_forest_stressors["Temperature Increase"]["Impact on 
 forests_rainforest_atlantic_forest_stressors["Temperature Increase"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Deforestation.', '**Influences (Stressors):**', 'Wildfires.', 'Changes in Precipitation.', '**Logic Description:** Global warming impacts.']
 forests_rainforest_atlantic_forest_stressors["Temperature Increase"]["Influences"] = ['Wildfires.', 'Changes in Precipitation.', '**Logic Description:** Global warming impacts.']
 forests_rainforest_atlantic_forest_stressors["Temperature Increase"]["Logic Description"] = '---'
+forests_rainforest_atlantic_forest_stressors["Temperature Increase"]["Impact Function"] = "impact_temperature_increase_forests_rainforest_atlantic_forest"
 
 # --- Changes in Precipitation ---
 forests_rainforest_atlantic_forest_stressors["Changes in Precipitation"]["Metric"] = 'Change in annual precipitation (mm/year); dry season changes.'
@@ -44,6 +47,7 @@ forests_rainforest_atlantic_forest_stressors["Changes in Precipitation"]["Impact
 forests_rainforest_atlantic_forest_stressors["Changes in Precipitation"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Deforestation (potentially).', '**Influences (Stressors):**', 'Wildfires.', '**Logic Description:** Changes in rainfall patterns.']
 forests_rainforest_atlantic_forest_stressors["Changes in Precipitation"]["Influences"] = ['Wildfires.', '**Logic Description:** Changes in rainfall patterns.']
 forests_rainforest_atlantic_forest_stressors["Changes in Precipitation"]["Logic Description"] = '---'
+forests_rainforest_atlantic_forest_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_forests_rainforest_atlantic_forest"
 
 # --- Wildfires ---
 forests_rainforest_atlantic_forest_stressors["Wildfires"]["Metric"] = 'Number of wildfires per year; total area burned (hectares/year).'
@@ -53,4 +57,5 @@ forests_rainforest_atlantic_forest_stressors["Wildfires"]["Impact on Biodiversit
 forests_rainforest_atlantic_forest_stressors["Wildfires"]["Influenced By"] = ['* Deforestation', '* Temp increase', '* Precipitation changes', '* Human activities', '**Influences (Stressors):**', '* Deforestation (further fragmentation).', '**Logic Description:** Wildfires, often linked to ag practices and climate, degrade fragmented forest.']
 forests_rainforest_atlantic_forest_stressors["Wildfires"]["Influences"] = ['* Deforestation (further fragmentation).', '**Logic Description:** Wildfires, often linked to ag practices and climate, degrade fragmented forest.']
 forests_rainforest_atlantic_forest_stressors["Wildfires"]["Logic Description"] = '---'
+forests_rainforest_atlantic_forest_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_forests_rainforest_atlantic_forest"
 

@@ -16,6 +16,7 @@ deserts_gobi_stressors["Climate Change"]["Impact on Biodiversity"] = 'Increased 
 deserts_gobi_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Water Availability.', 'Desertification.', 'Dust Storms.', '**Logic Description:** Climate change is exacerbating aridity and increasing the risk of desertification in the Gobi Desert.']
 deserts_gobi_stressors["Climate Change"]["Influences"] = ['Water Availability.', 'Desertification.', 'Dust Storms.', '**Logic Description:** Climate change is exacerbating aridity and increasing the risk of desertification in the Gobi Desert.']
 deserts_gobi_stressors["Climate Change"]["Logic Description"] = '---'
+deserts_gobi_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_deserts_gobi"
 
 # --- Overgrazing ---
 deserts_gobi_stressors["Overgrazing"]["Metric"] = 'Livestock density (number of animals per unit area); vegetation cover and composition; soil erosion.'
@@ -25,6 +26,7 @@ deserts_gobi_stressors["Overgrazing"]["Impact on Biodiversity"] = 'Loss of palat
 deserts_gobi_stressors["Overgrazing"]["Influenced By"] = ['Livestock Management Practices: Overstocking.', 'Population Growth: Increased demand for livestock products.', 'Economic Factors.', '**Influences (Stressors):**', 'Desertification: A *major* consequence.', 'Dust Storms: Loss of vegetation cover increases dust storm frequency and intensity.', '**Logic Description:** Overgrazing by livestock is a *major* driver of desertification in the Gobi Desert, leading to vegetation degradation, soil erosion, and loss of biodiversity.']
 deserts_gobi_stressors["Overgrazing"]["Influences"] = ['Desertification: A *major* consequence.', 'Dust Storms: Loss of vegetation cover increases dust storm frequency and intensity.', '**Logic Description:** Overgrazing by livestock is a *major* driver of desertification in the Gobi Desert, leading to vegetation degradation, soil erosion, and loss of biodiversity.']
 deserts_gobi_stressors["Overgrazing"]["Logic Description"] = '---'
+deserts_gobi_stressors["Overgrazing"]["Impact Function"] = "impact_overgrazing_deserts_gobi"
 
 # --- Mining ---
 deserts_gobi_stressors["Mining"]["Data Sources"] = ['* Government and Company reports', '**Impact on Area:** Habitat Loss', '**Impact on Biodiversity:**', 'Habitat loss and fragmentation.', '* Pollution', '**Influenced By (Stressors):**', '* Demand for resources', '**Influences (Stressors):**', '* Pollution', '**Logic Description:** Mining activities impact.']
@@ -33,6 +35,7 @@ deserts_gobi_stressors["Mining"]["Impact on Biodiversity"] = 'Habitat loss and f
 deserts_gobi_stressors["Mining"]["Influenced By"] = ['* Demand for resources', '**Influences (Stressors):**', '* Pollution', '**Logic Description:** Mining activities impact.']
 deserts_gobi_stressors["Mining"]["Influences"] = ['* Pollution', '**Logic Description:** Mining activities impact.']
 deserts_gobi_stressors["Mining"]["Logic Description"] = '---'
+deserts_gobi_stressors["Mining"]["Impact Function"] = "impact_mining_deserts_gobi"
 
 # --- Dust Storms ---
 deserts_gobi_stressors["Dust Storms"]["Metric"] = 'Frequency and intensity of dust storms; visibility; particulate matter concentrations.'
@@ -42,4 +45,5 @@ deserts_gobi_stressors["Dust Storms"]["Impact on Biodiversity"] = 'Can damage ve
 deserts_gobi_stressors["Dust Storms"]["Influenced By"] = ['* Desertification (loss of vegetation cover).', '* Overgrazing', '* Climate Change (changes in wind patterns, drought).', '**Influences (Stressors):**', '* Air Quality (downwind).', '* Human Health (downwind).', '* Soil Fertility (in areas where dust is deposited).', '**Logic Description:** The Gobi Desert is a major source of dust storms, which can have significant impacts on air quality, human health, and even soil fertility in downwind areas. Desertification and climate change are exacerbating the problem.']
 deserts_gobi_stressors["Dust Storms"]["Influences"] = ['* Air Quality (downwind).', '* Human Health (downwind).', '* Soil Fertility (in areas where dust is deposited).', '**Logic Description:** The Gobi Desert is a major source of dust storms, which can have significant impacts on air quality, human health, and even soil fertility in downwind areas. Desertification and climate change are exacerbating the problem.']
 deserts_gobi_stressors["Dust Storms"]["Logic Description"] = '---'
+deserts_gobi_stressors["Dust Storms"]["Impact Function"] = "impact_dust_storms_deserts_gobi"
 

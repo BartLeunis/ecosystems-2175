@@ -15,6 +15,7 @@ aquatic_kelp_forests_pacific_northwest_stressors["Ocean Warming"]["Impact on Bio
 aquatic_kelp_forests_pacific_northwest_stressors["Ocean Warming"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Sea Urchin Grazing (indirectly).', '**Logic Description:**  Rising ocean temperatures, especially marine heatwaves, stress kelp.']
 aquatic_kelp_forests_pacific_northwest_stressors["Ocean Warming"]["Influences"] = ['Sea Urchin Grazing (indirectly).', '**Logic Description:**  Rising ocean temperatures, especially marine heatwaves, stress kelp.']
 aquatic_kelp_forests_pacific_northwest_stressors["Ocean Warming"]["Logic Description"] = '---'
+aquatic_kelp_forests_pacific_northwest_stressors["Ocean Warming"]["Impact Function"] = "impact_ocean_warming_aquatic_kelp_forests_pacific_northwest"
 
 # --- Sea Urchin Grazing / "Urchin Barrens" ---
 aquatic_kelp_forests_pacific_northwest_stressors["Sea Urchin Grazing / "Urchin Barrens""]["Metric"] = 'Sea urchin density; kelp cover; sea otter abundance.'
@@ -24,6 +25,7 @@ aquatic_kelp_forests_pacific_northwest_stressors["Sea Urchin Grazing / "Urchin B
 aquatic_kelp_forests_pacific_northwest_stressors["Sea Urchin Grazing / "Urchin Barrens""]["Influenced By"] = ['Sea Otter Abundance: Sea otters are key predators.  Where otters are present and healthy, urchin populations are generally controlled. Where otters are absent or reduced, urchin barrens can form.', 'Overfishing of Other Urchin Predators.', '**Influences (Stressors):**', 'Kelp Forest Cover.', '**Logic Description:** The sea otter/urchin/kelp dynamic is crucial. While sea otter populations are generally healthier in the Pacific Northwest than in parts of California, localized urchin barrens can still occur.']
 aquatic_kelp_forests_pacific_northwest_stressors["Sea Urchin Grazing / "Urchin Barrens""]["Influences"] = ['Kelp Forest Cover.', '**Logic Description:** The sea otter/urchin/kelp dynamic is crucial. While sea otter populations are generally healthier in the Pacific Northwest than in parts of California, localized urchin barrens can still occur.']
 aquatic_kelp_forests_pacific_northwest_stressors["Sea Urchin Grazing / "Urchin Barrens""]["Logic Description"] = '---'
+aquatic_kelp_forests_pacific_northwest_stressors["Sea Urchin Grazing / "Urchin Barrens""]["Impact Function"] = "impact_sea_urchin_grazing_/_"urchin_barrens"_aquatic_kelp_forests_pacific_northwest"
 
 # --- Water Pollution ---
 aquatic_kelp_forests_pacific_northwest_stressors["Water Pollution"]["Metric"] = 'Concentrations of pollutants (nutrients, sediments, etc.).'
@@ -33,4 +35,5 @@ aquatic_kelp_forests_pacific_northwest_stressors["Water Pollution"]["Impact on B
 aquatic_kelp_forests_pacific_northwest_stressors["Water Pollution"]["Influenced By"] = ['* Runoff', '* Industrial discharge', '**Influences (Stressors):**', '* Kelp health', '* Water clarity', '**Logic Description:** Pollution from various sources.']
 aquatic_kelp_forests_pacific_northwest_stressors["Water Pollution"]["Influences"] = ['* Kelp health', '* Water clarity', '**Logic Description:** Pollution from various sources.']
 aquatic_kelp_forests_pacific_northwest_stressors["Water Pollution"]["Logic Description"] = '---'
+aquatic_kelp_forests_pacific_northwest_stressors["Water Pollution"]["Impact Function"] = "impact_water_pollution_aquatic_kelp_forests_pacific_northwest"
 

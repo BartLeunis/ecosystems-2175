@@ -25,6 +25,7 @@ wetlands_sundarbans_stressors["Sea Level Rise"]["Impact on Biodiversity"] = 'Los
 wetlands_sundarbans_stressors["Sea Level Rise"]["Influenced By"] = ['Sundarbans - Climate Change: Global warming leading to thermal expansion of water and melting of glaciers/ice sheets.', 'Local Land Subsidence: Can exacerbate the effects of sea level rise.', '**Influences (Stressors):**', 'Sundarbans - Salinity Intrusion.', 'Sundarbans - Habitat Availability.', '**Logic Description:** The Sundarbans, a low-lying delta region, is one of the most vulnerable places on Earth to sea level rise.  Inundation and increased salinity are major threats to the mangrove ecosystem and its biodiversity.']
 wetlands_sundarbans_stressors["Sea Level Rise"]["Influences"] = ['Sundarbans - Salinity Intrusion.', 'Sundarbans - Habitat Availability.', '**Logic Description:** The Sundarbans, a low-lying delta region, is one of the most vulnerable places on Earth to sea level rise.  Inundation and increased salinity are major threats to the mangrove ecosystem and its biodiversity.']
 wetlands_sundarbans_stressors["Sea Level Rise"]["Logic Description"] = '---'
+wetlands_sundarbans_stressors["Sea Level Rise"]["Impact Function"] = "impact_sea_level_rise_wetlands_sundarbans"
 
 # --- Salinity Intrusion ---
 wetlands_sundarbans_stressors["Salinity Intrusion"]["Metric"] = 'Salinity levels in water and soil (parts per thousand - ppt).'
@@ -34,6 +35,7 @@ wetlands_sundarbans_stressors["Salinity Intrusion"]["Impact on Biodiversity"] = 
 wetlands_sundarbans_stressors["Salinity Intrusion"]["Influenced By"] = ['Sundarbans - Sea Level Rise', 'Sundarbans - Reduced Freshwater Flow: Upstream water diversions and dams on rivers that feed the Sundarbans (e.g., the Ganges).', '* Sundarbans - Climate Change', '**Influences (Stressors):**', 'Sundarbans - Water Quality.', 'Sundarbans - Habitat Availability.', '* Sundarbans - Freshwater Availability', '**Logic Description:** Sea level rise and reduced freshwater flow from rivers lead to increased salinity intrusion, impacting both the mangrove ecosystem and human populations who depend on freshwater resources.']
 wetlands_sundarbans_stressors["Salinity Intrusion"]["Influences"] = ['Sundarbans - Water Quality.', 'Sundarbans - Habitat Availability.', '* Sundarbans - Freshwater Availability', '**Logic Description:** Sea level rise and reduced freshwater flow from rivers lead to increased salinity intrusion, impacting both the mangrove ecosystem and human populations who depend on freshwater resources.']
 wetlands_sundarbans_stressors["Salinity Intrusion"]["Logic Description"] = '---'
+wetlands_sundarbans_stressors["Salinity Intrusion"]["Impact Function"] = "impact_salinity_intrusion_wetlands_sundarbans"
 
 # --- Climate Change ---
 wetlands_sundarbans_stressors["Climate Change"]["Metric"] = 'Temperature, Precipitation, Cyclone intensity'
@@ -43,6 +45,7 @@ wetlands_sundarbans_stressors["Climate Change"]["Impact on Biodiversity"] = '* I
 wetlands_sundarbans_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Sundarbans - Sea Level Rise', '* Sundarbans - Cyclone Frequency and Intensity', '* Sundarbans - Reduced Freshwater Flow', '**Logic Description:** Climate change drives multiple stressors.']
 wetlands_sundarbans_stressors["Climate Change"]["Influences"] = ['* Sundarbans - Sea Level Rise', '* Sundarbans - Cyclone Frequency and Intensity', '* Sundarbans - Reduced Freshwater Flow', '**Logic Description:** Climate change drives multiple stressors.']
 wetlands_sundarbans_stressors["Climate Change"]["Logic Description"] = '---'
+wetlands_sundarbans_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_wetlands_sundarbans"
 
 # --- Pollution ---
 wetlands_sundarbans_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., heavy metals, oil, plastics) in water, sediment, and biota.'
@@ -52,6 +55,7 @@ wetlands_sundarbans_stressors["Pollution"]["Impact on Biodiversity"] = 'Toxic ef
 wetlands_sundarbans_stressors["Pollution"]["Influenced By"] = ['Industrial Discharge: From industries in Bangladesh and India.', 'Shipping Activities: Oil spills and discharge.', 'Agricultural Runoff', 'Untreated Sewage', '* Tourism', '**Influences (Stressors):**', 'Sundarbans - Water Quality.', '*  Sundarbans - Wildlife Health.', '**Logic Description:** Pollution from various sources degrades water quality and impacts the ecosystem.']
 wetlands_sundarbans_stressors["Pollution"]["Influences"] = ['Sundarbans - Water Quality.', '*  Sundarbans - Wildlife Health.', '**Logic Description:** Pollution from various sources degrades water quality and impacts the ecosystem.']
 wetlands_sundarbans_stressors["Pollution"]["Logic Description"] = '---'
+wetlands_sundarbans_stressors["Pollution"]["Impact Function"] = "impact_pollution_wetlands_sundarbans"
 
 # --- Overexploitation of Resources ---
 wetlands_sundarbans_stressors["Overexploitation of Resources"]["Metric"] = 'Fish catches; timber harvesting rates; honey collection rates.'
@@ -61,6 +65,7 @@ wetlands_sundarbans_stressors["Overexploitation of Resources"]["Impact on Biodiv
 wetlands_sundarbans_stressors["Overexploitation of Resources"]["Influenced By"] = ['* Population growth', '* Poverty', '* Lack of alternative livelihoods.', '**Influences (Stressors):**', '* Resource availability', '**Logic Description:** Unsustainable harvesting of fish, timber, and other resources depletes stocks and impacts the ecosystem.']
 wetlands_sundarbans_stressors["Overexploitation of Resources"]["Influences"] = ['* Resource availability', '**Logic Description:** Unsustainable harvesting of fish, timber, and other resources depletes stocks and impacts the ecosystem.']
 wetlands_sundarbans_stressors["Overexploitation of Resources"]["Logic Description"] = '---'
+wetlands_sundarbans_stressors["Overexploitation of Resources"]["Impact Function"] = "impact_overexploitation_of_resources_wetlands_sundarbans"
 
 # --- Cyclone Frequency and Intensity ---
 wetlands_sundarbans_stressors["Cyclone Frequency and Intensity"]["Metric"] = 'Number of cyclones making landfall; wind speeds; storm surge height.'
@@ -70,6 +75,7 @@ wetlands_sundarbans_stressors["Cyclone Frequency and Intensity"]["Impact on Biod
 wetlands_sundarbans_stressors["Cyclone Frequency and Intensity"]["Influenced By"] = ['*  Sundarbans - Climate Change', '**Influences (Stressors):**', '*  Sundarbans - Coastal Erosion.', '* Many', '**Logic Description:** The Sundarbans is highly vulnerable to cyclones, and climate change may increase their frequency and intensity.']
 wetlands_sundarbans_stressors["Cyclone Frequency and Intensity"]["Influences"] = ['*  Sundarbans - Coastal Erosion.', '* Many', '**Logic Description:** The Sundarbans is highly vulnerable to cyclones, and climate change may increase their frequency and intensity.']
 wetlands_sundarbans_stressors["Cyclone Frequency and Intensity"]["Logic Description"] = '---'
+wetlands_sundarbans_stressors["Cyclone Frequency and Intensity"]["Impact Function"] = "impact_cyclone_frequency_and_intensity_wetlands_sundarbans"
 
 # --- Reduced Freshwater Flow ---
 wetlands_sundarbans_stressors["Reduced Freshwater Flow"]["Metric"] = 'Water flow rates in the rivers that feed the Sundarbans (e.g., the Ganges).'
@@ -79,12 +85,14 @@ wetlands_sundarbans_stressors["Reduced Freshwater Flow"]["Impact on Biodiversity
 wetlands_sundarbans_stressors["Reduced Freshwater Flow"]["Influenced By"] = ['* Upstream water diversions and dams.', '*  Sundarbans - Climate Change', '**Influences (Stressors):**', '* Sundarbans - Salinity Intrusion', '* Sundarbans - Sedimentation', '**Logic Description:** Reduced freshwater flow exacerbates salinity problems and affects delta formation.']
 wetlands_sundarbans_stressors["Reduced Freshwater Flow"]["Influences"] = ['* Sundarbans - Salinity Intrusion', '* Sundarbans - Sedimentation', '**Logic Description:** Reduced freshwater flow exacerbates salinity problems and affects delta formation.']
 wetlands_sundarbans_stressors["Reduced Freshwater Flow"]["Logic Description"] = '---'
+wetlands_sundarbans_stressors["Reduced Freshwater Flow"]["Impact Function"] = "impact_reduced_freshwater_flow_wetlands_sundarbans"
 
 # --- Habitat Availability ---
 wetlands_sundarbans_stressors["Habitat Availability"]["Impact on Biodiversity"] = '* Population sizes and distributions\n**Influenced By (Stressors):**\n* Sundarbans - Sea Level Rise\n* Sundarbans - Salinity Intrusion\n**Influences (Stressors):**\n* Many\n**Logic Description:** The amount of suitable habitat is critical.'
 wetlands_sundarbans_stressors["Habitat Availability"]["Influenced By"] = ['* Sundarbans - Sea Level Rise', '* Sundarbans - Salinity Intrusion', '**Influences (Stressors):**', '* Many', '**Logic Description:** The amount of suitable habitat is critical.']
 wetlands_sundarbans_stressors["Habitat Availability"]["Influences"] = ['* Many', '**Logic Description:** The amount of suitable habitat is critical.']
 wetlands_sundarbans_stressors["Habitat Availability"]["Logic Description"] = '---'
+wetlands_sundarbans_stressors["Habitat Availability"]["Impact Function"] = "impact_habitat_availability_wetlands_sundarbans"
 
 # --- Water Quality ---
 wetlands_sundarbans_stressors["Water Quality"]["Metric"] = 'Various water quality parameters.'
@@ -92,6 +100,7 @@ wetlands_sundarbans_stressors["Water Quality"]["Impact on Area"] = 'Overall ecos
 wetlands_sundarbans_stressors["Water Quality"]["Influenced By"] = ['* Sundarbans - Pollution', '*  Sundarbans - Salinity Intrusion', '**Influences (Stressors):**', '* Many, varies', '**Logic Description:** Water quality is essential for ecosystem health.']
 wetlands_sundarbans_stressors["Water Quality"]["Influences"] = ['* Many, varies', '**Logic Description:** Water quality is essential for ecosystem health.']
 wetlands_sundarbans_stressors["Water Quality"]["Logic Description"] = '---'
+wetlands_sundarbans_stressors["Water Quality"]["Impact Function"] = "impact_water_quality_wetlands_sundarbans"
 
 # --- Wildlife Health ---
 wetlands_sundarbans_stressors["Wildlife Health"]["Metric"] = 'Disease prevalence, mortality rates'
@@ -99,6 +108,7 @@ wetlands_sundarbans_stressors["Wildlife Health"]["Data Sources"] = ['* Wildlife 
 wetlands_sundarbans_stressors["Wildlife Health"]["Impact on Biodiversity"] = '* Population Declines.\n**Influenced By (Stressors)**:\n* Sundarbans - Pollution\n**Influences (Stressors):**\n* Population dynamics\n**Logic Description:** Wildlife health is an indicator of overall stress.'
 wetlands_sundarbans_stressors["Wildlife Health"]["Influences"] = ['* Population dynamics', '**Logic Description:** Wildlife health is an indicator of overall stress.']
 wetlands_sundarbans_stressors["Wildlife Health"]["Logic Description"] = '---'
+wetlands_sundarbans_stressors["Wildlife Health"]["Impact Function"] = "impact_wildlife_health_wetlands_sundarbans"
 
 # --- Coastal Erosion ---
 wetlands_sundarbans_stressors["Coastal Erosion"]["Metric"] = 'Rate of shoreline retreat.'
@@ -107,15 +117,18 @@ wetlands_sundarbans_stressors["Coastal Erosion"]["Impact on Area"] = ''
 wetlands_sundarbans_stressors["Coastal Erosion"]["Impact on Biodiversity"] = 'Habitat loss.\n**Influenced By (Stressors):**\nSundarbans - Sea Level Rise\n* Sundarbans - Cyclone Frequency and Intensity\n**Influences (Stressors):**\n* Many\n**Logic Description**: Erosion reduces land area.'
 wetlands_sundarbans_stressors["Coastal Erosion"]["Influenced By"] = ['Sundarbans - Sea Level Rise', '* Sundarbans - Cyclone Frequency and Intensity', '**Influences (Stressors):**', '* Many', '**Logic Description**: Erosion reduces land area.']
 wetlands_sundarbans_stressors["Coastal Erosion"]["Influences"] = ['* Many', '**Logic Description**: Erosion reduces land area.']
+wetlands_sundarbans_stressors["Coastal Erosion"]["Impact Function"] = "impact_coastal_erosion_wetlands_sundarbans"
 
 # --- Sedimentation ---
 wetlands_sundarbans_stressors["Sedimentation"]["Metric"] = 'Sediment deposition rates.'
 wetlands_sundarbans_stressors["Sedimentation"]["Data Sources"] = ['* Research studies', '**Impact on Area**: Changes in land elevation and delta formation.', '**Impact on Biodiversity:**', '* Can be positive (building new land) or negative (smothering habitats)', '**Influenced By (Stressors)**:', '*  Sundarbans - Reduced Freshwater Flow', '**Influences (Stressors):**', '* Habitat availability', '**Logic Description**: Sediment dynamics are crucial for delta ecosystems.']
 wetlands_sundarbans_stressors["Sedimentation"]["Impact on Biodiversity"] = '* Can be positive (building new land) or negative (smothering habitats)\n**Influenced By (Stressors)**:\n*  Sundarbans - Reduced Freshwater Flow\n**Influences (Stressors):**\n* Habitat availability\n**Logic Description**: Sediment dynamics are crucial for delta ecosystems.'
 wetlands_sundarbans_stressors["Sedimentation"]["Influences"] = ['* Habitat availability', '**Logic Description**: Sediment dynamics are crucial for delta ecosystems.']
+wetlands_sundarbans_stressors["Sedimentation"]["Impact Function"] = "impact_sedimentation_wetlands_sundarbans"
 
 # --- Freshwater Availability ---
 wetlands_sundarbans_stressors["Freshwater Availability"]["Influenced By"] = ['* Sundarbans - Salinity Intrusion', '**Influences (Stressors):**', 'Human well-being.', '* Many', '**Logic Description:** Freshwater is a scarce resource in some areas']
 wetlands_sundarbans_stressors["Freshwater Availability"]["Influences"] = ['Human well-being.', '* Many', '**Logic Description:** Freshwater is a scarce resource in some areas']
 wetlands_sundarbans_stressors["Freshwater Availability"]["Logic Description"] = '---'
+wetlands_sundarbans_stressors["Freshwater Availability"]["Impact Function"] = "impact_freshwater_availability_wetlands_sundarbans"
 

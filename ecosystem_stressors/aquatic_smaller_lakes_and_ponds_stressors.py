@@ -16,6 +16,7 @@ aquatic_smaller_lakes_and_ponds_stressors["Eutrophication"]["Impact on Biodivers
 aquatic_smaller_lakes_and_ponds_stressors["Eutrophication"]["Influenced By"] = ['Agricultural Runoff: Fertilizers and animal waste.', 'Urban Runoff: Sewage, stormwater, lawn fertilizers.', 'Septic Systems: Leaking septic systems.', 'Internal Loading: From sediments.', '**Influences (Stressors):**', 'Harmful Algal Blooms.', 'Oxygen Depletion.', 'Water Quality.', '**Logic Description:** Smaller lakes and ponds are *particularly vulnerable* to eutrophication due to their smaller volume and often close proximity to human activities. Nutrient pollution from agriculture, urban areas, and septic systems leads to excessive algal growth, reduced water clarity, and impacts on aquatic life.']
 aquatic_smaller_lakes_and_ponds_stressors["Eutrophication"]["Influences"] = ['Harmful Algal Blooms.', 'Oxygen Depletion.', 'Water Quality.', '**Logic Description:** Smaller lakes and ponds are *particularly vulnerable* to eutrophication due to their smaller volume and often close proximity to human activities. Nutrient pollution from agriculture, urban areas, and septic systems leads to excessive algal growth, reduced water clarity, and impacts on aquatic life.']
 aquatic_smaller_lakes_and_ponds_stressors["Eutrophication"]["Logic Description"] = '---'
+aquatic_smaller_lakes_and_ponds_stressors["Eutrophication"]["Impact Function"] = "impact_eutrophication_aquatic_smaller_lakes_and_ponds"
 
 # --- Invasive Species ---
 aquatic_smaller_lakes_and_ponds_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance of invasive aquatic plants (e.g., Eurasian watermilfoil, hydrilla) and animals (e.g., common carp, rusty crayfish).'
@@ -25,6 +26,7 @@ aquatic_smaller_lakes_and_ponds_stressors["Invasive Species"]["Impact on Biodive
 aquatic_smaller_lakes_and_ponds_stressors["Invasive Species"]["Influenced By"] = ['Recreational Boating: Transport of species between water bodies.', 'Aquarium Releases.', 'Intentional Introductions (for some species).', '**Influences (Stressors):**', 'Native Species Populations.', 'Water Quality.', 'Ecosystem Functioning.', '**Logic Description:** Invasive species can rapidly colonize and dominate smaller lakes and ponds, outcompeting native species, altering habitats, and impacting water quality.']
 aquatic_smaller_lakes_and_ponds_stressors["Invasive Species"]["Influences"] = ['Native Species Populations.', 'Water Quality.', 'Ecosystem Functioning.', '**Logic Description:** Invasive species can rapidly colonize and dominate smaller lakes and ponds, outcompeting native species, altering habitats, and impacting water quality.']
 aquatic_smaller_lakes_and_ponds_stressors["Invasive Species"]["Logic Description"] = '---'
+aquatic_smaller_lakes_and_ponds_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_aquatic_smaller_lakes_and_ponds"
 
 # --- Water Withdrawals ---
 aquatic_smaller_lakes_and_ponds_stressors["Water Withdrawals"]["Metric"] = 'Water levels; volume of water withdrawn; changes in outflow.'
@@ -34,6 +36,7 @@ aquatic_smaller_lakes_and_ponds_stressors["Water Withdrawals"]["Impact on Biodiv
 aquatic_smaller_lakes_and_ponds_stressors["Water Withdrawals"]["Influenced By"] = ['Irrigation: For agriculture.', 'Residential Water Use.', 'Industrial Water Use.', 'Drought (exacerbates the problem).', '**Influences (Stressors):**', 'Water Availability.', 'Habitat Loss.', 'Water Quality.', '**Logic Description:** Water withdrawals, particularly during dry periods, can significantly reduce water levels in smaller lakes and ponds, leading to habitat loss, increased stress on aquatic life, and potentially complete drying up of the water body.']
 aquatic_smaller_lakes_and_ponds_stressors["Water Withdrawals"]["Influences"] = ['Water Availability.', 'Habitat Loss.', 'Water Quality.', '**Logic Description:** Water withdrawals, particularly during dry periods, can significantly reduce water levels in smaller lakes and ponds, leading to habitat loss, increased stress on aquatic life, and potentially complete drying up of the water body.']
 aquatic_smaller_lakes_and_ponds_stressors["Water Withdrawals"]["Logic Description"] = '---'
+aquatic_smaller_lakes_and_ponds_stressors["Water Withdrawals"]["Impact Function"] = "impact_water_withdrawals_aquatic_smaller_lakes_and_ponds"
 
 # --- Shoreline Development ---
 aquatic_smaller_lakes_and_ponds_stressors["Shoreline Development"]["Data Sources"] = ['* Local planning and zoning records', '* Aerial photography.', '**Impact on Area**: Loss of natural shoreline', '**Impact on Biodiversity:**', '* Loss of habitat for plants, invertebrates, and fish.', '* Increased runoff and erosion.', '**Influenced By (Stressors):**', '* Human population growth', '* Desire for lakefront property', '**Influences (Stressors):**', '* Habitat loss', '* Water Quality', '**Logic Description:**  Development of shorelines removes natural buffers and habitats.']
@@ -41,4 +44,5 @@ aquatic_smaller_lakes_and_ponds_stressors["Shoreline Development"]["Impact on Bi
 aquatic_smaller_lakes_and_ponds_stressors["Shoreline Development"]["Influenced By"] = ['* Human population growth', '* Desire for lakefront property', '**Influences (Stressors):**', '* Habitat loss', '* Water Quality', '**Logic Description:**  Development of shorelines removes natural buffers and habitats.']
 aquatic_smaller_lakes_and_ponds_stressors["Shoreline Development"]["Influences"] = ['* Habitat loss', '* Water Quality', '**Logic Description:**  Development of shorelines removes natural buffers and habitats.']
 aquatic_smaller_lakes_and_ponds_stressors["Shoreline Development"]["Logic Description"] = '---'
+aquatic_smaller_lakes_and_ponds_stressors["Shoreline Development"]["Impact Function"] = "impact_shoreline_development_aquatic_smaller_lakes_and_ponds"
 

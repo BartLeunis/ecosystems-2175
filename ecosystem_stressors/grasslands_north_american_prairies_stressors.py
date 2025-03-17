@@ -30,6 +30,7 @@ grasslands_north_american_prairies_stressors["Land-Use Change"]["Impact on Biodi
 grasslands_north_american_prairies_stressors["Land-Use Change"]["Influenced By"] = ['North American Prairies - Agricultural Expansion', 'North American Prairies - Urban Sprawl', 'North American Prairies - Government Policies', '**Influences (Stressors):**', 'North American Prairies - Habitat Fragmentation', '**Logic Description:** Conversion of prairie to agriculture and urban areas has been the dominant stressor, leading to massive habitat loss and fragmentation. This is the primary reason why prairies are one of the most endangered ecosystems on Earth.']
 grasslands_north_american_prairies_stressors["Land-Use Change"]["Influences"] = ['North American Prairies - Habitat Fragmentation', '**Logic Description:** Conversion of prairie to agriculture and urban areas has been the dominant stressor, leading to massive habitat loss and fragmentation. This is the primary reason why prairies are one of the most endangered ecosystems on Earth.']
 grasslands_north_american_prairies_stressors["Land-Use Change"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Land-Use Change"]["Impact Function"] = "impact_land_use_change_grasslands_north_american_prairies"
 
 # --- Habitat Fragmentation ---
 grasslands_north_american_prairies_stressors["Habitat Fragmentation"]["Metric"] = 'Patch size distribution; edge density; connectivity indices.'
@@ -39,6 +40,7 @@ grasslands_north_american_prairies_stressors["Habitat Fragmentation"]["Impact on
 grasslands_north_american_prairies_stressors["Habitat Fragmentation"]["Influenced By"] = ['North American Prairies - Land-Use Change', 'North American Prairies - Infrastructure Development', '**Influences (Stressors):**', '* Exacerbates impacts of other stressors.', '**Logic Description:** Fragmentation, a consequence of land-use change, isolates remaining prairie patches, reducing their ecological viability and increasing the vulnerability of prairie species.']
 grasslands_north_american_prairies_stressors["Habitat Fragmentation"]["Influences"] = ['* Exacerbates impacts of other stressors.', '**Logic Description:** Fragmentation, a consequence of land-use change, isolates remaining prairie patches, reducing their ecological viability and increasing the vulnerability of prairie species.']
 grasslands_north_american_prairies_stressors["Habitat Fragmentation"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Habitat Fragmentation"]["Impact Function"] = "impact_habitat_fragmentation_grasslands_north_american_prairies"
 
 # --- Invasive Species ---
 grasslands_north_american_prairies_stressors["Invasive Species"]["Metric"] = 'Abundance and distribution of key invasive species (e.g., smooth brome, leafy spurge, cheatgrass).'
@@ -48,6 +50,7 @@ grasslands_north_american_prairies_stressors["Invasive Species"]["Impact on Biod
 grasslands_north_american_prairies_stressors["Invasive Species"]["Influenced By"] = ['North American Prairies - Disturbance', 'North American Prairies - Climate Change', 'North American Prairies - Introduction', '**Influences (Stressors):**', '*  North American Prairies - Fire Regimes', '**Logic Description:** Invasive species outcompete native prairie plants, altering ecosystem structure and function.']
 grasslands_north_american_prairies_stressors["Invasive Species"]["Influences"] = ['*  North American Prairies - Fire Regimes', '**Logic Description:** Invasive species outcompete native prairie plants, altering ecosystem structure and function.']
 grasslands_north_american_prairies_stressors["Invasive Species"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_grasslands_north_american_prairies"
 
 # --- Climate Change ---
 grasslands_north_american_prairies_stressors["Climate Change"]["Metric"] = 'Temperature increase (°C); changes in precipitation (mm/year, seasonality); increased frequency and severity of drought.'
@@ -57,6 +60,7 @@ grasslands_north_american_prairies_stressors["Climate Change"]["Impact on Biodiv
 grasslands_north_american_prairies_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '*  North American Prairies - Fire Regimes', '*  North American Prairies - Water Availability', '**Logic Description:** Climate change is altering temperature and precipitation patterns, increasing stress on prairie ecosystems and potentially favoring invasive species.']
 grasslands_north_american_prairies_stressors["Climate Change"]["Influences"] = ['*  North American Prairies - Fire Regimes', '*  North American Prairies - Water Availability', '**Logic Description:** Climate change is altering temperature and precipitation patterns, increasing stress on prairie ecosystems and potentially favoring invasive species.']
 grasslands_north_american_prairies_stressors["Climate Change"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_grasslands_north_american_prairies"
 
 # --- Fire Suppression ---
 grasslands_north_american_prairies_stressors["Fire Suppression"]["Metric"] = 'Fire frequency (return interval - years); area burned (ha/year).'
@@ -66,6 +70,7 @@ grasslands_north_american_prairies_stressors["Fire Suppression"]["Impact on Biod
 grasslands_north_american_prairies_stressors["Fire Suppression"]["Influenced By"] = ['North American Prairies - Land Management Practices', '**Influences (Stressors):**', '*  North American Prairies - Woody Encroachment', '*  North American Prairies - Fire Intensity', '**Logic Description:** Fire suppression, a common management practice, has altered the natural fire regime of prairies, leading to woody encroachment (trees and shrubs invading grasslands) and the decline of fire-dependent species.']
 grasslands_north_american_prairies_stressors["Fire Suppression"]["Influences"] = ['*  North American Prairies - Woody Encroachment', '*  North American Prairies - Fire Intensity', '**Logic Description:** Fire suppression, a common management practice, has altered the natural fire regime of prairies, leading to woody encroachment (trees and shrubs invading grasslands) and the decline of fire-dependent species.']
 grasslands_north_american_prairies_stressors["Fire Suppression"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Fire Suppression"]["Impact Function"] = "impact_fire_suppression_grasslands_north_american_prairies"
 
 # --- Overgrazing ---
 grasslands_north_american_prairies_stressors["Overgrazing"]["Metric"] = 'Livestock Density, vegetation cover'
@@ -75,6 +80,7 @@ grasslands_north_american_prairies_stressors["Overgrazing"]["Impact on Biodivers
 grasslands_north_american_prairies_stressors["Overgrazing"]["Influenced By"] = ['*  North American Prairies - Livestock Management', '**Influences (Stressors):**', '*  North American Prairies - Vegetation Changes', '**Logic Description:** Overgrazing can degrade prairie vegetation, leading to soil erosion and the spread of invasive species.']
 grasslands_north_american_prairies_stressors["Overgrazing"]["Influences"] = ['*  North American Prairies - Vegetation Changes', '**Logic Description:** Overgrazing can degrade prairie vegetation, leading to soil erosion and the spread of invasive species.']
 grasslands_north_american_prairies_stressors["Overgrazing"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Overgrazing"]["Impact Function"] = "impact_overgrazing_grasslands_north_american_prairies"
 
 # --- Agricultural Expansion ---
 grasslands_north_american_prairies_stressors["Agricultural Expansion"]["Metric"] = 'Area converted to agriculture.'
@@ -83,12 +89,14 @@ grasslands_north_american_prairies_stressors["Agricultural Expansion"]["Impact o
 grasslands_north_american_prairies_stressors["Agricultural Expansion"]["Impact on Biodiversity"] = '* Species Loss\n**Influenced By (Stressors):**\n* Global Demand\n**Influences (Stressors):**\n*  North American Prairies - Land-Use Change\n**Logic Description**: Demand for agricultural land.'
 grasslands_north_american_prairies_stressors["Agricultural Expansion"]["Influenced By"] = ['* Global Demand', '**Influences (Stressors):**', '*  North American Prairies - Land-Use Change', '**Logic Description**: Demand for agricultural land.']
 grasslands_north_american_prairies_stressors["Agricultural Expansion"]["Influences"] = ['*  North American Prairies - Land-Use Change', '**Logic Description**: Demand for agricultural land.']
+grasslands_north_american_prairies_stressors["Agricultural Expansion"]["Impact Function"] = "impact_agricultural_expansion_grasslands_north_american_prairies"
 
 # --- Urban Sprawl ---
 grasslands_north_american_prairies_stressors["Urban Sprawl"]["Impact on Area"] = 'Habitat loss.'
 grasslands_north_american_prairies_stressors["Urban Sprawl"]["Impact on Biodiversity"] = '* Species Loss\n**Influenced By (Stressors):**\n* Population Growth\n**Influences (Stressors):**\n* North American Prairies - Land-Use Change\n**Logic Description**: Urban expansion consumes habitat.'
 grasslands_north_american_prairies_stressors["Urban Sprawl"]["Influenced By"] = ['* Population Growth', '**Influences (Stressors):**', '* North American Prairies - Land-Use Change', '**Logic Description**: Urban expansion consumes habitat.']
 grasslands_north_american_prairies_stressors["Urban Sprawl"]["Influences"] = ['* North American Prairies - Land-Use Change', '**Logic Description**: Urban expansion consumes habitat.']
+grasslands_north_american_prairies_stressors["Urban Sprawl"]["Impact Function"] = "impact_urban_sprawl_grasslands_north_american_prairies"
 
 # --- Government Policies ---
 grasslands_north_american_prairies_stressors["Government Policies"]["Metric"] = 'Subsidies; regulations.'
@@ -96,6 +104,7 @@ grasslands_north_american_prairies_stressors["Government Policies"]["Impact on A
 grasslands_north_american_prairies_stressors["Government Policies"]["Impact on Biodiversity"] = '* Variable.\n**Influenced By (Stressors):**\n* Economics\n**Influences (Stressors):**\n*  North American Prairies - Land-Use Change\n*  North American Prairies - Agricultural Expansion\n**Logic Description**: Policies influence land use decisions.'
 grasslands_north_american_prairies_stressors["Government Policies"]["Influenced By"] = ['* Economics', '**Influences (Stressors):**', '*  North American Prairies - Land-Use Change', '*  North American Prairies - Agricultural Expansion', '**Logic Description**: Policies influence land use decisions.']
 grasslands_north_american_prairies_stressors["Government Policies"]["Influences"] = ['*  North American Prairies - Land-Use Change', '*  North American Prairies - Agricultural Expansion', '**Logic Description**: Policies influence land use decisions.']
+grasslands_north_american_prairies_stressors["Government Policies"]["Impact Function"] = "impact_government_policies_grasslands_north_american_prairies"
 
 # --- Infrastructure Development ---
 grasslands_north_american_prairies_stressors["Infrastructure Development"]["Metric"] = 'Road density, etc.'
@@ -105,6 +114,7 @@ grasslands_north_american_prairies_stressors["Infrastructure Development"]["Impa
 grasslands_north_american_prairies_stressors["Infrastructure Development"]["Influenced By"] = ['* Economic Growth', '**Influences (Stressors):**', '* North American Prairies - Habitat Fragmentation', '**Logic Description:** Roads and other infrastructure fragment the landscape.']
 grasslands_north_american_prairies_stressors["Infrastructure Development"]["Influences"] = ['* North American Prairies - Habitat Fragmentation', '**Logic Description:** Roads and other infrastructure fragment the landscape.']
 grasslands_north_american_prairies_stressors["Infrastructure Development"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_grasslands_north_american_prairies"
 
 # --- Disturbance ---
 grasslands_north_american_prairies_stressors["Disturbance"]["Data Sources"] = ['* Field Surveys', '**Impact on Area**: Site-specific', '**Impact on Biodiversity:**', '* Variable', '**Influenced By (Stressors):**', '*  North American Prairies - Overgrazing', '*  North American Prairies - Fire Suppression', '**Influences (Stressors):**', '* North American Prairies - Invasive Species', '**Logic Description:** General category for physical disturbances.']
@@ -112,6 +122,7 @@ grasslands_north_american_prairies_stressors["Disturbance"]["Impact on Biodivers
 grasslands_north_american_prairies_stressors["Disturbance"]["Influenced By"] = ['*  North American Prairies - Overgrazing', '*  North American Prairies - Fire Suppression', '**Influences (Stressors):**', '* North American Prairies - Invasive Species', '**Logic Description:** General category for physical disturbances.']
 grasslands_north_american_prairies_stressors["Disturbance"]["Influences"] = ['* North American Prairies - Invasive Species', '**Logic Description:** General category for physical disturbances.']
 grasslands_north_american_prairies_stressors["Disturbance"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Disturbance"]["Impact Function"] = "impact_disturbance_grasslands_north_american_prairies"
 
 # --- Introduction ---
 grasslands_north_american_prairies_stressors["Introduction"]["Metric"] = 'Number of introduced species'
@@ -120,6 +131,7 @@ grasslands_north_american_prairies_stressors["Introduction"]["Impact on Area"] =
 grasslands_north_american_prairies_stressors["Introduction"]["Impact on Biodiversity"] = '* Competition, etc.\n**Influenced By (Stressors):**\n* Global trade\n**Influences (Stressors):**\n* North American Prairies - Invasive Species\n**Logic Description**: Intentional/Unintentional introductions'
 grasslands_north_american_prairies_stressors["Introduction"]["Influenced By"] = ['* Global trade', '**Influences (Stressors):**', '* North American Prairies - Invasive Species', '**Logic Description**: Intentional/Unintentional introductions']
 grasslands_north_american_prairies_stressors["Introduction"]["Influences"] = ['* North American Prairies - Invasive Species', '**Logic Description**: Intentional/Unintentional introductions']
+grasslands_north_american_prairies_stressors["Introduction"]["Impact Function"] = "impact_introduction_grasslands_north_american_prairies"
 
 # --- Land Management Practices ---
 grasslands_north_american_prairies_stressors["Land Management Practices"]["Metric"] = 'Area Under different practices.'
@@ -129,6 +141,7 @@ grasslands_north_american_prairies_stressors["Land Management Practices"]["Impac
 grasslands_north_american_prairies_stressors["Land Management Practices"]["Influenced By"] = ['* Policy', '**Influences (Stressors):**', '* North American Prairies - Fire Suppression', '* North American Prairies - Overgrazing', '**Logic Description:** Practices influence outcomes.']
 grasslands_north_american_prairies_stressors["Land Management Practices"]["Influences"] = ['* North American Prairies - Fire Suppression', '* North American Prairies - Overgrazing', '**Logic Description:** Practices influence outcomes.']
 grasslands_north_american_prairies_stressors["Land Management Practices"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Land Management Practices"]["Impact Function"] = "impact_land_management_practices_grasslands_north_american_prairies"
 
 # --- Fire Regimes ---
 grasslands_north_american_prairies_stressors["Fire Regimes"]["Metric"] = 'Fire frequency, intensity, seasonality, size'
@@ -137,6 +150,7 @@ grasslands_north_american_prairies_stressors["Fire Regimes"]["Impact on Area"] =
 grasslands_north_american_prairies_stressors["Fire Regimes"]["Impact on Biodiversity"] = '* Species Composition.\n**Influenced By (Stressors):**\n*  North American Prairies - Fire Suppression\n*  North American Prairies - Climate Change\n*  North American Prairies - Invasive Species\n**Influences (Stressors):**\n* North American Prairies - Woody encroachment\n* North American Prairies - Invasive Species\n**Logic Description**: Fire is a natural process, but alterations can have negative impacts.'
 grasslands_north_american_prairies_stressors["Fire Regimes"]["Influenced By"] = ['*  North American Prairies - Fire Suppression', '*  North American Prairies - Climate Change', '*  North American Prairies - Invasive Species', '**Influences (Stressors):**', '* North American Prairies - Woody encroachment', '* North American Prairies - Invasive Species', '**Logic Description**: Fire is a natural process, but alterations can have negative impacts.']
 grasslands_north_american_prairies_stressors["Fire Regimes"]["Influences"] = ['* North American Prairies - Woody encroachment', '* North American Prairies - Invasive Species', '**Logic Description**: Fire is a natural process, but alterations can have negative impacts.']
+grasslands_north_american_prairies_stressors["Fire Regimes"]["Impact Function"] = "impact_fire_regimes_grasslands_north_american_prairies"
 
 # --- Woody encroachment ---
 grasslands_north_american_prairies_stressors["Woody encroachment"]["Data Sources"] = ['* Remote Sensing', '* Field Surveys', '**Impact on Area:** Habitat Change', '**Impact on Biodiversity:**', '* Loss of grassland species', '**Influenced By (Stressors):**', '* North American Prairies - Fire Suppression', '* North American Prairies - Fire Regimes', '**Influences (Stressors):**', '* Habitat Loss', '**Logic Description:** Trees and shrubs take over grasslands.']
@@ -145,6 +159,7 @@ grasslands_north_american_prairies_stressors["Woody encroachment"]["Impact on Bi
 grasslands_north_american_prairies_stressors["Woody encroachment"]["Influenced By"] = ['* North American Prairies - Fire Suppression', '* North American Prairies - Fire Regimes', '**Influences (Stressors):**', '* Habitat Loss', '**Logic Description:** Trees and shrubs take over grasslands.']
 grasslands_north_american_prairies_stressors["Woody encroachment"]["Influences"] = ['* Habitat Loss', '**Logic Description:** Trees and shrubs take over grasslands.']
 grasslands_north_american_prairies_stressors["Woody encroachment"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Woody encroachment"]["Impact Function"] = "impact_woody_encroachment_grasslands_north_american_prairies"
 
 # --- Fire Intensity ---
 grasslands_north_american_prairies_stressors["Fire Intensity"]["Data Sources"] = ['* Fire records.', '* Remote sensing.', '**Impact on Area:** Variable, depending on intensity.', '**Impact on Biodiversity:**', '*  Variable, depending on intensity.', '**Influenced By (Stressors):**', '* North American Prairies - Fire Suppression', '**Influences (Stressors):**', '* North American Prairies - Fire Regimes', '**Logic Description:** The intensity of fires affects impact.']
@@ -153,6 +168,7 @@ grasslands_north_american_prairies_stressors["Fire Intensity"]["Impact on Biodiv
 grasslands_north_american_prairies_stressors["Fire Intensity"]["Influenced By"] = ['* North American Prairies - Fire Suppression', '**Influences (Stressors):**', '* North American Prairies - Fire Regimes', '**Logic Description:** The intensity of fires affects impact.']
 grasslands_north_american_prairies_stressors["Fire Intensity"]["Influences"] = ['* North American Prairies - Fire Regimes', '**Logic Description:** The intensity of fires affects impact.']
 grasslands_north_american_prairies_stressors["Fire Intensity"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Fire Intensity"]["Impact Function"] = "impact_fire_intensity_grasslands_north_american_prairies"
 
 # --- Water Availability ---
 grasslands_north_american_prairies_stressors["Water Availability"]["Metric"] = 'Precipitation, drought indices.'
@@ -161,6 +177,7 @@ grasslands_north_american_prairies_stressors["Water Availability"]["Impact on Bi
 grasslands_north_american_prairies_stressors["Water Availability"]["Influenced By"] = ['* North American Prairies - Climate Change', '**Influences (Stressors):**', '* Many, varies', '**Logic Description:** Water availability drives many processes.']
 grasslands_north_american_prairies_stressors["Water Availability"]["Influences"] = ['* Many, varies', '**Logic Description:** Water availability drives many processes.']
 grasslands_north_american_prairies_stressors["Water Availability"]["Logic Description"] = '---'
+grasslands_north_american_prairies_stressors["Water Availability"]["Impact Function"] = "impact_water_availability_grasslands_north_american_prairies"
 
 # --- Vegetation Changes ---
 grasslands_north_american_prairies_stressors["Vegetation Changes"]["Metric"] = 'Plant community composition.'
@@ -170,4 +187,5 @@ grasslands_north_american_prairies_stressors["Vegetation Changes"]["Impact on Bi
 grasslands_north_american_prairies_stressors["Vegetation Changes"]["Influenced By"] = ['* North American Prairies - Overgrazing', '**Influences (Stressors):**', '*  Many, varies.', '**Logic Description:** Changes in plant communities.']
 grasslands_north_american_prairies_stressors["Vegetation Changes"]["Influences"] = ['*  Many, varies.', '**Logic Description:** Changes in plant communities.']
 grasslands_north_american_prairies_stressors["Vegetation Changes"]["Logic Description"] = ''
+grasslands_north_american_prairies_stressors["Vegetation Changes"]["Impact Function"] = "impact_vegetation_changes_grasslands_north_american_prairies"
 

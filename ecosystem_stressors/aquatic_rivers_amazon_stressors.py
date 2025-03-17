@@ -16,6 +16,7 @@ aquatic_rivers_amazon_stressors["Deforestation"]["Impact on Biodiversity"] = 'Lo
 aquatic_rivers_amazon_stressors["Deforestation"]["Influenced By"] = ['Agricultural Expansion: (cattle ranching, soybean farming).', 'Illegal Logging.', 'Road Construction.', 'Mining.', 'Weak Environmental Governance.', '**Influences (Stressors):**', 'Sedimentation (major impact).', 'Hydrology.', 'Water Quality.', '**Logic Description:** Deforestation in the Amazon basin is the *primary* driver of environmental change in the Amazon River system. It leads to increased soil erosion, resulting in higher sediment loads in rivers, altered flow patterns, and impacts on aquatic life.']
 aquatic_rivers_amazon_stressors["Deforestation"]["Influences"] = ['Sedimentation (major impact).', 'Hydrology.', 'Water Quality.', '**Logic Description:** Deforestation in the Amazon basin is the *primary* driver of environmental change in the Amazon River system. It leads to increased soil erosion, resulting in higher sediment loads in rivers, altered flow patterns, and impacts on aquatic life.']
 aquatic_rivers_amazon_stressors["Deforestation"]["Logic Description"] = '---'
+aquatic_rivers_amazon_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_aquatic_rivers_amazon"
 
 # --- Hydropower Dams ---
 aquatic_rivers_amazon_stressors["Hydropower Dams"]["Metric"] = 'Number of dams constructed and planned; changes in river flow; area of land flooded by reservoirs.'
@@ -25,6 +26,7 @@ aquatic_rivers_amazon_stressors["Hydropower Dams"]["Impact on Biodiversity"] = '
 aquatic_rivers_amazon_stressors["Hydropower Dams"]["Influenced By"] = ['Demand for Electricity: In Brazil and neighboring countries.', 'Government Energy Policies.', '**Influences (Stressors):**', 'Fish Migration.', 'Sediment Transport.', 'Habitat Connectivity.', 'Greenhouse Gas Emissions.', '**Logic Description:**  Hydropower dam construction is a rapidly growing threat to the Amazon River system, altering flow patterns, blocking fish migration, fragmenting habitats, and releasing greenhouse gases.']
 aquatic_rivers_amazon_stressors["Hydropower Dams"]["Influences"] = ['Fish Migration.', 'Sediment Transport.', 'Habitat Connectivity.', 'Greenhouse Gas Emissions.', '**Logic Description:**  Hydropower dam construction is a rapidly growing threat to the Amazon River system, altering flow patterns, blocking fish migration, fragmenting habitats, and releasing greenhouse gases.']
 aquatic_rivers_amazon_stressors["Hydropower Dams"]["Logic Description"] = '---'
+aquatic_rivers_amazon_stressors["Hydropower Dams"]["Impact Function"] = "impact_hydropower_dams_aquatic_rivers_amazon"
 
 # --- Climate Change ---
 aquatic_rivers_amazon_stressors["Climate Change"]["Metric"] = 'Changes in precipitation patterns; changes in river discharge; increased frequency and severity of droughts and floods; water temperature.'
@@ -34,6 +36,7 @@ aquatic_rivers_amazon_stressors["Climate Change"]["Impact on Biodiversity"] = 'I
 aquatic_rivers_amazon_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Deforestation (can exacerbate local climate change impacts).', '**Influences (Stressors):**', 'Hydrology.', 'Extreme Events (Floods and Droughts).', 'Water Temperature.', '**Logic Description:** Climate change is impacting the Amazon River through changes in precipitation, increased frequency of extreme events, and interactions with other stressors like deforestation.']
 aquatic_rivers_amazon_stressors["Climate Change"]["Influences"] = ['Hydrology.', 'Extreme Events (Floods and Droughts).', 'Water Temperature.', '**Logic Description:** Climate change is impacting the Amazon River through changes in precipitation, increased frequency of extreme events, and interactions with other stressors like deforestation.']
 aquatic_rivers_amazon_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_rivers_amazon_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_rivers_amazon"
 
 # --- Pollution ---
 aquatic_rivers_amazon_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (mercury from gold mining, pesticides, sewage).'
@@ -43,4 +46,5 @@ aquatic_rivers_amazon_stressors["Pollution"]["Impact on Biodiversity"] = '* Toxi
 aquatic_rivers_amazon_stressors["Pollution"]["Influenced By"] = ['* Gold mining (mercury).', '* Agriculture (pesticides).', '* Urban areas (sewage).', '**Influences (Stressors):**', 'Water Quality.', '* Wildlife and human health.', '**Logic Description:**  Mining, agriculture, and urban areas contribute to pollution.']
 aquatic_rivers_amazon_stressors["Pollution"]["Influences"] = ['Water Quality.', '* Wildlife and human health.', '**Logic Description:**  Mining, agriculture, and urban areas contribute to pollution.']
 aquatic_rivers_amazon_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_rivers_amazon_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_rivers_amazon"
 

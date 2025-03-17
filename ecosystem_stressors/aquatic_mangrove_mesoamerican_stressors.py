@@ -15,6 +15,7 @@ aquatic_mangrove_mesoamerican_stressors["Coastal Development"]["Impact on Biodiv
 aquatic_mangrove_mesoamerican_stressors["Coastal Development"]["Influenced By"] = ['Tourism Development: A *major* driver, particularly in areas like the Riviera Maya.', 'Aquaculture Expansion: Shrimp farming.', 'Population Growth.', 'Government Policies.', '**Influences (Stressors):**', 'Coastal Erosion.', 'Water Quality.', '**Logic Description:** Coastal development, particularly for tourism and aquaculture, is a *dominant* threat to Mesoamerican mangroves, leading to significant habitat loss.']
 aquatic_mangrove_mesoamerican_stressors["Coastal Development"]["Influences"] = ['Coastal Erosion.', 'Water Quality.', '**Logic Description:** Coastal development, particularly for tourism and aquaculture, is a *dominant* threat to Mesoamerican mangroves, leading to significant habitat loss.']
 aquatic_mangrove_mesoamerican_stressors["Coastal Development"]["Logic Description"] = '---'
+aquatic_mangrove_mesoamerican_stressors["Coastal Development"]["Impact Function"] = "impact_coastal_development_aquatic_mangrove_mesoamerican"
 
 # --- Pollution ---
 aquatic_mangrove_mesoamerican_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (nutrients, pesticides, etc.) in water and sediments.'
@@ -24,6 +25,7 @@ aquatic_mangrove_mesoamerican_stressors["Pollution"]["Impact on Biodiversity"] =
 aquatic_mangrove_mesoamerican_stressors["Pollution"]["Influenced By"] = ['Agricultural Runoff.', 'Urban Runoff.', 'Tourism Activities.', 'Inadequate Wastewater Treatment.', '**Influences (Stressors):**', 'Water Quality.', 'Mangrove Health.', '**Logic Description:** Pollution from agriculture, urban areas, and tourism degrades water quality and impacts mangrove ecosystems.']
 aquatic_mangrove_mesoamerican_stressors["Pollution"]["Influences"] = ['Water Quality.', 'Mangrove Health.', '**Logic Description:** Pollution from agriculture, urban areas, and tourism degrades water quality and impacts mangrove ecosystems.']
 aquatic_mangrove_mesoamerican_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_mangrove_mesoamerican_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_mangrove_mesoamerican"
 
 # --- Climate Change ---
 aquatic_mangrove_mesoamerican_stressors["Climate Change"]["Metric"] = 'Sea level rise; temperature increase; storm intensity.'
@@ -33,4 +35,5 @@ aquatic_mangrove_mesoamerican_stressors["Climate Change"]["Impact on Biodiversit
 aquatic_mangrove_mesoamerican_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Sea Level Rise', '* Storm Surge', '**Logic Description:** Climate change, particularly sea level rise and increased storm intensity, poses a significant threat.']
 aquatic_mangrove_mesoamerican_stressors["Climate Change"]["Influences"] = ['* Sea Level Rise', '* Storm Surge', '**Logic Description:** Climate change, particularly sea level rise and increased storm intensity, poses a significant threat.']
 aquatic_mangrove_mesoamerican_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_mangrove_mesoamerican_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_mangrove_mesoamerican"
 

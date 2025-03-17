@@ -17,6 +17,7 @@ mountains_himalayas_stressors["Glacier Retreat"]["Impact on Biodiversity"] = 'Ch
 mountains_himalayas_stressors["Glacier Retreat"]["Influenced By"] = ['Temperature Increase.', 'Black Carbon Deposition: *Significant* in the Himalayas, accelerating melting.', 'Changes in Precipitation (in some areas).', '**Influences (Stressors):**', 'Water Resources: *Critically* important for downstream populations.', 'Hazard Risks (GLOFs): A *major* concern.', '**Logic Description:** Glacier retreat in the Himalayas is a *major* issue, driven by climate change and black carbon deposition.  This impacts water resources for a *huge* downstream population and increases the risk of glacial lake outburst floods.']
 mountains_himalayas_stressors["Glacier Retreat"]["Influences"] = ['Water Resources: *Critically* important for downstream populations.', 'Hazard Risks (GLOFs): A *major* concern.', '**Logic Description:** Glacier retreat in the Himalayas is a *major* issue, driven by climate change and black carbon deposition.  This impacts water resources for a *huge* downstream population and increases the risk of glacial lake outburst floods.']
 mountains_himalayas_stressors["Glacier Retreat"]["Logic Description"] = '---'
+mountains_himalayas_stressors["Glacier Retreat"]["Impact Function"] = "impact_glacier_retreat_mountains_himalayas"
 
 # --- Black Carbon Deposition ---
 mountains_himalayas_stressors["Black Carbon Deposition"]["Metric"] = 'Concentration of black carbon in snow and ice; changes in albedo (reflectivity) of snow and ice.'
@@ -26,6 +27,7 @@ mountains_himalayas_stressors["Black Carbon Deposition"]["Impact on Biodiversity
 mountains_himalayas_stressors["Black Carbon Deposition"]["Influenced By"] = ['Burning of Fossil Fuels: In South Asia and other regions.', 'Biomass Burning: (e.g., cooking fires, agricultural burning).', '**Influences (Stressors):**', 'Glacier Retreat: A *major* contributing factor.', '**Logic Description:** Black carbon (soot) deposition on Himalayan glaciers darkens the surface, reducing its reflectivity and accelerating melting.  This is a significant contributor to glacier retreat.']
 mountains_himalayas_stressors["Black Carbon Deposition"]["Influences"] = ['Glacier Retreat: A *major* contributing factor.', '**Logic Description:** Black carbon (soot) deposition on Himalayan glaciers darkens the surface, reducing its reflectivity and accelerating melting.  This is a significant contributor to glacier retreat.']
 mountains_himalayas_stressors["Black Carbon Deposition"]["Logic Description"] = '---'
+mountains_himalayas_stressors["Black Carbon Deposition"]["Impact Function"] = "impact_black_carbon_deposition_mountains_himalayas"
 
 # --- Overgrazing and Collection of Medicinal Plants ---
 mountains_himalayas_stressors["Overgrazing and Collection of Medicinal Plants"]["Metric"] = 'Livestock density; abundance of key medicinal plant species.'
@@ -35,6 +37,7 @@ mountains_himalayas_stressors["Overgrazing and Collection of Medicinal Plants"][
 mountains_himalayas_stressors["Overgrazing and Collection of Medicinal Plants"]["Influenced By"] = ['* Population growth', '* Economic pressures', '**Influences (Stressors):**', '* Plant communities', '**Logic Description:** Overgrazing and collection pressures on plant resources.']
 mountains_himalayas_stressors["Overgrazing and Collection of Medicinal Plants"]["Influences"] = ['* Plant communities', '**Logic Description:** Overgrazing and collection pressures on plant resources.']
 mountains_himalayas_stressors["Overgrazing and Collection of Medicinal Plants"]["Logic Description"] = '---'
+mountains_himalayas_stressors["Overgrazing and Collection of Medicinal Plants"]["Impact Function"] = "impact_overgrazing_and_collection_of_medicinal_plants_mountains_himalayas"
 
 # --- Tourism ---
 mountains_himalayas_stressors["Tourism"]["Metric"] = 'Number of tourists; development of tourism infrastructure.'
@@ -44,6 +47,7 @@ mountains_himalayas_stressors["Tourism"]["Impact on Biodiversity"] = '* Disturba
 mountains_himalayas_stressors["Tourism"]["Influenced By"] = ['* Increasing popularity of trekking and mountaineering.', '**Influences (Stressors):**', '* Local environments.', '**Logic Description:** Tourism can have localized negative impacts.']
 mountains_himalayas_stressors["Tourism"]["Influences"] = ['* Local environments.', '**Logic Description:** Tourism can have localized negative impacts.']
 mountains_himalayas_stressors["Tourism"]["Logic Description"] = '---'
+mountains_himalayas_stressors["Tourism"]["Impact Function"] = "impact_tourism_mountains_himalayas"
 
 # --- Climate Change ---
 mountains_himalayas_stressors["Climate Change"]["Metric"] = 'Changes in temp, precip, and extreme weather'
@@ -53,4 +57,5 @@ mountains_himalayas_stressors["Climate Change"]["Impact on Biodiversity"] = '* S
 mountains_himalayas_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Water resources.', '**Logic Description:** Climate change.']
 mountains_himalayas_stressors["Climate Change"]["Influences"] = ['* Water resources.', '**Logic Description:** Climate change.']
 mountains_himalayas_stressors["Climate Change"]["Logic Description"] = '---'
+mountains_himalayas_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_mountains_himalayas"
 

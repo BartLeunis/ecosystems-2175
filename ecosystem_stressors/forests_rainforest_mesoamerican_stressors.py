@@ -17,6 +17,7 @@ forests_rainforest_mesoamerican_stressors["Infrastructure Development"]["Impact 
 forests_rainforest_mesoamerican_stressors["Infrastructure Development"]["Influenced By"] = ['Economic Growth: Tourism, agriculture, resource extraction.', 'Population Growth.', 'Government Policies.', 'Global Commodity Prices.', '**Influences (Stressors):**', 'Deforestation.', 'Wildfires.', 'Pollution.', '**Logic Description:** Infrastructure development, driven by various economic activities, leads to habitat loss and facilitates other stressors.']
 forests_rainforest_mesoamerican_stressors["Infrastructure Development"]["Influences"] = ['Deforestation.', 'Wildfires.', 'Pollution.', '**Logic Description:** Infrastructure development, driven by various economic activities, leads to habitat loss and facilitates other stressors.']
 forests_rainforest_mesoamerican_stressors["Infrastructure Development"]["Logic Description"] = '---'
+forests_rainforest_mesoamerican_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_forests_rainforest_mesoamerican"
 
 # --- Deforestation ---
 forests_rainforest_mesoamerican_stressors["Deforestation"]["Metric"] = 'Area of forest cleared per year (ha/year).'
@@ -26,6 +27,7 @@ forests_rainforest_mesoamerican_stressors["Deforestation"]["Impact on Biodiversi
 forests_rainforest_mesoamerican_stressors["Deforestation"]["Influenced By"] = ['Infrastructure Development.', 'Economic Growth: Agriculture (cattle ranching, coffee, palm oil), logging.', 'Population Growth: Subsistence agriculture.', 'Government Policies.', '* Global Commodity Prices', '**Influences (Stressors):**', 'Wildfires.', '* Changes in Precipitation', '**Logic Description:** Deforestation, driven by agricultural expansion (including cattle ranching and, increasingly, palm oil), logging, and subsistence farming, is a major threat.']
 forests_rainforest_mesoamerican_stressors["Deforestation"]["Influences"] = ['Wildfires.', '* Changes in Precipitation', '**Logic Description:** Deforestation, driven by agricultural expansion (including cattle ranching and, increasingly, palm oil), logging, and subsistence farming, is a major threat.']
 forests_rainforest_mesoamerican_stressors["Deforestation"]["Logic Description"] = '---'
+forests_rainforest_mesoamerican_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_forests_rainforest_mesoamerican"
 
 # --- Temperature Increase ---
 forests_rainforest_mesoamerican_stressors["Temperature Increase"]["Metric"] = 'Average annual temperature increase (°C).'
@@ -35,6 +37,7 @@ forests_rainforest_mesoamerican_stressors["Temperature Increase"]["Impact on Bio
 forests_rainforest_mesoamerican_stressors["Temperature Increase"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Deforestation.', '**Influences (Stressors):**', 'Wildfires.', 'Changes in Precipitation.', '**Logic Description:** Global warming impacts, with potential impacts on both terrestrial and coastal ecosystems (e.g., coral reefs).']
 forests_rainforest_mesoamerican_stressors["Temperature Increase"]["Influences"] = ['Wildfires.', 'Changes in Precipitation.', '**Logic Description:** Global warming impacts, with potential impacts on both terrestrial and coastal ecosystems (e.g., coral reefs).']
 forests_rainforest_mesoamerican_stressors["Temperature Increase"]["Logic Description"] = '---'
+forests_rainforest_mesoamerican_stressors["Temperature Increase"]["Impact Function"] = "impact_temperature_increase_forests_rainforest_mesoamerican"
 
 # --- Changes in Precipitation ---
 forests_rainforest_mesoamerican_stressors["Changes in Precipitation"]["Metric"] = 'Change in annual precipitation (mm/year); dry season changes.'
@@ -44,6 +47,7 @@ forests_rainforest_mesoamerican_stressors["Changes in Precipitation"]["Impact on
 forests_rainforest_mesoamerican_stressors["Changes in Precipitation"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Deforestation (potentially).', '**Influences (Stressors):**', 'Wildfires.', '**Logic Description:** Changes in rainfall patterns and potential changes in hurricane frequency/intensity, linked to climate change.']
 forests_rainforest_mesoamerican_stressors["Changes in Precipitation"]["Influences"] = ['Wildfires.', '**Logic Description:** Changes in rainfall patterns and potential changes in hurricane frequency/intensity, linked to climate change.']
 forests_rainforest_mesoamerican_stressors["Changes in Precipitation"]["Logic Description"] = '---'
+forests_rainforest_mesoamerican_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_forests_rainforest_mesoamerican"
 
 # --- Wildfires ---
 forests_rainforest_mesoamerican_stressors["Wildfires"]["Metric"] = 'Number of fires; area burned (ha/year).'
@@ -53,4 +57,5 @@ forests_rainforest_mesoamerican_stressors["Wildfires"]["Impact on Biodiversity"]
 forests_rainforest_mesoamerican_stressors["Wildfires"]["Influenced By"] = ['Deforestation.', 'Temperature Increase.', 'Changes in Precipitation.', 'Human Activities (agricultural burning).', '**Influences (Stressors):**', 'Deforestation.', '**Logic Description:** Wildfires, often linked to land clearing and exacerbated by climate change.']
 forests_rainforest_mesoamerican_stressors["Wildfires"]["Influences"] = ['Deforestation.', '**Logic Description:** Wildfires, often linked to land clearing and exacerbated by climate change.']
 forests_rainforest_mesoamerican_stressors["Wildfires"]["Logic Description"] = '---'
+forests_rainforest_mesoamerican_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_forests_rainforest_mesoamerican"
 

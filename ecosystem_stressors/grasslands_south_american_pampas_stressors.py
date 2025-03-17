@@ -17,6 +17,7 @@ grasslands_south_american_pampas_stressors["Land-Use Change"]["Impact on Biodive
 grasslands_south_american_pampas_stressors["Land-Use Change"]["Influenced By"] = ['South American Pampas - Agricultural Expansion: Demand for soybeans and other crops, and for cattle pasture.', 'South American Pampas - Global Commodity Prices.', 'South American Pampas - Government Policies.', '**Influences (Stressors):**', '*  South American Pampas - Habitat Fragmentation', '**Logic Description:** Conversion of pampas to agriculture (especially soybean cultivation) and pasture is the dominant stressor, leading to massive habitat loss.']
 grasslands_south_american_pampas_stressors["Land-Use Change"]["Influences"] = ['*  South American Pampas - Habitat Fragmentation', '**Logic Description:** Conversion of pampas to agriculture (especially soybean cultivation) and pasture is the dominant stressor, leading to massive habitat loss.']
 grasslands_south_american_pampas_stressors["Land-Use Change"]["Logic Description"] = '---'
+grasslands_south_american_pampas_stressors["Land-Use Change"]["Impact Function"] = "impact_land_use_change_grasslands_south_american_pampas"
 
 # --- Habitat Fragmentation ---
 grasslands_south_american_pampas_stressors["Habitat Fragmentation"]["Metric"] = 'Patch size distribution; edge density; connectivity indices.'
@@ -26,6 +27,7 @@ grasslands_south_american_pampas_stressors["Habitat Fragmentation"]["Impact on B
 grasslands_south_american_pampas_stressors["Habitat Fragmentation"]["Influenced By"] = ['*  South American Pampas - Land Use Change', '**Influences (Stressors):**', '* Exacerbates other stressor impacts', '**Logic Description:** Fragmentation isolates pampas patches, reducing their ecological viability.']
 grasslands_south_american_pampas_stressors["Habitat Fragmentation"]["Influences"] = ['* Exacerbates other stressor impacts', '**Logic Description:** Fragmentation isolates pampas patches, reducing their ecological viability.']
 grasslands_south_american_pampas_stressors["Habitat Fragmentation"]["Logic Description"] = '---'
+grasslands_south_american_pampas_stressors["Habitat Fragmentation"]["Impact Function"] = "impact_habitat_fragmentation_grasslands_south_american_pampas"
 
 # --- Climate Change ---
 grasslands_south_american_pampas_stressors["Climate Change"]["Metric"] = 'Temperature increase; changes in precipitation; drought frequency/severity.'
@@ -35,6 +37,7 @@ grasslands_south_american_pampas_stressors["Climate Change"]["Impact on Biodiver
 grasslands_south_american_pampas_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '*  South American Pampas - Water Availability', '**Logic Description:** Climate change alters temperature and precipitation patterns.']
 grasslands_south_american_pampas_stressors["Climate Change"]["Influences"] = ['*  South American Pampas - Water Availability', '**Logic Description:** Climate change alters temperature and precipitation patterns.']
 grasslands_south_american_pampas_stressors["Climate Change"]["Logic Description"] = '---'
+grasslands_south_american_pampas_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_grasslands_south_american_pampas"
 
 # --- Overgrazing ---
 grasslands_south_american_pampas_stressors["Overgrazing"]["Metric"] = 'Livestock density; vegetation cover and composition.'
@@ -44,6 +47,7 @@ grasslands_south_american_pampas_stressors["Overgrazing"]["Impact on Biodiversit
 grasslands_south_american_pampas_stressors["Overgrazing"]["Influenced By"] = ['*  South American Pampas - Livestock Management Practices.', '**Influences (Stressors):**', '*  South American Pampas - Vegetation Changes', '**Logic Description:** Overgrazing by livestock can degrade pampas vegetation.']
 grasslands_south_american_pampas_stressors["Overgrazing"]["Influences"] = ['*  South American Pampas - Vegetation Changes', '**Logic Description:** Overgrazing by livestock can degrade pampas vegetation.']
 grasslands_south_american_pampas_stressors["Overgrazing"]["Logic Description"] = '---'
+grasslands_south_american_pampas_stressors["Overgrazing"]["Impact Function"] = "impact_overgrazing_grasslands_south_american_pampas"
 
 # --- Invasive Species ---
 grasslands_south_american_pampas_stressors["Invasive Species"]["Metric"] = 'Abundance/Distribution of key invasive species (e.g., certain grasses).'
@@ -53,4 +57,5 @@ grasslands_south_american_pampas_stressors["Invasive Species"]["Impact on Biodiv
 grasslands_south_american_pampas_stressors["Invasive Species"]["Influenced By"] = ['*  South American Pampas - Disturbance', '*  South American Pampas - Climate Change', '**Influences (Stressors):**', '*  South American Pampas - Native Plant Communities', '**Logic Description:** Invasive grasses can outcompete native pampas species.']
 grasslands_south_american_pampas_stressors["Invasive Species"]["Influences"] = ['*  South American Pampas - Native Plant Communities', '**Logic Description:** Invasive grasses can outcompete native pampas species.']
 grasslands_south_american_pampas_stressors["Invasive Species"]["Logic Description"] = '---'
+grasslands_south_american_pampas_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_grasslands_south_american_pampas"
 

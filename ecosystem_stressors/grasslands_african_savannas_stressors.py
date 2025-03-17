@@ -19,6 +19,7 @@ grasslands_african_savannas_stressors["Land-Use Change"]["Impact on Biodiversity
 grasslands_african_savannas_stressors["Land-Use Change"]["Influenced By"] = ['* African Savannas - Agricultural Expansion', '* African Savannas - Population Growth', '* African Savannas - Government Policies', '**Influences (Stressors):**', '*  African Savannas - Habitat Fragmentation', '**Logic Description:** Conversion of savanna to agriculture and settlements is a major threat, leading to habitat loss, fragmentation, and increased conflict between humans and wildlife.']
 grasslands_african_savannas_stressors["Land-Use Change"]["Influences"] = ['*  African Savannas - Habitat Fragmentation', '**Logic Description:** Conversion of savanna to agriculture and settlements is a major threat, leading to habitat loss, fragmentation, and increased conflict between humans and wildlife.']
 grasslands_african_savannas_stressors["Land-Use Change"]["Logic Description"] = '---'
+grasslands_african_savannas_stressors["Land-Use Change"]["Impact Function"] = "impact_land_use_change_grasslands_african_savannas"
 
 # --- Habitat Fragmentation ---
 grasslands_african_savannas_stressors["Habitat Fragmentation"]["Metric"] = 'Patch size distribution; edge density; connectivity indices.'
@@ -28,6 +29,7 @@ grasslands_african_savannas_stressors["Habitat Fragmentation"]["Impact on Biodiv
 grasslands_african_savannas_stressors["Habitat Fragmentation"]["Influenced By"] = ['*  African Savannas - Land-Use Change', '**Influences (Stressors):**', '* Exacerbates other stressor impacts', '**Logic Description:** Fragmentation isolates savanna patches, reducing their ecological viability and increasing the vulnerability of wildlife populations.']
 grasslands_african_savannas_stressors["Habitat Fragmentation"]["Influences"] = ['* Exacerbates other stressor impacts', '**Logic Description:** Fragmentation isolates savanna patches, reducing their ecological viability and increasing the vulnerability of wildlife populations.']
 grasslands_african_savannas_stressors["Habitat Fragmentation"]["Logic Description"] = '---'
+grasslands_african_savannas_stressors["Habitat Fragmentation"]["Impact Function"] = "impact_habitat_fragmentation_grasslands_african_savannas"
 
 # --- Climate Change ---
 grasslands_african_savannas_stressors["Climate Change"]["Metric"] = 'Temperature increase (°C); changes in precipitation (mm/year, seasonality); increased frequency and severity of drought.'
@@ -37,6 +39,7 @@ grasslands_african_savannas_stressors["Climate Change"]["Impact on Biodiversity"
 grasslands_african_savannas_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '*  African Savannas - Fire Regimes', '*  African Savannas - Water Availability', '**Logic Description:** Climate change is altering temperature and precipitation patterns, increasing stress on savanna ecosystems and impacting water resources.']
 grasslands_african_savannas_stressors["Climate Change"]["Influences"] = ['*  African Savannas - Fire Regimes', '*  African Savannas - Water Availability', '**Logic Description:** Climate change is altering temperature and precipitation patterns, increasing stress on savanna ecosystems and impacting water resources.']
 grasslands_african_savannas_stressors["Climate Change"]["Logic Description"] = '---'
+grasslands_african_savannas_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_grasslands_african_savannas"
 
 # --- Wildfires ---
 grasslands_african_savannas_stressors["Wildfires"]["Metric"] = 'Fire frequency (return interval); area burned (ha/year); fire intensity.'
@@ -46,6 +49,7 @@ grasslands_african_savannas_stressors["Wildfires"]["Impact on Biodiversity"] = '
 grasslands_african_savannas_stressors["Wildfires"]["Influenced By"] = ['*  African Savannas - Climate Change', '*  African Savannas - Human Activities', '*  African Savannas - Land-Use Change', '**Influences (Stressors):**', '*  African Savannas - Vegetation Structure', '**Logic Description:** Fire is a natural and important process in savannas, but changes in fire regimes due to climate change and human activities can have significant ecological impacts.']
 grasslands_african_savannas_stressors["Wildfires"]["Influences"] = ['*  African Savannas - Vegetation Structure', '**Logic Description:** Fire is a natural and important process in savannas, but changes in fire regimes due to climate change and human activities can have significant ecological impacts.']
 grasslands_african_savannas_stressors["Wildfires"]["Logic Description"] = '---'
+grasslands_african_savannas_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_grasslands_african_savannas"
 
 # --- Poaching ---
 grasslands_african_savannas_stressors["Poaching"]["Metric"] = 'Number of illegally killed animals (for key species, e.g., elephants, rhinos); poaching incidents.'
@@ -55,6 +59,7 @@ grasslands_african_savannas_stressors["Poaching"]["Impact on Biodiversity"] = 'D
 grasslands_african_savannas_stressors["Poaching"]["Influenced By"] = ['* African Savannas - Demand for Wildlife Products', '* African Savannas - Poverty', '* African Savannas - Weak Governance', '* African Savannas - Organized Crime', '**Influences (Stressors):**', '*  African Savannas - Wildlife Populations', '*  African Savannas - Ecosystem Function', '**Logic Description:** Poaching, driven by demand for wildlife products and other factors, is a major threat to many savanna species, with cascading effects on the ecosystem.']
 grasslands_african_savannas_stressors["Poaching"]["Influences"] = ['*  African Savannas - Wildlife Populations', '*  African Savannas - Ecosystem Function', '**Logic Description:** Poaching, driven by demand for wildlife products and other factors, is a major threat to many savanna species, with cascading effects on the ecosystem.']
 grasslands_african_savannas_stressors["Poaching"]["Logic Description"] = '---'
+grasslands_african_savannas_stressors["Poaching"]["Impact Function"] = "impact_poaching_grasslands_african_savannas"
 
 # --- Overgrazing ---
 grasslands_african_savannas_stressors["Overgrazing"]["Metric"] = 'Livestock density; vegetation cover and composition; soil erosion.'
@@ -64,6 +69,7 @@ grasslands_african_savannas_stressors["Overgrazing"]["Impact on Biodiversity"] =
 grasslands_african_savannas_stressors["Overgrazing"]["Influenced By"] = ['*  African Savannas - Livestock Management', 'African Savannas - Population Growth: Increased demand for livestock products.', '**Influences (Stressors):**', '*  African Savannas - Vegetation Structure', '**Logic Description:** Overgrazing by livestock can degrade savanna vegetation, leading to soil erosion and competition with wild herbivores.']
 grasslands_african_savannas_stressors["Overgrazing"]["Influences"] = ['*  African Savannas - Vegetation Structure', '**Logic Description:** Overgrazing by livestock can degrade savanna vegetation, leading to soil erosion and competition with wild herbivores.']
 grasslands_african_savannas_stressors["Overgrazing"]["Logic Description"] = '---'
+grasslands_african_savannas_stressors["Overgrazing"]["Impact Function"] = "impact_overgrazing_grasslands_african_savannas"
 
 # --- Invasive Species ---
 grasslands_african_savannas_stressors["Invasive Species"]["Metric"] = 'Abundance/Distribution of key invasive species.'
@@ -73,4 +79,5 @@ grasslands_african_savannas_stressors["Invasive Species"]["Impact on Biodiversit
 grasslands_african_savannas_stressors["Invasive Species"]["Influenced By"] = ['*  African Savannas - Disturbance', '*  African Savannas - Climate Change', '**Influences (Stressors):**', '*  African Savannas - Native plant communities', '**Logic Description:** Invasive species can outcompete native plants and alter ecosystem processes.']
 grasslands_african_savannas_stressors["Invasive Species"]["Influences"] = ['*  African Savannas - Native plant communities', '**Logic Description:** Invasive species can outcompete native plants and alter ecosystem processes.']
 grasslands_african_savannas_stressors["Invasive Species"]["Logic Description"] = '---'
+grasslands_african_savannas_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_grasslands_african_savannas"
 

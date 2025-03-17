@@ -15,6 +15,7 @@ aquatic_cold_water_corals_stressors["Bottom Trawling"]["Impact on Biodiversity"]
 aquatic_cold_water_corals_stressors["Bottom Trawling"]["Influenced By"] = ['Demand for Deep-Sea Fish: That may occur near coral habitats.', 'Fishing Technology.', 'Weak Governance and Enforcement.', '**Influences (Stressors):**', 'Habitat Destruction (the overwhelming impact).', '**Logic Description:** Bottom trawling is *by far* the greatest threat to cold-water coral ecosystems, causing severe and often irreversible damage to these slow-growing and fragile habitats.']
 aquatic_cold_water_corals_stressors["Bottom Trawling"]["Influences"] = ['Habitat Destruction (the overwhelming impact).', '**Logic Description:** Bottom trawling is *by far* the greatest threat to cold-water coral ecosystems, causing severe and often irreversible damage to these slow-growing and fragile habitats.']
 aquatic_cold_water_corals_stressors["Bottom Trawling"]["Logic Description"] = '---'
+aquatic_cold_water_corals_stressors["Bottom Trawling"]["Impact Function"] = "impact_bottom_trawling_aquatic_cold_water_corals"
 
 # --- Climate Change ---
 aquatic_cold_water_corals_stressors["Climate Change"]["Metric"] = 'Changes in water temperature, oxygen levels, and pH, currents.'
@@ -24,6 +25,7 @@ aquatic_cold_water_corals_stressors["Climate Change"]["Impact on Biodiversity"] 
 aquatic_cold_water_corals_stressors["Climate Change"]["Influenced By"] = ['* Global emissions.', '**Influences (Stressors):**', '*  Ocean Acidification.', '**Logic Description:** Climate change can impact cold water corals, though the extent is still being investigated.']
 aquatic_cold_water_corals_stressors["Climate Change"]["Influences"] = ['*  Ocean Acidification.', '**Logic Description:** Climate change can impact cold water corals, though the extent is still being investigated.']
 aquatic_cold_water_corals_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_cold_water_corals_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_cold_water_corals"
 
 # --- Ocean Acidification ---
 aquatic_cold_water_corals_stressors["Ocean Acidification"]["Metric"] = 'pH levels and carbonate saturation'
@@ -32,4 +34,5 @@ aquatic_cold_water_corals_stressors["Ocean Acidification"]["Impact on Biodiversi
 aquatic_cold_water_corals_stressors["Ocean Acidification"]["Influenced By"] = ['* Atmospheric CO2', '**Influences (Stressors):**', '* Coral health.', '**Logic Description:**  Acidification hinders the ability to build skeletons.']
 aquatic_cold_water_corals_stressors["Ocean Acidification"]["Influences"] = ['* Coral health.', '**Logic Description:**  Acidification hinders the ability to build skeletons.']
 aquatic_cold_water_corals_stressors["Ocean Acidification"]["Logic Description"] = '---'
+aquatic_cold_water_corals_stressors["Ocean Acidification"]["Impact Function"] = "impact_ocean_acidification_aquatic_cold_water_corals"
 

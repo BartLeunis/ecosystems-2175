@@ -17,6 +17,7 @@ forests_rainforest_congo_stressors["Infrastructure Development"]["Impact on Biod
 forests_rainforest_congo_stressors["Infrastructure Development"]["Influenced By"] = ['Economic Growth: Demand for resources (timber, minerals).', 'Population Growth: Increased demand for land and resources.', 'Government Policies: Infrastructure development plans and regulations.', 'Global Commodity Prices: Prices for timber, minerals, and other resources.', '**Influences (Stressors):**', 'Deforestation: Roads facilitate logging and agricultural expansion.', 'Wildfires: Increased risk due to human activity.', 'Pollution: Mining and other industrial activities.', '**Logic Description:** Similar to the Amazon, infrastructure development (roads, dams, mines) directly reduces rainforest area and fragments habitat. This leads to biodiversity loss through habitat loss, disruption of ecological processes, and increased human access for hunting and poaching.']
 forests_rainforest_congo_stressors["Infrastructure Development"]["Influences"] = ['Deforestation: Roads facilitate logging and agricultural expansion.', 'Wildfires: Increased risk due to human activity.', 'Pollution: Mining and other industrial activities.', '**Logic Description:** Similar to the Amazon, infrastructure development (roads, dams, mines) directly reduces rainforest area and fragments habitat. This leads to biodiversity loss through habitat loss, disruption of ecological processes, and increased human access for hunting and poaching.']
 forests_rainforest_congo_stressors["Infrastructure Development"]["Logic Description"] = '---'
+forests_rainforest_congo_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_forests_rainforest_congo"
 
 # --- Deforestation ---
 forests_rainforest_congo_stressors["Deforestation"]["Metric"] = 'Area of forest cleared per year (hectares/year).'
@@ -26,6 +27,7 @@ forests_rainforest_congo_stressors["Deforestation"]["Impact on Biodiversity"] = 
 forests_rainforest_congo_stressors["Deforestation"]["Influenced By"] = ['Infrastructure Development: Access for logging and agriculture.', 'Economic Growth: Demand for timber and agricultural land.', 'Global Commodity Prices: Prices for timber, palm oil, and other commodities.', 'Population Growth: Subsistence agriculture and fuelwood collection.', 'Government Policies: Weak enforcement of environmental regulations.', '**Influences (Stressors):**', 'Wildfires: Increased susceptibility to fire.', 'Changes in Precipitation (potentially).', '**Logic Description:** Deforestation, driven by logging (both legal and illegal), agricultural expansion (including small-scale subsistence farming), and fuelwood collection, directly reduces forest area and biodiversity.']
 forests_rainforest_congo_stressors["Deforestation"]["Influences"] = ['Wildfires: Increased susceptibility to fire.', 'Changes in Precipitation (potentially).', '**Logic Description:** Deforestation, driven by logging (both legal and illegal), agricultural expansion (including small-scale subsistence farming), and fuelwood collection, directly reduces forest area and biodiversity.']
 forests_rainforest_congo_stressors["Deforestation"]["Logic Description"] = '---'
+forests_rainforest_congo_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_forests_rainforest_congo"
 
 # --- Temperature Increase ---
 forests_rainforest_congo_stressors["Temperature Increase"]["Metric"] = 'Average annual temperature increase (°C) above a pre-industrial baseline.'
@@ -35,6 +37,7 @@ forests_rainforest_congo_stressors["Temperature Increase"]["Impact on Biodiversi
 forests_rainforest_congo_stressors["Temperature Increase"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Deforestation: Reduced carbon sequestration.', '**Influences (Stressors):**', 'Wildfires: Increased fire risk.', 'Changes in Precipitation.', '**Logic Description:**  Global warming, exacerbated locally by deforestation, increases temperatures, stressing species and increasing the risk of other stressors like wildfires.']
 forests_rainforest_congo_stressors["Temperature Increase"]["Influences"] = ['Wildfires: Increased fire risk.', 'Changes in Precipitation.', '**Logic Description:**  Global warming, exacerbated locally by deforestation, increases temperatures, stressing species and increasing the risk of other stressors like wildfires.']
 forests_rainforest_congo_stressors["Temperature Increase"]["Logic Description"] = '---'
+forests_rainforest_congo_stressors["Temperature Increase"]["Impact Function"] = "impact_temperature_increase_forests_rainforest_congo"
 
 # --- Changes in Precipitation ---
 forests_rainforest_congo_stressors["Changes in Precipitation"]["Metric"] = 'Change in annual precipitation (mm/year); changes in dry season length and severity.'
@@ -44,6 +47,7 @@ forests_rainforest_congo_stressors["Changes in Precipitation"]["Impact on Biodiv
 forests_rainforest_congo_stressors["Changes in Precipitation"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Deforestation (potentially).', '**Influences (Stressors):**', 'Wildfires: Increased fire risk with longer dry seasons.', '**Logic Description:** Climate change and potentially deforestation alter rainfall patterns, increasing drought stress and affecting aquatic ecosystems.']
 forests_rainforest_congo_stressors["Changes in Precipitation"]["Influences"] = ['Wildfires: Increased fire risk with longer dry seasons.', '**Logic Description:** Climate change and potentially deforestation alter rainfall patterns, increasing drought stress and affecting aquatic ecosystems.']
 forests_rainforest_congo_stressors["Changes in Precipitation"]["Logic Description"] = '---'
+forests_rainforest_congo_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_forests_rainforest_congo"
 
 # --- Wildfires ---
 forests_rainforest_congo_stressors["Wildfires"]["Metric"] = 'Number of wildfires per year; total area burned (hectares/year).'
@@ -53,4 +57,5 @@ forests_rainforest_congo_stressors["Wildfires"]["Impact on Biodiversity"] = ' Di
 forests_rainforest_congo_stressors["Wildfires"]["Influenced By"] = ['Deforestation: Creates drier, more flammable conditions.', 'Temperature Increase: Increased fire risk.', ' Changes in Precipitation: Longer dry seasons increase risk.', 'Human Activities: Agricultural burning, accidental fires.', '**Influences (Stressors):**', 'Deforestation.', '**Logic Description:** Wildfires, often linked to deforestation and agricultural practices, are exacerbated by climate change, leading to direct forest loss and biodiversity impacts.']
 forests_rainforest_congo_stressors["Wildfires"]["Influences"] = ['Deforestation.', '**Logic Description:** Wildfires, often linked to deforestation and agricultural practices, are exacerbated by climate change, leading to direct forest loss and biodiversity impacts.']
 forests_rainforest_congo_stressors["Wildfires"]["Logic Description"] = '---'
+forests_rainforest_congo_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_forests_rainforest_congo"
 

@@ -2,7 +2,8 @@
 
 import os
 import importlib
-import shutil  # For copying files
+import shutil
+from sub_ecosystem_areas import sub_ecosystem_areas  # Import the new dictionary
 
 def create_detailed_parameter_files(original_eco_params, original_sim_params, detailed_eco_params, detailed_sim_params):
     """Copies and renames the original parameter files to create detailed versions."""
@@ -12,7 +13,9 @@ def create_detailed_parameter_files(original_eco_params, original_sim_params, de
     print(f"Created detailed parameter files: {detailed_eco_params}, {detailed_sim_params}")
 
 def load_stressor_data(stressor_dir="ecosystem_stressors"):
-    """Loads stressor data, specifically the area, from ecosystem files."""
+    """Loads stressor data from individual ecosystem files.  We don't actually need this
+      to *get* the area anymore, but we still need to know *which* stressors exist
+      so we can create entries for them."""
     all_stressors = {}
     for filename in os.listdir(stressor_dir):
         if filename.endswith("_stressors.py"):
@@ -20,11 +23,10 @@ def load_stressor_data(stressor_dir="ecosystem_stressors"):
             module_name = f"ecosystem_stressors.{filename[:-3]}"
             try:
                 module = importlib.import_module(module_name)
-                # Get area directly from the stressor file
-                area_value = getattr(module, "area")  # Get the 'area' variable
-                all_stressors[ecosystem_name] = {"area": area_value} #Store just area for now.
+                stressor_dict = getattr(module, f"{ecosystem_name.lower().replace(' ', '_').replace('(', '').replace(')', '')}_stressors")
+                all_stressors[ecosystem_name] = stressor_dict #We just need the names.
             except Exception as e:
-                print(f"ERROR: Could not load data for {ecosystem_name}: {e}")
+                print(f"ERROR: Could not load stressors for {ecosystem_name}: {e}")
                 continue
     return all_stressors
 
@@ -73,14 +75,15 @@ def populate_detailed_parameters(stressor_data, original_eco_params, original_si
     }
 
     # --- Populate Detailed Parameters ---
-    for sub_ecosystem, data in stressor_data.items():
+    #for sub_ecosystem, data in stressor_data.items(): #We don't get data from here anymore
+    for sub_ecosystem in stressor_data:  # Iterate through the *names* of the stressors.
         original_ecosystem = ecosystem_mapping[sub_ecosystem]
 
         # --- Ecosystem Parameters ---
         detailed_eco_data["ecosystems"].append(sub_ecosystem)
-        detailed_eco_data["ecosystem_areas"][sub_ecosystem] = data["area"]  # Get area from stressor file
+        detailed_eco_data["ecosystem_areas"][sub_ecosystem] = sub_ecosystem_areas[sub_ecosystem]  # Get area from sub_ecosystem_areas.py
         detailed_eco_data["biodiversity_density_ratios"][sub_ecosystem] = original_eco.biodiversity_density_ratios[original_ecosystem]  # Copy
-        detailed_eco_data["initial_biodiversity"][sub_ecosystem] = original_eco.initial_biodiversity[original_ecosystem] * data['area'] / original_eco.ecosystem_areas[original_ecosystem] # Scale initial bio
+        detailed_eco_data["initial_biodiversity"][sub_ecosystem] = original_eco.initial_biodiversity[original_ecosystem] * sub_ecosystem_areas[sub_ecosystem] / original_eco.ecosystem_areas[original_ecosystem] # Scale initial bio
 
         # --- Simulation Parameters ---
         detailed_sim_data["final_baselines"][sub_ecosystem] = original_sim.final_baselines[original_ecosystem]  # Copy
@@ -139,7 +142,7 @@ def main():
     # 1. Create new, empty parameter files.
     create_detailed_parameter_files(original_eco_params, original_sim_params, detailed_eco_params, detailed_sim_params)
 
-    # 2. Load stressor data (areas, specifically).
+    # 2. Load stressor data (we just need the names, not the areas).
     stressor_data = load_stressor_data()
 
     # 3. Populate the new files.

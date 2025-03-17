@@ -16,6 +16,7 @@ mountains_rocky_stressors["Wildfires"]["Impact on Biodiversity"] = 'Loss of habi
 mountains_rocky_stressors["Wildfires"]["Influenced By"] = ['Climate Change: Hotter, drier conditions increase fire risk.', 'Forest Management Practices: Fire suppression has led to a buildup of fuels in some areas.', 'Insect Outbreaks: (e.g., mountain pine beetle) can create large areas of dead trees, increasing fire risk.', '**Influences (Stressors):**', 'Forest Structure.', 'Biodiversity.', 'Water Quality (erosion).', 'Air Quality', '**Logic Description:** Wildfires are a *major* and increasing stressor in the Rocky Mountains, driven by climate change, forest management practices, and insect outbreaks.']
 mountains_rocky_stressors["Wildfires"]["Influences"] = ['Forest Structure.', 'Biodiversity.', 'Water Quality (erosion).', 'Air Quality', '**Logic Description:** Wildfires are a *major* and increasing stressor in the Rocky Mountains, driven by climate change, forest management practices, and insect outbreaks.']
 mountains_rocky_stressors["Wildfires"]["Logic Description"] = '---'
+mountains_rocky_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_mountains_rocky"
 
 # --- Insect Outbreaks ---
 mountains_rocky_stressors["Insect Outbreaks"]["Metric"] = 'Area affected by mountain pine beetle and other bark beetles; tree mortality.'
@@ -25,6 +26,7 @@ mountains_rocky_stressors["Insect Outbreaks"]["Impact on Biodiversity"] = 'Loss 
 mountains_rocky_stressors["Insect Outbreaks"]["Influenced By"] = ['Climate Change: Warmer winters allow more beetles to survive.', 'Drought Stress: Weakens trees and makes them more susceptible to attack.', 'Forest Management Practices: Dense, even-aged forests are more vulnerable.', '**Influences (Stressors):**', 'Forest Structure.', 'Wildfire Risk.', 'Water Resources (changes in snowpack and runoff).', '**Logic Description:** Insect outbreaks, particularly mountain pine beetle, have caused *massive* tree mortality in the Rocky Mountains, driven by climate change and forest conditions.']
 mountains_rocky_stressors["Insect Outbreaks"]["Influences"] = ['Forest Structure.', 'Wildfire Risk.', 'Water Resources (changes in snowpack and runoff).', '**Logic Description:** Insect outbreaks, particularly mountain pine beetle, have caused *massive* tree mortality in the Rocky Mountains, driven by climate change and forest conditions.']
 mountains_rocky_stressors["Insect Outbreaks"]["Logic Description"] = '---'
+mountains_rocky_stressors["Insect Outbreaks"]["Impact Function"] = "impact_insect_outbreaks_mountains_rocky"
 
 # --- Climate Change ---
 mountains_rocky_stressors["Climate Change"]["Metric"] = 'Temperature increase; changes in snowpack; changes in precipitation.'
@@ -34,6 +36,7 @@ mountains_rocky_stressors["Climate Change"]["Impact on Biodiversity"] = '* Shift
 mountains_rocky_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Water, fires, insects', '**Logic Description:** Climate change is a major driver of many stressors.']
 mountains_rocky_stressors["Climate Change"]["Influences"] = ['* Water, fires, insects', '**Logic Description:** Climate change is a major driver of many stressors.']
 mountains_rocky_stressors["Climate Change"]["Logic Description"] = '---'
+mountains_rocky_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_mountains_rocky"
 
 # --- Resource Extraction ---
 mountains_rocky_stressors["Resource Extraction"]["Metric"] = 'Area affected by mining and logging; pollution levels.'
@@ -43,4 +46,5 @@ mountains_rocky_stressors["Resource Extraction"]["Impact on Biodiversity"] = '* 
 mountains_rocky_stressors["Resource Extraction"]["Influenced By"] = ['* Demand for resources.', '**Influences (Stressors):**', '* Habitat loss', '* Pollution', '**Logic Description:** Resource extraction continues to be a stressor.']
 mountains_rocky_stressors["Resource Extraction"]["Influences"] = ['* Habitat loss', '* Pollution', '**Logic Description:** Resource extraction continues to be a stressor.']
 mountains_rocky_stressors["Resource Extraction"]["Logic Description"] = '---'
+mountains_rocky_stressors["Resource Extraction"]["Impact Function"] = "impact_resource_extraction_mountains_rocky"
 

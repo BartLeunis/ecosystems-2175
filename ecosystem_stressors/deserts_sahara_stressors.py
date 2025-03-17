@@ -15,6 +15,7 @@ deserts_sahara_stressors["Climate Change"]["Impact on Biodiversity"] = 'Increase
 deserts_sahara_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions: The primary driver.', '**Influences (Stressors):**', 'Water Availability: Further reduces already scarce water resources.', 'Desertification: *Expansion of the desert is a major concern.*', 'Dust Storms: May increase in frequency and intensity.', '**Logic Description:**  The Sahara is already extremely hot and dry. Climate change is projected to make it even hotter and, in some areas, drier, exacerbating desertification and impacting the already limited biodiversity.  *Dust storms originating in the Sahara can have far-reaching impacts.*']
 deserts_sahara_stressors["Climate Change"]["Influences"] = ['Water Availability: Further reduces already scarce water resources.', 'Desertification: *Expansion of the desert is a major concern.*', 'Dust Storms: May increase in frequency and intensity.', '**Logic Description:**  The Sahara is already extremely hot and dry. Climate change is projected to make it even hotter and, in some areas, drier, exacerbating desertification and impacting the already limited biodiversity.  *Dust storms originating in the Sahara can have far-reaching impacts.*']
 deserts_sahara_stressors["Climate Change"]["Logic Description"] = '---'
+deserts_sahara_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_deserts_sahara"
 
 # --- Water Extraction ---
 deserts_sahara_stressors["Water Extraction"]["Metric"] = 'Volume of groundwater extracted (m³/year); changes in groundwater levels (meters).'
@@ -24,6 +25,7 @@ deserts_sahara_stressors["Water Extraction"]["Impact on Biodiversity"] = 'Loss o
 deserts_sahara_stressors["Water Extraction"]["Influenced By"] = ['Population Growth: Increased demand for water.', 'Agricultural Expansion: Irrigation projects (often unsustainable in the long term).', '**Influences (Stressors):**', 'Water Availability: Directly impacts water resources.', '**Logic Description:** Groundwater extraction, often for agriculture, can deplete aquifers and threaten oases, which are critical habitats in the Sahara.']
 deserts_sahara_stressors["Water Extraction"]["Influences"] = ['Water Availability: Directly impacts water resources.', '**Logic Description:** Groundwater extraction, often for agriculture, can deplete aquifers and threaten oases, which are critical habitats in the Sahara.']
 deserts_sahara_stressors["Water Extraction"]["Logic Description"] = '---'
+deserts_sahara_stressors["Water Extraction"]["Impact Function"] = "impact_water_extraction_deserts_sahara"
 
 # --- Desertification ---
 deserts_sahara_stressors["Desertification"]["Data Sources"] = ['* Remote sensing.', '* Research studies.', '**Impact on Area:** Expansion of desert area.', '**Impact on Biodiversity:**', 'Loss of habitat.', 'Shifts in species composition.', '**Influenced By (Stressors):**', 'Climate Change.', '* Overgrazing.', '* Unsustainable water use.', 'Deforestation (in transition zones).', '**Influences (Stressors):**', '* Further exacerbates climate change impacts.', '**Logic Description:** The Sahara is expanding, driven by climate and human activities.']
@@ -32,4 +34,5 @@ deserts_sahara_stressors["Desertification"]["Impact on Biodiversity"] = 'Loss of
 deserts_sahara_stressors["Desertification"]["Influenced By"] = ['Climate Change.', '* Overgrazing.', '* Unsustainable water use.', 'Deforestation (in transition zones).', '**Influences (Stressors):**', '* Further exacerbates climate change impacts.', '**Logic Description:** The Sahara is expanding, driven by climate and human activities.']
 deserts_sahara_stressors["Desertification"]["Influences"] = ['* Further exacerbates climate change impacts.', '**Logic Description:** The Sahara is expanding, driven by climate and human activities.']
 deserts_sahara_stressors["Desertification"]["Logic Description"] = '---'
+deserts_sahara_stressors["Desertification"]["Impact Function"] = "impact_desertification_deserts_sahara"
 

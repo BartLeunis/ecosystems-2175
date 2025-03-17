@@ -19,6 +19,7 @@ forests_temperate_forests_european_stressors["Infrastructure Development"]["Impa
 forests_temperate_forests_european_stressors["Infrastructure Development"]["Influenced By"] = ['Economic Growth.', 'Population Growth (and density).', 'Transportation planning.', '**Influences (Stressors):**', 'Deforestation (localized).', '* Increased Access', '**Logic Description:** Continued development further fragments an already highly fragmented landscape.']
 forests_temperate_forests_european_stressors["Infrastructure Development"]["Influences"] = ['Deforestation (localized).', '* Increased Access', '**Logic Description:** Continued development further fragments an already highly fragmented landscape.']
 forests_temperate_forests_european_stressors["Infrastructure Development"]["Logic Description"] = '---'
+forests_temperate_forests_european_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_forests_temperate_forests_european"
 
 # --- Deforestation ---
 forests_temperate_forests_european_stressors["Deforestation"]["Metric"] = 'Area of forest cleared per year (ha/year) (often localized; overall forest cover may be increasing in some areas due to afforestation, but *loss* of *old-growth* or *natural* forest is still a concern).'
@@ -28,6 +29,7 @@ forests_temperate_forests_european_stressors["Deforestation"]["Impact on Biodive
 forests_temperate_forests_european_stressors["Deforestation"]["Influenced By"] = ['Infrastructure Development.', 'Urban Sprawl.', 'Agricultural Expansion (limited, but can occur).', 'Timber Harvesting (depending on management practices).', '**Influences (Stressors):**', '* Forest Age and Structure', '**Logic Description:** While overall forest cover may be stable or increasing in some areas, localized deforestation and loss of old-growth forest continue to be stressors.']
 forests_temperate_forests_european_stressors["Deforestation"]["Influences"] = ['* Forest Age and Structure', '**Logic Description:** While overall forest cover may be stable or increasing in some areas, localized deforestation and loss of old-growth forest continue to be stressors.']
 forests_temperate_forests_european_stressors["Deforestation"]["Logic Description"] = '---'
+forests_temperate_forests_european_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_forests_temperate_forests_european"
 
 # --- Temperature Increase ---
 forests_temperate_forests_european_stressors["Temperature Increase"]["Metric"] = 'Average annual temperature increase (°C).'
@@ -37,6 +39,7 @@ forests_temperate_forests_european_stressors["Temperature Increase"]["Impact on 
 forests_temperate_forests_european_stressors["Temperature Increase"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Wildfires.', 'Changes in Precipitation.', '* Pest and disease outbreaks', '**Logic Description:** Climate change impacts, including increased risk of drought and insect outbreaks.']
 forests_temperate_forests_european_stressors["Temperature Increase"]["Influences"] = ['Wildfires.', 'Changes in Precipitation.', '* Pest and disease outbreaks', '**Logic Description:** Climate change impacts, including increased risk of drought and insect outbreaks.']
 forests_temperate_forests_european_stressors["Temperature Increase"]["Logic Description"] = '---'
+forests_temperate_forests_european_stressors["Temperature Increase"]["Impact Function"] = "impact_temperature_increase_forests_temperate_forests_european"
 
 # --- Changes in Precipitation ---
 forests_temperate_forests_european_stressors["Changes in Precipitation"]["Metric"] = 'Change in annual precipitation (mm/year); changes in seasonality (e.g., drier summers, wetter winters).'
@@ -46,6 +49,7 @@ forests_temperate_forests_european_stressors["Changes in Precipitation"]["Impact
 forests_temperate_forests_european_stressors["Changes in Precipitation"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', '* Wildfires (in drier regions)', '* Water availability', '**Logic Description:** Changes in precipitation patterns, including increased drought risk in some regions, impact water availability and species composition.']
 forests_temperate_forests_european_stressors["Changes in Precipitation"]["Influences"] = ['* Wildfires (in drier regions)', '* Water availability', '**Logic Description:** Changes in precipitation patterns, including increased drought risk in some regions, impact water availability and species composition.']
 forests_temperate_forests_european_stressors["Changes in Precipitation"]["Logic Description"] = '---'
+forests_temperate_forests_european_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_forests_temperate_forests_european"
 
 # --- Wildfires ---
 forests_temperate_forests_european_stressors["Wildfires"]["Metric"] = 'Number of fires; area burned (ha/year) (more significant in southern Europe).'
@@ -55,6 +59,7 @@ forests_temperate_forests_european_stressors["Wildfires"]["Impact on Biodiversit
 forests_temperate_forests_european_stressors["Wildfires"]["Influenced By"] = ['Temperature Increase.', 'Changes in Precipitation (drier summers).', 'Land Abandonment (leading to fuel buildup).', 'Human Activities (negligence, arson).', '**Influences (Stressors):**', '* Air quality', '* Future Fire Risk', '**Logic Description:** Wildfires, particularly in southern Europe, are increasing due to climate change and land management practices.']
 forests_temperate_forests_european_stressors["Wildfires"]["Influences"] = ['* Air quality', '* Future Fire Risk', '**Logic Description:** Wildfires, particularly in southern Europe, are increasing due to climate change and land management practices.']
 forests_temperate_forests_european_stressors["Wildfires"]["Logic Description"] = '---'
+forests_temperate_forests_european_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_forests_temperate_forests_european"
 
 # --- Air Pollution ---
 forests_temperate_forests_european_stressors["Air Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., ozone, nitrogen oxides, sulfur dioxide).'
@@ -64,6 +69,7 @@ forests_temperate_forests_european_stressors["Air Pollution"]["Impact on Biodive
 forests_temperate_forests_european_stressors["Air Pollution"]["Influenced By"] = ['Industrial Activity.', 'Fossil Fuel Combustion.', 'Agricultural Practices.', '**Influences (Stressors):**', '* Water Quality', '* Forest health', '**Logic Description:** Air pollution, from various sources, continues to be a stressor, particularly in industrialized areas.']
 forests_temperate_forests_european_stressors["Air Pollution"]["Influences"] = ['* Water Quality', '* Forest health', '**Logic Description:** Air pollution, from various sources, continues to be a stressor, particularly in industrialized areas.']
 forests_temperate_forests_european_stressors["Air Pollution"]["Logic Description"] = '---'
+forests_temperate_forests_european_stressors["Air Pollution"]["Impact Function"] = "impact_air_pollution_forests_temperate_forests_european"
 
 # --- Invasive Species ---
 forests_temperate_forests_european_stressors["Invasive Species"]["Metric"] = 'Abundance/Distribution of key invasive species.'
@@ -72,4 +78,5 @@ forests_temperate_forests_european_stressors["Invasive Species"]["Impact on Biod
 forests_temperate_forests_european_stressors["Invasive Species"]["Influenced By"] = ['* Disturbance', '* Climate Change', '* Global Trade', '**Influences (Stressors):**', '* Forest Composition', '**Logic Description:** Invasive species impacts.']
 forests_temperate_forests_european_stressors["Invasive Species"]["Influences"] = ['* Forest Composition', '**Logic Description:** Invasive species impacts.']
 forests_temperate_forests_european_stressors["Invasive Species"]["Logic Description"] = '---'
+forests_temperate_forests_european_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_forests_temperate_forests_european"
 

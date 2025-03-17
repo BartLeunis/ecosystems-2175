@@ -17,6 +17,7 @@ aquatic_mangrove_sundarbans_stressors["Coastal Development"]["Impact on Biodiver
 aquatic_mangrove_sundarbans_stressors["Coastal Development"]["Influenced By"] = ['Population Growth: High population density in the region.', 'Poverty and Lack of Alternative Livelihoods.', 'Shrimp Farming: Expansion of shrimp farms.', 'Infrastructure Development (ports, roads).', '**Influences (Stressors):**', 'Coastal Erosion.', 'Water Quality.', '**Logic Description:** Coastal development, driven by population growth, poverty, and economic activities like shrimp farming, is a significant threat to the Sundarbans, leading to habitat loss and fragmentation.']
 aquatic_mangrove_sundarbans_stressors["Coastal Development"]["Influences"] = ['Coastal Erosion.', 'Water Quality.', '**Logic Description:** Coastal development, driven by population growth, poverty, and economic activities like shrimp farming, is a significant threat to the Sundarbans, leading to habitat loss and fragmentation.']
 aquatic_mangrove_sundarbans_stressors["Coastal Development"]["Logic Description"] = '---'
+aquatic_mangrove_sundarbans_stressors["Coastal Development"]["Impact Function"] = "impact_coastal_development_aquatic_mangrove_sundarbans"
 
 # --- Deforestation ---
 aquatic_mangrove_sundarbans_stressors["Deforestation"]["Metric"] = 'Area of mangroves cleared per year (ha/year) (often illegal logging).'
@@ -26,6 +27,7 @@ aquatic_mangrove_sundarbans_stressors["Deforestation"]["Impact on Biodiversity"]
 aquatic_mangrove_sundarbans_stressors["Deforestation"]["Influenced By"] = ['Poverty and Lack of Alternative Livelihoods: Fuelwood collection, timber harvesting.', 'Weak Law Enforcement.', 'Corruption.', '**Influences (Stressors):**', '* Coastal erosion', '**Logic Description:** Deforestation, often illegal, for fuelwood, timber, and land clearing, reduces mangrove area.']
 aquatic_mangrove_sundarbans_stressors["Deforestation"]["Influences"] = ['* Coastal erosion', '**Logic Description:** Deforestation, often illegal, for fuelwood, timber, and land clearing, reduces mangrove area.']
 aquatic_mangrove_sundarbans_stressors["Deforestation"]["Logic Description"] = '---'
+aquatic_mangrove_sundarbans_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_aquatic_mangrove_sundarbans"
 
 # --- Pollution ---
 aquatic_mangrove_sundarbans_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., heavy metals, pesticides, plastics) in water, sediment, and mangrove tissues.'
@@ -35,6 +37,7 @@ aquatic_mangrove_sundarbans_stressors["Pollution"]["Impact on Biodiversity"] = '
 aquatic_mangrove_sundarbans_stressors["Pollution"]["Influenced By"] = ['Industrial Discharge: From industries located upstream.', 'Agricultural Runoff: Pesticides and fertilizers.', 'Urban Runoff: Sewage and industrial effluent.', 'Shipping Activities: Oil spills and discharge of waste.', '**Influences (Stressors):**', 'Mangrove Health.', 'Water Quality.', '* Wildlife populations.', '**Logic Description:** Pollution from upstream industrial sources, agriculture, and shipping activities degrades water quality and impacts the Sundarbans ecosystem.']
 aquatic_mangrove_sundarbans_stressors["Pollution"]["Influences"] = ['Mangrove Health.', 'Water Quality.', '* Wildlife populations.', '**Logic Description:** Pollution from upstream industrial sources, agriculture, and shipping activities degrades water quality and impacts the Sundarbans ecosystem.']
 aquatic_mangrove_sundarbans_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_mangrove_sundarbans_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_mangrove_sundarbans"
 
 # --- Climate Change ---
 aquatic_mangrove_sundarbans_stressors["Climate Change"]["Metric"] = 'Sea level rise (mm/year); sea surface temperature (°C); changes in precipitation patterns; increased storm intensity and frequency; cyclone frequency.'
@@ -44,6 +47,7 @@ aquatic_mangrove_sundarbans_stressors["Climate Change"]["Impact on Biodiversity"
 aquatic_mangrove_sundarbans_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Sea Level Rise (the dominant impact).', 'Coastal Erosion.', 'Salinity Intrusion.', 'Storm Surge.', '**Logic Description:** Climate change, particularly sea level rise, poses an *existential* threat to the Sundarbans. Increased storm intensity and changes in freshwater input also have significant impacts.']
 aquatic_mangrove_sundarbans_stressors["Climate Change"]["Influences"] = ['Sea Level Rise (the dominant impact).', 'Coastal Erosion.', 'Salinity Intrusion.', 'Storm Surge.', '**Logic Description:** Climate change, particularly sea level rise, poses an *existential* threat to the Sundarbans. Increased storm intensity and changes in freshwater input also have significant impacts.']
 aquatic_mangrove_sundarbans_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_mangrove_sundarbans_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_mangrove_sundarbans"
 
 # --- Upstream Water Diversions ---
 aquatic_mangrove_sundarbans_stressors["Upstream Water Diversions"]["Metric"] = 'River flow rates into the Sundarbans.'
@@ -53,4 +57,5 @@ aquatic_mangrove_sundarbans_stressors["Upstream Water Diversions"]["Impact on Bi
 aquatic_mangrove_sundarbans_stressors["Upstream Water Diversions"]["Influenced By"] = ['* Water management in India and Bangladesh (e.g., Farakka Barrage).', '**Influences (Stressors):**', '* Salinity.', '* Sedimentation.', '**Logic Description:** Upstream water diversions reduce freshwater flow, increasing salinity and affecting sediment delivery.']
 aquatic_mangrove_sundarbans_stressors["Upstream Water Diversions"]["Influences"] = ['* Salinity.', '* Sedimentation.', '**Logic Description:** Upstream water diversions reduce freshwater flow, increasing salinity and affecting sediment delivery.']
 aquatic_mangrove_sundarbans_stressors["Upstream Water Diversions"]["Logic Description"] = '---'
+aquatic_mangrove_sundarbans_stressors["Upstream Water Diversions"]["Impact Function"] = "impact_upstream_water_diversions_aquatic_mangrove_sundarbans"
 

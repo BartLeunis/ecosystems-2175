@@ -18,6 +18,7 @@ forests_temperate_forests_east_asian_stressors["Infrastructure Development"]["Im
 forests_temperate_forests_east_asian_stressors["Infrastructure Development"]["Influenced By"] = ['Economic Growth.', 'Population Growth (and high density in some areas).', 'Government Policies.', '**Influences (Stressors):**', 'Deforestation (localized).', '**Logic Description:** Rapid development continues to fragment habitat.']
 forests_temperate_forests_east_asian_stressors["Infrastructure Development"]["Influences"] = ['Deforestation (localized).', '**Logic Description:** Rapid development continues to fragment habitat.']
 forests_temperate_forests_east_asian_stressors["Infrastructure Development"]["Logic Description"] = '---'
+forests_temperate_forests_east_asian_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_forests_temperate_forests_east_asian"
 
 # --- Deforestation ---
 forests_temperate_forests_east_asian_stressors["Deforestation"]["Metric"] = 'Area of forest cleared per year (ha/year) (localized; overall forest cover may be increasing in some areas due to afforestation, but loss of *natural* forest is a concern).'
@@ -27,6 +28,7 @@ forests_temperate_forests_east_asian_stressors["Deforestation"]["Impact on Biodi
 forests_temperate_forests_east_asian_stressors["Deforestation"]["Influenced By"] = ['Infrastructure Development.', 'Urban Sprawl.', 'Agricultural Expansion (in some areas).', 'Timber Harvesting.', '**Influences (Stressors):**', '* Forest Composition', '**Logic Description:** Localized deforestation and conversion of natural forest to plantations continue to be stressors.']
 forests_temperate_forests_east_asian_stressors["Deforestation"]["Influences"] = ['* Forest Composition', '**Logic Description:** Localized deforestation and conversion of natural forest to plantations continue to be stressors.']
 forests_temperate_forests_east_asian_stressors["Deforestation"]["Logic Description"] = '---'
+forests_temperate_forests_east_asian_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_forests_temperate_forests_east_asian"
 
 # --- Temperature Increase ---
 forests_temperate_forests_east_asian_stressors["Temperature Increase"]["Metric"] = 'Average annual temperature increase (°C).'
@@ -36,6 +38,7 @@ forests_temperate_forests_east_asian_stressors["Temperature Increase"]["Impact o
 forests_temperate_forests_east_asian_stressors["Temperature Increase"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Wildfires.', 'Changes in Precipitation.', '* Pest and disease outbreaks', '**Logic Description:** Climate change impacts.']
 forests_temperate_forests_east_asian_stressors["Temperature Increase"]["Influences"] = ['Wildfires.', 'Changes in Precipitation.', '* Pest and disease outbreaks', '**Logic Description:** Climate change impacts.']
 forests_temperate_forests_east_asian_stressors["Temperature Increase"]["Logic Description"] = '---'
+forests_temperate_forests_east_asian_stressors["Temperature Increase"]["Impact Function"] = "impact_temperature_increase_forests_temperate_forests_east_asian"
 
 # --- Changes in Precipitation ---
 forests_temperate_forests_east_asian_stressors["Changes in Precipitation"]["Metric"] = 'Change in annual precipitation (mm/year); changes in seasonality (e.g., changes in monsoon patterns).'
@@ -45,6 +48,7 @@ forests_temperate_forests_east_asian_stressors["Changes in Precipitation"]["Impa
 forests_temperate_forests_east_asian_stressors["Changes in Precipitation"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', '* Wildfires (in some areas)', '* Water availability.', '**Logic Description:** Changes in precipitation patterns, including changes in monsoon intensity and distribution, impact water resources and ecosystems.']
 forests_temperate_forests_east_asian_stressors["Changes in Precipitation"]["Influences"] = ['* Wildfires (in some areas)', '* Water availability.', '**Logic Description:** Changes in precipitation patterns, including changes in monsoon intensity and distribution, impact water resources and ecosystems.']
 forests_temperate_forests_east_asian_stressors["Changes in Precipitation"]["Logic Description"] = '---'
+forests_temperate_forests_east_asian_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_forests_temperate_forests_east_asian"
 
 # --- Air Pollution ---
 forests_temperate_forests_east_asian_stressors["Air Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., ozone, particulate matter, nitrogen oxides).'
@@ -54,6 +58,7 @@ forests_temperate_forests_east_asian_stressors["Air Pollution"]["Impact on Biodi
 forests_temperate_forests_east_asian_stressors["Air Pollution"]["Influenced By"] = ['Industrial Activity.', 'Fossil Fuel Combustion.', 'Agricultural Practices.', '**Influences (Stressors):**', '* Water Quality', '* Forest Health', '**Logic Description:** Severe air pollution, particularly in parts of China, is a major stressor.']
 forests_temperate_forests_east_asian_stressors["Air Pollution"]["Influences"] = ['* Water Quality', '* Forest Health', '**Logic Description:** Severe air pollution, particularly in parts of China, is a major stressor.']
 forests_temperate_forests_east_asian_stressors["Air Pollution"]["Logic Description"] = '---'
+forests_temperate_forests_east_asian_stressors["Air Pollution"]["Impact Function"] = "impact_air_pollution_forests_temperate_forests_east_asian"
 
 # --- Invasive Species ---
 forests_temperate_forests_east_asian_stressors["Invasive Species"]["Metric"] = 'Abundance and distribution of key invasives.'
@@ -63,4 +68,5 @@ forests_temperate_forests_east_asian_stressors["Invasive Species"]["Impact on Bi
 forests_temperate_forests_east_asian_stressors["Invasive Species"]["Influenced By"] = ['* Disturbance.', '* Climate change.', '* Global trade.', '**Influences (Stressors):**', '* Forest Structure', '**Logic Description:** Invasive species impact.']
 forests_temperate_forests_east_asian_stressors["Invasive Species"]["Influences"] = ['* Forest Structure', '**Logic Description:** Invasive species impact.']
 forests_temperate_forests_east_asian_stressors["Invasive Species"]["Logic Description"] = '---'
+forests_temperate_forests_east_asian_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_forests_temperate_forests_east_asian"
 

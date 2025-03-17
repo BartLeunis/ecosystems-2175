@@ -16,6 +16,7 @@ aquatic_african_great_lakes_stressors["Overfishing"]["Impact on Biodiversity"] =
 aquatic_african_great_lakes_stressors["Overfishing"]["Influenced By"] = ['High Fishing Pressure: Due to large human populations dependent on fishing.', 'Use of Destructive Fishing Gear: (e.g., small mesh nets).', 'Weak Enforcement of Fisheries Regulations.', 'Lack of Alternative Livelihoods.', '**Influences (Stressors):**', 'Food Web Structure.', 'Fish Populations.', 'Lake Ecosystem Health.', '**Logic Description:** Overfishing is a *severe* and widespread problem in the African Great Lakes, driven by high fishing pressure, destructive fishing practices, and weak governance, leading to the decline of fish populations and the disruption of lake ecosystems.']
 aquatic_african_great_lakes_stressors["Overfishing"]["Influences"] = ['Food Web Structure.', 'Fish Populations.', 'Lake Ecosystem Health.', '**Logic Description:** Overfishing is a *severe* and widespread problem in the African Great Lakes, driven by high fishing pressure, destructive fishing practices, and weak governance, leading to the decline of fish populations and the disruption of lake ecosystems.']
 aquatic_african_great_lakes_stressors["Overfishing"]["Logic Description"] = '---'
+aquatic_african_great_lakes_stressors["Overfishing"]["Impact Function"] = "impact_overfishing_aquatic_african_great_lakes"
 
 # --- Sedimentation ---
 aquatic_african_great_lakes_stressors["Sedimentation"]["Metric"] = 'Sediment load in rivers flowing into the lakes; turbidity (water cloudiness); sedimentation rates in the lakes.'
@@ -25,6 +26,7 @@ aquatic_african_great_lakes_stressors["Sedimentation"]["Impact on Biodiversity"]
 aquatic_african_great_lakes_stressors["Sedimentation"]["Influenced By"] = ['Deforestation: In the watersheds surrounding the lakes.', 'Agricultural Practices: Poor soil conservation practices.', 'Population Growth: Leading to increased land clearing.', '**Influences (Stressors):**', 'Water Quality.', 'Habitat Loss.', 'Lake Ecosystem Health.', '**Logic Description:** Increased sedimentation, primarily due to deforestation and poor agricultural practices in the watersheds surrounding the lakes, is a major threat, reducing water clarity, smothering habitats, and impacting aquatic life.']
 aquatic_african_great_lakes_stressors["Sedimentation"]["Influences"] = ['Water Quality.', 'Habitat Loss.', 'Lake Ecosystem Health.', '**Logic Description:** Increased sedimentation, primarily due to deforestation and poor agricultural practices in the watersheds surrounding the lakes, is a major threat, reducing water clarity, smothering habitats, and impacting aquatic life.']
 aquatic_african_great_lakes_stressors["Sedimentation"]["Logic Description"] = '---'
+aquatic_african_great_lakes_stressors["Sedimentation"]["Impact Function"] = "impact_sedimentation_aquatic_african_great_lakes"
 
 # --- Invasive Species ---
 aquatic_african_great_lakes_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance of key invasive species (e.g., water hyacinth, Nile perch (in Lake Victoria)).'
@@ -34,6 +36,7 @@ aquatic_african_great_lakes_stressors["Invasive Species"]["Impact on Biodiversit
 aquatic_african_great_lakes_stressors["Invasive Species"]["Influenced By"] = ['Intentional Introductions: (e.g., Nile perch in Lake Victoria).', 'Accidental Introductions.', 'Lack of Natural Controls.', '**Influences (Stressors):**', 'Water Quality (water hyacinth).', 'Fish Populations (Nile perch).', 'Ecosystem Structure.', '**Logic Description:** Invasive species, such as water hyacinth and Nile perch (in Lake Victoria), have had devastating impacts on the African Great Lakes, disrupting ecosystems and causing significant ecological and economic damage.']
 aquatic_african_great_lakes_stressors["Invasive Species"]["Influences"] = ['Water Quality (water hyacinth).', 'Fish Populations (Nile perch).', 'Ecosystem Structure.', '**Logic Description:** Invasive species, such as water hyacinth and Nile perch (in Lake Victoria), have had devastating impacts on the African Great Lakes, disrupting ecosystems and causing significant ecological and economic damage.']
 aquatic_african_great_lakes_stressors["Invasive Species"]["Logic Description"] = '---'
+aquatic_african_great_lakes_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_aquatic_african_great_lakes"
 
 # --- Climate Change ---
 aquatic_african_great_lakes_stressors["Climate Change"]["Metric"] = 'Water temperature; changes in rainfall patterns; changes in lake levels.'
@@ -43,4 +46,5 @@ aquatic_african_great_lakes_stressors["Climate Change"]["Impact on Biodiversity"
 aquatic_african_great_lakes_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Water Levels.', 'Lake Stratification.', 'Ecosystem Functioning.', '**Logic Description:** Climate change is an emerging threat to the African Great Lakes, with potential impacts on water temperature, lake levels, and ecosystem dynamics.']
 aquatic_african_great_lakes_stressors["Climate Change"]["Influences"] = ['Water Levels.', 'Lake Stratification.', 'Ecosystem Functioning.', '**Logic Description:** Climate change is an emerging threat to the African Great Lakes, with potential impacts on water temperature, lake levels, and ecosystem dynamics.']
 aquatic_african_great_lakes_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_african_great_lakes_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_african_great_lakes"
 

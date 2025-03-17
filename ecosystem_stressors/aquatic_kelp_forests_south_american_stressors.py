@@ -15,12 +15,14 @@ aquatic_kelp_forests_south_american_stressors["Overfishing"]["Impact on Biodiver
 aquatic_kelp_forests_south_american_stressors["Overfishing"]["Influenced By"] = ['Overfishing of Urchin Predators.', 'Demand for Seafood.', '**Influences (Stressors):**', 'Kelp Forest Cover.', '**Logic Description:** Overfishing of predators can lead to increased urchin grazing and kelp forest loss.  This is a *potential* threat, and the specific predators and dynamics may differ from the Northern Hemisphere.']
 aquatic_kelp_forests_south_american_stressors["Overfishing"]["Influences"] = ['Kelp Forest Cover.', '**Logic Description:** Overfishing of predators can lead to increased urchin grazing and kelp forest loss.  This is a *potential* threat, and the specific predators and dynamics may differ from the Northern Hemisphere.']
 aquatic_kelp_forests_south_american_stressors["Overfishing"]["Logic Description"] = '---'
+aquatic_kelp_forests_south_american_stressors["Overfishing"]["Impact Function"] = "impact_overfishing_aquatic_kelp_forests_south_american"
 
 # --- Sea Urchin Harvesting ---
 aquatic_kelp_forests_south_american_stressors["Sea Urchin Harvesting"]["Data Sources"] = ['* Fisheries data', '**Impact on Area:** Potential for kelp forest expansion (if urchins are heavily harvested).', '**Impact on Biodiversity**:', '* Can be positive or negative.', '**Influenced By (Stressors):**', '* Demand for urchin roe (uni).', '**Influences (Stressors):**', '* Urchin populations', '* Kelp cover.', '**Logic Description**: In some areas, sea urchins are harvested for their roe (uni). This can have *complex* effects on kelp forests. It *could* reduce grazing pressure, but it also removes a component of the ecosystem.']
 aquatic_kelp_forests_south_american_stressors["Sea Urchin Harvesting"]["Impact on Area"] = 'Potential for kelp forest expansion (if urchins are heavily harvested).'
 aquatic_kelp_forests_south_american_stressors["Sea Urchin Harvesting"]["Influenced By"] = ['* Demand for urchin roe (uni).', '**Influences (Stressors):**', '* Urchin populations', '* Kelp cover.', '**Logic Description**: In some areas, sea urchins are harvested for their roe (uni). This can have *complex* effects on kelp forests. It *could* reduce grazing pressure, but it also removes a component of the ecosystem.']
 aquatic_kelp_forests_south_american_stressors["Sea Urchin Harvesting"]["Influences"] = ['* Urchin populations', '* Kelp cover.', '**Logic Description**: In some areas, sea urchins are harvested for their roe (uni). This can have *complex* effects on kelp forests. It *could* reduce grazing pressure, but it also removes a component of the ecosystem.']
+aquatic_kelp_forests_south_american_stressors["Sea Urchin Harvesting"]["Impact Function"] = "impact_sea_urchin_harvesting_aquatic_kelp_forests_south_american"
 
 # --- Climate Change ---
 aquatic_kelp_forests_south_american_stressors["Climate Change"]["Metric"] = 'Sea surface temperature (SST) (°C); ocean acidification (pH).'
@@ -30,4 +32,5 @@ aquatic_kelp_forests_south_american_stressors["Climate Change"]["Impact on Biodi
 aquatic_kelp_forests_south_american_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', '**Logic Description:**  The impacts of climate change on South American kelp forests are still being researched, but warming waters and acidification are potential threats.']
 aquatic_kelp_forests_south_american_stressors["Climate Change"]["Influences"] = ['**Logic Description:**  The impacts of climate change on South American kelp forests are still being researched, but warming waters and acidification are potential threats.']
 aquatic_kelp_forests_south_american_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_kelp_forests_south_american_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_kelp_forests_south_american"
 

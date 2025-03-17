@@ -14,6 +14,7 @@ mountains_ethiopian_highlands_stressors["Soil Erosion"]["Impact on Biodiversity"
 mountains_ethiopian_highlands_stressors["Soil Erosion"]["Influenced By"] = ['Deforestation: Loss of vegetation cover leaves soil exposed.', 'Overgrazing: Reduces vegetation cover.', 'Intensive Agriculture: On steep slopes without proper soil conservation practices.', 'Population Pressure: Leads to cultivation of marginal lands.', '**Influences (Stressors):**', 'Agricultural Productivity: Reduces crop yields.', 'Water Quality: Increased sediment load in rivers.', 'Reservoir Siltation: Reduces the lifespan of reservoirs.', '**Logic Description:** Soil erosion is a *severe* and widespread problem in the Ethiopian Highlands, driven by deforestation, overgrazing, intensive agriculture, and population pressure. This loss of topsoil reduces land productivity and impacts water quality.']
 mountains_ethiopian_highlands_stressors["Soil Erosion"]["Influences"] = ['Agricultural Productivity: Reduces crop yields.', 'Water Quality: Increased sediment load in rivers.', 'Reservoir Siltation: Reduces the lifespan of reservoirs.', '**Logic Description:** Soil erosion is a *severe* and widespread problem in the Ethiopian Highlands, driven by deforestation, overgrazing, intensive agriculture, and population pressure. This loss of topsoil reduces land productivity and impacts water quality.']
 mountains_ethiopian_highlands_stressors["Soil Erosion"]["Logic Description"] = '---'
+mountains_ethiopian_highlands_stressors["Soil Erosion"]["Impact Function"] = "impact_soil_erosion_mountains_ethiopian_highlands"
 
 # --- Invasive Species ---
 mountains_ethiopian_highlands_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance'
@@ -22,4 +23,5 @@ mountains_ethiopian_highlands_stressors["Invasive Species"]["Impact on Area"] = 
 mountains_ethiopian_highlands_stressors["Invasive Species"]["Impact on Biodiversity"] = '* Competition with native species.\n**Influenced By (Stressors):**\n* Human activities.\n* Disturbance.\n**Influences (Stressors):**\n* Native plant communities.\n**Logic Description**: Invasive plants can impact.'
 mountains_ethiopian_highlands_stressors["Invasive Species"]["Influenced By"] = ['* Human activities.', '* Disturbance.', '**Influences (Stressors):**', '* Native plant communities.', '**Logic Description**: Invasive plants can impact.']
 mountains_ethiopian_highlands_stressors["Invasive Species"]["Influences"] = ['* Native plant communities.', '**Logic Description**: Invasive plants can impact.']
+mountains_ethiopian_highlands_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_mountains_ethiopian_highlands"
 

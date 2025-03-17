@@ -16,6 +16,7 @@ aquatic_kelp_forests_north_atlantic_stressors["Ocean Warming"]["Impact on Biodiv
 aquatic_kelp_forests_north_atlantic_stressors["Ocean Warming"]["Influenced By"] = ['Global Greenhouse Gas Emissions: Primary driver.', '**Influences (Stressors):**', 'Sea Urchin Barrens Formation (see below).', '**Logic Description:** Rising ocean temperatures, particularly during marine heatwaves, can stress kelp, leading to reduced growth, increased mortality, and even large-scale die-offs.']
 aquatic_kelp_forests_north_atlantic_stressors["Ocean Warming"]["Influences"] = ['Sea Urchin Barrens Formation (see below).', '**Logic Description:** Rising ocean temperatures, particularly during marine heatwaves, can stress kelp, leading to reduced growth, increased mortality, and even large-scale die-offs.']
 aquatic_kelp_forests_north_atlantic_stressors["Ocean Warming"]["Logic Description"] = '---'
+aquatic_kelp_forests_north_atlantic_stressors["Ocean Warming"]["Impact Function"] = "impact_ocean_warming_aquatic_kelp_forests_north_atlantic"
 
 # --- Invasive Species ---
 aquatic_kelp_forests_north_atlantic_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance of key invasive species (e.g.,  *Membranipora membranacea*, a bryozoan).'
@@ -24,6 +25,7 @@ aquatic_kelp_forests_north_atlantic_stressors["Invasive Species"]["Impact on Bio
 aquatic_kelp_forests_north_atlantic_stressors["Invasive Species"]["Influenced By"] = ['* Shipping (ballast water, hull fouling).', '**Influences (Stressors):**', '* Kelp health and survival', '**Logic Description:** The invasive bryozoan *Membranipora membranacea* is a significant threat to kelp forests in some parts of the North Atlantic, encrusting kelp blades and reducing their photosynthetic capacity.']
 aquatic_kelp_forests_north_atlantic_stressors["Invasive Species"]["Influences"] = ['* Kelp health and survival', '**Logic Description:** The invasive bryozoan *Membranipora membranacea* is a significant threat to kelp forests in some parts of the North Atlantic, encrusting kelp blades and reducing their photosynthetic capacity.']
 aquatic_kelp_forests_north_atlantic_stressors["Invasive Species"]["Logic Description"] = '---'
+aquatic_kelp_forests_north_atlantic_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_aquatic_kelp_forests_north_atlantic"
 
 # --- Storms and Wave Action ---
 aquatic_kelp_forests_north_atlantic_stressors["Storms and Wave Action"]["Metric"] = 'Wave Height, storm frequency'
@@ -33,6 +35,7 @@ aquatic_kelp_forests_north_atlantic_stressors["Storms and Wave Action"]["Impact 
 aquatic_kelp_forests_north_atlantic_stressors["Storms and Wave Action"]["Influenced By"] = ['* Climate Change', '* Weather Patterns', '**Influences (Stressors):**', '* Kelp forest structure', '**Logic Description:** Increased storm intensity or frequency, potentially linked to climate change, can cause physical damage to kelp forests.']
 aquatic_kelp_forests_north_atlantic_stressors["Storms and Wave Action"]["Influences"] = ['* Kelp forest structure', '**Logic Description:** Increased storm intensity or frequency, potentially linked to climate change, can cause physical damage to kelp forests.']
 aquatic_kelp_forests_north_atlantic_stressors["Storms and Wave Action"]["Logic Description"] = '---'
+aquatic_kelp_forests_north_atlantic_stressors["Storms and Wave Action"]["Impact Function"] = "impact_storms_and_wave_action_aquatic_kelp_forests_north_atlantic"
 
 # --- Pollution ---
 aquatic_kelp_forests_north_atlantic_stressors["Pollution"]["Metric"] = 'Water quality'
@@ -42,4 +45,5 @@ aquatic_kelp_forests_north_atlantic_stressors["Pollution"]["Impact on Biodiversi
 aquatic_kelp_forests_north_atlantic_stressors["Pollution"]["Influenced By"] = ['* Runoff, industrial discharge', '**Influences (Stressors):**', '* Kelp growth', '**Logic Description:** Water pollution can impact']
 aquatic_kelp_forests_north_atlantic_stressors["Pollution"]["Influences"] = ['* Kelp growth', '**Logic Description:** Water pollution can impact']
 aquatic_kelp_forests_north_atlantic_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_kelp_forests_north_atlantic_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_kelp_forests_north_atlantic"
 

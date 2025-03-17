@@ -15,6 +15,7 @@ aquatic_lake_baikal_stressors["Climate Change"]["Impact on Biodiversity"] = "Pot
 aquatic_lake_baikal_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Ice Cover (major impact).', 'Water Temperature.', 'Ecosystem Functioning.', "**Logic Description:** Climate change is a *major* threat to Lake Baikal, with warming waters, reduced ice cover, and potential impacts on the lake's unique and endemic biodiversity. The lake's deep waters are warming, which is a significant concern."]
 aquatic_lake_baikal_stressors["Climate Change"]["Influences"] = ['Ice Cover (major impact).', 'Water Temperature.', 'Ecosystem Functioning.', "**Logic Description:** Climate change is a *major* threat to Lake Baikal, with warming waters, reduced ice cover, and potential impacts on the lake's unique and endemic biodiversity. The lake's deep waters are warming, which is a significant concern."]
 aquatic_lake_baikal_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_lake_baikal_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_lake_baikal"
 
 # --- Pollution ---
 aquatic_lake_baikal_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., nutrients, heavy metals, organic pollutants) in water and sediments.'
@@ -24,6 +25,7 @@ aquatic_lake_baikal_stressors["Pollution"]["Impact on Biodiversity"] = "Potentia
 aquatic_lake_baikal_stressors["Pollution"]["Influenced By"] = ['Industrial Discharge: From pulp and paper mills and other industries (historically a major source, though regulations have improved).', 'Atmospheric Deposition.', 'Wastewater from settlements around the lake.', '**Influences (Stressors):**', 'Water Quality.', 'Wildlife Health.', "**Logic Description:** Pollution from industrial sources, atmospheric deposition, and wastewater discharge poses a threat to Lake Baikal's water quality and unique biodiversity.  The Baikal Pulp and Paper Mill was a major historical source, and while it has closed, legacy pollution remains a concern."]
 aquatic_lake_baikal_stressors["Pollution"]["Influences"] = ['Water Quality.', 'Wildlife Health.', "**Logic Description:** Pollution from industrial sources, atmospheric deposition, and wastewater discharge poses a threat to Lake Baikal's water quality and unique biodiversity.  The Baikal Pulp and Paper Mill was a major historical source, and while it has closed, legacy pollution remains a concern."]
 aquatic_lake_baikal_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_lake_baikal_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_lake_baikal"
 
 # --- Poaching ---
 aquatic_lake_baikal_stressors["Poaching"]["Data Sources"] = ['* Government reports', '**Impact on Area**: N/A', '**Impact on Biodiversity:**', '* Population decline of endemic species', '**Influenced By (Stressors):**', '* Demand for rare/valuable species.', '* Economic hardship.', '**Influences (Stressors):**', '* Population levels', '**Logic Description:** Illegal hunting, especially the endemic seal.']
@@ -31,4 +33,5 @@ aquatic_lake_baikal_stressors["Poaching"]["Impact on Biodiversity"] = '* Populat
 aquatic_lake_baikal_stressors["Poaching"]["Influenced By"] = ['* Demand for rare/valuable species.', '* Economic hardship.', '**Influences (Stressors):**', '* Population levels', '**Logic Description:** Illegal hunting, especially the endemic seal.']
 aquatic_lake_baikal_stressors["Poaching"]["Influences"] = ['* Population levels', '**Logic Description:** Illegal hunting, especially the endemic seal.']
 aquatic_lake_baikal_stressors["Poaching"]["Logic Description"] = '---'
+aquatic_lake_baikal_stressors["Poaching"]["Impact Function"] = "impact_poaching_aquatic_lake_baikal"
 

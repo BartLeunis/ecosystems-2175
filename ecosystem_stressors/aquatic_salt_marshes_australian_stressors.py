@@ -15,6 +15,7 @@ aquatic_salt_marshes_australian_stressors["Sea Level Rise"]["Impact on Biodivers
 aquatic_salt_marshes_australian_stressors["Sea Level Rise"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Coastal Erosion.', 'Habitat Loss.', '**Logic Description:** Sea level rise is a growing threat to Australian salt marshes.']
 aquatic_salt_marshes_australian_stressors["Sea Level Rise"]["Influences"] = ['Coastal Erosion.', 'Habitat Loss.', '**Logic Description:** Sea level rise is a growing threat to Australian salt marshes.']
 aquatic_salt_marshes_australian_stressors["Sea Level Rise"]["Logic Description"] = '---'
+aquatic_salt_marshes_australian_stressors["Sea Level Rise"]["Impact Function"] = "impact_sea_level_rise_aquatic_salt_marshes_australian"
 
 # --- Coastal Development ---
 aquatic_salt_marshes_australian_stressors["Coastal Development"]["Metric"] = 'Area converted, Length of hardened shoreline'
@@ -24,6 +25,7 @@ aquatic_salt_marshes_australian_stressors["Coastal Development"]["Impact on Biod
 aquatic_salt_marshes_australian_stressors["Coastal Development"]["Influenced By"] = ['* Urban Expansion', '* Infrastructure', '**Influences (Stressors):**', '* Habitat loss', '* Coastal squeeze', '**Logic Description:** Coastal development removes marsh habitat and restricts landward migration.']
 aquatic_salt_marshes_australian_stressors["Coastal Development"]["Influences"] = ['* Habitat loss', '* Coastal squeeze', '**Logic Description:** Coastal development removes marsh habitat and restricts landward migration.']
 aquatic_salt_marshes_australian_stressors["Coastal Development"]["Logic Description"] = '---'
+aquatic_salt_marshes_australian_stressors["Coastal Development"]["Impact Function"] = "impact_coastal_development_aquatic_salt_marshes_australian"
 
 # --- Altered Hydrology ---
 aquatic_salt_marshes_australian_stressors["Altered Hydrology"]["Metric"] = 'Changes in freshwater inflow; presence of drainage structures.'
@@ -33,4 +35,5 @@ aquatic_salt_marshes_australian_stressors["Altered Hydrology"]["Impact on Biodiv
 aquatic_salt_marshes_australian_stressors["Altered Hydrology"]["Influenced By"] = ['* Drainage and Flood Mitigation.', '* Upstream Water Use.', '**Influences (Stressors):**', '* Salinity.', '* Sedimentation.', '**Logic Description:** Alterations to freshwater inflow and drainage patterns impact marsh ecosystems.']
 aquatic_salt_marshes_australian_stressors["Altered Hydrology"]["Influences"] = ['* Salinity.', '* Sedimentation.', '**Logic Description:** Alterations to freshwater inflow and drainage patterns impact marsh ecosystems.']
 aquatic_salt_marshes_australian_stressors["Altered Hydrology"]["Logic Description"] = '---'
+aquatic_salt_marshes_australian_stressors["Altered Hydrology"]["Impact Function"] = "impact_altered_hydrology_aquatic_salt_marshes_australian"
 

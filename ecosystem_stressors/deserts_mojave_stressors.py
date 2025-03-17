@@ -17,6 +17,7 @@ deserts_mojave_stressors["Urban Sprawl and Development"]["Impact on Biodiversity
 deserts_mojave_stressors["Urban Sprawl and Development"]["Influenced By"] = ['Population Growth: In cities like Las Vegas.', 'Urban Expansion.', 'Infrastructure Development.', '**Influences (Stressors):**', 'Habitat Fragmentation.', '**Logic Description:** Urban sprawl and development, driven by population growth in cities like Las Vegas, are encroaching on Mojave Desert habitats.']
 deserts_mojave_stressors["Urban Sprawl and Development"]["Influences"] = ['Habitat Fragmentation.', '**Logic Description:** Urban sprawl and development, driven by population growth in cities like Las Vegas, are encroaching on Mojave Desert habitats.']
 deserts_mojave_stressors["Urban Sprawl and Development"]["Logic Description"] = '---'
+deserts_mojave_stressors["Urban Sprawl and Development"]["Impact Function"] = "impact_urban_sprawl_and_development_deserts_mojave"
 
 # --- Water Extraction ---
 deserts_mojave_stressors["Water Extraction"]["Metric"] = 'Volume of groundwater extracted (m³/year); changes in groundwater levels.'
@@ -26,6 +27,7 @@ deserts_mojave_stressors["Water Extraction"]["Impact on Biodiversity"] = 'Loss o
 deserts_mojave_stressors["Water Extraction"]["Influenced By"] = ['Urban Water Demand.', 'Agricultural Water Use (in some areas).', 'Mining.', '**Influences (Stressors):**', 'Water Availability.', '**Logic Description:** Groundwater extraction is a significant concern, impacting desert water sources.']
 deserts_mojave_stressors["Water Extraction"]["Influences"] = ['Water Availability.', '**Logic Description:** Groundwater extraction is a significant concern, impacting desert water sources.']
 deserts_mojave_stressors["Water Extraction"]["Logic Description"] = '---'
+deserts_mojave_stressors["Water Extraction"]["Impact Function"] = "impact_water_extraction_deserts_mojave"
 
 # --- Off-Road Vehicle Use ---
 deserts_mojave_stressors["Off-Road Vehicle Use"]["Metric"] = 'Area affected by off-road vehicle use; density of trails.'
@@ -35,6 +37,7 @@ deserts_mojave_stressors["Off-Road Vehicle Use"]["Impact on Biodiversity"] = 'Cr
 deserts_mojave_stressors["Off-Road Vehicle Use"]["Influenced By"] = ['Recreational Activities.', 'Lack of Enforcement of Regulations.', '**Influences (Stressors):**', 'Soil Erosion.', 'Vegetation Damage.', '**Logic Description:** Off-road vehicle use causes significant physical damage to desert soils and vegetation, impacting biodiversity.']
 deserts_mojave_stressors["Off-Road Vehicle Use"]["Influences"] = ['Soil Erosion.', 'Vegetation Damage.', '**Logic Description:** Off-road vehicle use causes significant physical damage to desert soils and vegetation, impacting biodiversity.']
 deserts_mojave_stressors["Off-Road Vehicle Use"]["Logic Description"] = '---'
+deserts_mojave_stressors["Off-Road Vehicle Use"]["Impact Function"] = "impact_off_road_vehicle_use_deserts_mojave"
 
 # --- Invasive Species ---
 deserts_mojave_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance of invasive plants (e.g., cheatgrass, red brome).'
@@ -44,6 +47,7 @@ deserts_mojave_stressors["Invasive Species"]["Impact on Biodiversity"] = 'Compet
 deserts_mojave_stressors["Invasive Species"]["Influenced By"] = ['Disturbance: (e.g., off-road vehicle use, grazing).', 'Climate Change: May favor some invasives.', '**Influences (Stressors):**', 'Fire Regimes.', 'Native Plant Communities.', '**Logic Description:** Invasive plants, particularly annual grasses, are altering fire regimes and outcompeting native desert vegetation.']
 deserts_mojave_stressors["Invasive Species"]["Influences"] = ['Fire Regimes.', 'Native Plant Communities.', '**Logic Description:** Invasive plants, particularly annual grasses, are altering fire regimes and outcompeting native desert vegetation.']
 deserts_mojave_stressors["Invasive Species"]["Logic Description"] = '---'
+deserts_mojave_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_deserts_mojave"
 
 # --- Climate Change ---
 deserts_mojave_stressors["Climate Change"]["Metric"] = 'Temperature increase; changes in precipitation.'
@@ -53,4 +57,5 @@ deserts_mojave_stressors["Climate Change"]["Impact on Biodiversity"] = '* Increa
 deserts_mojave_stressors["Climate Change"]["Influenced By"] = ['* Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', '* Water availability', '**Logic Description:** Climate change impacts.']
 deserts_mojave_stressors["Climate Change"]["Influences"] = ['* Water availability', '**Logic Description:** Climate change impacts.']
 deserts_mojave_stressors["Climate Change"]["Logic Description"] = '---'
+deserts_mojave_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_deserts_mojave"
 

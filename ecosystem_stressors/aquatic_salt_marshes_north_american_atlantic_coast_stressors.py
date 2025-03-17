@@ -17,6 +17,7 @@ aquatic_salt_marshes_north_american_atlantic_coast_stressors["Sea Level Rise"]["
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Sea Level Rise"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Local Subsidence: In some areas.', '**Influences (Stressors):**', 'Coastal Erosion.', 'Habitat Loss (the dominant impact).', '**Logic Description:** Sea level rise is a *critical* threat. Many areas are experiencing high rates of *relative* sea level rise (global rise + local subsidence). "Coastal squeeze" is a major concern, as development prevents landward migration.']
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Sea Level Rise"]["Influences"] = ['Coastal Erosion.', 'Habitat Loss (the dominant impact).', '**Logic Description:** Sea level rise is a *critical* threat. Many areas are experiencing high rates of *relative* sea level rise (global rise + local subsidence). "Coastal squeeze" is a major concern, as development prevents landward migration.']
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Sea Level Rise"]["Logic Description"] = '---'
+aquatic_salt_marshes_north_american_atlantic_coast_stressors["Sea Level Rise"]["Impact Function"] = "impact_sea_level_rise_aquatic_salt_marshes_north_american_atlantic_coast"
 
 # --- Coastal Development ---
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Coastal Development"]["Metric"] = 'Area of salt marsh converted to development (ha/year); length of hardened shoreline.'
@@ -26,6 +27,7 @@ aquatic_salt_marshes_north_american_atlantic_coast_stressors["Coastal Developmen
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Coastal Development"]["Influenced By"] = ['Urbanization.', 'Infrastructure Development.', '"Coastal Squeeze."', '**Influences (Stressors):**', 'Coastal Erosion.', 'Habitat Loss.', '**Logic Description:** Development directly removes marsh habitat and *prevents landward migration* in response to sea level rise, exacerbating the impacts of sea level rise.']
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Coastal Development"]["Influences"] = ['Coastal Erosion.', 'Habitat Loss.', '**Logic Description:** Development directly removes marsh habitat and *prevents landward migration* in response to sea level rise, exacerbating the impacts of sea level rise.']
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Coastal Development"]["Logic Description"] = '---'
+aquatic_salt_marshes_north_american_atlantic_coast_stressors["Coastal Development"]["Impact Function"] = "impact_coastal_development_aquatic_salt_marshes_north_american_atlantic_coast"
 
 # --- Altered Hydrology ---
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Altered Hydrology"]["Metric"] = 'Changes in freshwater inflow; presence of ditches and drainage structures.'
@@ -35,6 +37,7 @@ aquatic_salt_marshes_north_american_atlantic_coast_stressors["Altered Hydrology"
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Altered Hydrology"]["Influenced By"] = ['Ditching and Drainage (historical and ongoing).', 'Roads and Dikes.', 'Upstream Dams and Diversions.', '**Influences (Stressors):**', 'Salinity.', 'Sedimentation.', '**Logic Description:**  Altered hydrology impacts salinity, sedimentation, and habitat.']
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Altered Hydrology"]["Influences"] = ['Salinity.', 'Sedimentation.', '**Logic Description:**  Altered hydrology impacts salinity, sedimentation, and habitat.']
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Altered Hydrology"]["Logic Description"] = '---'
+aquatic_salt_marshes_north_american_atlantic_coast_stressors["Altered Hydrology"]["Impact Function"] = "impact_altered_hydrology_aquatic_salt_marshes_north_american_atlantic_coast"
 
 # --- Pollution ---
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Pollution"]["Metric"] = 'Concentrations of nitrogen and phosphorus in water and sediments.'
@@ -44,6 +47,7 @@ aquatic_salt_marshes_north_american_atlantic_coast_stressors["Pollution"]["Impac
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Pollution"]["Influenced By"] = ['Agricultural Runoff.', 'Urban Runoff.', 'Wastewater Treatment Plants.', '**Influences (Stressors):**', 'Water Quality.', 'Plant Communities.', '**Logic Description:** Nutrient pollution (primarily nitrogen) from agriculture and urban areas is a widespread problem, leading to eutrophication and changes in marsh vegetation.']
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Pollution"]["Influences"] = ['Water Quality.', 'Plant Communities.', '**Logic Description:** Nutrient pollution (primarily nitrogen) from agriculture and urban areas is a widespread problem, leading to eutrophication and changes in marsh vegetation.']
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_salt_marshes_north_american_atlantic_coast_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_salt_marshes_north_american_atlantic_coast"
 
 # --- Invasive Species ---
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Invasive Species"]["Metric"] = 'Extent and density of *Phragmites* stands.'
@@ -53,4 +57,5 @@ aquatic_salt_marshes_north_american_atlantic_coast_stressors["Invasive Species"]
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Invasive Species"]["Influenced By"] = ['Disturbance:  Roads, ditches, development, nutrient enrichment often create conditions favorable for *Phragmites*.', 'Altered Hydrology.', '**Influences (Stressors):**', 'Native Plant Communities.', 'Habitat Structure.', '**Logic Description:** The invasive common reed, *Phragmites australis*, is a widespread problem in North American Atlantic Coast salt marshes, outcompeting native plants and altering habitat structure.']
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Invasive Species"]["Influences"] = ['Native Plant Communities.', 'Habitat Structure.', '**Logic Description:** The invasive common reed, *Phragmites australis*, is a widespread problem in North American Atlantic Coast salt marshes, outcompeting native plants and altering habitat structure.']
 aquatic_salt_marshes_north_american_atlantic_coast_stressors["Invasive Species"]["Logic Description"] = '---'
+aquatic_salt_marshes_north_american_atlantic_coast_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_aquatic_salt_marshes_north_american_atlantic_coast"
 

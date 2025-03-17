@@ -31,6 +31,7 @@ wetlands_okavango_delta_stressors["Water Diversion"]["Impact on Biodiversity"] =
 wetlands_okavango_delta_stressors["Water Diversion"]["Influenced By"] = ['Okavango Delta - Upstream Water Demand', 'Okavango Delta - Government Policies', '**Influences (Stressors):**', '*  Okavango Delta - Habitat Availability', '**Logic Description:** The Okavango Delta is dependent on inflows from the Okavango River. Increased water extraction upstream could significantly reduce the amount of water, impacting its size and function.']
 wetlands_okavango_delta_stressors["Water Diversion"]["Influences"] = ['*  Okavango Delta - Habitat Availability', '**Logic Description:** The Okavango Delta is dependent on inflows from the Okavango River. Increased water extraction upstream could significantly reduce the amount of water, impacting its size and function.']
 wetlands_okavango_delta_stressors["Water Diversion"]["Logic Description"] = '---'
+wetlands_okavango_delta_stressors["Water Diversion"]["Impact Function"] = "impact_water_diversion_wetlands_okavango_delta"
 
 # --- Climate Change ---
 wetlands_okavango_delta_stressors["Climate Change"]["Metric"] = 'Changes in temperature and precipitation.'
@@ -38,6 +39,7 @@ wetlands_okavango_delta_stressors["Climate Change"]["Data Sources"] = ['* Climat
 wetlands_okavango_delta_stressors["Climate Change"]["Impact on Biodiversity"] = '* Increased stress on species.\n* Shifts in species distributions.\n**Influenced By (Stressors):**\n* Global greenhouse gas emissions.\n**Influences (Stressors):**\n* Okavango Delta - Hydrology (This was already present, ensuring no duplication)\n**Logic Description**:  Climate change is a significant long-term threat.'
 wetlands_okavango_delta_stressors["Climate Change"]["Influenced By"] = ['* Global greenhouse gas emissions.', '**Influences (Stressors):**', '* Okavango Delta - Hydrology (This was already present, ensuring no duplication)', '**Logic Description**:  Climate change is a significant long-term threat.']
 wetlands_okavango_delta_stressors["Climate Change"]["Influences"] = ['* Okavango Delta - Hydrology (This was already present, ensuring no duplication)', '**Logic Description**:  Climate change is a significant long-term threat.']
+wetlands_okavango_delta_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_wetlands_okavango_delta"
 
 # --- Pollution ---
 wetlands_okavango_delta_stressors["Pollution"]["Metric"] = 'Concentration of pollutants in water and sediment.'
@@ -47,6 +49,7 @@ wetlands_okavango_delta_stressors["Pollution"]["Impact on Biodiversity"] = '* To
 wetlands_okavango_delta_stressors["Pollution"]["Influenced By"] = ['Okavango Delta - Tourism', 'Okavango Delta - Agricultural Runoff', 'Okavango Delta - Upstream Development', '**Influences (Stressors):**', '*  Okavango Delta - Water Quality', '*  Okavango Delta - Wildlife Health', '**Logic Description:** While currently relatively pristine, the Okavango Delta is vulnerable to pollution.']
 wetlands_okavango_delta_stressors["Pollution"]["Influences"] = ['*  Okavango Delta - Water Quality', '*  Okavango Delta - Wildlife Health', '**Logic Description:** While currently relatively pristine, the Okavango Delta is vulnerable to pollution.']
 wetlands_okavango_delta_stressors["Pollution"]["Logic Description"] = '---'
+wetlands_okavango_delta_stressors["Pollution"]["Impact Function"] = "impact_pollution_wetlands_okavango_delta"
 
 # --- Overfishing ---
 wetlands_okavango_delta_stressors["Overfishing"]["Metric"] = 'Fish catches (tonnes/year); fish population sizes.'
@@ -56,6 +59,7 @@ wetlands_okavango_delta_stressors["Overfishing"]["Impact on Biodiversity"] = 'De
 wetlands_okavango_delta_stressors["Overfishing"]["Influenced By"] = ['Okavango Delta - Population Growth', 'Okavango Delta - Fishing Practices', '**Influences (Stressors):**', '*  Okavango Delta - Fish Populations', '*  Okavango Delta - Food Web', '**Logic Description:** Overfishing can deplete fish stocks, impacting the food web.']
 wetlands_okavango_delta_stressors["Overfishing"]["Influences"] = ['*  Okavango Delta - Fish Populations', '*  Okavango Delta - Food Web', '**Logic Description:** Overfishing can deplete fish stocks, impacting the food web.']
 wetlands_okavango_delta_stressors["Overfishing"]["Logic Description"] = '---'
+wetlands_okavango_delta_stressors["Overfishing"]["Impact Function"] = "impact_overfishing_wetlands_okavango_delta"
 
 # --- Invasive Species ---
 wetlands_okavango_delta_stressors["Invasive Species"]["Metric"] = 'Abundance/distribution of key invasive species.'
@@ -65,6 +69,7 @@ wetlands_okavango_delta_stressors["Invasive Species"]["Impact on Biodiversity"] 
 wetlands_okavango_delta_stressors["Invasive Species"]["Influenced By"] = ['*  Okavango Delta - Human Activities', 'Okavango Delta - Climate Change', '**Influences (Stressors):**', '*  Okavango Delta - Native Species', '**Logic Description:** Invasive aquatic plants (e.g., Salvinia molesta) can clog waterways and reduce habitat quality.']
 wetlands_okavango_delta_stressors["Invasive Species"]["Influences"] = ['*  Okavango Delta - Native Species', '**Logic Description:** Invasive aquatic plants (e.g., Salvinia molesta) can clog waterways and reduce habitat quality.']
 wetlands_okavango_delta_stressors["Invasive Species"]["Logic Description"] = '---'
+wetlands_okavango_delta_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_wetlands_okavango_delta"
 
 # --- Upstream Water Demand ---
 wetlands_okavango_delta_stressors["Upstream Water Demand"]["Metric"] = 'Water use by sector (agriculture, urban, etc.) upstream of the delta.'
@@ -73,12 +78,14 @@ wetlands_okavango_delta_stressors["Upstream Water Demand"]["Impact on Area"] = '
 wetlands_okavango_delta_stressors["Upstream Water Demand"]["Impact on Biodiversity"] = '* Habitat loss\n**Influenced By (Stressors):**\n* Population growth\n* Economic Development\n**Influences (Stressors):**\n* Okavango Delta - Water Diversion\n**Logic Description**: Upstream water use reduces inflow.'
 wetlands_okavango_delta_stressors["Upstream Water Demand"]["Influenced By"] = ['* Population growth', '* Economic Development', '**Influences (Stressors):**', '* Okavango Delta - Water Diversion', '**Logic Description**: Upstream water use reduces inflow.']
 wetlands_okavango_delta_stressors["Upstream Water Demand"]["Influences"] = ['* Okavango Delta - Water Diversion', '**Logic Description**: Upstream water use reduces inflow.']
+wetlands_okavango_delta_stressors["Upstream Water Demand"]["Impact Function"] = "impact_upstream_water_demand_wetlands_okavango_delta"
 
 # --- Government Policies ---
 wetlands_okavango_delta_stressors["Government Policies"]["Data Sources"] = ['* Policy documents, legal frameworks.', '**Impact on Area**: Variable, can be positive or negative.', '**Impact on Biodiversity:**', '* Variable', '**Influenced By (Stressors):**', '* Politics', '* Economics', '* International agreements', '**Influences (Stressors):**', '* Okavango Delta - Water Diversion', '**Logic Description**: Government policy shapes resource management.']
 wetlands_okavango_delta_stressors["Government Policies"]["Impact on Biodiversity"] = '* Variable\n**Influenced By (Stressors):**\n* Politics\n* Economics\n* International agreements\n**Influences (Stressors):**\n* Okavango Delta - Water Diversion\n**Logic Description**: Government policy shapes resource management.'
 wetlands_okavango_delta_stressors["Government Policies"]["Influenced By"] = ['* Politics', '* Economics', '* International agreements', '**Influences (Stressors):**', '* Okavango Delta - Water Diversion', '**Logic Description**: Government policy shapes resource management.']
 wetlands_okavango_delta_stressors["Government Policies"]["Influences"] = ['* Okavango Delta - Water Diversion', '**Logic Description**: Government policy shapes resource management.']
+wetlands_okavango_delta_stressors["Government Policies"]["Impact Function"] = "impact_government_policies_wetlands_okavango_delta"
 
 # --- Tourism ---
 wetlands_okavango_delta_stressors["Tourism"]["Data Sources"] = ['* Tourism statistics', '**Impact on Area:** Localized impacts, potential for pollution and disturbance.', '**Impact on Biodiversity:**', '* Disturbance to wildlife.', '**Influenced By (Stressors):**', '* Global travel trends', '**Influences (Stressors):**', '* Okavango Delta - Pollution', '**Logic Description**: Tourism impacts.']
@@ -86,12 +93,14 @@ wetlands_okavango_delta_stressors["Tourism"]["Impact on Area"] = 'Localized impa
 wetlands_okavango_delta_stressors["Tourism"]["Impact on Biodiversity"] = '* Disturbance to wildlife.\n**Influenced By (Stressors):**\n* Global travel trends\n**Influences (Stressors):**\n* Okavango Delta - Pollution\n**Logic Description**: Tourism impacts.'
 wetlands_okavango_delta_stressors["Tourism"]["Influenced By"] = ['* Global travel trends', '**Influences (Stressors):**', '* Okavango Delta - Pollution', '**Logic Description**: Tourism impacts.']
 wetlands_okavango_delta_stressors["Tourism"]["Influences"] = ['* Okavango Delta - Pollution', '**Logic Description**: Tourism impacts.']
+wetlands_okavango_delta_stressors["Tourism"]["Impact Function"] = "impact_tourism_wetlands_okavango_delta"
 
 # --- Agricultural Runoff ---
 wetlands_okavango_delta_stressors["Agricultural Runoff"]["Metric"] = 'Nutrient and pesticide concentrations in water.'
 wetlands_okavango_delta_stressors["Agricultural Runoff"]["Data Sources"] = ['* Water quality monitoring data.', '**Impact on Area:** Water quality degradation.', '**Impact on Biodiversity:**', '* Potential for eutrophication and toxic effects', '**Influenced By (Stressors)**', '* Agricultural practices upstream.', '**Influences (Stressors)**', '* Okavango Delta - Pollution', '**Logic Description**: Runoff from agricultural areas.']
 wetlands_okavango_delta_stressors["Agricultural Runoff"]["Impact on Area"] = 'Water quality degradation.'
 wetlands_okavango_delta_stressors["Agricultural Runoff"]["Impact on Biodiversity"] = '* Potential for eutrophication and toxic effects\n**Influenced By (Stressors)**\n* Agricultural practices upstream.\n**Influences (Stressors)**\n* Okavango Delta - Pollution\n**Logic Description**: Runoff from agricultural areas.'
+wetlands_okavango_delta_stressors["Agricultural Runoff"]["Impact Function"] = "impact_agricultural_runoff_wetlands_okavango_delta"
 
 # --- Upstream Development ---
 wetlands_okavango_delta_stressors["Upstream Development"]["Metric"] = 'Infrastructure development, economic activity in the catchment area.'
@@ -100,12 +109,14 @@ wetlands_okavango_delta_stressors["Upstream Development"]["Impact on Area"] = 'P
 wetlands_okavango_delta_stressors["Upstream Development"]["Impact on Biodiversity"] = '* Habitat loss and degradation.\n**Influenced By (Stressors):**\n* Economic growth\n* Population growth\n**Influences (Stressors):**\n* Okavango Delta - Pollution\n* Okavango Delta - Water Diversion\n**Logic Description**: Development activities upstream can affect the delta.'
 wetlands_okavango_delta_stressors["Upstream Development"]["Influenced By"] = ['* Economic growth', '* Population growth', '**Influences (Stressors):**', '* Okavango Delta - Pollution', '* Okavango Delta - Water Diversion', '**Logic Description**: Development activities upstream can affect the delta.']
 wetlands_okavango_delta_stressors["Upstream Development"]["Influences"] = ['* Okavango Delta - Pollution', '* Okavango Delta - Water Diversion', '**Logic Description**: Development activities upstream can affect the delta.']
+wetlands_okavango_delta_stressors["Upstream Development"]["Impact Function"] = "impact_upstream_development_wetlands_okavango_delta"
 
 # --- Human Activities ---
 wetlands_okavango_delta_stressors["Human Activities"]["Data Sources"] = ['* Varies', '**Impact on Area:** Varies', '**Impact on Biodiversity**:', '* Varies', '**Influenced By (Stressors):**', '* Many', '**Influences (Stressors):**', '*  Okavango Delta - Invasive Species', '**Logic Description**: General Category.']
 wetlands_okavango_delta_stressors["Human Activities"]["Impact on Area"] = 'Varies'
 wetlands_okavango_delta_stressors["Human Activities"]["Influenced By"] = ['* Many', '**Influences (Stressors):**', '*  Okavango Delta - Invasive Species', '**Logic Description**: General Category.']
 wetlands_okavango_delta_stressors["Human Activities"]["Influences"] = ['*  Okavango Delta - Invasive Species', '**Logic Description**: General Category.']
+wetlands_okavango_delta_stressors["Human Activities"]["Impact Function"] = "impact_human_activities_wetlands_okavango_delta"
 
 # --- Fishing Practices ---
 wetlands_okavango_delta_stressors["Fishing Practices"]["Metric"] = 'Types of fishing gear used, fishing effort.'
@@ -113,6 +124,7 @@ wetlands_okavango_delta_stressors["Fishing Practices"]["Data Sources"] = ['* Fis
 wetlands_okavango_delta_stressors["Fishing Practices"]["Impact on Area"] = 'N/A'
 wetlands_okavango_delta_stressors["Fishing Practices"]["Influenced By"] = ['* Local regulations, enforcement.', '**Influences (Stressors):**', '* Okavango Delta - Overfishing', '**Logic Description**: Unsustainable fishing practices can damage fish stocks.']
 wetlands_okavango_delta_stressors["Fishing Practices"]["Influences"] = ['* Okavango Delta - Overfishing', '**Logic Description**: Unsustainable fishing practices can damage fish stocks.']
+wetlands_okavango_delta_stressors["Fishing Practices"]["Impact Function"] = "impact_fishing_practices_wetlands_okavango_delta"
 
 # --- Population Growth ---
 wetlands_okavango_delta_stressors["Population Growth"]["Metric"] = 'Human population size and density in and around the delta.'
@@ -120,6 +132,7 @@ wetlands_okavango_delta_stressors["Population Growth"]["Data Sources"] = ['* Cen
 wetlands_okavango_delta_stressors["Population Growth"]["Impact on Area"] = 'Increased pressure on resources.'
 wetlands_okavango_delta_stressors["Population Growth"]["Influences"] = ['* Okavango Delta - Overfishing', '**Logic Description:** Population growth increases resource use.']
 wetlands_okavango_delta_stressors["Population Growth"]["Logic Description"] = '---'
+wetlands_okavango_delta_stressors["Population Growth"]["Impact Function"] = "impact_population_growth_wetlands_okavango_delta"
 
 # --- Fish Populations ---
 wetlands_okavango_delta_stressors["Fish Populations"]["Metric"] = 'Population sizes and structure of key fish species.'
@@ -127,6 +140,7 @@ wetlands_okavango_delta_stressors["Fish Populations"]["Data Sources"] = ['* Fish
 wetlands_okavango_delta_stressors["Fish Populations"]["Impact on Area"] = 'N/A'
 wetlands_okavango_delta_stressors["Fish Populations"]["Impact on Biodiversity"] = '* Food web dynamics\n**Influenced By (Stressors):**\n* Okavango Delta - Overfishing\n* Okavango Delta - Fishing Practices\n**Influences (Stressors)**\n* Okavango Delta - Food Web\n**Logic Description**: Fish are a key part of the ecosystem.'
 wetlands_okavango_delta_stressors["Fish Populations"]["Influenced By"] = ['* Okavango Delta - Overfishing', '* Okavango Delta - Fishing Practices', '**Influences (Stressors)**', '* Okavango Delta - Food Web', '**Logic Description**: Fish are a key part of the ecosystem.']
+wetlands_okavango_delta_stressors["Fish Populations"]["Impact Function"] = "impact_fish_populations_wetlands_okavango_delta"
 
 # --- Food Web ---
 wetlands_okavango_delta_stressors["Food Web"]["Data Sources"] = ['* Research Studies.', '**Impact on Area:** N/A', '**Impact on Biodiversity:**', '* Overall ecosystem stability.', '**Influenced By (Stressors):**', '* Okavango Delta - Fish Populations', '* Many others', '**Influences (Stressors):**', '* Many, varies', '**Logic Description:** Complex interactions within the food web.']
@@ -135,12 +149,14 @@ wetlands_okavango_delta_stressors["Food Web"]["Impact on Biodiversity"] = '* Ove
 wetlands_okavango_delta_stressors["Food Web"]["Influenced By"] = ['* Okavango Delta - Fish Populations', '* Many others', '**Influences (Stressors):**', '* Many, varies', '**Logic Description:** Complex interactions within the food web.']
 wetlands_okavango_delta_stressors["Food Web"]["Influences"] = ['* Many, varies', '**Logic Description:** Complex interactions within the food web.']
 wetlands_okavango_delta_stressors["Food Web"]["Logic Description"] = '---'
+wetlands_okavango_delta_stressors["Food Web"]["Impact Function"] = "impact_food_web_wetlands_okavango_delta"
 
 # --- Native Species ---
 wetlands_okavango_delta_stressors["Native Species"]["Metric"] = 'Population sizes and distributions of native plants and animals.'
 wetlands_okavango_delta_stressors["Native Species"]["Data Sources"] = ['* Species Surveys', '**Impact on Area**: Varies', '**Impact on Biodiversity:**', '* Ecosystem Function', '**Influenced By (Stressors):**', '* Okavango Delta - Invasive Species', '**Influences (Stressors)**', '* Many', '**Logic Description**: Native species health.']
 wetlands_okavango_delta_stressors["Native Species"]["Impact on Biodiversity"] = '* Ecosystem Function\n**Influenced By (Stressors):**\n* Okavango Delta - Invasive Species\n**Influences (Stressors)**\n* Many\n**Logic Description**: Native species health.'
 wetlands_okavango_delta_stressors["Native Species"]["Influenced By"] = ['* Okavango Delta - Invasive Species', '**Influences (Stressors)**', '* Many', '**Logic Description**: Native species health.']
+wetlands_okavango_delta_stressors["Native Species"]["Impact Function"] = "impact_native_species_wetlands_okavango_delta"
 
 # --- Hydrology ---
 wetlands_okavango_delta_stressors["Hydrology"]["Metric"] = 'Water levels, flow rates, flooding patterns.'
@@ -148,6 +164,7 @@ wetlands_okavango_delta_stressors["Hydrology"]["Data Sources"] = ['* Hydrologica
 wetlands_okavango_delta_stressors["Hydrology"]["Impact on Area"] = 'Extent and duration of flooding, habitat availability.'
 wetlands_okavango_delta_stressors["Hydrology"]["Impact on Biodiversity"] = '* Impacts on all aquatic and wetland species.\n**Influenced By (Stressors):**\n* Okavango Delta - Water Diversion\n* Okavango Delta- Climate Change\n**Influences (Stressors)**\n* Many, varies\n**Logic Description**: Water flow is the fundamental driver of the ecosystem.'
 wetlands_okavango_delta_stressors["Hydrology"]["Influenced By"] = ['* Okavango Delta - Water Diversion', '* Okavango Delta- Climate Change', '**Influences (Stressors)**', '* Many, varies', '**Logic Description**: Water flow is the fundamental driver of the ecosystem.']
+wetlands_okavango_delta_stressors["Hydrology"]["Impact Function"] = "impact_hydrology_wetlands_okavango_delta"
 
 # --- Water Quality ---
 wetlands_okavango_delta_stressors["Water Quality"]["Metric"] = 'Various water quality parameters.'
@@ -156,10 +173,12 @@ wetlands_okavango_delta_stressors["Water Quality"]["Impact on Biodiversity"] = '
 wetlands_okavango_delta_stressors["Water Quality"]["Influenced By"] = ['* Okavango Delta - Pollution', '**Influences (Stressors):**', '* Many, varies', '**Logic Description:** Water Quality is a critical factor.']
 wetlands_okavango_delta_stressors["Water Quality"]["Influences"] = ['* Many, varies', '**Logic Description:** Water Quality is a critical factor.']
 wetlands_okavango_delta_stressors["Water Quality"]["Logic Description"] = '---'
+wetlands_okavango_delta_stressors["Water Quality"]["Impact Function"] = "impact_water_quality_wetlands_okavango_delta"
 
 # --- Wildlife Health ---
 wetlands_okavango_delta_stressors["Wildlife Health"]["Metric"] = 'Disease prevalence, mortality rates'
 wetlands_okavango_delta_stressors["Wildlife Health"]["Data Sources"] = ['* Wildlife Monitoring.', '**Impact on Area**: Indirect', '**Impact on Biodiversity**:', 'Population Declines', '**Influenced By (Stressors):**', '* Okavango Delta - Pollution', '**Influences (Stressors):**', '* Population Dynamics', '**Logic Description**: Overall Health.']
 wetlands_okavango_delta_stressors["Wildlife Health"]["Influenced By"] = ['* Okavango Delta - Pollution', '**Influences (Stressors):**', '* Population Dynamics', '**Logic Description**: Overall Health.']
 wetlands_okavango_delta_stressors["Wildlife Health"]["Influences"] = ['* Population Dynamics', '**Logic Description**: Overall Health.']
+wetlands_okavango_delta_stressors["Wildlife Health"]["Impact Function"] = "impact_wildlife_health_wetlands_okavango_delta"
 

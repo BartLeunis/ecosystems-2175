@@ -17,6 +17,7 @@ aquatic_pelagic_open_ocean_stressors["Overfishing"]["Impact on Biodiversity"] = 
 aquatic_pelagic_open_ocean_stressors["Overfishing"]["Influenced By"] = ['Global Demand for Seafood: Growing human population and increasing per capita consumption.', 'Fishing Technology: Advances in fishing gear and vessel capabilities.', 'Subsidies: Government subsidies can encourage overfishing.', 'Illegal, Unreported, and Unregulated (IUU) Fishing.', 'Weak Governance and Enforcement: Ineffective management of fisheries.', '**Influences (Stressors):**', 'Marine Food Webs: Disrupts trophic relationships.', 'Ecosystem Functioning.', '**Logic Description:** Overfishing is a major threat to the open ocean, depleting fish stocks, altering food web structure, and impacting a wide range of marine species.']
 aquatic_pelagic_open_ocean_stressors["Overfishing"]["Influences"] = ['Marine Food Webs: Disrupts trophic relationships.', 'Ecosystem Functioning.', '**Logic Description:** Overfishing is a major threat to the open ocean, depleting fish stocks, altering food web structure, and impacting a wide range of marine species.']
 aquatic_pelagic_open_ocean_stressors["Overfishing"]["Logic Description"] = '---'
+aquatic_pelagic_open_ocean_stressors["Overfishing"]["Impact Function"] = "impact_overfishing_aquatic_pelagic_open_ocean"
 
 # --- Climate Change ---
 aquatic_pelagic_open_ocean_stressors["Climate Change"]["Metric"] = 'Sea surface temperature (SST) (°C); ocean acidification (pH); changes in ocean currents; changes in stratification (layering of the water column); oxygen minimum zone expansion.'
@@ -26,6 +27,7 @@ aquatic_pelagic_open_ocean_stressors["Climate Change"]["Impact on Biodiversity"]
 aquatic_pelagic_open_ocean_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Ocean Acidification.', 'Ocean Currents.', 'Stratification.', 'Oxygen Minimum Zones.', '**Logic Description:** Climate change is causing widespread and fundamental changes to the open ocean, impacting temperature, acidity, currents, stratification, and oxygen levels, with cascading effects on marine life.']
 aquatic_pelagic_open_ocean_stressors["Climate Change"]["Influences"] = ['Ocean Acidification.', 'Ocean Currents.', 'Stratification.', 'Oxygen Minimum Zones.', '**Logic Description:** Climate change is causing widespread and fundamental changes to the open ocean, impacting temperature, acidity, currents, stratification, and oxygen levels, with cascading effects on marine life.']
 aquatic_pelagic_open_ocean_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_pelagic_open_ocean_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_pelagic_open_ocean"
 
 # --- Plastic Pollution ---
 aquatic_pelagic_open_ocean_stressors["Plastic Pollution"]["Metric"] = 'Concentrations of plastic debris (macroplastics, microplastics) in surface waters, the water column, and sediments; abundance of plastic ingested by marine organisms.'
@@ -35,6 +37,7 @@ aquatic_pelagic_open_ocean_stressors["Plastic Pollution"]["Impact on Biodiversit
 aquatic_pelagic_open_ocean_stressors["Plastic Pollution"]["Influenced By"] = ['Land-Based Sources: Improper waste disposal, runoff from rivers.', 'Shipping Activities.', 'Fishing Gear (lost or discarded).', '**Influences (Stressors):**', '* Wildlife mortality', '**Logic Description:** Plastic pollution is a pervasive problem in the open ocean, impacting marine life through entanglement, ingestion, and the potential for toxic effects.']
 aquatic_pelagic_open_ocean_stressors["Plastic Pollution"]["Influences"] = ['* Wildlife mortality', '**Logic Description:** Plastic pollution is a pervasive problem in the open ocean, impacting marine life through entanglement, ingestion, and the potential for toxic effects.']
 aquatic_pelagic_open_ocean_stressors["Plastic Pollution"]["Logic Description"] = '---'
+aquatic_pelagic_open_ocean_stressors["Plastic Pollution"]["Impact Function"] = "impact_plastic_pollution_aquatic_pelagic_open_ocean"
 
 # --- Chemical Pollution ---
 aquatic_pelagic_open_ocean_stressors["Chemical Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., heavy metals, persistent organic pollutants (POPs), oil) in seawater, sediments, and marine organisms.'
@@ -44,6 +47,7 @@ aquatic_pelagic_open_ocean_stressors["Chemical Pollution"]["Impact on Biodiversi
 aquatic_pelagic_open_ocean_stressors["Chemical Pollution"]["Influenced By"] = ['Industrial Discharge.', 'Agricultural Runoff.', 'Shipping Activities (oil spills, discharge of waste).', 'Atmospheric Deposition: Pollutants can travel long distances through the air.', '**Influences (Stressors):**', '* Wildlife health', '**Logic Description:** Chemical pollution from various sources contaminates the open ocean, impacting marine life through toxic effects and bioaccumulation.']
 aquatic_pelagic_open_ocean_stressors["Chemical Pollution"]["Influences"] = ['* Wildlife health', '**Logic Description:** Chemical pollution from various sources contaminates the open ocean, impacting marine life through toxic effects and bioaccumulation.']
 aquatic_pelagic_open_ocean_stressors["Chemical Pollution"]["Logic Description"] = '---'
+aquatic_pelagic_open_ocean_stressors["Chemical Pollution"]["Impact Function"] = "impact_chemical_pollution_aquatic_pelagic_open_ocean"
 
 # --- Noise Pollution ---
 aquatic_pelagic_open_ocean_stressors["Noise Pollution"]["Metric"] = 'Ambient noise levels; frequency and intensity of anthropogenic noise.'
@@ -53,4 +57,5 @@ aquatic_pelagic_open_ocean_stressors["Noise Pollution"]["Impact on Biodiversity"
 aquatic_pelagic_open_ocean_stressors["Noise Pollution"]["Influenced By"] = ['* Shipping', '* Sonar', '* Seismic surveys', '* Construction', '**Influences (Stressors):**', '* Marine mammal behavior and communication', '**Logic Description:** Noise pollution from shipping, sonar, and other human activities can interfere with marine animal communication, navigation, and behavior.']
 aquatic_pelagic_open_ocean_stressors["Noise Pollution"]["Influences"] = ['* Marine mammal behavior and communication', '**Logic Description:** Noise pollution from shipping, sonar, and other human activities can interfere with marine animal communication, navigation, and behavior.']
 aquatic_pelagic_open_ocean_stressors["Noise Pollution"]["Logic Description"] = '---'
+aquatic_pelagic_open_ocean_stressors["Noise Pollution"]["Impact Function"] = "impact_noise_pollution_aquatic_pelagic_open_ocean"
 

@@ -16,6 +16,7 @@ aquatic_great_lakes_stressors["Invasive Species"]["Impact on Biodiversity"] = 'Z
 aquatic_great_lakes_stressors["Invasive Species"]["Influenced By"] = ['Ballast Water Discharge: From transoceanic ships (historically the major pathway).', 'Canals and Waterways: Connecting the Great Lakes to other water bodies.', '**Influences (Stressors):**', 'Native Fish Populations.', 'Water Quality (in some cases, e.g., increased clarity due to mussels).', 'Food Web Structure.', '**Logic Description:** Invasive species, introduced primarily through ballast water from ships, have had *profound* and cascading impacts on the Great Lakes ecosystem, altering food webs, impacting native species, and causing economic damage.']
 aquatic_great_lakes_stressors["Invasive Species"]["Influences"] = ['Native Fish Populations.', 'Water Quality (in some cases, e.g., increased clarity due to mussels).', 'Food Web Structure.', '**Logic Description:** Invasive species, introduced primarily through ballast water from ships, have had *profound* and cascading impacts on the Great Lakes ecosystem, altering food webs, impacting native species, and causing economic damage.']
 aquatic_great_lakes_stressors["Invasive Species"]["Logic Description"] = '---'
+aquatic_great_lakes_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_aquatic_great_lakes"
 
 # --- Eutrophication ---
 aquatic_great_lakes_stressors["Eutrophication"]["Metric"] = 'Nutrient concentrations (phosphorus, nitrogen); chlorophyll *a*; Secchi depth; dissolved oxygen; frequency and severity of harmful algal blooms.'
@@ -25,6 +26,7 @@ aquatic_great_lakes_stressors["Eutrophication"]["Impact on Biodiversity"] = 'Har
 aquatic_great_lakes_stressors["Eutrophication"]["Influenced By"] = ['Agricultural Runoff: Fertilizers and animal waste are major sources of nutrients.', 'Urban Runoff: Sewage and stormwater.', 'Climate Change: Warmer water and altered precipitation patterns can exacerbate eutrophication.', '**Influences (Stressors):**', 'Harmful Algal Blooms.', 'Oxygen Depletion.', 'Water Quality.', 'Fisheries.', '**Logic Description:** Eutrophication, particularly in certain areas of the Great Lakes (e.g., western Lake Erie), remains a significant problem, driven by nutrient pollution from agriculture and urban areas. This leads to harmful algal blooms, oxygen depletion, and impacts on aquatic life.']
 aquatic_great_lakes_stressors["Eutrophication"]["Influences"] = ['Harmful Algal Blooms.', 'Oxygen Depletion.', 'Water Quality.', 'Fisheries.', '**Logic Description:** Eutrophication, particularly in certain areas of the Great Lakes (e.g., western Lake Erie), remains a significant problem, driven by nutrient pollution from agriculture and urban areas. This leads to harmful algal blooms, oxygen depletion, and impacts on aquatic life.']
 aquatic_great_lakes_stressors["Eutrophication"]["Logic Description"] = '---'
+aquatic_great_lakes_stressors["Eutrophication"]["Impact Function"] = "impact_eutrophication_aquatic_great_lakes"
 
 # --- Legacy Pollutants ---
 aquatic_great_lakes_stressors["Legacy Pollutants"]["Metric"] = 'Concentrations of persistent organic pollutants (POPs) (e.g., PCBs, DDT, mercury) in sediments, fish tissue, and wildlife.'
@@ -34,6 +36,7 @@ aquatic_great_lakes_stressors["Legacy Pollutants"]["Impact on Biodiversity"] = '
 aquatic_great_lakes_stressors["Legacy Pollutants"]["Influenced By"] = ['Historical Industrial Discharges: From past industrial activities.', 'Atmospheric Deposition.', '**Influences (Stressors):**', 'Wildlife Health.', 'Human Health (through consumption of contaminated fish).', '**Logic Description:**  Legacy pollutants, such as PCBs and mercury, from past industrial activities persist in the Great Lakes ecosystem, contaminating sediments and accumulating in the food chain, posing risks to wildlife and human health.']
 aquatic_great_lakes_stressors["Legacy Pollutants"]["Influences"] = ['Wildlife Health.', 'Human Health (through consumption of contaminated fish).', '**Logic Description:**  Legacy pollutants, such as PCBs and mercury, from past industrial activities persist in the Great Lakes ecosystem, contaminating sediments and accumulating in the food chain, posing risks to wildlife and human health.']
 aquatic_great_lakes_stressors["Legacy Pollutants"]["Logic Description"] = '---'
+aquatic_great_lakes_stressors["Legacy Pollutants"]["Impact Function"] = "impact_legacy_pollutants_aquatic_great_lakes"
 
 # --- Climate Change ---
 aquatic_great_lakes_stressors["Climate Change"]["Metric"] = 'Water temperature; ice cover duration; water levels; frequency and intensity of storms.'
@@ -43,4 +46,5 @@ aquatic_great_lakes_stressors["Climate Change"]["Impact on Biodiversity"] = 'Shi
 aquatic_great_lakes_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Eutrophication (warmer water can exacerbate nutrient problems).', 'Invasive Species (some may benefit from warmer waters).', 'Water Levels.', '**Logic Description:** Climate change is impacting the Great Lakes through warming waters, altered ice cover, fluctuating water levels, and potentially more intense storms, with significant consequences for the ecosystem.']
 aquatic_great_lakes_stressors["Climate Change"]["Influences"] = ['Eutrophication (warmer water can exacerbate nutrient problems).', 'Invasive Species (some may benefit from warmer waters).', 'Water Levels.', '**Logic Description:** Climate change is impacting the Great Lakes through warming waters, altered ice cover, fluctuating water levels, and potentially more intense storms, with significant consequences for the ecosystem.']
 aquatic_great_lakes_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_great_lakes_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_great_lakes"
 

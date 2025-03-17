@@ -18,6 +18,7 @@ grasslands_eurasian_steppes_stressors["Land-Use Change"]["Impact on Biodiversity
 grasslands_eurasian_steppes_stressors["Land-Use Change"]["Influenced By"] = ['* Eurasian Steppes - Agricultural Expansion', '* Eurasian Steppes - Population Growth', '* Eurasian Steppes - Government Policies', '**Influences (Stressors):**', '*  Eurasian Steppes - Habitat Fragmentation', '**Logic Description:** Conversion of steppe to agriculture, particularly large-scale agriculture, is a major threat, leading to habitat loss and fragmentation.']
 grasslands_eurasian_steppes_stressors["Land-Use Change"]["Influences"] = ['*  Eurasian Steppes - Habitat Fragmentation', '**Logic Description:** Conversion of steppe to agriculture, particularly large-scale agriculture, is a major threat, leading to habitat loss and fragmentation.']
 grasslands_eurasian_steppes_stressors["Land-Use Change"]["Logic Description"] = '---'
+grasslands_eurasian_steppes_stressors["Land-Use Change"]["Impact Function"] = "impact_land_use_change_grasslands_eurasian_steppes"
 
 # --- Habitat Fragmentation ---
 grasslands_eurasian_steppes_stressors["Habitat Fragmentation"]["Metric"] = 'Patch size distribution; edge density; connectivity indices.'
@@ -27,6 +28,7 @@ grasslands_eurasian_steppes_stressors["Habitat Fragmentation"]["Impact on Biodiv
 grasslands_eurasian_steppes_stressors["Habitat Fragmentation"]["Influenced By"] = ['Eurasian Steppes - Land-Use Change', '**Influences (Stressors):**', '* Exacerbates impacts of other stressors', '**Logic Description:** Fragmentation isolates steppe patches, reducing their ecological viability.']
 grasslands_eurasian_steppes_stressors["Habitat Fragmentation"]["Influences"] = ['* Exacerbates impacts of other stressors', '**Logic Description:** Fragmentation isolates steppe patches, reducing their ecological viability.']
 grasslands_eurasian_steppes_stressors["Habitat Fragmentation"]["Logic Description"] = '---'
+grasslands_eurasian_steppes_stressors["Habitat Fragmentation"]["Impact Function"] = "impact_habitat_fragmentation_grasslands_eurasian_steppes"
 
 # --- Climate Change ---
 grasslands_eurasian_steppes_stressors["Climate Change"]["Metric"] = 'Temperature increase (°C); changes in precipitation (mm/year, seasonality); increased frequency and severity of drought.'
@@ -36,6 +38,7 @@ grasslands_eurasian_steppes_stressors["Climate Change"]["Impact on Biodiversity"
 grasslands_eurasian_steppes_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '*  Eurasian Steppes - Fire Regimes', '*  Eurasian Steppes - Water Availability.', '**Logic Description:** Climate change is altering temperature and precipitation patterns, increasing aridity and the risk of desertification in some areas.']
 grasslands_eurasian_steppes_stressors["Climate Change"]["Influences"] = ['*  Eurasian Steppes - Fire Regimes', '*  Eurasian Steppes - Water Availability.', '**Logic Description:** Climate change is altering temperature and precipitation patterns, increasing aridity and the risk of desertification in some areas.']
 grasslands_eurasian_steppes_stressors["Climate Change"]["Logic Description"] = '---'
+grasslands_eurasian_steppes_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_grasslands_eurasian_steppes"
 
 # --- Overgrazing ---
 grasslands_eurasian_steppes_stressors["Overgrazing"]["Metric"] = 'Livestock density; vegetation cover and composition; soil erosion.'
@@ -45,6 +48,7 @@ grasslands_eurasian_steppes_stressors["Overgrazing"]["Impact on Biodiversity"] =
 grasslands_eurasian_steppes_stressors["Overgrazing"]["Influenced By"] = ['*  Eurasian Steppes - Livestock Management', '**Influences (Stressors):**', '*  Eurasian Steppes - Vegetation Changes', '*  Eurasian Steppes - Desertification (in extreme cases).', '**Logic Description:** Overgrazing by livestock is a widespread problem, leading to vegetation degradation and soil erosion.']
 grasslands_eurasian_steppes_stressors["Overgrazing"]["Influences"] = ['*  Eurasian Steppes - Vegetation Changes', '*  Eurasian Steppes - Desertification (in extreme cases).', '**Logic Description:** Overgrazing by livestock is a widespread problem, leading to vegetation degradation and soil erosion.']
 grasslands_eurasian_steppes_stressors["Overgrazing"]["Logic Description"] = '---'
+grasslands_eurasian_steppes_stressors["Overgrazing"]["Impact Function"] = "impact_overgrazing_grasslands_eurasian_steppes"
 
 # --- Wildfires ---
 grasslands_eurasian_steppes_stressors["Wildfires"]["Metric"] = 'Fire frequency; area burned (ha/year).'
@@ -54,6 +58,7 @@ grasslands_eurasian_steppes_stressors["Wildfires"]["Impact on Biodiversity"] = '
 grasslands_eurasian_steppes_stressors["Wildfires"]["Influenced By"] = ['*  Eurasian Steppes - Climate Change', '* Human activities.', '**Influences (Stressors):**', '*  Eurasian Steppes - Vegetation Structure.', '**Logic Description:** Changes in fire regimes, often linked to human activities and climate change, can impact steppe ecosystems.']
 grasslands_eurasian_steppes_stressors["Wildfires"]["Influences"] = ['*  Eurasian Steppes - Vegetation Structure.', '**Logic Description:** Changes in fire regimes, often linked to human activities and climate change, can impact steppe ecosystems.']
 grasslands_eurasian_steppes_stressors["Wildfires"]["Logic Description"] = '---'
+grasslands_eurasian_steppes_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_grasslands_eurasian_steppes"
 
 # --- Invasive Species ---
 grasslands_eurasian_steppes_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance of key invasive species.'
@@ -63,4 +68,5 @@ grasslands_eurasian_steppes_stressors["Invasive Species"]["Impact on Biodiversit
 grasslands_eurasian_steppes_stressors["Invasive Species"]["Influenced By"] = ['*  Eurasian Steppes - Disturbance', '*  Eurasian Steppes - Climate Change', '**Influences (Stressors):**', '*  Eurasian Steppes - Native Communities', '**Logic Description:** Invasive species impacts.']
 grasslands_eurasian_steppes_stressors["Invasive Species"]["Influences"] = ['*  Eurasian Steppes - Native Communities', '**Logic Description:** Invasive species impacts.']
 grasslands_eurasian_steppes_stressors["Invasive Species"]["Logic Description"] = '---'
+grasslands_eurasian_steppes_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_grasslands_eurasian_steppes"
 

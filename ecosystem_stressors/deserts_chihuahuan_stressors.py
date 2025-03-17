@@ -17,6 +17,7 @@ deserts_chihuahuan_stressors["Overgrazing"]["Impact on Biodiversity"] = 'Loss of
 deserts_chihuahuan_stressors["Overgrazing"]["Influenced By"] = ['Livestock Management Practices: Overstocking.', 'Land Tenure Systems.', '**Influences (Stressors):**', 'Desertification.', 'Shrub Encroachment.', '**Logic Description:** Overgrazing by livestock is a *widespread* problem in the Chihuahuan Desert, leading to vegetation degradation, soil erosion, and shifts in plant communities.']
 deserts_chihuahuan_stressors["Overgrazing"]["Influences"] = ['Desertification.', 'Shrub Encroachment.', '**Logic Description:** Overgrazing by livestock is a *widespread* problem in the Chihuahuan Desert, leading to vegetation degradation, soil erosion, and shifts in plant communities.']
 deserts_chihuahuan_stressors["Overgrazing"]["Logic Description"] = '---'
+deserts_chihuahuan_stressors["Overgrazing"]["Impact Function"] = "impact_overgrazing_deserts_chihuahuan"
 
 # --- Water Extraction ---
 deserts_chihuahuan_stressors["Water Extraction"]["Metric"] = 'Volume of groundwater extracted (m³/year); changes in groundwater levels; impacts on springs.'
@@ -26,6 +27,7 @@ deserts_chihuahuan_stressors["Water Extraction"]["Impact on Biodiversity"] = 'Im
 deserts_chihuahuan_stressors["Water Extraction"]["Influenced By"] = ['Agricultural Water Use.', 'Urban Water Demand.', 'Mining Activities.', '**Influences (Stressors):**', 'Water Availability.', '**Logic Description:** Groundwater extraction for agriculture, urban use, and mining is a significant concern, impacting water availability for desert ecosystems.']
 deserts_chihuahuan_stressors["Water Extraction"]["Influences"] = ['Water Availability.', '**Logic Description:** Groundwater extraction for agriculture, urban use, and mining is a significant concern, impacting water availability for desert ecosystems.']
 deserts_chihuahuan_stressors["Water Extraction"]["Logic Description"] = '---'
+deserts_chihuahuan_stressors["Water Extraction"]["Impact Function"] = "impact_water_extraction_deserts_chihuahuan"
 
 # --- Land-Use Change ---
 deserts_chihuahuan_stressors["Land-Use Change"]["Metric"] = 'Area converted to agriculture, urban development, or other uses (ha/year).'
@@ -35,6 +37,7 @@ deserts_chihuahuan_stressors["Land-Use Change"]["Impact on Biodiversity"] = 'Los
 deserts_chihuahuan_stressors["Land-Use Change"]["Influenced By"] = ['* Agricultural expansion', '* Urban sprawl', '**Influences (Stressors):**', '* Fragmentation.', '**Logic Description:** Conversion of desert habitat to other land uses.']
 deserts_chihuahuan_stressors["Land-Use Change"]["Influences"] = ['* Fragmentation.', '**Logic Description:** Conversion of desert habitat to other land uses.']
 deserts_chihuahuan_stressors["Land-Use Change"]["Logic Description"] = '---'
+deserts_chihuahuan_stressors["Land-Use Change"]["Impact Function"] = "impact_land_use_change_deserts_chihuahuan"
 
 # --- Invasive Species ---
 deserts_chihuahuan_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance of key invasive species (e.g., Lehmann lovegrass).'
@@ -44,6 +47,7 @@ deserts_chihuahuan_stressors["Invasive Species"]["Impact on Biodiversity"] = '* 
 deserts_chihuahuan_stressors["Invasive Species"]["Influenced By"] = ['Disturbance (e.g., overgrazing).', '**Influences (Stressors):**', '* Native Plants', '* Fire', '**Logic Description:** Invasive plants can outcompete natives and alter fire regimes.']
 deserts_chihuahuan_stressors["Invasive Species"]["Influences"] = ['* Native Plants', '* Fire', '**Logic Description:** Invasive plants can outcompete natives and alter fire regimes.']
 deserts_chihuahuan_stressors["Invasive Species"]["Logic Description"] = '---'
+deserts_chihuahuan_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_deserts_chihuahuan"
 
 # --- Climate Change ---
 deserts_chihuahuan_stressors["Climate Change"]["Metric"] = 'Temperature increase; changes in precipitation; increased drought.'
@@ -53,4 +57,5 @@ deserts_chihuahuan_stressors["Climate Change"]["Impact on Biodiversity"] = '* St
 deserts_chihuahuan_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Water Availability.', '**Logic Description:** Climate change will exacerbate aridity and water stress.']
 deserts_chihuahuan_stressors["Climate Change"]["Influences"] = ['* Water Availability.', '**Logic Description:** Climate change will exacerbate aridity and water stress.']
 deserts_chihuahuan_stressors["Climate Change"]["Logic Description"] = '---'
+deserts_chihuahuan_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_deserts_chihuahuan"
 

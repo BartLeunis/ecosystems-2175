@@ -17,6 +17,7 @@ aquatic_rivers_yangtze_stressors["Three Gorges Dam"]["Impact on Biodiversity"] =
 aquatic_rivers_yangtze_stressors["Three Gorges Dam"]["Influenced By"] = ['Hydropower Generation: The primary purpose of the dam.', 'Flood Control.', 'Navigation.', '**Influences (Stressors):**', 'Fish Migration.', 'Sediment Transport.', 'Habitat Connectivity.', 'Water Quality.', 'Endangered Species Survival.', "**Logic Description:** The Three Gorges Dam, the world's largest hydropower project, has had *massive* and complex impacts on the Yangtze River ecosystem, including blocking fish migration, altering sediment transport, and contributing to the decline of endangered species. Numerous other dams, both built and planned, further compound these effects."]
 aquatic_rivers_yangtze_stressors["Three Gorges Dam"]["Influences"] = ['Fish Migration.', 'Sediment Transport.', 'Habitat Connectivity.', 'Water Quality.', 'Endangered Species Survival.', "**Logic Description:** The Three Gorges Dam, the world's largest hydropower project, has had *massive* and complex impacts on the Yangtze River ecosystem, including blocking fish migration, altering sediment transport, and contributing to the decline of endangered species. Numerous other dams, both built and planned, further compound these effects."]
 aquatic_rivers_yangtze_stressors["Three Gorges Dam"]["Logic Description"] = '---'
+aquatic_rivers_yangtze_stressors["Three Gorges Dam"]["Impact Function"] = "impact_three_gorges_dam_aquatic_rivers_yangtze"
 
 # --- Pollution ---
 aquatic_rivers_yangtze_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., nutrients, heavy metals, organic pollutants, microplastics) in water and sediment.'
@@ -26,6 +27,7 @@ aquatic_rivers_yangtze_stressors["Pollution"]["Impact on Biodiversity"] = 'Toxic
 aquatic_rivers_yangtze_stressors["Pollution"]["Influenced By"] = ['Industrial Discharge: From factories along the river.', 'Agricultural Runoff: Fertilizers and pesticides.', 'Urban Sewage: From rapidly growing cities.', 'Shipping Activities.', '**Influences (Stressors):**', 'Water Quality.', 'Aquatic Life Health.', 'Human Health.', '**Logic Description:** Pollution from industrial, agricultural, and urban sources is a *major* problem in the Yangtze River, degrading water quality and impacting aquatic life and human health.']
 aquatic_rivers_yangtze_stressors["Pollution"]["Influences"] = ['Water Quality.', 'Aquatic Life Health.', 'Human Health.', '**Logic Description:** Pollution from industrial, agricultural, and urban sources is a *major* problem in the Yangtze River, degrading water quality and impacting aquatic life and human health.']
 aquatic_rivers_yangtze_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_rivers_yangtze_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_rivers_yangtze"
 
 # --- Overfishing ---
 aquatic_rivers_yangtze_stressors["Overfishing"]["Metric"] = 'Fish catches; fish population sizes; changes in fish community structure.'
@@ -35,6 +37,7 @@ aquatic_rivers_yangtze_stressors["Overfishing"]["Impact on Biodiversity"] = 'Dec
 aquatic_rivers_yangtze_stressors["Overfishing"]["Influenced By"] = ['High Fishing Pressure: Due to large human populations and demand for food.', 'Destructive Fishing Practices: (e.g., electrofishing).', 'Habitat Degradation: (from pollution, dams).', '**Influences (Stressors):**', 'Fish Populations.', 'Food Web Structure.', '**Logic Description:** Overfishing, combined with other stressors, has severely depleted fish populations in the Yangtze River.']
 aquatic_rivers_yangtze_stressors["Overfishing"]["Influences"] = ['Fish Populations.', 'Food Web Structure.', '**Logic Description:** Overfishing, combined with other stressors, has severely depleted fish populations in the Yangtze River.']
 aquatic_rivers_yangtze_stressors["Overfishing"]["Logic Description"] = '---'
+aquatic_rivers_yangtze_stressors["Overfishing"]["Impact Function"] = "impact_overfishing_aquatic_rivers_yangtze"
 
 # --- Invasive Species ---
 aquatic_rivers_yangtze_stressors["Invasive Species"]["Metric"] = 'Abundance and distribution of invasive aquatic plants and animals.'
@@ -44,6 +47,7 @@ aquatic_rivers_yangtze_stressors["Invasive Species"]["Impact on Biodiversity"] =
 aquatic_rivers_yangtze_stressors["Invasive Species"]["Influenced By"] = ['Human Activities: (e.g., ballast water discharge, intentional introductions).', 'Altered Habitats: (dams and other changes can create conditions favorable to some invasives).', '**Influences (Stressors):**', 'Native Species Populations.', 'Ecosystem Functioning.', '**Logic Description:** Invasive species are an increasing threat to the Yangtze River ecosystem, competing with and preying on native species and altering habitats.']
 aquatic_rivers_yangtze_stressors["Invasive Species"]["Influences"] = ['Native Species Populations.', 'Ecosystem Functioning.', '**Logic Description:** Invasive species are an increasing threat to the Yangtze River ecosystem, competing with and preying on native species and altering habitats.']
 aquatic_rivers_yangtze_stressors["Invasive Species"]["Logic Description"] = '---'
+aquatic_rivers_yangtze_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_aquatic_rivers_yangtze"
 
 # --- Climate Change ---
 aquatic_rivers_yangtze_stressors["Climate Change"]["Metric"] = 'Water temperature; changes in precipitation patterns (amount, intensity, timing); glacier melt (in the headwaters).'
@@ -53,4 +57,5 @@ aquatic_rivers_yangtze_stressors["Climate Change"]["Impact on Biodiversity"] = '
 aquatic_rivers_yangtze_stressors["Climate Change"]["Influenced By"] = ['* Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', '* Hydrology (river flow).', '* Water Temperature.', '* Extreme Weather Events.', '**Logic Description:** Climate change is impacting the Yangtze River through changes in temperature, precipitation, and glacier melt, leading to altered flow regimes, increased water temperatures, and a higher risk of extreme events, further stressing an already heavily impacted ecosystem.']
 aquatic_rivers_yangtze_stressors["Climate Change"]["Influences"] = ['* Hydrology (river flow).', '* Water Temperature.', '* Extreme Weather Events.', '**Logic Description:** Climate change is impacting the Yangtze River through changes in temperature, precipitation, and glacier melt, leading to altered flow regimes, increased water temperatures, and a higher risk of extreme events, further stressing an already heavily impacted ecosystem.']
 aquatic_rivers_yangtze_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_rivers_yangtze_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_rivers_yangtze"
 

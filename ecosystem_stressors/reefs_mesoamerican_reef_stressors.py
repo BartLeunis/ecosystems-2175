@@ -17,6 +17,7 @@ reefs_mesoamerican_reef_stressors["Overfishing"]["Impact on Biodiversity"] = 'De
 reefs_mesoamerican_reef_stressors["Overfishing"]["Influenced By"] = ['High Fishing Pressure: Due to local dependence on fishing and tourism.', 'Weak Enforcement of Fisheries Regulations.', 'Lack of Alternative Livelihoods.', '**Influences (Stressors):**', 'Algal Overgrowth (if herbivores are removed).', 'Coral Reef Health.', '**Logic Description:** Overfishing is a major problem in the Mesoamerican Reef, depleting populations of important fish species and disrupting the food web.']
 reefs_mesoamerican_reef_stressors["Overfishing"]["Influences"] = ['Algal Overgrowth (if herbivores are removed).', 'Coral Reef Health.', '**Logic Description:** Overfishing is a major problem in the Mesoamerican Reef, depleting populations of important fish species and disrupting the food web.']
 reefs_mesoamerican_reef_stressors["Overfishing"]["Logic Description"] = '---'
+reefs_mesoamerican_reef_stressors["Overfishing"]["Impact Function"] = "impact_overfishing_reefs_mesoamerican_reef"
 
 # --- Coastal Development ---
 reefs_mesoamerican_reef_stressors["Coastal Development"]["Metric"] = 'Area of coastline developed (km or ha); tourism intensity (number of visitors); infrastructure development (e.g., hotels, marinas).'
@@ -26,6 +27,7 @@ reefs_mesoamerican_reef_stressors["Coastal Development"]["Impact on Biodiversity
 reefs_mesoamerican_reef_stressors["Coastal Development"]["Influenced By"] = ['Tourism Development: Rapid growth in tourism in some areas.', 'Population Growth: Increased demand for housing and infrastructure.', 'Government Policies: Land-use planning and zoning.', '**Influences (Stressors):**', 'Water Quality.', 'Sedimentation.', 'Habitat Loss.', '**Logic Description:** Rapid coastal development, driven by tourism and population growth, is leading to habitat loss, increased sedimentation, and pollution, impacting coral reefs.']
 reefs_mesoamerican_reef_stressors["Coastal Development"]["Influences"] = ['Water Quality.', 'Sedimentation.', 'Habitat Loss.', '**Logic Description:** Rapid coastal development, driven by tourism and population growth, is leading to habitat loss, increased sedimentation, and pollution, impacting coral reefs.']
 reefs_mesoamerican_reef_stressors["Coastal Development"]["Logic Description"] = '---'
+reefs_mesoamerican_reef_stressors["Coastal Development"]["Impact Function"] = "impact_coastal_development_reefs_mesoamerican_reef"
 
 # --- Water Pollution ---
 reefs_mesoamerican_reef_stressors["Water Pollution"]["Metric"] = 'Concentrations of nutrients (nitrogen, phosphorus), sediments, and pesticides in coastal waters.'
@@ -35,6 +37,7 @@ reefs_mesoamerican_reef_stressors["Water Pollution"]["Impact on Biodiversity"] =
 reefs_mesoamerican_reef_stressors["Water Pollution"]["Influenced By"] = ['Agricultural Runoff: Fertilizers and pesticides from agriculture.', 'Deforestation: Increased sediment runoff.', 'Urban Runoff: Sewage and stormwater.', 'Inadequate Wastewater Treatment.', '**Influences (Stressors):**', 'Coral Reef Health.', 'Algal Blooms.', '**Logic Description:** Runoff from agriculture, deforestation, and urban areas carries pollutants (nutrients, sediments, pesticides) into coastal waters, degrading water quality and impacting coral reefs.']
 reefs_mesoamerican_reef_stressors["Water Pollution"]["Influences"] = ['Coral Reef Health.', 'Algal Blooms.', '**Logic Description:** Runoff from agriculture, deforestation, and urban areas carries pollutants (nutrients, sediments, pesticides) into coastal waters, degrading water quality and impacting coral reefs.']
 reefs_mesoamerican_reef_stressors["Water Pollution"]["Logic Description"] = '---'
+reefs_mesoamerican_reef_stressors["Water Pollution"]["Impact Function"] = "impact_water_pollution_reefs_mesoamerican_reef"
 
 # --- Climate Change ---
 reefs_mesoamerican_reef_stressors["Climate Change"]["Metric"] = 'SST, Ocean Acidification, storm intensity.'
@@ -44,6 +47,7 @@ reefs_mesoamerican_reef_stressors["Climate Change"]["Impact on Biodiversity"] = 
 reefs_mesoamerican_reef_stressors["Climate Change"]["Influenced By"] = ['* Global GHG emissions', '**Influences (Stressors):**', '* Coral Bleaching', '* Ocean Acidification', '* Storm intensity', '**Logic Description:**  Warming waters, acidification, and potentially stronger storms impact.']
 reefs_mesoamerican_reef_stressors["Climate Change"]["Influences"] = ['* Coral Bleaching', '* Ocean Acidification', '* Storm intensity', '**Logic Description:**  Warming waters, acidification, and potentially stronger storms impact.']
 reefs_mesoamerican_reef_stressors["Climate Change"]["Logic Description"] = '---'
+reefs_mesoamerican_reef_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_reefs_mesoamerican_reef"
 
 # --- Invasive Species ---
 reefs_mesoamerican_reef_stressors["Invasive Species"]["Metric"] = 'Abundance and distribution of lionfish (and other invasive species, if relevant).'
@@ -53,4 +57,5 @@ reefs_mesoamerican_reef_stressors["Invasive Species"]["Impact on Biodiversity"] 
 reefs_mesoamerican_reef_stressors["Invasive Species"]["Influenced By"] = ['Introduction through the aquarium trade (likely initial introduction).', 'Lack of Natural Predators: In the Caribbean.', '**Influences (Stressors):**', 'Native Fish Populations.', '**Logic Description:** The invasive lionfish, a voracious predator with no natural predators in the Atlantic/Caribbean, is a major threat to reef fish populations in the Mesoamerican Reef.']
 reefs_mesoamerican_reef_stressors["Invasive Species"]["Influences"] = ['Native Fish Populations.', '**Logic Description:** The invasive lionfish, a voracious predator with no natural predators in the Atlantic/Caribbean, is a major threat to reef fish populations in the Mesoamerican Reef.']
 reefs_mesoamerican_reef_stressors["Invasive Species"]["Logic Description"] = '---'
+reefs_mesoamerican_reef_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_reefs_mesoamerican_reef"
 

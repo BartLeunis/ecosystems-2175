@@ -14,6 +14,7 @@ reefs_florida_keys_reefs_stressors["Ocean Warming and Bleaching"]["Impact on Bio
 reefs_florida_keys_reefs_stressors["Ocean Warming and Bleaching"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Coral Disease (bleached corals are more susceptible).', 'Reef Resilience.', '**Logic Description:** Rising ocean temperatures, driven by climate change, cause coral bleaching, which can lead to coral mortality and impact the overall health of the reef.']
 reefs_florida_keys_reefs_stressors["Ocean Warming and Bleaching"]["Influences"] = ['Coral Disease (bleached corals are more susceptible).', 'Reef Resilience.', '**Logic Description:** Rising ocean temperatures, driven by climate change, cause coral bleaching, which can lead to coral mortality and impact the overall health of the reef.']
 reefs_florida_keys_reefs_stressors["Ocean Warming and Bleaching"]["Logic Description"] = '---'
+reefs_florida_keys_reefs_stressors["Ocean Warming and Bleaching"]["Impact Function"] = "impact_ocean_warming_and_bleaching_reefs_florida_keys_reefs"
 
 # --- Physical Damage ---
 reefs_florida_keys_reefs_stressors["Physical Damage"]["Metric"] = 'Number of boat groundings; diver contacts with corals; anchor damage.'
@@ -23,4 +24,5 @@ reefs_florida_keys_reefs_stressors["Physical Damage"]["Impact on Biodiversity"] 
 reefs_florida_keys_reefs_stressors["Physical Damage"]["Influenced By"] = ['High Boating Traffic: In popular reef areas.', 'Lack of Awareness: Among boaters and divers.', 'Inadequate Mooring Buoys.', '**Influences (Stressors):**', 'Coral Cover (localized impacts).', '**Logic Description:** Physical damage from boat anchors, groundings, and diver/snorkeler contact can cause localized but significant damage to corals.']
 reefs_florida_keys_reefs_stressors["Physical Damage"]["Influences"] = ['Coral Cover (localized impacts).', '**Logic Description:** Physical damage from boat anchors, groundings, and diver/snorkeler contact can cause localized but significant damage to corals.']
 reefs_florida_keys_reefs_stressors["Physical Damage"]["Logic Description"] = '---'
+reefs_florida_keys_reefs_stressors["Physical Damage"]["Impact Function"] = "impact_physical_damage_reefs_florida_keys_reefs"
 

@@ -16,6 +16,7 @@ aquatic_mangrove_southeast_asian_stressors["Aquaculture Expansion"]["Impact on B
 aquatic_mangrove_southeast_asian_stressors["Aquaculture Expansion"]["Influenced By"] = ['Global Demand for Shrimp: A major economic driver.', 'Government Policies: Promotion of aquaculture development (in some cases).', 'Lack of Enforcement of Environmental Regulations.', 'Poverty and Lack of Alternative Livelihoods.', '**Influences (Stressors):**', 'Coastal Erosion.', 'Water Quality (pollution from ponds).', 'Habitat Loss (the primary impact).', '**Logic Description:** The conversion of mangroves to aquaculture ponds, primarily for shrimp farming, is the *single largest cause* of mangrove loss in Southeast Asia. This has devastating impacts on biodiversity, coastal protection, and water quality.']
 aquatic_mangrove_southeast_asian_stressors["Aquaculture Expansion"]["Influences"] = ['Coastal Erosion.', 'Water Quality (pollution from ponds).', 'Habitat Loss (the primary impact).', '**Logic Description:** The conversion of mangroves to aquaculture ponds, primarily for shrimp farming, is the *single largest cause* of mangrove loss in Southeast Asia. This has devastating impacts on biodiversity, coastal protection, and water quality.']
 aquatic_mangrove_southeast_asian_stressors["Aquaculture Expansion"]["Logic Description"] = '---'
+aquatic_mangrove_southeast_asian_stressors["Aquaculture Expansion"]["Impact Function"] = "impact_aquaculture_expansion_aquatic_mangrove_southeast_asian"
 
 # --- Deforestation ---
 aquatic_mangrove_southeast_asian_stressors["Deforestation"]["Metric"] = 'Area of mangroves cleared per year (ha/year) (for timber, charcoal, etc.).'
@@ -25,6 +26,7 @@ aquatic_mangrove_southeast_asian_stressors["Deforestation"]["Impact on Biodivers
 aquatic_mangrove_southeast_asian_stressors["Deforestation"]["Influenced By"] = ['Demand for Timber and Fuelwood: Local use and export.', 'Poverty and Lack of Alternative Livelihoods.', 'Coastal Development', '**Influences (Stressors):**', '* Coastal erosion', '**Logic Description:** Deforestation for timber, fuelwood, and charcoal production also contributes to mangrove loss.']
 aquatic_mangrove_southeast_asian_stressors["Deforestation"]["Influences"] = ['* Coastal erosion', '**Logic Description:** Deforestation for timber, fuelwood, and charcoal production also contributes to mangrove loss.']
 aquatic_mangrove_southeast_asian_stressors["Deforestation"]["Logic Description"] = '---'
+aquatic_mangrove_southeast_asian_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_aquatic_mangrove_southeast_asian"
 
 # --- Pollution ---
 aquatic_mangrove_southeast_asian_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (nutrients, heavy metals, plastics) in water and sediment.'
@@ -34,6 +36,7 @@ aquatic_mangrove_southeast_asian_stressors["Pollution"]["Impact on Biodiversity"
 aquatic_mangrove_southeast_asian_stressors["Pollution"]["Influenced By"] = ['Industrial Discharge.', 'Urban Runoff.', 'Agricultural Runoff.', 'Aquaculture Effluent.', '**Influences (Stressors):**', 'Mangrove Health.', 'Water Quality.', '**Logic Description:** Pollution from various sources degrades water quality and impacts mangrove ecosystems.']
 aquatic_mangrove_southeast_asian_stressors["Pollution"]["Influences"] = ['Mangrove Health.', 'Water Quality.', '**Logic Description:** Pollution from various sources degrades water quality and impacts mangrove ecosystems.']
 aquatic_mangrove_southeast_asian_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_mangrove_southeast_asian_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_mangrove_southeast_asian"
 
 # --- Climate Change ---
 aquatic_mangrove_southeast_asian_stressors["Climate Change"]["Metric"] = 'Sea Level Rise, Temperature, Storms'
@@ -43,4 +46,5 @@ aquatic_mangrove_southeast_asian_stressors["Climate Change"]["Impact on Biodiver
 aquatic_mangrove_southeast_asian_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Sea level', '* Storm surge', '**Logic Description:**  Climate change impacts.']
 aquatic_mangrove_southeast_asian_stressors["Climate Change"]["Influences"] = ['* Sea level', '* Storm surge', '**Logic Description:**  Climate change impacts.']
 aquatic_mangrove_southeast_asian_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_mangrove_southeast_asian_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_mangrove_southeast_asian"
 

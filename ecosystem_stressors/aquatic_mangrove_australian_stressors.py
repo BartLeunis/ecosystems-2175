@@ -15,6 +15,7 @@ aquatic_mangrove_australian_stressors["Climate Change"]["Impact on Biodiversity"
 aquatic_mangrove_australian_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Sea Level Rise.', 'Coastal Erosion.', 'Storm Surge.', '**Logic Description:** Climate change, particularly sea level rise, poses a *major* threat to Australian mangroves. Increased storm intensity and changes in rainfall patterns also have impacts.']
 aquatic_mangrove_australian_stressors["Climate Change"]["Influences"] = ['Sea Level Rise.', 'Coastal Erosion.', 'Storm Surge.', '**Logic Description:** Climate change, particularly sea level rise, poses a *major* threat to Australian mangroves. Increased storm intensity and changes in rainfall patterns also have impacts.']
 aquatic_mangrove_australian_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_mangrove_australian_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_mangrove_australian"
 
 # --- Coastal Development ---
 aquatic_mangrove_australian_stressors["Coastal Development"]["Metric"] = 'Area converted'
@@ -24,6 +25,7 @@ aquatic_mangrove_australian_stressors["Coastal Development"]["Impact on Biodiver
 aquatic_mangrove_australian_stressors["Coastal Development"]["Influenced By"] = ['* Urban expansion', '* Infrastructure', '**Influences (Stressors):**', '* Habitat Fragmentation', '**Logic Description:** Coastal development is a pressure.']
 aquatic_mangrove_australian_stressors["Coastal Development"]["Influences"] = ['* Habitat Fragmentation', '**Logic Description:** Coastal development is a pressure.']
 aquatic_mangrove_australian_stressors["Coastal Development"]["Logic Description"] = '---'
+aquatic_mangrove_australian_stressors["Coastal Development"]["Impact Function"] = "impact_coastal_development_aquatic_mangrove_australian"
 
 # --- Pollution ---
 aquatic_mangrove_australian_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants.'
@@ -33,4 +35,5 @@ aquatic_mangrove_australian_stressors["Pollution"]["Impact on Biodiversity"] = '
 aquatic_mangrove_australian_stressors["Pollution"]["Influenced By"] = ['* Agricultural, urban, and industrial runoff', '**Influences (Stressors):**', '* Mangrove Health', '**Logic Description:** Runoff a concern in some areas.']
 aquatic_mangrove_australian_stressors["Pollution"]["Influences"] = ['* Mangrove Health', '**Logic Description:** Runoff a concern in some areas.']
 aquatic_mangrove_australian_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_mangrove_australian_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_mangrove_australian"
 

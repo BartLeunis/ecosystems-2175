@@ -18,6 +18,7 @@ forests_temperate_forests_pacific_northwest_stressors["Infrastructure Developmen
 forests_temperate_forests_pacific_northwest_stressors["Infrastructure Development"]["Influenced By"] = ['Economic Growth: Resource extraction (timber).', 'Population Growth.', 'Government Policies.', '**Influences (Stressors):**', 'Deforestation (primarily through logging).', 'Water quality (dams)', '**Logic Description:** Infrastructure, primarily related to logging and dams, fragments habitat and impacts aquatic ecosystems.']
 forests_temperate_forests_pacific_northwest_stressors["Infrastructure Development"]["Influences"] = ['Deforestation (primarily through logging).', 'Water quality (dams)', '**Logic Description:** Infrastructure, primarily related to logging and dams, fragments habitat and impacts aquatic ecosystems.']
 forests_temperate_forests_pacific_northwest_stressors["Infrastructure Development"]["Logic Description"] = '---'
+forests_temperate_forests_pacific_northwest_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_forests_temperate_forests_pacific_northwest"
 
 # --- Deforestation ---
 forests_temperate_forests_pacific_northwest_stressors["Deforestation"]["Metric"] = 'Area of forest cleared per year (ha/year) (often related to logging, but can also include conversion to other land uses).'
@@ -27,6 +28,7 @@ forests_temperate_forests_pacific_northwest_stressors["Deforestation"]["Impact o
 forests_temperate_forests_pacific_northwest_stressors["Deforestation"]["Influenced By"] = ['Infrastructure Development (roads).', 'Economic Growth: Demand for timber.', 'Government Policies: Timber harvest regulations.', '**Influences (Stressors):**', '*  Carbon Sequestration', '**Logic Description:** Logging, particularly of old-growth forests, is a major driver of deforestation, impacting biodiversity and carbon storage.']
 forests_temperate_forests_pacific_northwest_stressors["Deforestation"]["Influences"] = ['*  Carbon Sequestration', '**Logic Description:** Logging, particularly of old-growth forests, is a major driver of deforestation, impacting biodiversity and carbon storage.']
 forests_temperate_forests_pacific_northwest_stressors["Deforestation"]["Logic Description"] = '---'
+forests_temperate_forests_pacific_northwest_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_forests_temperate_forests_pacific_northwest"
 
 # --- Temperature Increase ---
 forests_temperate_forests_pacific_northwest_stressors["Temperature Increase"]["Metric"] = 'Average annual temperature increase (°C).'
@@ -36,6 +38,7 @@ forests_temperate_forests_pacific_northwest_stressors["Temperature Increase"]["I
 forests_temperate_forests_pacific_northwest_stressors["Temperature Increase"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Wildfires.', 'Changes in Precipitation.', 'Pest outbreaks', '**Logic Description:** Climate change impacts, including increased risk of wildfires and insect outbreaks.']
 forests_temperate_forests_pacific_northwest_stressors["Temperature Increase"]["Influences"] = ['Wildfires.', 'Changes in Precipitation.', 'Pest outbreaks', '**Logic Description:** Climate change impacts, including increased risk of wildfires and insect outbreaks.']
 forests_temperate_forests_pacific_northwest_stressors["Temperature Increase"]["Logic Description"] = '---'
+forests_temperate_forests_pacific_northwest_stressors["Temperature Increase"]["Impact Function"] = "impact_temperature_increase_forests_temperate_forests_pacific_northwest"
 
 # --- Changes in Precipitation ---
 forests_temperate_forests_pacific_northwest_stressors["Changes in Precipitation"]["Metric"] = 'Change in annual precipitation (mm/year); changes in snowpack (snow water equivalent - SWE).'
@@ -45,6 +48,7 @@ forests_temperate_forests_pacific_northwest_stressors["Changes in Precipitation"
 forests_temperate_forests_pacific_northwest_stressors["Changes in Precipitation"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Wildfires.', '* Water availability', '**Logic Description:** Changes in precipitation patterns, including reduced snowpack, impact water availability and species composition.']
 forests_temperate_forests_pacific_northwest_stressors["Changes in Precipitation"]["Influences"] = ['Wildfires.', '* Water availability', '**Logic Description:** Changes in precipitation patterns, including reduced snowpack, impact water availability and species composition.']
 forests_temperate_forests_pacific_northwest_stressors["Changes in Precipitation"]["Logic Description"] = '---'
+forests_temperate_forests_pacific_northwest_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_forests_temperate_forests_pacific_northwest"
 
 # --- Wildfires ---
 forests_temperate_forests_pacific_northwest_stressors["Wildfires"]["Metric"] = 'Number of fires; area burned (ha/year).'
@@ -54,6 +58,7 @@ forests_temperate_forests_pacific_northwest_stressors["Wildfires"]["Impact on Bi
 forests_temperate_forests_pacific_northwest_stressors["Wildfires"]["Influenced By"] = ['Temperature Increase.', 'Changes in Precipitation (reduced snowpack, longer dry seasons).', 'Forest Management Practices (fire suppression).', 'Insect outbreaks (creating dead trees).', '**Influences (Stressors):**', 'Future fire risk', '* air quality', '**Logic Description:** Wildfires, increasing in frequency and intensity due to climate change and past fire suppression, are a major threat.']
 forests_temperate_forests_pacific_northwest_stressors["Wildfires"]["Influences"] = ['Future fire risk', '* air quality', '**Logic Description:** Wildfires, increasing in frequency and intensity due to climate change and past fire suppression, are a major threat.']
 forests_temperate_forests_pacific_northwest_stressors["Wildfires"]["Logic Description"] = '---'
+forests_temperate_forests_pacific_northwest_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_forests_temperate_forests_pacific_northwest"
 
 # --- Invasive Species ---
 forests_temperate_forests_pacific_northwest_stressors["Invasive Species"]["Metric"] = 'Abundance/distribution of key invasives (e.g., Scotch broom, Himalayan blackberry).'
@@ -63,4 +68,5 @@ forests_temperate_forests_pacific_northwest_stressors["Invasive Species"]["Impac
 forests_temperate_forests_pacific_northwest_stressors["Invasive Species"]["Influenced By"] = ['* Disturbance (e.g., logging, roads).', '* Climate Change', '* Global trade', '**Influences (Stressors):**', '* Native plant communities', '**Logic Description:** Invasive plants can outcompete native species, altering forest structure and function.']
 forests_temperate_forests_pacific_northwest_stressors["Invasive Species"]["Influences"] = ['* Native plant communities', '**Logic Description:** Invasive plants can outcompete native species, altering forest structure and function.']
 forests_temperate_forests_pacific_northwest_stressors["Invasive Species"]["Logic Description"] = '---'
+forests_temperate_forests_pacific_northwest_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_forests_temperate_forests_pacific_northwest"
 

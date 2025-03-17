@@ -17,6 +17,7 @@ wetlands_camargue_stressors["Altered Hydrology"]["Impact on Biodiversity"] = "Im
 wetlands_camargue_stressors["Altered Hydrology"]["Influenced By"] = ['Water Management Practices: The Camargue is heavily managed for water, with a complex system of canals, sluices, and pumping stations.', 'Upstream Water Use: Agriculture, industry, and urban areas along the Rhone River.', 'Rice Cultivation: A major water user within the Camargue itself.', 'Climate Change: Changes in precipitation and sea level.', '* Sea level rise', '**Influences (Stressors):**', 'Salinity Levels.', 'Habitat Availability.', 'Water Quality.', "**Logic Description:** The Camargue's hydrology is heavily managed, and changes in water management practices, upstream water use, and climate change can significantly alter water levels, salinity, and the distribution of different wetland habitats. This is a constant balancing act between human needs and ecological needs."]
 wetlands_camargue_stressors["Altered Hydrology"]["Influences"] = ['Salinity Levels.', 'Habitat Availability.', 'Water Quality.', "**Logic Description:** The Camargue's hydrology is heavily managed, and changes in water management practices, upstream water use, and climate change can significantly alter water levels, salinity, and the distribution of different wetland habitats. This is a constant balancing act between human needs and ecological needs."]
 wetlands_camargue_stressors["Altered Hydrology"]["Logic Description"] = '---'
+wetlands_camargue_stressors["Altered Hydrology"]["Impact Function"] = "impact_altered_hydrology_wetlands_camargue"
 
 # --- Pollution ---
 wetlands_camargue_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., nutrients, pesticides, heavy metals) in water, sediment, and biota.'
@@ -26,6 +27,7 @@ wetlands_camargue_stressors["Pollution"]["Impact on Biodiversity"] = "Eutrophica
 wetlands_camargue_stressors["Pollution"]["Influenced By"] = ['Agricultural Runoff: From rice cultivation and other agriculture in the region.', 'Industrial Discharge: (potentially, from industries upstream).', 'Urban Runoff: From nearby towns and cities.', '**Influences (Stressors):**', 'Water Quality.', 'Wildlife Health.', "**Logic Description:** Pollution from agriculture, industry, and urban areas can degrade water quality and impact the Camargue's ecosystems."]
 wetlands_camargue_stressors["Pollution"]["Influences"] = ['Water Quality.', 'Wildlife Health.', "**Logic Description:** Pollution from agriculture, industry, and urban areas can degrade water quality and impact the Camargue's ecosystems."]
 wetlands_camargue_stressors["Pollution"]["Logic Description"] = '---'
+wetlands_camargue_stressors["Pollution"]["Impact Function"] = "impact_pollution_wetlands_camargue"
 
 # --- Climate Change ---
 wetlands_camargue_stressors["Climate Change"]["Metric"] = 'Temperature increase (°C); changes in precipitation (mm/year, seasonality); sea level rise (mm/year).'
@@ -35,6 +37,7 @@ wetlands_camargue_stressors["Climate Change"]["Impact on Biodiversity"] = 'Shift
 wetlands_camargue_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Sea Level Rise', '* Hydrology', '**Logic Description:** Climate change is impacting the Camargue through sea level rise, altered precipitation patterns, and increased temperatures.']
 wetlands_camargue_stressors["Climate Change"]["Influences"] = ['* Sea Level Rise', '* Hydrology', '**Logic Description:** Climate change is impacting the Camargue through sea level rise, altered precipitation patterns, and increased temperatures.']
 wetlands_camargue_stressors["Climate Change"]["Logic Description"] = '---'
+wetlands_camargue_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_wetlands_camargue"
 
 # --- Invasive Species ---
 wetlands_camargue_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance'
@@ -43,6 +46,7 @@ wetlands_camargue_stressors["Invasive Species"]["Impact on Biodiversity"] = '* C
 wetlands_camargue_stressors["Invasive Species"]["Influenced By"] = ['* Human activities', '**Influences (Stressors):**', '* Native species', '**Logic Description:** Invasive species can disrupt the ecosystem.']
 wetlands_camargue_stressors["Invasive Species"]["Influences"] = ['* Native species', '**Logic Description:** Invasive species can disrupt the ecosystem.']
 wetlands_camargue_stressors["Invasive Species"]["Logic Description"] = '---'
+wetlands_camargue_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_wetlands_camargue"
 
 # --- Tourism ---
 wetlands_camargue_stressors["Tourism"]["Data Sources"] = ['* Tourism Statistics', '**Impact on Area**: Localized disturbance', '**Impact on Biodiversity:**', '* Disturbance of wildlife, especially birds.', '**Influenced By (Stressors):**', '* Popularity of the region', '**Influences (Stressors):**', '* Wildlife Behavior', '**Logic Description:** Tourism, while economically important, can disturb wildlife.']
@@ -50,4 +54,5 @@ wetlands_camargue_stressors["Tourism"]["Impact on Biodiversity"] = '* Disturbanc
 wetlands_camargue_stressors["Tourism"]["Influenced By"] = ['* Popularity of the region', '**Influences (Stressors):**', '* Wildlife Behavior', '**Logic Description:** Tourism, while economically important, can disturb wildlife.']
 wetlands_camargue_stressors["Tourism"]["Influences"] = ['* Wildlife Behavior', '**Logic Description:** Tourism, while economically important, can disturb wildlife.']
 wetlands_camargue_stressors["Tourism"]["Logic Description"] = '---'
+wetlands_camargue_stressors["Tourism"]["Impact Function"] = "impact_tourism_wetlands_camargue"
 

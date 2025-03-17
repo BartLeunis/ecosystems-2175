@@ -13,4 +13,5 @@ wetlands_inner_niger_delta_stressors["Deforestation"]["Impact on Biodiversity"] 
 wetlands_inner_niger_delta_stressors["Deforestation"]["Influenced By"] = ['Population Growth: Increased demand for fuelwood and land.', 'Agricultural Expansion: Clearing land for crops.', '**Influences (Stressors):**', 'Water Quality (through increased sedimentation).', 'Habitat Availability', '**Logic Description:** Deforestation, driven by population growth and agricultural expansion, is impacting both biodiversity and the livelihoods of communities that depend on forest resources.']
 wetlands_inner_niger_delta_stressors["Deforestation"]["Influences"] = ['Water Quality (through increased sedimentation).', 'Habitat Availability', '**Logic Description:** Deforestation, driven by population growth and agricultural expansion, is impacting both biodiversity and the livelihoods of communities that depend on forest resources.']
 wetlands_inner_niger_delta_stressors["Deforestation"]["Logic Description"] = '---'
+wetlands_inner_niger_delta_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_wetlands_inner_niger_delta"
 

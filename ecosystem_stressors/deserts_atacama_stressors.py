@@ -16,6 +16,7 @@ deserts_atacama_stressors["Mining"]["Impact on Biodiversity"] = 'Impacts on extr
 deserts_atacama_stressors["Mining"]["Influenced By"] = ['Global Demand for Minerals: (copper, lithium).', 'Government Policies.', '**Influences (Stressors):**', 'Water Resources: *Critical* in this hyper-arid environment.', 'Pollution.', '**Logic Description:** Mining, particularly for copper and lithium, is a *dominant* stressor in the Atacama, with *major* impacts on extremely limited water resources and unique, highly adapted biodiversity.']
 deserts_atacama_stressors["Mining"]["Influences"] = ['Water Resources: *Critical* in this hyper-arid environment.', 'Pollution.', '**Logic Description:** Mining, particularly for copper and lithium, is a *dominant* stressor in the Atacama, with *major* impacts on extremely limited water resources and unique, highly adapted biodiversity.']
 deserts_atacama_stressors["Mining"]["Logic Description"] = '---'
+deserts_atacama_stressors["Mining"]["Impact Function"] = "impact_mining_deserts_atacama"
 
 # --- Water Extraction ---
 deserts_atacama_stressors["Water Extraction"]["Metric"] = 'Volume of water extracted (m³/year); changes in groundwater levels; impacts on oases.'
@@ -25,12 +26,14 @@ deserts_atacama_stressors["Water Extraction"]["Impact on Biodiversity"] = 'Loss 
 deserts_atacama_stressors["Water Extraction"]["Influenced By"] = ['Mining Activities: *Very* high water demand.', 'Agriculture (limited, but present in some areas).', 'Human Consumption.', '**Influences (Stressors):**', 'Water Availability: The *defining* factor.', '**Logic Description:** Water extraction, primarily for mining, is a *critical* threat in the hyper-arid Atacama, impacting the extremely limited water resources and the unique biodiversity that depends on them.']
 deserts_atacama_stressors["Water Extraction"]["Influences"] = ['Water Availability: The *defining* factor.', '**Logic Description:** Water extraction, primarily for mining, is a *critical* threat in the hyper-arid Atacama, impacting the extremely limited water resources and the unique biodiversity that depends on them.']
 deserts_atacama_stressors["Water Extraction"]["Logic Description"] = '---'
+deserts_atacama_stressors["Water Extraction"]["Impact Function"] = "impact_water_extraction_deserts_atacama"
 
 # --- Light Pollution ---
 deserts_atacama_stressors["Light Pollution"]["Data Sources"] = ['* Astronomical observatories', '**Impact on Area:** N/A', '**Impact on Biodiversity**:', '* Impacts on nocturnal species.', '**Influenced By (Stressors):**', '* Astronomy', '* Urban areas', '**Influences (Stressors):**', '* Nocturnal wildlife', '**Logic Description**: The Atacama is a major center for astronomical observation.']
 deserts_atacama_stressors["Light Pollution"]["Impact on Area"] = 'N/A'
 deserts_atacama_stressors["Light Pollution"]["Influenced By"] = ['* Astronomy', '* Urban areas', '**Influences (Stressors):**', '* Nocturnal wildlife', '**Logic Description**: The Atacama is a major center for astronomical observation.']
 deserts_atacama_stressors["Light Pollution"]["Influences"] = ['* Nocturnal wildlife', '**Logic Description**: The Atacama is a major center for astronomical observation.']
+deserts_atacama_stressors["Light Pollution"]["Impact Function"] = "impact_light_pollution_deserts_atacama"
 
 # --- Climate Change ---
 deserts_atacama_stressors["Climate Change"]["Metric"] = 'Temperature and precipitation changes'
@@ -39,4 +42,5 @@ deserts_atacama_stressors["Climate Change"]["Impact on Area"] = 'Impacts already
 deserts_atacama_stressors["Climate Change"]["Impact on Biodiversity"] = '* Impacts species adapted to extreme conditions\n**Influenced By (Stressors):**\n* Global GHG\n**Influences (Stressors):**\n* Water resources\n**Logic Description**: Climate change impacts.'
 deserts_atacama_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Water resources', '**Logic Description**: Climate change impacts.']
 deserts_atacama_stressors["Climate Change"]["Influences"] = ['* Water resources', '**Logic Description**: Climate change impacts.']
+deserts_atacama_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_deserts_atacama"
 

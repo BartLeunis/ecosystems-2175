@@ -15,6 +15,7 @@ deserts_namib_stressors["Climate Change"]["Impact on Biodiversity"] = 'The Namib
 deserts_namib_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Fog Patterns: A *critical* factor for the Namib.', '**Logic Description:** Climate change impacts on temperature and, *crucially*, fog patterns, threaten the unique adaptations of Namib Desert species.']
 deserts_namib_stressors["Climate Change"]["Influences"] = ['Fog Patterns: A *critical* factor for the Namib.', '**Logic Description:** Climate change impacts on temperature and, *crucially*, fog patterns, threaten the unique adaptations of Namib Desert species.']
 deserts_namib_stressors["Climate Change"]["Logic Description"] = '---'
+deserts_namib_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_deserts_namib"
 
 # --- Mining ---
 deserts_namib_stressors["Mining"]["Metric"] = 'Area affected by mining operations (ha); water use by mining; pollution levels.'
@@ -24,6 +25,7 @@ deserts_namib_stressors["Mining"]["Impact on Biodiversity"] = 'Direct habitat de
 deserts_namib_stressors["Mining"]["Influenced By"] = ['Global Demand for Minerals: (e.g., uranium, diamonds).', 'Government Policies.', '**Influences (Stressors):**', 'Water Resources.', 'Pollution.', '**Logic Description:** Mining activities, particularly for uranium and diamonds, can impact fragile desert habitats and water resources.']
 deserts_namib_stressors["Mining"]["Influences"] = ['Water Resources.', 'Pollution.', '**Logic Description:** Mining activities, particularly for uranium and diamonds, can impact fragile desert habitats and water resources.']
 deserts_namib_stressors["Mining"]["Logic Description"] = '---'
+deserts_namib_stressors["Mining"]["Impact Function"] = "impact_mining_deserts_namib"
 
 # --- Off-Road Driving ---
 deserts_namib_stressors["Off-Road Driving"]["Metric"] = 'Area impacted'
@@ -33,4 +35,5 @@ deserts_namib_stressors["Off-Road Driving"]["Impact on Biodiversity"] = 'Impacts
 deserts_namib_stressors["Off-Road Driving"]["Influenced By"] = ['* Tourism', '**Influences (Stressors):**', '* Soil and vegetation', '**Logic Description:** Off-road driving can damage sensitive desert ecosystems.']
 deserts_namib_stressors["Off-Road Driving"]["Influences"] = ['* Soil and vegetation', '**Logic Description:** Off-road driving can damage sensitive desert ecosystems.']
 deserts_namib_stressors["Off-Road Driving"]["Logic Description"] = '---'
+deserts_namib_stressors["Off-Road Driving"]["Impact Function"] = "impact_off_road_driving_deserts_namib"
 

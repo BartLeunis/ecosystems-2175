@@ -33,6 +33,7 @@ tundra_alpine_stressors["Temperature Increase"]["Impact on Biodiversity"] = 'Spe
 tundra_alpine_stressors["Temperature Increase"]["Influenced By"] = ['Global Greenhouse Gas Emissions', '**Influences (Stressors):**', 'Alpine Tundra - Changes in Precipitation', 'Alpine Tundra - Glacier Retreat', 'Alpine Tundra - Snowpack', '**Logic Description:** Similar to Arctic Tundra, but with even greater risk of species extinctions due to limited "upward" movement. "Mountain top extinction."']
 tundra_alpine_stressors["Temperature Increase"]["Influences"] = ['Alpine Tundra - Changes in Precipitation', 'Alpine Tundra - Glacier Retreat', 'Alpine Tundra - Snowpack', '**Logic Description:** Similar to Arctic Tundra, but with even greater risk of species extinctions due to limited "upward" movement. "Mountain top extinction."']
 tundra_alpine_stressors["Temperature Increase"]["Logic Description"] = '---'
+tundra_alpine_stressors["Temperature Increase"]["Impact Function"] = "impact_temperature_increase_tundra_alpine"
 
 # --- Changes in Precipitation ---
 tundra_alpine_stressors["Changes in Precipitation"]["Metric"] = 'Change in annual precipitation (mm/year); changes in snowpack (depth, duration).'
@@ -42,6 +43,7 @@ tundra_alpine_stressors["Changes in Precipitation"]["Impact on Biodiversity"] = 
 tundra_alpine_stressors["Changes in Precipitation"]["Influenced By"] = ['Global Greenhouse Gas Emissions', '**Influences (Stressors):**', 'Alpine Tundra - Water Availability', '**Logic Description:** Changes in snowpack are particularly critical, affecting water availability throughout the year.']
 tundra_alpine_stressors["Changes in Precipitation"]["Influences"] = ['Alpine Tundra - Water Availability', '**Logic Description:** Changes in snowpack are particularly critical, affecting water availability throughout the year.']
 tundra_alpine_stressors["Changes in Precipitation"]["Logic Description"] = '---'
+tundra_alpine_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_tundra_alpine"
 
 # --- Infrastructure Development ---
 tundra_alpine_stressors["Infrastructure Development"]["Metric"] = 'Road density (km/km²); area affected by ski resorts, tourism infrastructure, and other development (ha).'
@@ -51,6 +53,7 @@ tundra_alpine_stressors["Infrastructure Development"]["Impact on Biodiversity"] 
 tundra_alpine_stressors["Infrastructure Development"]["Influenced By"] = ['Alpine Tundra - Economic Growth (tourism)', 'Alpine Tundra - Government Policies', '**Influences (Stressors):**', 'Alpine Tundra - Localized Pollution', 'Alpine Tundra - Invasive Species', '**Logic Description:** Tourism and recreation infrastructure (ski resorts, roads) are major drivers of habitat loss and fragmentation in alpine tundra.']
 tundra_alpine_stressors["Infrastructure Development"]["Influences"] = ['Alpine Tundra - Localized Pollution', 'Alpine Tundra - Invasive Species', '**Logic Description:** Tourism and recreation infrastructure (ski resorts, roads) are major drivers of habitat loss and fragmentation in alpine tundra.']
 tundra_alpine_stressors["Infrastructure Development"]["Logic Description"] = '---'
+tundra_alpine_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_tundra_alpine"
 
 # --- Pollution ---
 tundra_alpine_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., nitrogen, heavy metals) in air, water, soil, and biota.'
@@ -60,6 +63,7 @@ tundra_alpine_stressors["Pollution"]["Impact on Biodiversity"] = 'Toxic effects 
 tundra_alpine_stressors["Pollution"]["Influenced By"] = ['Alpine Tundra - Long-Range Transport of Pollutants', 'Alpine Tundra - Local Sources', '**Influences (Stressors):**', '*  Alpine Tundra - Wildlife Health', 'Alpine Tundra - Water Quality', '**Logic Description:** Alpine tundra receives pollutants from both long-range transport and local sources (tourism, mining). Nitrogen deposition is a particular concern.']
 tundra_alpine_stressors["Pollution"]["Influences"] = ['*  Alpine Tundra - Wildlife Health', 'Alpine Tundra - Water Quality', '**Logic Description:** Alpine tundra receives pollutants from both long-range transport and local sources (tourism, mining). Nitrogen deposition is a particular concern.']
 tundra_alpine_stressors["Pollution"]["Logic Description"] = '---'
+tundra_alpine_stressors["Pollution"]["Impact Function"] = "impact_pollution_tundra_alpine"
 
 # --- Overgrazing ---
 tundra_alpine_stressors["Overgrazing"]["Metric"] = 'Livestock density (animals/km²); vegetation cover and composition; signs of soil erosion.'
@@ -69,6 +73,7 @@ tundra_alpine_stressors["Overgrazing"]["Impact on Biodiversity"] = 'Loss of pala
 tundra_alpine_stressors["Overgrazing"]["Influenced By"] = ['Alpine Tundra - Livestock Management Practices', '**Influences (Stressors):**', 'Alpine Tundra - Vegetation Changes', '*  Alpine Tundra - Soil Erosion', '**Logic Description:** Overgrazing by livestock can damage fragile alpine vegetation and lead to soil erosion.']
 tundra_alpine_stressors["Overgrazing"]["Influences"] = ['Alpine Tundra - Vegetation Changes', '*  Alpine Tundra - Soil Erosion', '**Logic Description:** Overgrazing by livestock can damage fragile alpine vegetation and lead to soil erosion.']
 tundra_alpine_stressors["Overgrazing"]["Logic Description"] = '---'
+tundra_alpine_stressors["Overgrazing"]["Impact Function"] = "impact_overgrazing_tundra_alpine"
 
 # --- Invasive Species ---
 tundra_alpine_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance of invasive plant species.'
@@ -77,6 +82,7 @@ tundra_alpine_stressors["Invasive Species"]["Impact on Biodiversity"] = '* Compe
 tundra_alpine_stressors["Invasive Species"]["Influenced By"] = ['* Alpine Tundra - Climate Change', '* Alpine Tundra - Disturbance', '**Influences (Stressors):**', '* Alpine Tundra - Native Plant Communities', '**Logic Description:** While less widespread than other, invasive species are increasing.']
 tundra_alpine_stressors["Invasive Species"]["Influences"] = ['* Alpine Tundra - Native Plant Communities', '**Logic Description:** While less widespread than other, invasive species are increasing.']
 tundra_alpine_stressors["Invasive Species"]["Logic Description"] = '---'
+tundra_alpine_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_tundra_alpine"
 
 # --- Economic Growth ---
 tundra_alpine_stressors["Economic Growth"]["Metric"] = 'GDP, tourism revenue'
@@ -85,6 +91,7 @@ tundra_alpine_stressors["Economic Growth"]["Impact on Area"] = 'Increased pressu
 tundra_alpine_stressors["Economic Growth"]["Impact on Biodiversity"] = '* Disturbance\n**Influenced By (Stressors)**\n* Global and local economies\n**Influences (Stressors):**\n* Alpine Tundra - Infrastructure Development\n**Logic Description:** Economic growth, particularly in tourism, drives development.'
 tundra_alpine_stressors["Economic Growth"]["Influences"] = ['* Alpine Tundra - Infrastructure Development', '**Logic Description:** Economic growth, particularly in tourism, drives development.']
 tundra_alpine_stressors["Economic Growth"]["Logic Description"] = '---'
+tundra_alpine_stressors["Economic Growth"]["Impact Function"] = "impact_economic_growth_tundra_alpine"
 
 # --- Government Policies ---
 tundra_alpine_stressors["Government Policies"]["Metric"] = 'Land use regulations, environmental protections'
@@ -94,6 +101,7 @@ tundra_alpine_stressors["Government Policies"]["Impact on Biodiversity"] = '* Va
 tundra_alpine_stressors["Government Policies"]["Influenced By"] = ['* Politics, economics', '**Influences (Stressors):**', '* Alpine Tundra - Infrastructure Development', '**Logic Description:** Government policies can have positive or negative impacts']
 tundra_alpine_stressors["Government Policies"]["Influences"] = ['* Alpine Tundra - Infrastructure Development', '**Logic Description:** Government policies can have positive or negative impacts']
 tundra_alpine_stressors["Government Policies"]["Logic Description"] = '---'
+tundra_alpine_stressors["Government Policies"]["Impact Function"] = "impact_government_policies_tundra_alpine"
 
 # --- Long-Range Transport of Pollutants ---
 tundra_alpine_stressors["Long-Range Transport of Pollutants"]["Data Sources"] = ['* Environmental Monitoring', '**Impact on Area:** Widespread, low-level contamination', '**Impact on Biodiversity:**', '*  Toxic effects', '* Bioaccumulation', '**Influenced By (Stressors):**', '* Industrial activity in other regions.', '**Influences (Stressors):**', '* Alpine Tundra - Pollution', '**Logic Description:** Pollutants travel long distances']
@@ -102,6 +110,7 @@ tundra_alpine_stressors["Long-Range Transport of Pollutants"]["Impact on Biodive
 tundra_alpine_stressors["Long-Range Transport of Pollutants"]["Influenced By"] = ['* Industrial activity in other regions.', '**Influences (Stressors):**', '* Alpine Tundra - Pollution', '**Logic Description:** Pollutants travel long distances']
 tundra_alpine_stressors["Long-Range Transport of Pollutants"]["Influences"] = ['* Alpine Tundra - Pollution', '**Logic Description:** Pollutants travel long distances']
 tundra_alpine_stressors["Long-Range Transport of Pollutants"]["Logic Description"] = '---'
+tundra_alpine_stressors["Long-Range Transport of Pollutants"]["Impact Function"] = "impact_long_range_transport_of_pollutants_tundra_alpine"
 
 # --- Local Sources ---
 tundra_alpine_stressors["Local Sources"]["Data Sources"] = ['* Environmental monitoring.', '**Impact on Area:** Localized pollution hot spots.', '**Impact on Biodiversity:**', '* Impacts on wildlife.', '**Influenced By (Stressors):**', '* Alpine Tundra - Infrastructure Development', '**Influences (Stressors):**', '* Alpine Tundra - Pollution', '**Logic Description:** Local activities (tourism, mining, etc.) contribute to pollution']
@@ -110,6 +119,7 @@ tundra_alpine_stressors["Local Sources"]["Impact on Biodiversity"] = '* Impacts 
 tundra_alpine_stressors["Local Sources"]["Influenced By"] = ['* Alpine Tundra - Infrastructure Development', '**Influences (Stressors):**', '* Alpine Tundra - Pollution', '**Logic Description:** Local activities (tourism, mining, etc.) contribute to pollution']
 tundra_alpine_stressors["Local Sources"]["Influences"] = ['* Alpine Tundra - Pollution', '**Logic Description:** Local activities (tourism, mining, etc.) contribute to pollution']
 tundra_alpine_stressors["Local Sources"]["Logic Description"] = '---'
+tundra_alpine_stressors["Local Sources"]["Impact Function"] = "impact_local_sources_tundra_alpine"
 
 # --- Disturbance ---
 tundra_alpine_stressors["Disturbance"]["Metric"] = 'Area and frequency.'
@@ -117,6 +127,7 @@ tundra_alpine_stressors["Disturbance"]["Data Sources"] = ['* Field observations'
 tundra_alpine_stressors["Disturbance"]["Impact on Biodiversity"] = '* Variable\n**Influenced By (Stressors)**\n* Many\n**Influences (Stressors):**\n*  Alpine Tundra - Invasive Species\n**Logic Description:** General category'
 tundra_alpine_stressors["Disturbance"]["Influences"] = ['*  Alpine Tundra - Invasive Species', '**Logic Description:** General category']
 tundra_alpine_stressors["Disturbance"]["Logic Description"] = '---'
+tundra_alpine_stressors["Disturbance"]["Impact Function"] = "impact_disturbance_tundra_alpine"
 
 # --- Native Plant Communities ---
 tundra_alpine_stressors["Native Plant Communities"]["Metric"] = 'Plant species composition, abundance'
@@ -124,11 +135,13 @@ tundra_alpine_stressors["Native Plant Communities"]["Data Sources"] = ['* Field 
 tundra_alpine_stressors["Native Plant Communities"]["Impact on Area"] = 'Overall ecosystem structure'
 tundra_alpine_stressors["Native Plant Communities"]["Impact on Biodiversity"] = 'Interactions with other species.\n**Influenced By (Stressors)**\n* Alpine Tundra - Invasive Species\n**Influences (Stressors):**\n* Many\n**Logic Description**: Foundation of the ecosystem.'
 tundra_alpine_stressors["Native Plant Communities"]["Influences"] = ['* Many', '**Logic Description**: Foundation of the ecosystem.']
+tundra_alpine_stressors["Native Plant Communities"]["Impact Function"] = "impact_native_plant_communities_tundra_alpine"
 
 # --- Water Availability ---
 tundra_alpine_stressors["Water Availability"]["Impact on Area"] = 'Water availability'
 tundra_alpine_stressors["Water Availability"]["Influenced By"] = ['* Alpine Tundra - Changes in Precipitation', '**Influences (Stressors)**', '* Many', '**Logic Description:** Water is essential.']
 tundra_alpine_stressors["Water Availability"]["Logic Description"] = '---'
+tundra_alpine_stressors["Water Availability"]["Impact Function"] = "impact_water_availability_tundra_alpine"
 
 # --- Vegetation Changes ---
 tundra_alpine_stressors["Vegetation Changes"]["Data Sources"] = ['* Field Surveys, Remote Sensing', '**Impact on Area:** Habitat Structure.', '**Impact on Biodiversity:**', '* Altered species interactions.', '**Influenced By (Stressors):**', '* Many, Varies', '**Influences (Stressors):**', '* Many, Varies', '**Logic Description**: Changes in vegetation reflect other stressors.']
@@ -136,12 +149,14 @@ tundra_alpine_stressors["Vegetation Changes"]["Impact on Area"] = 'Habitat Struc
 tundra_alpine_stressors["Vegetation Changes"]["Impact on Biodiversity"] = '* Altered species interactions.\n**Influenced By (Stressors):**\n* Many, Varies\n**Influences (Stressors):**\n* Many, Varies\n**Logic Description**: Changes in vegetation reflect other stressors.'
 tundra_alpine_stressors["Vegetation Changes"]["Influenced By"] = ['* Many, Varies', '**Influences (Stressors):**', '* Many, Varies', '**Logic Description**: Changes in vegetation reflect other stressors.']
 tundra_alpine_stressors["Vegetation Changes"]["Influences"] = ['* Many, Varies', '**Logic Description**: Changes in vegetation reflect other stressors.']
+tundra_alpine_stressors["Vegetation Changes"]["Impact Function"] = "impact_vegetation_changes_tundra_alpine"
 
 # --- Soil Erosion ---
 tundra_alpine_stressors["Soil Erosion"]["Impact on Area"] = 'Loss of topsoil, reduced soil fertility.'
 tundra_alpine_stressors["Soil Erosion"]["Impact on Biodiversity"] = '* Impacts on plant growth.\n**Influenced By (Stressors):**\n*  Alpine Tundra - Overgrazing\n**Influences (Stressors):**\n* Many, Varies\n**Logic Description**: Erosion degrades soil.'
 tundra_alpine_stressors["Soil Erosion"]["Influenced By"] = ['*  Alpine Tundra - Overgrazing', '**Influences (Stressors):**', '* Many, Varies', '**Logic Description**: Erosion degrades soil.']
 tundra_alpine_stressors["Soil Erosion"]["Influences"] = ['* Many, Varies', '**Logic Description**: Erosion degrades soil.']
+tundra_alpine_stressors["Soil Erosion"]["Impact Function"] = "impact_soil_erosion_tundra_alpine"
 
 # --- Wildlife Health ---
 tundra_alpine_stressors["Wildlife Health"]["Data Sources"] = ['* Wildlife Monitoring', '**Impact on Area:** Indirect, via population', '**Impact on Biodiversity:**', '* Population Declines', '**Influenced By (Stressors):**', '* Alpine Tundra - Pollution', '**Influences (Stressors):**', '* Alpine Tundra - Population Dynamics', '**Logic Description:** Health']
@@ -150,23 +165,27 @@ tundra_alpine_stressors["Wildlife Health"]["Impact on Biodiversity"] = '* Popula
 tundra_alpine_stressors["Wildlife Health"]["Influenced By"] = ['* Alpine Tundra - Pollution', '**Influences (Stressors):**', '* Alpine Tundra - Population Dynamics', '**Logic Description:** Health']
 tundra_alpine_stressors["Wildlife Health"]["Influences"] = ['* Alpine Tundra - Population Dynamics', '**Logic Description:** Health']
 tundra_alpine_stressors["Wildlife Health"]["Logic Description"] = '---'
+tundra_alpine_stressors["Wildlife Health"]["Impact Function"] = "impact_wildlife_health_tundra_alpine"
 
 # --- Livestock Management Practices ---
 tundra_alpine_stressors["Livestock Management Practices"]["Metric"] = 'Grazing intensity, timing, and type of livestock.'
 tundra_alpine_stressors["Livestock Management Practices"]["Data Sources"] = ['* Agricultural records, field observations.', '**Impact on Area:** Changes in vegetation composition and structure, soil compaction.', '**Impact on Biodiversity:**', '* Impacts on plant communities, potential for competition with native herbivores.', '**Influenced By (Stressors)**', '* Economic factors, cultural practices, government policies.', '**Influences (Stressors)**', '* Alpine Tundra - Overgrazing']
 tundra_alpine_stressors["Livestock Management Practices"]["Impact on Area"] = 'Changes in vegetation composition and structure, soil compaction.'
 tundra_alpine_stressors["Livestock Management Practices"]["Impact on Biodiversity"] = '* Impacts on plant communities, potential for competition with native herbivores.\n**Influenced By (Stressors)**\n* Economic factors, cultural practices, government policies.\n**Influences (Stressors)**\n* Alpine Tundra - Overgrazing'
+tundra_alpine_stressors["Livestock Management Practices"]["Impact Function"] = "impact_livestock_management_practices_tundra_alpine"
 
 # --- Water Quality ---
 tundra_alpine_stressors["Water Quality"]["Impact on Biodiversity"] = '* Impacts on aquatic life.\n**Influenced By (Stressors):**\n* Alpine Tundra - Pollution\n**Influences (Stressors):**\n* Many\n**Logic Description**: Water quality is fundamental.'
 tundra_alpine_stressors["Water Quality"]["Influenced By"] = ['* Alpine Tundra - Pollution', '**Influences (Stressors):**', '* Many', '**Logic Description**: Water quality is fundamental.']
 tundra_alpine_stressors["Water Quality"]["Influences"] = ['* Many', '**Logic Description**: Water quality is fundamental.']
+tundra_alpine_stressors["Water Quality"]["Impact Function"] = "impact_water_quality_tundra_alpine"
 
 # --- Population Dynamics ---
 tundra_alpine_stressors["Population Dynamics"]["Data Sources"] = ['* Wildlife/Plant Surveys.', '**Impact on Area:** Indirect.', '**Impact on Biodiversity:**', '* Ecosystem Function', '**Influenced By (Stressors)**', '* Alpine Tundra - Wildlife Health', '**Influences (Stressors)**:', '* Many', '**Logic Description:** Changes affect ecosystem']
 tundra_alpine_stressors["Population Dynamics"]["Impact on Area"] = 'Indirect.'
 tundra_alpine_stressors["Population Dynamics"]["Impact on Biodiversity"] = '* Ecosystem Function\n**Influenced By (Stressors)**\n* Alpine Tundra - Wildlife Health\n**Influences (Stressors)**:\n* Many\n**Logic Description:** Changes affect ecosystem'
 tundra_alpine_stressors["Population Dynamics"]["Logic Description"] = '---'
+tundra_alpine_stressors["Population Dynamics"]["Impact Function"] = "impact_population_dynamics_tundra_alpine"
 
 # --- Glacier Retreat ---
 tundra_alpine_stressors["Glacier Retreat"]["Data Sources"] = ['* Remote sensing', '* Field measurements', '**Impact on Area:** Water availability (long-term decrease).', '**Impact on Biodiversity:**', '* Impacts on downstream ecosystems.', '**Influenced By (Stressors):**', '* Alpine Tundra - Temperature Increase', '**Influences (Stressors):**', '*  Alpine Tundra - Water Availability', '**Logic Description**: Glaciers are a critical water source.']
@@ -174,9 +193,11 @@ tundra_alpine_stressors["Glacier Retreat"]["Impact on Area"] = 'Water availabili
 tundra_alpine_stressors["Glacier Retreat"]["Impact on Biodiversity"] = '* Impacts on downstream ecosystems.\n**Influenced By (Stressors):**\n* Alpine Tundra - Temperature Increase\n**Influences (Stressors):**\n*  Alpine Tundra - Water Availability\n**Logic Description**: Glaciers are a critical water source.'
 tundra_alpine_stressors["Glacier Retreat"]["Influenced By"] = ['* Alpine Tundra - Temperature Increase', '**Influences (Stressors):**', '*  Alpine Tundra - Water Availability', '**Logic Description**: Glaciers are a critical water source.']
 tundra_alpine_stressors["Glacier Retreat"]["Influences"] = ['*  Alpine Tundra - Water Availability', '**Logic Description**: Glaciers are a critical water source.']
+tundra_alpine_stressors["Glacier Retreat"]["Impact Function"] = "impact_glacier_retreat_tundra_alpine"
 
 # --- Snowpack ---
 tundra_alpine_stressors["Snowpack"]["Metric"] = 'Snow depth, duration, water content.'
 tundra_alpine_stressors["Snowpack"]["Impact on Area"] = 'Water availability, insulation for plants and animals.'
 tundra_alpine_stressors["Snowpack"]["Impact on Biodiversity"] = 'Impacts on plant growth, animal survival, and timing of biological events.\n**Influenced By (Stressors)**\n* Alpine Tundra - Temperature Increase\n* Alpine Tundra- Changes in Precipitation\n**Influences (Stressors)**\n* Many\n**Logic Description**: Snowpack is critical for water and insulation.'
+tundra_alpine_stressors["Snowpack"]["Impact Function"] = "impact_snowpack_tundra_alpine"
 

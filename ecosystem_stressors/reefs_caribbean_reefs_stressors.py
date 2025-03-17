@@ -18,6 +18,7 @@ reefs_caribbean_reefs_stressors["Overfishing"]["Impact on Biodiversity"] = 'Decl
 reefs_caribbean_reefs_stressors["Overfishing"]["Influenced By"] = ['High Fishing Pressure: Due to local dependence on fishing and tourism.', 'Weak Enforcement of Fisheries Regulations.', 'Lack of Alternative Livelihoods.', '**Influences (Stressors):**', 'Algal Overgrowth (if herbivores are removed).', 'Coral Reef Health.', '**Logic Description:** Overfishing is a widespread and chronic problem across the Caribbean, depleting populations of important reef fish and disrupting the ecological balance of reef ecosystems. This is often a *more* severe problem than in, say, the Great Barrier Reef.']
 reefs_caribbean_reefs_stressors["Overfishing"]["Influences"] = ['Algal Overgrowth (if herbivores are removed).', 'Coral Reef Health.', '**Logic Description:** Overfishing is a widespread and chronic problem across the Caribbean, depleting populations of important reef fish and disrupting the ecological balance of reef ecosystems. This is often a *more* severe problem than in, say, the Great Barrier Reef.']
 reefs_caribbean_reefs_stressors["Overfishing"]["Logic Description"] = '---'
+reefs_caribbean_reefs_stressors["Overfishing"]["Impact Function"] = "impact_overfishing_reefs_caribbean_reefs"
 
 # --- Water Pollution ---
 reefs_caribbean_reefs_stressors["Water Pollution"]["Metric"] = 'Concentrations of nutrients (nitrogen, phosphorus), sediments, and other pollutants in coastal waters.'
@@ -27,6 +28,7 @@ reefs_caribbean_reefs_stressors["Water Pollution"]["Impact on Biodiversity"] = '
 reefs_caribbean_reefs_stressors["Water Pollution"]["Influenced By"] = ['Agricultural Runoff: Fertilizers and pesticides.', 'Deforestation: Increased sediment runoff.', 'Urban Runoff: Sewage, stormwater, and industrial effluent.', 'Inadequate Wastewater Treatment: Common in many Caribbean islands.', '**Influences (Stressors):**', 'Coral Reef Health.', 'Algal Blooms.', 'Coral Disease.', '**Logic Description:** Pollution from various sources (agriculture, deforestation, urban runoff, and inadequate wastewater treatment) degrades water quality and impacts coral reefs throughout the Caribbean.']
 reefs_caribbean_reefs_stressors["Water Pollution"]["Influences"] = ['Coral Reef Health.', 'Algal Blooms.', 'Coral Disease.', '**Logic Description:** Pollution from various sources (agriculture, deforestation, urban runoff, and inadequate wastewater treatment) degrades water quality and impacts coral reefs throughout the Caribbean.']
 reefs_caribbean_reefs_stressors["Water Pollution"]["Logic Description"] = '---'
+reefs_caribbean_reefs_stressors["Water Pollution"]["Impact Function"] = "impact_water_pollution_reefs_caribbean_reefs"
 
 # --- Coastal Development ---
 reefs_caribbean_reefs_stressors["Coastal Development"]["Metric"] = 'Area of coastline developed; tourism intensity (number of visitors); infrastructure development.'
@@ -36,6 +38,7 @@ reefs_caribbean_reefs_stressors["Coastal Development"]["Impact on Biodiversity"]
 reefs_caribbean_reefs_stressors["Coastal Development"]["Influenced By"] = ['Tourism Development: A major driver in many Caribbean islands.', 'Population Growth.', 'Lack of Effective Coastal Zone Management.', '**Influences (Stressors):**', 'Water Quality.', 'Sedimentation.', 'Habitat Loss.', '**Logic Description:** Rapid coastal development, often driven by tourism, is leading to habitat loss, increased sedimentation, and pollution, impacting coral reefs across the Caribbean.']
 reefs_caribbean_reefs_stressors["Coastal Development"]["Influences"] = ['Water Quality.', 'Sedimentation.', 'Habitat Loss.', '**Logic Description:** Rapid coastal development, often driven by tourism, is leading to habitat loss, increased sedimentation, and pollution, impacting coral reefs across the Caribbean.']
 reefs_caribbean_reefs_stressors["Coastal Development"]["Logic Description"] = '---'
+reefs_caribbean_reefs_stressors["Coastal Development"]["Impact Function"] = "impact_coastal_development_reefs_caribbean_reefs"
 
 # --- Coral Disease ---
 reefs_caribbean_reefs_stressors["Coral Disease"]["Metric"] = 'Prevalence and severity of coral diseases (e.g., white band disease, black band disease, stony coral tissue loss disease).'
@@ -45,6 +48,7 @@ reefs_caribbean_reefs_stressors["Coral Disease"]["Impact on Biodiversity"] = 'Si
 reefs_caribbean_reefs_stressors["Coral Disease"]["Influenced By"] = ['Water Pollution: Can increase coral susceptibility to disease.', 'Ocean Warming: Can exacerbate disease outbreaks.', 'Other Stressors: That weaken corals.', '**Influences (Stressors):**', 'Coral Cover.', 'Reef Resilience.', '**Logic Description:** Coral diseases have caused widespread and devastating coral mortality throughout the Caribbean, contributing significantly to the overall decline of reef ecosystems.']
 reefs_caribbean_reefs_stressors["Coral Disease"]["Influences"] = ['Coral Cover.', 'Reef Resilience.', '**Logic Description:** Coral diseases have caused widespread and devastating coral mortality throughout the Caribbean, contributing significantly to the overall decline of reef ecosystems.']
 reefs_caribbean_reefs_stressors["Coral Disease"]["Logic Description"] = '---'
+reefs_caribbean_reefs_stressors["Coral Disease"]["Impact Function"] = "impact_coral_disease_reefs_caribbean_reefs"
 
 # --- Invasive Species ---
 reefs_caribbean_reefs_stressors["Invasive Species"]["Metric"] = 'Abundance and distribution of lionfish.'
@@ -54,6 +58,7 @@ reefs_caribbean_reefs_stressors["Invasive Species"]["Impact on Biodiversity"] = 
 reefs_caribbean_reefs_stressors["Invasive Species"]["Influenced By"] = ['Introduction through the aquarium trade (likely initial introduction).', 'Lack of Natural Predators: In the Caribbean.', '**Influences (Stressors):**', 'Native Fish Populations.', 'Reef Ecosystem Structure.', '**Logic Description:** The invasive lionfish, a voracious predator with no natural predators in the Caribbean, is a significant threat to native reef fish populations and the overall health of Caribbean reefs.']
 reefs_caribbean_reefs_stressors["Invasive Species"]["Influences"] = ['Native Fish Populations.', 'Reef Ecosystem Structure.', '**Logic Description:** The invasive lionfish, a voracious predator with no natural predators in the Caribbean, is a significant threat to native reef fish populations and the overall health of Caribbean reefs.']
 reefs_caribbean_reefs_stressors["Invasive Species"]["Logic Description"] = '---'
+reefs_caribbean_reefs_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_reefs_caribbean_reefs"
 
 # --- Climate Change ---
 reefs_caribbean_reefs_stressors["Climate Change"]["Metric"] = 'SST; Ocean acidification; hurricane frequency and intensity.'
@@ -63,4 +68,5 @@ reefs_caribbean_reefs_stressors["Climate Change"]["Impact on Biodiversity"] = '*
 reefs_caribbean_reefs_stressors["Climate Change"]["Influenced By"] = ['* Global emissions', '**Influences (Stressors):**', '* Bleaching, Acidification, Storm damage.', '**Logic Description:**  Warming, acidification, and potentially stronger storms all have negative effects.']
 reefs_caribbean_reefs_stressors["Climate Change"]["Influences"] = ['* Bleaching, Acidification, Storm damage.', '**Logic Description:**  Warming, acidification, and potentially stronger storms all have negative effects.']
 reefs_caribbean_reefs_stressors["Climate Change"]["Logic Description"] = '---'
+reefs_caribbean_reefs_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_reefs_caribbean_reefs"
 

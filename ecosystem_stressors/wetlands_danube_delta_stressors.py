@@ -20,6 +20,7 @@ wetlands_danube_delta_stressors["Altered Hydrology"]["Impact on Biodiversity"] =
 wetlands_danube_delta_stressors["Altered Hydrology"]["Influenced By"] = ['Upstream Dam Construction: Dams on the Danube River and its tributaries (throughout the Danube Basin) significantly alter flow regimes and sediment transport.', 'Water Management Practices: Within the delta itself (e.g., canals, dikes).', 'Climate Change: Changes in precipitation and river discharge.', '* Navigation projects', '**Influences (Stressors):**', 'Sedimentation.', 'Habitat Availability.', 'Water Quality.', "**Logic Description:** The Danube Delta's hydrology is strongly influenced by the Danube River. Upstream dams, water management practices within the delta, and climate change are all altering the natural hydrological regime, with significant impacts on the ecosystem."]
 wetlands_danube_delta_stressors["Altered Hydrology"]["Influences"] = ['Sedimentation.', 'Habitat Availability.', 'Water Quality.', "**Logic Description:** The Danube Delta's hydrology is strongly influenced by the Danube River. Upstream dams, water management practices within the delta, and climate change are all altering the natural hydrological regime, with significant impacts on the ecosystem."]
 wetlands_danube_delta_stressors["Altered Hydrology"]["Logic Description"] = '---'
+wetlands_danube_delta_stressors["Altered Hydrology"]["Impact Function"] = "impact_altered_hydrology_wetlands_danube_delta"
 
 # --- Pollution ---
 wetlands_danube_delta_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., nutrients, heavy metals, pesticides, organic pollutants) in water, sediment, and biota.'
@@ -29,6 +30,7 @@ wetlands_danube_delta_stressors["Pollution"]["Impact on Biodiversity"] = 'Eutrop
 wetlands_danube_delta_stressors["Pollution"]["Influenced By"] = ['Agricultural Runoff: From the Danube River Basin (a *huge* area).', 'Industrial Discharge: From industries throughout the basin.', 'Untreated or Inadequately Treated Wastewater: From cities and towns along the Danube.', '* Navigation', '**Influences (Stressors):**', 'Water Quality.', 'Wildlife Health.', '**Logic Description:** The Danube Delta receives pollutants from the entire Danube River Basin, a vast area encompassing many countries. Agriculture, industry, and inadequate wastewater treatment are major sources.']
 wetlands_danube_delta_stressors["Pollution"]["Influences"] = ['Water Quality.', 'Wildlife Health.', '**Logic Description:** The Danube Delta receives pollutants from the entire Danube River Basin, a vast area encompassing many countries. Agriculture, industry, and inadequate wastewater treatment are major sources.']
 wetlands_danube_delta_stressors["Pollution"]["Logic Description"] = '---'
+wetlands_danube_delta_stressors["Pollution"]["Impact Function"] = "impact_pollution_wetlands_danube_delta"
 
 # --- Invasive Species ---
 wetlands_danube_delta_stressors["Invasive Species"]["Metric"] = 'Abundance and distribution of key invasive species (e.g., certain fish, mollusks, plants).'
@@ -38,6 +40,7 @@ wetlands_danube_delta_stressors["Invasive Species"]["Impact on Biodiversity"] = 
 wetlands_danube_delta_stressors["Invasive Species"]["Influenced By"] = ['Introduction through shipping (ballast water).', 'Aquaculture (escaped fish).', '* Climate Change (may favor some invasives)', '**Influences (Stressors):**', '* Native Species', "**Logic Description:** Invasive species, introduced through various pathways, can outcompete native species and disrupt the delta's ecosystem."]
 wetlands_danube_delta_stressors["Invasive Species"]["Influences"] = ['* Native Species', "**Logic Description:** Invasive species, introduced through various pathways, can outcompete native species and disrupt the delta's ecosystem."]
 wetlands_danube_delta_stressors["Invasive Species"]["Logic Description"] = '---'
+wetlands_danube_delta_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_wetlands_danube_delta"
 
 # --- Overfishing ---
 wetlands_danube_delta_stressors["Overfishing"]["Metric"] = 'Fish catches, population sizes.'
@@ -47,6 +50,7 @@ wetlands_danube_delta_stressors["Overfishing"]["Impact on Biodiversity"] = '* De
 wetlands_danube_delta_stressors["Overfishing"]["Influenced By"] = ['* Fishing pressure', '**Influences (Stressors):**', '* Fish Stocks', '* Food Webs', '**Logic Description:** Unsustainable fishing practices impact fish.']
 wetlands_danube_delta_stressors["Overfishing"]["Influences"] = ['* Fish Stocks', '* Food Webs', '**Logic Description:** Unsustainable fishing practices impact fish.']
 wetlands_danube_delta_stressors["Overfishing"]["Logic Description"] = '---'
+wetlands_danube_delta_stressors["Overfishing"]["Impact Function"] = "impact_overfishing_wetlands_danube_delta"
 
 # --- Climate Change ---
 wetlands_danube_delta_stressors["Climate Change"]["Metric"] = 'Temp, precip, sea level rise.'
@@ -55,6 +59,7 @@ wetlands_danube_delta_stressors["Climate Change"]["Impact on Area"] = 'Changes i
 wetlands_danube_delta_stressors["Climate Change"]["Impact on Biodiversity"] = '* Species shifts, stress.\n**Influenced By (Stressors):**\n* Global GHG\n**Influences (Stressors):**\n* Hydrology\n**Logic Description**: Climate change is a long-term threat.'
 wetlands_danube_delta_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Hydrology', '**Logic Description**: Climate change is a long-term threat.']
 wetlands_danube_delta_stressors["Climate Change"]["Influences"] = ['* Hydrology', '**Logic Description**: Climate change is a long-term threat.']
+wetlands_danube_delta_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_wetlands_danube_delta"
 
 # --- Eutrophication ---
 wetlands_danube_delta_stressors["Eutrophication"]["Metric"] = 'Nutrient levels, algal blooms'
@@ -64,6 +69,7 @@ wetlands_danube_delta_stressors["Eutrophication"]["Impact on Biodiversity"] = '*
 wetlands_danube_delta_stressors["Eutrophication"]["Influenced By"] = ['* Danube Delta - Pollution', '**Influences (Stressors):**', '* Danube Delta - Water Quality', '**Logic Description:** Excess nutrients lead to algal overgrowth.']
 wetlands_danube_delta_stressors["Eutrophication"]["Influences"] = ['* Danube Delta - Water Quality', '**Logic Description:** Excess nutrients lead to algal overgrowth.']
 wetlands_danube_delta_stressors["Eutrophication"]["Logic Description"] = '---'
+wetlands_danube_delta_stressors["Eutrophication"]["Impact Function"] = "impact_eutrophication_wetlands_danube_delta"
 
 # --- Navigation Projects ---
 wetlands_danube_delta_stressors["Navigation Projects"]["Data Sources"] = ['* Government records, project reports.', '**Impact on Area**: Altered hydrology, habitat loss.', '**Impact on Biodiversity:**', '* Direct habitat destruction, impacts on fish migration.', '**Influenced By (Stressors):**', '*  Economic development, international agreements.', '**Influences (Stressors):**', '* Danube Delta - Altered Hydrology', '* Danube Delta - Pollution', '**Logic Description:** Infrastructure development for shipping can damage the ecosystem.']
@@ -71,9 +77,11 @@ wetlands_danube_delta_stressors["Navigation Projects"]["Impact on Biodiversity"]
 wetlands_danube_delta_stressors["Navigation Projects"]["Influenced By"] = ['*  Economic development, international agreements.', '**Influences (Stressors):**', '* Danube Delta - Altered Hydrology', '* Danube Delta - Pollution', '**Logic Description:** Infrastructure development for shipping can damage the ecosystem.']
 wetlands_danube_delta_stressors["Navigation Projects"]["Influences"] = ['* Danube Delta - Altered Hydrology', '* Danube Delta - Pollution', '**Logic Description:** Infrastructure development for shipping can damage the ecosystem.']
 wetlands_danube_delta_stressors["Navigation Projects"]["Logic Description"] = '---'
+wetlands_danube_delta_stressors["Navigation Projects"]["Impact Function"] = "impact_navigation_projects_wetlands_danube_delta"
 
 # --- Sedimentation ---
 wetlands_danube_delta_stressors["Sedimentation"]["Influenced By"] = ['* Danube Delta - Altered Hydrology', '**Influences (Stressors):**', '* Habitat quality', '**Logic Description:** Changes in sediment dynamics affect the delta.']
 wetlands_danube_delta_stressors["Sedimentation"]["Influences"] = ['* Habitat quality', '**Logic Description:** Changes in sediment dynamics affect the delta.']
 wetlands_danube_delta_stressors["Sedimentation"]["Logic Description"] = '---'
+wetlands_danube_delta_stressors["Sedimentation"]["Impact Function"] = "impact_sedimentation_wetlands_danube_delta"
 

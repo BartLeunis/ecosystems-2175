@@ -16,6 +16,7 @@ aquatic_mangrove_east_african_stressors["Deforestation"]["Impact on Biodiversity
 aquatic_mangrove_east_african_stressors["Deforestation"]["Influenced By"] = ['Poverty and Lack of Alternative Livelihoods: High dependence on mangrove wood for fuel.', 'Demand for Charcoal: A major cooking fuel in the region.', 'Population Growth: Increased demand for fuelwood.', 'Weak Enforcement of Environmental Regulations.', '**Influences (Stressors):**', 'Coastal Erosion.', 'Carbon Emissions.', '**Logic Description:** Deforestation for charcoal production and fuelwood is a *major* driver of mangrove loss in East Africa, driven by poverty, population growth, and lack of alternative energy sources.']
 aquatic_mangrove_east_african_stressors["Deforestation"]["Influences"] = ['Coastal Erosion.', 'Carbon Emissions.', '**Logic Description:** Deforestation for charcoal production and fuelwood is a *major* driver of mangrove loss in East Africa, driven by poverty, population growth, and lack of alternative energy sources.']
 aquatic_mangrove_east_african_stressors["Deforestation"]["Logic Description"] = '---'
+aquatic_mangrove_east_african_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_aquatic_mangrove_east_african"
 
 # --- Coastal Development ---
 aquatic_mangrove_east_african_stressors["Coastal Development"]["Metric"] = 'Area of mangroves converted to other land uses (ha/year).'
@@ -25,6 +26,7 @@ aquatic_mangrove_east_african_stressors["Coastal Development"]["Impact on Biodiv
 aquatic_mangrove_east_african_stressors["Coastal Development"]["Influenced By"] = ['Tourism Development: In some areas.', 'Urbanization: Expansion of coastal towns and cities.', 'Infrastructure Development (ports).', 'Aquaculture (but less so than in SE Asia)', '**Influences (Stressors):**', 'Coastal Erosion.', 'Water Quality.', '**Logic Description:** Coastal development, while less extensive than in some other regions, is a growing threat.']
 aquatic_mangrove_east_african_stressors["Coastal Development"]["Influences"] = ['Coastal Erosion.', 'Water Quality.', '**Logic Description:** Coastal development, while less extensive than in some other regions, is a growing threat.']
 aquatic_mangrove_east_african_stressors["Coastal Development"]["Logic Description"] = '---'
+aquatic_mangrove_east_african_stressors["Coastal Development"]["Impact Function"] = "impact_coastal_development_aquatic_mangrove_east_african"
 
 # --- Pollution ---
 aquatic_mangrove_east_african_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants in water and sediment.'
@@ -34,6 +36,7 @@ aquatic_mangrove_east_african_stressors["Pollution"]["Impact on Biodiversity"] =
 aquatic_mangrove_east_african_stressors["Pollution"]["Influenced By"] = ['Urban Runoff.', 'Industrial Discharge (in some areas).', 'Agricultural Runoff.', '**Influences (Stressors):**', '* Water Quality', '* Mangrove Health', '**Logic Description:** Pollution from various sources impacts water quality.']
 aquatic_mangrove_east_african_stressors["Pollution"]["Influences"] = ['* Water Quality', '* Mangrove Health', '**Logic Description:** Pollution from various sources impacts water quality.']
 aquatic_mangrove_east_african_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_mangrove_east_african_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_mangrove_east_african"
 
 # --- Climate Change ---
 aquatic_mangrove_east_african_stressors["Climate Change"]["Metric"] = 'Sea Level Rise, temperature increase, changes in rainfall'
@@ -43,4 +46,5 @@ aquatic_mangrove_east_african_stressors["Climate Change"]["Impact on Biodiversit
 aquatic_mangrove_east_african_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Sea Level', '* Coastal erosion', '**Logic Description:** Climate change, particularly sea level rise.']
 aquatic_mangrove_east_african_stressors["Climate Change"]["Influences"] = ['* Sea Level', '* Coastal erosion', '**Logic Description:** Climate change, particularly sea level rise.']
 aquatic_mangrove_east_african_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_mangrove_east_african_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_mangrove_east_african"
 

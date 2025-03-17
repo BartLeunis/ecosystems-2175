@@ -18,6 +18,7 @@ grasslands_australian_grasslands_stressors["Land-Use Change"]["Impact on Biodive
 grasslands_australian_grasslands_stressors["Land-Use Change"]["Influenced By"] = ['Australian Grasslands - Agricultural Expansion: Demand for cropland and pasture.', 'Australian Grasslands - Population Growth.', '*  Australian Grasslands - Government Policies.', '**Influences (Stressors):**', '*  Australian Grasslands - Habitat Fragmentation', '**Logic Description:** Conversion of grasslands to agriculture and pasture is a major threat.']
 grasslands_australian_grasslands_stressors["Land-Use Change"]["Influences"] = ['*  Australian Grasslands - Habitat Fragmentation', '**Logic Description:** Conversion of grasslands to agriculture and pasture is a major threat.']
 grasslands_australian_grasslands_stressors["Land-Use Change"]["Logic Description"] = '---'
+grasslands_australian_grasslands_stressors["Land-Use Change"]["Impact Function"] = "impact_land_use_change_grasslands_australian_grasslands"
 
 # --- Habitat Fragmentation ---
 grasslands_australian_grasslands_stressors["Habitat Fragmentation"]["Metric"] = 'Patch size distribution; edge density; connectivity indices.'
@@ -27,6 +28,7 @@ grasslands_australian_grasslands_stressors["Habitat Fragmentation"]["Impact on B
 grasslands_australian_grasslands_stressors["Habitat Fragmentation"]["Influenced By"] = ['*  Australian Grasslands - Land-Use Change.', '**Influences (Stressors):**', '* Exacerbates other stressors', '**Logic Description:** Fragmentation isolates grassland patches.']
 grasslands_australian_grasslands_stressors["Habitat Fragmentation"]["Influences"] = ['* Exacerbates other stressors', '**Logic Description:** Fragmentation isolates grassland patches.']
 grasslands_australian_grasslands_stressors["Habitat Fragmentation"]["Logic Description"] = '---'
+grasslands_australian_grasslands_stressors["Habitat Fragmentation"]["Impact Function"] = "impact_habitat_fragmentation_grasslands_australian_grasslands"
 
 # --- Climate Change ---
 grasslands_australian_grasslands_stressors["Climate Change"]["Metric"] = 'Temperature increase (°C); changes in precipitation (mm/year, seasonality); increased frequency and severity of drought.'
@@ -36,6 +38,7 @@ grasslands_australian_grasslands_stressors["Climate Change"]["Impact on Biodiver
 grasslands_australian_grasslands_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '*  Australian Grasslands - Fire Regimes.', '*  Australian Grasslands - Water Availability', '**Logic Description:** Climate change is altering temperature and precipitation patterns, increasing aridity and fire risk in many areas.']
 grasslands_australian_grasslands_stressors["Climate Change"]["Influences"] = ['*  Australian Grasslands - Fire Regimes.', '*  Australian Grasslands - Water Availability', '**Logic Description:** Climate change is altering temperature and precipitation patterns, increasing aridity and fire risk in many areas.']
 grasslands_australian_grasslands_stressors["Climate Change"]["Logic Description"] = '---'
+grasslands_australian_grasslands_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_grasslands_australian_grasslands"
 
 # --- Overgrazing ---
 grasslands_australian_grasslands_stressors["Overgrazing"]["Metric"] = 'Livestock density; vegetation cover and composition; soil erosion.'
@@ -45,6 +48,7 @@ grasslands_australian_grasslands_stressors["Overgrazing"]["Impact on Biodiversit
 grasslands_australian_grasslands_stressors["Overgrazing"]["Influenced By"] = ['*  Australian Grasslands - Livestock Management.', '*  Australian Grasslands - Feral Herbivores', '**Influences (Stressors):**', '*  Australian Grasslands - Vegetation Structure', '* Desertification', '**Logic Description:** Overgrazing by livestock and feral herbivores is a widespread problem, leading to vegetation degradation and soil erosion.']
 grasslands_australian_grasslands_stressors["Overgrazing"]["Influences"] = ['*  Australian Grasslands - Vegetation Structure', '* Desertification', '**Logic Description:** Overgrazing by livestock and feral herbivores is a widespread problem, leading to vegetation degradation and soil erosion.']
 grasslands_australian_grasslands_stressors["Overgrazing"]["Logic Description"] = '---'
+grasslands_australian_grasslands_stressors["Overgrazing"]["Impact Function"] = "impact_overgrazing_grasslands_australian_grasslands"
 
 # --- Wildfires ---
 grasslands_australian_grasslands_stressors["Wildfires"]["Metric"] = 'Fire frequency; area burned (ha/year); fire intensity.'
@@ -54,6 +58,7 @@ grasslands_australian_grasslands_stressors["Wildfires"]["Impact on Biodiversity"
 grasslands_australian_grasslands_stressors["Wildfires"]["Influenced By"] = ['Australian Grasslands - Climate Change', 'Australian Grasslands - Land Management Practices', '*  Australian Grasslands - Human Activities', '**Influences (Stressors):**', '*  Australian Grasslands - Vegetation Structure', '**Logic Description:** Changes in fire regimes, often linked to climate change and land management, can impact grassland ecosystems.']
 grasslands_australian_grasslands_stressors["Wildfires"]["Influences"] = ['*  Australian Grasslands - Vegetation Structure', '**Logic Description:** Changes in fire regimes, often linked to climate change and land management, can impact grassland ecosystems.']
 grasslands_australian_grasslands_stressors["Wildfires"]["Logic Description"] = '---'
+grasslands_australian_grasslands_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_grasslands_australian_grasslands"
 
 # --- Invasive Species ---
 grasslands_australian_grasslands_stressors["Invasive Species"]["Metric"] = 'Abundance/Distribution, e.g., Buffel grass'
@@ -63,4 +68,5 @@ grasslands_australian_grasslands_stressors["Invasive Species"]["Impact on Biodiv
 grasslands_australian_grasslands_stressors["Invasive Species"]["Influenced By"] = ['*  Australian Grasslands - Disturbance', '*  Australian Grasslands - Climate Change', '**Influences (Stressors):**', '*  Australian Grasslands - Native Plant Communities', '*  Australian Grasslands - Fire Regimes', '**Logic Description:** Invasive species, particularly some grasses (e.g., buffel grass), can outcompete native plants and alter fire regimes.']
 grasslands_australian_grasslands_stressors["Invasive Species"]["Influences"] = ['*  Australian Grasslands - Native Plant Communities', '*  Australian Grasslands - Fire Regimes', '**Logic Description:** Invasive species, particularly some grasses (e.g., buffel grass), can outcompete native plants and alter fire regimes.']
 grasslands_australian_grasslands_stressors["Invasive Species"]["Logic Description"] = '---'
+grasslands_australian_grasslands_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_grasslands_australian_grasslands"
 

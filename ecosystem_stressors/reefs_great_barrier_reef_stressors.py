@@ -18,6 +18,7 @@ reefs_great_barrier_reef_stressors["Ocean Warming"]["Impact on Biodiversity"] = 
 reefs_great_barrier_reef_stressors["Ocean Warming"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Coral Bleaching.', 'Disease Outbreaks.', '**Logic Description:** Ocean warming is the *most significant* threat to the GBR, causing widespread and increasingly frequent coral bleaching events.']
 reefs_great_barrier_reef_stressors["Ocean Warming"]["Influences"] = ['Coral Bleaching.', 'Disease Outbreaks.', '**Logic Description:** Ocean warming is the *most significant* threat to the GBR, causing widespread and increasingly frequent coral bleaching events.']
 reefs_great_barrier_reef_stressors["Ocean Warming"]["Logic Description"] = ''
+reefs_great_barrier_reef_stressors["Ocean Warming"]["Impact Function"] = "impact_ocean_warming_reefs_great_barrier_reef"
 
 # --- Ocean Acidification ---
 reefs_great_barrier_reef_stressors["Ocean Acidification"]["Metric"] = 'Ocean pH; aragonite saturation state (Ωar).'
@@ -27,6 +28,7 @@ reefs_great_barrier_reef_stressors["Ocean Acidification"]["Impact on Biodiversit
 reefs_great_barrier_reef_stressors["Ocean Acidification"]["Influenced By"] = ['Increased Atmospheric CO2.', '**Influences (Stressors):**', 'Coral growth and survival.', '**Logic Description:** Ocean acidification reduces the ability of corals to build their skeletons.']
 reefs_great_barrier_reef_stressors["Ocean Acidification"]["Influences"] = ['Coral growth and survival.', '**Logic Description:** Ocean acidification reduces the ability of corals to build their skeletons.']
 reefs_great_barrier_reef_stressors["Ocean Acidification"]["Logic Description"] = ''
+reefs_great_barrier_reef_stressors["Ocean Acidification"]["Impact Function"] = "impact_ocean_acidification_reefs_great_barrier_reef"
 
 # --- Water Pollution ---
 reefs_great_barrier_reef_stressors["Water Pollution"]["Metric"] = 'Concentrations of nutrients (nitrogen, phosphorus), sediments, and pesticides in coastal waters.'
@@ -36,6 +38,7 @@ reefs_great_barrier_reef_stressors["Water Pollution"]["Impact on Biodiversity"] 
 reefs_great_barrier_reef_stressors["Water Pollution"]["Influenced By"] = ['Agricultural Runoff (sugarcane and cattle grazing are major sources).', 'Coastal Development.', '**Influences (Stressors):**', 'Crown-of-Thorns Starfish Outbreaks.', 'Coral Bleaching (reduces resilience).', '**Logic Description:** Runoff from agriculture and coastal development carries nutrients, sediments, and pollutants into coastal waters, degrading water quality and impacting coral health.  This is a *major* and well-documented stressor on the GBR.']
 reefs_great_barrier_reef_stressors["Water Pollution"]["Influences"] = ['Crown-of-Thorns Starfish Outbreaks.', 'Coral Bleaching (reduces resilience).', '**Logic Description:** Runoff from agriculture and coastal development carries nutrients, sediments, and pollutants into coastal waters, degrading water quality and impacting coral health.  This is a *major* and well-documented stressor on the GBR.']
 reefs_great_barrier_reef_stressors["Water Pollution"]["Logic Description"] = ''
+reefs_great_barrier_reef_stressors["Water Pollution"]["Impact Function"] = "impact_water_pollution_reefs_great_barrier_reef"
 
 # --- Crown-of-Thorns Starfish (COTS) Outbreaks ---
 reefs_great_barrier_reef_stressors["Crown-of-Thorns Starfish (COTS) Outbreaks"]["Metric"] = 'Density of COTS (number per hectare).'
@@ -45,6 +48,7 @@ reefs_great_barrier_reef_stressors["Crown-of-Thorns Starfish (COTS) Outbreaks"][
 reefs_great_barrier_reef_stressors["Crown-of-Thorns Starfish (COTS) Outbreaks"]["Influenced By"] = ['Nutrient Enrichment (from land runoff - promotes larval survival).', 'Overfishing (removal of COTS predators - less well-established).', '**Influences (Stressors):**', 'Coral Cover.', '**Logic Description:** Outbreaks of crown-of-thorns starfish (COTS), a coral-eating starfish, are a major cause of coral decline on the GBR.  These outbreaks are thought to be linked to nutrient enrichment from land runoff.']
 reefs_great_barrier_reef_stressors["Crown-of-Thorns Starfish (COTS) Outbreaks"]["Influences"] = ['Coral Cover.', '**Logic Description:** Outbreaks of crown-of-thorns starfish (COTS), a coral-eating starfish, are a major cause of coral decline on the GBR.  These outbreaks are thought to be linked to nutrient enrichment from land runoff.']
 reefs_great_barrier_reef_stressors["Crown-of-Thorns Starfish (COTS) Outbreaks"]["Logic Description"] = ''
+reefs_great_barrier_reef_stressors["Crown-of-Thorns Starfish (COTS) Outbreaks"]["Impact Function"] = "impact_crown_of_thorns_starfish_(cots)_outbreaks_reefs_great_barrier_reef"
 
 # --- Tropical Cyclones ---
 reefs_great_barrier_reef_stressors["Tropical Cyclones"]["Metric"] = 'Frequency and intensity of tropical cyclones (categories 3-5).'
@@ -54,6 +58,7 @@ reefs_great_barrier_reef_stressors["Tropical Cyclones"]["Impact on Biodiversity"
 reefs_great_barrier_reef_stressors["Tropical Cyclones"]["Influenced By"] = ['* Climate change', '* Sea Surface Temperature', '**Influences (Stressors):**', '* Reef Structure', '**Logic Description:** Strong cyclones can cause significant physical damage to the reef structure.']
 reefs_great_barrier_reef_stressors["Tropical Cyclones"]["Influences"] = ['* Reef Structure', '**Logic Description:** Strong cyclones can cause significant physical damage to the reef structure.']
 reefs_great_barrier_reef_stressors["Tropical Cyclones"]["Logic Description"] = ''
+reefs_great_barrier_reef_stressors["Tropical Cyclones"]["Impact Function"] = "impact_tropical_cyclones_reefs_great_barrier_reef"
 
 # --- Overfishing ---
 reefs_great_barrier_reef_stressors["Overfishing"]["Data Sources"] = ['* Fisheries data', '* Underwater surveys', '**Impact on Area:** N/A', '**Impact on Biodiversity:**', '* Loss of species, trophic structure', '**Influenced By (Stressors):**', '* Fishing pressure.', '**Influences (Stressors):**', '* Food web.', "**Logic Description:** Overfishing can impact, although it's more regulated here than other areas."]
@@ -62,4 +67,5 @@ reefs_great_barrier_reef_stressors["Overfishing"]["Impact on Biodiversity"] = "*
 reefs_great_barrier_reef_stressors["Overfishing"]["Influenced By"] = ['* Fishing pressure.', '**Influences (Stressors):**', '* Food web.', "**Logic Description:** Overfishing can impact, although it's more regulated here than other areas."]
 reefs_great_barrier_reef_stressors["Overfishing"]["Influences"] = ['* Food web.', "**Logic Description:** Overfishing can impact, although it's more regulated here than other areas."]
 reefs_great_barrier_reef_stressors["Overfishing"]["Logic Description"] = ''
+reefs_great_barrier_reef_stressors["Overfishing"]["Impact Function"] = "impact_overfishing_reefs_great_barrier_reef"
 

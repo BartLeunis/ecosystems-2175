@@ -16,6 +16,7 @@ aquatic_seagrass_southeast_asian_stressors["Coastal Development"]["Impact on Bio
 aquatic_seagrass_southeast_asian_stressors["Coastal Development"]["Influenced By"] = ['Aquaculture Expansion: Shrimp and fish farming.', 'Urbanization and Population Growth.', 'Infrastructure Development (ports, roads).', '**Influences (Stressors):**', 'Habitat Loss (the primary impact).', 'Water Quality.', '**Logic Description:** Coastal development, driven by aquaculture, urbanization, and infrastructure projects, is a major threat to seagrass meadows in Southeast Asia.']
 aquatic_seagrass_southeast_asian_stressors["Coastal Development"]["Influences"] = ['Habitat Loss (the primary impact).', 'Water Quality.', '**Logic Description:** Coastal development, driven by aquaculture, urbanization, and infrastructure projects, is a major threat to seagrass meadows in Southeast Asia.']
 aquatic_seagrass_southeast_asian_stressors["Coastal Development"]["Logic Description"] = '---'
+aquatic_seagrass_southeast_asian_stressors["Coastal Development"]["Impact Function"] = "impact_coastal_development_aquatic_seagrass_southeast_asian"
 
 # --- Water Pollution ---
 aquatic_seagrass_southeast_asian_stressors["Water Pollution"]["Metric"] = 'Concentrations of nutrients, sediments, and other pollutants in coastal waters.'
@@ -25,6 +26,7 @@ aquatic_seagrass_southeast_asian_stressors["Water Pollution"]["Impact on Biodive
 aquatic_seagrass_southeast_asian_stressors["Water Pollution"]["Influenced By"] = ['Agricultural Runoff.', 'Urban Runoff.', 'Industrial Discharge.', 'Aquaculture Effluent.', '* Deforestation', '**Influences (Stressors):**', 'Light Availability.', 'Seagrass Health.', '**Logic Description:** Pollution from various sources degrades water quality and impacts seagrass meadows.']
 aquatic_seagrass_southeast_asian_stressors["Water Pollution"]["Influences"] = ['Light Availability.', 'Seagrass Health.', '**Logic Description:** Pollution from various sources degrades water quality and impacts seagrass meadows.']
 aquatic_seagrass_southeast_asian_stressors["Water Pollution"]["Logic Description"] = '---'
+aquatic_seagrass_southeast_asian_stressors["Water Pollution"]["Impact Function"] = "impact_water_pollution_aquatic_seagrass_southeast_asian"
 
 # --- Destructive Fishing Practices ---
 aquatic_seagrass_southeast_asian_stressors["Destructive Fishing Practices"]["Metric"] = 'Use of bottom trawls, dynamite fishing, and other destructive methods.'
@@ -34,6 +36,7 @@ aquatic_seagrass_southeast_asian_stressors["Destructive Fishing Practices"]["Imp
 aquatic_seagrass_southeast_asian_stressors["Destructive Fishing Practices"]["Influenced By"] = ['Poverty and Lack of Alternative Livelihoods.', 'Weak Enforcement of Fisheries Regulations.', '**Influences (Stressors):**', 'Habitat Loss.', '**Logic Description:** Destructive fishing practices, such as bottom trawling and dynamite fishing, damage seagrass beds and impact associated biodiversity.']
 aquatic_seagrass_southeast_asian_stressors["Destructive Fishing Practices"]["Influences"] = ['Habitat Loss.', '**Logic Description:** Destructive fishing practices, such as bottom trawling and dynamite fishing, damage seagrass beds and impact associated biodiversity.']
 aquatic_seagrass_southeast_asian_stressors["Destructive Fishing Practices"]["Logic Description"] = '---'
+aquatic_seagrass_southeast_asian_stressors["Destructive Fishing Practices"]["Impact Function"] = "impact_destructive_fishing_practices_aquatic_seagrass_southeast_asian"
 
 # --- Climate Change ---
 aquatic_seagrass_southeast_asian_stressors["Climate Change"]["Metric"] = 'Sea surface temperature; ocean acidification; sea level rise; storm intensity.'
@@ -43,4 +46,5 @@ aquatic_seagrass_southeast_asian_stressors["Climate Change"]["Impact on Biodiver
 aquatic_seagrass_southeast_asian_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Sea Level Rise.', 'Ocean Acidification.', '**Logic Description:** Climate change related impacts on seagrass.']
 aquatic_seagrass_southeast_asian_stressors["Climate Change"]["Influences"] = ['Sea Level Rise.', 'Ocean Acidification.', '**Logic Description:** Climate change related impacts on seagrass.']
 aquatic_seagrass_southeast_asian_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_seagrass_southeast_asian_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_seagrass_southeast_asian"
 

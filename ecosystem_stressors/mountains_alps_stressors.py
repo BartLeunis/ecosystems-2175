@@ -17,6 +17,7 @@ mountains_alps_stressors["Tourism"]["Impact on Biodiversity"] = 'Impacts on sens
 mountains_alps_stressors["Tourism"]["Influenced By"] = ['High Demand for Skiing and Other Mountain Recreation.', 'Economic Importance of Tourism.', '**Influences (Stressors):**', 'Habitat Fragmentation.', 'Water Resources.', '* Pollution', '**Logic Description:** Tourism, particularly skiing, is a *major* economic activity in the Alps but also a *significant* environmental stressor, impacting habitat, water resources, and wildlife.']
 mountains_alps_stressors["Tourism"]["Influences"] = ['Habitat Fragmentation.', 'Water Resources.', '* Pollution', '**Logic Description:** Tourism, particularly skiing, is a *major* economic activity in the Alps but also a *significant* environmental stressor, impacting habitat, water resources, and wildlife.']
 mountains_alps_stressors["Tourism"]["Logic Description"] = '---'
+mountains_alps_stressors["Tourism"]["Impact Function"] = "impact_tourism_mountains_alps"
 
 # --- Changes in Snowpack ---
 mountains_alps_stressors["Changes in Snowpack"]["Metric"] = 'Snow depth; snow duration; timing of snowmelt.'
@@ -26,6 +27,7 @@ mountains_alps_stressors["Changes in Snowpack"]["Impact on Biodiversity"] = 'Cha
 mountains_alps_stressors["Changes in Snowpack"]["Influenced By"] = ['Temperature Increase.', 'Changes in Precipitation.', '**Influences (Stressors):**', 'Winter Tourism (skiing).', 'Water Resources.', 'Ecosystem Functioning', '**Logic Description:** Changes in snowpack, driven by climate change, are impacting winter tourism, water resources, and alpine ecosystems.']
 mountains_alps_stressors["Changes in Snowpack"]["Influences"] = ['Winter Tourism (skiing).', 'Water Resources.', 'Ecosystem Functioning', '**Logic Description:** Changes in snowpack, driven by climate change, are impacting winter tourism, water resources, and alpine ecosystems.']
 mountains_alps_stressors["Changes in Snowpack"]["Logic Description"] = '---'
+mountains_alps_stressors["Changes in Snowpack"]["Impact Function"] = "impact_changes_in_snowpack_mountains_alps"
 
 # --- Air Pollution ---
 mountains_alps_stressors["Air Pollution"]["Metric"] = 'Concentrations of pollutants (ozone, nitrogen oxides, particulate matter).'
@@ -35,6 +37,7 @@ mountains_alps_stressors["Air Pollution"]["Impact on Biodiversity"] = 'Damage to
 mountains_alps_stressors["Air Pollution"]["Influenced By"] = ['Proximity to Industrial Areas: (in Europe).', 'Traffic Emissions: (in valleys).', 'Long-Range Transport of Pollutants.', '**Influences (Stressors):**', 'Forest Health.', 'Water Quality.', '**Logic Description:** Air pollution, from both local and distant sources, is a concern in the Alps, impacting forests and water quality.']
 mountains_alps_stressors["Air Pollution"]["Influences"] = ['Forest Health.', 'Water Quality.', '**Logic Description:** Air pollution, from both local and distant sources, is a concern in the Alps, impacting forests and water quality.']
 mountains_alps_stressors["Air Pollution"]["Logic Description"] = '---'
+mountains_alps_stressors["Air Pollution"]["Impact Function"] = "impact_air_pollution_mountains_alps"
 
 # --- Land Abandonment ---
 mountains_alps_stressors["Land Abandonment"]["Metric"] = 'Area of abandoned agricultural land.'
@@ -44,6 +47,7 @@ mountains_alps_stressors["Land Abandonment"]["Impact on Biodiversity"] = 'Loss o
 mountains_alps_stressors["Land Abandonment"]["Influenced By"] = ['* Socioeconomic changes (rural depopulation).', '**Influences (Stressors):**', '* Habitat structure', '**Logic Description:** Abandonment of traditional agricultural practices can lead to changes in vegetation.']
 mountains_alps_stressors["Land Abandonment"]["Influences"] = ['* Habitat structure', '**Logic Description:** Abandonment of traditional agricultural practices can lead to changes in vegetation.']
 mountains_alps_stressors["Land Abandonment"]["Logic Description"] = '---'
+mountains_alps_stressors["Land Abandonment"]["Impact Function"] = "impact_land_abandonment_mountains_alps"
 
 # --- Climate Change ---
 mountains_alps_stressors["Climate Change"]["Metric"] = 'Changes in temperature, precipitation'
@@ -53,4 +57,5 @@ mountains_alps_stressors["Climate Change"]["Impact on Biodiversity"] = '* Shifts
 mountains_alps_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Many factors', '**Logic Description:** Climate change.']
 mountains_alps_stressors["Climate Change"]["Influences"] = ['* Many factors', '**Logic Description:** Climate change.']
 mountains_alps_stressors["Climate Change"]["Logic Description"] = '---'
+mountains_alps_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_mountains_alps"
 

@@ -15,6 +15,7 @@ aquatic_salt_marshes_european_stressors["Sea Level Rise and Coastal Squeeze"]["I
 aquatic_salt_marshes_european_stressors["Sea Level Rise and Coastal Squeeze"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Coastal Development: Prevents landward migration.', 'Hard Coastal Defenses: Dikes, seawalls.', '**Influences (Stressors):**', 'Coastal Erosion.', 'Habitat Loss (the dominant impact).', '**Logic Description:** Sea level rise is a significant threat, and *coastal squeeze* (due to extensive coastal development and hard defenses) is a *major* problem, preventing marshes from migrating inland.']
 aquatic_salt_marshes_european_stressors["Sea Level Rise and Coastal Squeeze"]["Influences"] = ['Coastal Erosion.', 'Habitat Loss (the dominant impact).', '**Logic Description:** Sea level rise is a significant threat, and *coastal squeeze* (due to extensive coastal development and hard defenses) is a *major* problem, preventing marshes from migrating inland.']
 aquatic_salt_marshes_european_stressors["Sea Level Rise and Coastal Squeeze"]["Logic Description"] = '---'
+aquatic_salt_marshes_european_stressors["Sea Level Rise and Coastal Squeeze"]["Impact Function"] = "impact_sea_level_rise_and_coastal_squeeze_aquatic_salt_marshes_european"
 
 # --- Land Reclamation ---
 aquatic_salt_marshes_european_stressors["Land Reclamation"]["Metric"] = 'Area of salt marsh converted to other land uses (agriculture, development) (ha/year).'
@@ -24,6 +25,7 @@ aquatic_salt_marshes_european_stressors["Land Reclamation"]["Impact on Biodivers
 aquatic_salt_marshes_european_stressors["Land Reclamation"]["Influenced By"] = ['Agricultural Expansion: Historically, many European salt marshes were diked and drained for agriculture.', 'Coastal Development.', '**Influences (Stressors):**', 'Habitat Loss (a major historical impact).', '**Logic Description:**  A large proportion of European salt marshes have been *historically* lost due to land reclamation for agriculture and development. This is a legacy effect that continues to influence the current state of these ecosystems.']
 aquatic_salt_marshes_european_stressors["Land Reclamation"]["Influences"] = ['Habitat Loss (a major historical impact).', '**Logic Description:**  A large proportion of European salt marshes have been *historically* lost due to land reclamation for agriculture and development. This is a legacy effect that continues to influence the current state of these ecosystems.']
 aquatic_salt_marshes_european_stressors["Land Reclamation"]["Logic Description"] = '---'
+aquatic_salt_marshes_european_stressors["Land Reclamation"]["Impact Function"] = "impact_land_reclamation_aquatic_salt_marshes_european"
 
 # --- Pollution ---
 aquatic_salt_marshes_european_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants'
@@ -33,4 +35,5 @@ aquatic_salt_marshes_european_stressors["Pollution"]["Impact on Biodiversity"] =
 aquatic_salt_marshes_european_stressors["Pollution"]["Influenced By"] = ['* Industrial discharge', '*  Agricultural Runoff', '* Urban Runoff', '**Influences (Stressors):**', '* Water quality', '* Marsh health', '**Logic Description:** Pollution from industrial, agricultural, and urban sources.']
 aquatic_salt_marshes_european_stressors["Pollution"]["Influences"] = ['* Water quality', '* Marsh health', '**Logic Description:** Pollution from industrial, agricultural, and urban sources.']
 aquatic_salt_marshes_european_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_salt_marshes_european_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_salt_marshes_european"
 

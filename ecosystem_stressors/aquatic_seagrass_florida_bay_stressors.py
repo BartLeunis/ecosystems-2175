@@ -15,6 +15,7 @@ aquatic_seagrass_florida_bay_stressors["Water Quality Degradation"]["Impact on B
 aquatic_seagrass_florida_bay_stressors["Water Quality Degradation"]["Influenced By"] = ['Agricultural Runoff: From the Everglades Agricultural Area and other agricultural regions.', 'Urban Runoff: From South Florida.', 'Altered Hydrology: Changes in freshwater inflow from the Everglades.', '**Influences (Stressors):**', 'Light Availability (the critical factor).', 'Algal Blooms.', 'Seagrass Die-offs.', '**Logic Description:** Water quality degradation, primarily due to nutrient pollution and altered freshwater inflow from the Everglades, is the *major* driver of seagrass loss in Florida Bay. This has led to large-scale seagrass die-offs and ecosystem shifts.']
 aquatic_seagrass_florida_bay_stressors["Water Quality Degradation"]["Influences"] = ['Light Availability (the critical factor).', 'Algal Blooms.', 'Seagrass Die-offs.', '**Logic Description:** Water quality degradation, primarily due to nutrient pollution and altered freshwater inflow from the Everglades, is the *major* driver of seagrass loss in Florida Bay. This has led to large-scale seagrass die-offs and ecosystem shifts.']
 aquatic_seagrass_florida_bay_stressors["Water Quality Degradation"]["Logic Description"] = '---'
+aquatic_seagrass_florida_bay_stressors["Water Quality Degradation"]["Impact Function"] = "impact_water_quality_degradation_aquatic_seagrass_florida_bay"
 
 # --- Physical Damage ---
 aquatic_seagrass_florida_bay_stressors["Physical Damage"]["Metric"] = 'Area of seagrass scarred by boat propellers; number of boating accidents in seagrass areas.'
@@ -24,6 +25,7 @@ aquatic_seagrass_florida_bay_stressors["Physical Damage"]["Impact on Biodiversit
 aquatic_seagrass_florida_bay_stressors["Physical Damage"]["Influenced By"] = ['High Boating Traffic: In shallow waters.', 'Lack of Boater Education.', '**Influences (Stressors):**', 'Habitat Loss (localized).', '**Logic Description:** Boat propeller scarring is a significant problem in Florida Bay due to the shallow waters and extensive seagrass beds.']
 aquatic_seagrass_florida_bay_stressors["Physical Damage"]["Influences"] = ['Habitat Loss (localized).', '**Logic Description:** Boat propeller scarring is a significant problem in Florida Bay due to the shallow waters and extensive seagrass beds.']
 aquatic_seagrass_florida_bay_stressors["Physical Damage"]["Logic Description"] = '---'
+aquatic_seagrass_florida_bay_stressors["Physical Damage"]["Impact Function"] = "impact_physical_damage_aquatic_seagrass_florida_bay"
 
 # --- Climate Change ---
 aquatic_seagrass_florida_bay_stressors["Climate Change"]["Metric"] = 'Sea surface temperature, ocean acidification, sea level, storm intensity.'
@@ -33,4 +35,5 @@ aquatic_seagrass_florida_bay_stressors["Climate Change"]["Impact on Biodiversity
 aquatic_seagrass_florida_bay_stressors["Climate Change"]["Influenced By"] = ['* Global GHG emissions.', '**Influences (Stressors):**', '* Sea Level Rise', '* Ocean acidification.', '**Logic Description:**  Climate change stressors impact.']
 aquatic_seagrass_florida_bay_stressors["Climate Change"]["Influences"] = ['* Sea Level Rise', '* Ocean acidification.', '**Logic Description:**  Climate change stressors impact.']
 aquatic_seagrass_florida_bay_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_seagrass_florida_bay_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_seagrass_florida_bay"
 

@@ -16,6 +16,7 @@ aquatic_seagrass_mediterranean_stressors["Physical Damage"]["Impact on Biodivers
 aquatic_seagrass_mediterranean_stressors["Physical Damage"]["Influenced By"] = ['Boating Activity: Anchoring in seagrass meadows.', 'Illegal Trawling: Trawling is prohibited in many areas, but illegal trawling still occurs.', 'Coastal Development.', '**Influences (Stressors):**', 'Habitat Loss (the primary impact).', 'Coastal Erosion.', '**Logic Description:** Physical damage from anchoring and (illegal) trawling is a *major* threat to *Posidonia oceanica* meadows.  These meadows are extremely slow-growing and recover very slowly from damage, so the impacts can last for decades or centuries.']
 aquatic_seagrass_mediterranean_stressors["Physical Damage"]["Influences"] = ['Habitat Loss (the primary impact).', 'Coastal Erosion.', '**Logic Description:** Physical damage from anchoring and (illegal) trawling is a *major* threat to *Posidonia oceanica* meadows.  These meadows are extremely slow-growing and recover very slowly from damage, so the impacts can last for decades or centuries.']
 aquatic_seagrass_mediterranean_stressors["Physical Damage"]["Logic Description"] = '---'
+aquatic_seagrass_mediterranean_stressors["Physical Damage"]["Impact Function"] = "impact_physical_damage_aquatic_seagrass_mediterranean"
 
 # --- Water Quality Degradation ---
 aquatic_seagrass_mediterranean_stressors["Water Quality Degradation"]["Metric"] = 'Water clarity (turbidity); nutrient concentrations; concentrations of pollutants.'
@@ -25,6 +26,7 @@ aquatic_seagrass_mediterranean_stressors["Water Quality Degradation"]["Impact on
 aquatic_seagrass_mediterranean_stressors["Water Quality Degradation"]["Influenced By"] = ['Urban Runoff: Sewage, stormwater.', 'Agricultural Runoff.', 'Industrial Discharge.', 'Coastal Development.', '**Influences (Stressors):**', 'Light Availability.', 'Seagrass Health.', '**Logic Description:** Reduced water quality due to pollution and increased turbidity is a significant threat.']
 aquatic_seagrass_mediterranean_stressors["Water Quality Degradation"]["Influences"] = ['Light Availability.', 'Seagrass Health.', '**Logic Description:** Reduced water quality due to pollution and increased turbidity is a significant threat.']
 aquatic_seagrass_mediterranean_stressors["Water Quality Degradation"]["Logic Description"] = '---'
+aquatic_seagrass_mediterranean_stressors["Water Quality Degradation"]["Impact Function"] = "impact_water_quality_degradation_aquatic_seagrass_mediterranean"
 
 # --- Climate Change ---
 aquatic_seagrass_mediterranean_stressors["Climate Change"]["Metric"] = 'Sea surface temperature; frequency/intensity of heatwaves; ocean acidification.'
@@ -34,6 +36,7 @@ aquatic_seagrass_mediterranean_stressors["Climate Change"]["Impact on Biodiversi
 aquatic_seagrass_mediterranean_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Heat Stress.', '* Ocean Acidification', '**Logic Description:** The Mediterranean Sea is warming rapidly, and marine heatwaves are becoming more frequent and intense, posing a significant threat to *Posidonia oceanica*.']
 aquatic_seagrass_mediterranean_stressors["Climate Change"]["Influences"] = ['Heat Stress.', '* Ocean Acidification', '**Logic Description:** The Mediterranean Sea is warming rapidly, and marine heatwaves are becoming more frequent and intense, posing a significant threat to *Posidonia oceanica*.']
 aquatic_seagrass_mediterranean_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_seagrass_mediterranean_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_seagrass_mediterranean"
 
 # --- Invasive Species ---
 aquatic_seagrass_mediterranean_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance of invasive *Caulerpa* species.'
@@ -43,4 +46,5 @@ aquatic_seagrass_mediterranean_stressors["Invasive Species"]["Impact on Biodiver
 aquatic_seagrass_mediterranean_stressors["Invasive Species"]["Influenced By"] = ['Shipping (ballast water, hull fouling).', 'Aquarium releases.', '* Climate Change', '**Influences (Stressors):**', '*  Native Seagrass', '**Logic Description:** Invasive algae, particularly *Caulerpa* species, can outcompete *Posidonia oceanica*.']
 aquatic_seagrass_mediterranean_stressors["Invasive Species"]["Influences"] = ['*  Native Seagrass', '**Logic Description:** Invasive algae, particularly *Caulerpa* species, can outcompete *Posidonia oceanica*.']
 aquatic_seagrass_mediterranean_stressors["Invasive Species"]["Logic Description"] = '---'
+aquatic_seagrass_mediterranean_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_aquatic_seagrass_mediterranean"
 

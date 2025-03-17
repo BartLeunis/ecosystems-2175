@@ -16,6 +16,7 @@ aquatic_rivers_danube_stressors["Pollution"]["Impact on Biodiversity"] = 'Eutrop
 aquatic_rivers_danube_stressors["Pollution"]["Influenced By"] = ['Agricultural Runoff: Fertilizers and animal waste.', 'Industrial Discharge: Untreated or poorly treated industrial wastewater.', 'Municipal Wastewater: Sewage from cities and towns.', 'Mining Activities: Release of heavy metals.', '**Influences (Stressors):**', 'Water Quality.', 'Aquatic Life Health.', 'Human Health.', '**Logic Description:** The Danube River is a transboundary river flowing through many countries, and it receives pollution from a wide range of sources, including agriculture, industry, and urban areas. This pollution degrades water quality and impacts both aquatic life and human health.']
 aquatic_rivers_danube_stressors["Pollution"]["Influences"] = ['Water Quality.', 'Aquatic Life Health.', 'Human Health.', '**Logic Description:** The Danube River is a transboundary river flowing through many countries, and it receives pollution from a wide range of sources, including agriculture, industry, and urban areas. This pollution degrades water quality and impacts both aquatic life and human health.']
 aquatic_rivers_danube_stressors["Pollution"]["Logic Description"] = '---'
+aquatic_rivers_danube_stressors["Pollution"]["Impact Function"] = "impact_pollution_aquatic_rivers_danube"
 
 # --- Hydromorphological Alterations ---
 aquatic_rivers_danube_stressors["Hydromorphological Alterations"]["Metric"] = 'Number of dams, weirs, and other structures; extent of channelization; loss of floodplain habitats; changes in flow regime.'
@@ -25,6 +26,7 @@ aquatic_rivers_danube_stressors["Hydromorphological Alterations"]["Impact on Bio
 aquatic_rivers_danube_stressors["Hydromorphological Alterations"]["Influenced By"] = ['Hydropower Generation: Dams.', 'Navigation: Channelization and locks.', 'Flood Control: Levees and embankments.', 'Water Abstraction: For irrigation and other uses.', '**Influences (Stressors):**', 'Habitat Connectivity.', 'Sediment Transport.', 'Floodplain Ecosystems.', 'Fish Migration', "**Logic Description:** Dams, weirs, channelization, and other hydromorphological alterations have significantly changed the Danube River's natural flow regime, fragmenting habitats, blocking fish migration, and reducing the extent of floodplains."]
 aquatic_rivers_danube_stressors["Hydromorphological Alterations"]["Influences"] = ['Habitat Connectivity.', 'Sediment Transport.', 'Floodplain Ecosystems.', 'Fish Migration', "**Logic Description:** Dams, weirs, channelization, and other hydromorphological alterations have significantly changed the Danube River's natural flow regime, fragmenting habitats, blocking fish migration, and reducing the extent of floodplains."]
 aquatic_rivers_danube_stressors["Hydromorphological Alterations"]["Logic Description"] = '---'
+aquatic_rivers_danube_stressors["Hydromorphological Alterations"]["Impact Function"] = "impact_hydromorphological_alterations_aquatic_rivers_danube"
 
 # --- Invasive Species ---
 aquatic_rivers_danube_stressors["Invasive Species"]["Data Sources"] = ['* Research', '* Monitoring programs.', '**Impact on Area**: Changes to habitats.', '**Impact on Biodiversity:**', 'Competition with native species.', 'Alteration of food webs.', '**Influenced By (Stressors):**', '* Ballast water.', '* Canals', '* Climate Change', '**Influences (Stressors):**', '* Native Species', '**Logic Description:** Invasive species impact.']
@@ -32,6 +34,7 @@ aquatic_rivers_danube_stressors["Invasive Species"]["Impact on Biodiversity"] = 
 aquatic_rivers_danube_stressors["Invasive Species"]["Influenced By"] = ['* Ballast water.', '* Canals', '* Climate Change', '**Influences (Stressors):**', '* Native Species', '**Logic Description:** Invasive species impact.']
 aquatic_rivers_danube_stressors["Invasive Species"]["Influences"] = ['* Native Species', '**Logic Description:** Invasive species impact.']
 aquatic_rivers_danube_stressors["Invasive Species"]["Logic Description"] = '---'
+aquatic_rivers_danube_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_aquatic_rivers_danube"
 
 # --- Climate Change ---
 aquatic_rivers_danube_stressors["Climate Change"]["Metric"] = 'Temperature and precipitation changes'
@@ -41,4 +44,5 @@ aquatic_rivers_danube_stressors["Climate Change"]["Impact on Biodiversity"] = '*
 aquatic_rivers_danube_stressors["Climate Change"]["Influenced By"] = ['* Global GHG Emissions', '**Influences (Stressors):**', '*  Hydrology', '**Logic Description:** Climate change impacts.']
 aquatic_rivers_danube_stressors["Climate Change"]["Influences"] = ['*  Hydrology', '**Logic Description:** Climate change impacts.']
 aquatic_rivers_danube_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_rivers_danube_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_rivers_danube"
 

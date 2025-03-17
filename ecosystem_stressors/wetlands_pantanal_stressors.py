@@ -38,6 +38,7 @@ wetlands_pantanal_stressors["Land-Use Change"]["Impact on Biodiversity"] = 'Habi
 wetlands_pantanal_stressors["Land-Use Change"]["Influenced By"] = ['Pantanal - Agricultural Expansion', 'Pantanal - Economic Growth', 'Pantanal - Government Policies', '*  Pantanal - Infrastructure Development', '**Influences (Stressors):**', '*  Pantanal - Habitat Fragmentation', '**Logic Description:** Conversion of Pantanal habitat to cattle pasture is a growing threat, leading to habitat loss and fragmentation.']
 wetlands_pantanal_stressors["Land-Use Change"]["Influences"] = ['*  Pantanal - Habitat Fragmentation', '**Logic Description:** Conversion of Pantanal habitat to cattle pasture is a growing threat, leading to habitat loss and fragmentation.']
 wetlands_pantanal_stressors["Land-Use Change"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Land-Use Change"]["Impact Function"] = "impact_land_use_change_wetlands_pantanal"
 
 # --- Altered Hydrology ---
 wetlands_pantanal_stressors["Altered Hydrology"]["Metric"] = 'Changes in water levels, flooding patterns, and river flow.'
@@ -47,6 +48,7 @@ wetlands_pantanal_stressors["Altered Hydrology"]["Impact on Biodiversity"] = "Im
 wetlands_pantanal_stressors["Altered Hydrology"]["Influenced By"] = ['Pantanal - Upstream Dam Construction', 'Pantanal - Climate Change', 'Pantanal - Deforestation', '*  Pantanal - Water Diversion', '**Influences (Stressors):**', '*  Pantanal - Habitat Availability', "**Logic Description:** The Pantanal's ecology is driven by its annual flood pulse. Dams, climate change, and deforestation are altering this."]
 wetlands_pantanal_stressors["Altered Hydrology"]["Influences"] = ['*  Pantanal - Habitat Availability', "**Logic Description:** The Pantanal's ecology is driven by its annual flood pulse. Dams, climate change, and deforestation are altering this."]
 wetlands_pantanal_stressors["Altered Hydrology"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Altered Hydrology"]["Impact Function"] = "impact_altered_hydrology_wetlands_pantanal"
 
 # --- Pollution ---
 wetlands_pantanal_stressors["Pollution"]["Metric"] = 'Concentrations of pollutants (e.g., mercury, pesticides, sediment) in water and sediments.'
@@ -56,6 +58,7 @@ wetlands_pantanal_stressors["Pollution"]["Impact on Biodiversity"] = 'Toxic effe
 wetlands_pantanal_stressors["Pollution"]["Influenced By"] = ['Pantanal - Mining Activities', 'Pantanal - Agricultural Runoff', 'Pantanal - Deforestation', '**Influences (Stressors):**', '*  Pantanal - Water Quality', '*  Pantanal - Wildlife Health', '**Logic Description:** Pollution from mining, agriculture, and deforestation degrades water quality and impacts wildlife.']
 wetlands_pantanal_stressors["Pollution"]["Influences"] = ['*  Pantanal - Water Quality', '*  Pantanal - Wildlife Health', '**Logic Description:** Pollution from mining, agriculture, and deforestation degrades water quality and impacts wildlife.']
 wetlands_pantanal_stressors["Pollution"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Pollution"]["Impact Function"] = "impact_pollution_wetlands_pantanal"
 
 # --- Climate Change ---
 wetlands_pantanal_stressors["Climate Change"]["Metric"] = 'Temperature, Precipitation, increased frequency of extreme weather events.'
@@ -65,6 +68,7 @@ wetlands_pantanal_stressors["Climate Change"]["Impact on Biodiversity"] = '* Shi
 wetlands_pantanal_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '*  Pantanal - Hydrology', '*  Pantanal - Wildfires', '**Logic Description:** Climate change impacts']
 wetlands_pantanal_stressors["Climate Change"]["Influences"] = ['*  Pantanal - Hydrology', '*  Pantanal - Wildfires', '**Logic Description:** Climate change impacts']
 wetlands_pantanal_stressors["Climate Change"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_wetlands_pantanal"
 
 # --- Wildfires ---
 wetlands_pantanal_stressors["Wildfires"]["Data Sources"] = ['* Remote Sensing', '* Local Reports', '**Impact on Area:** Direct loss', '**Impact on Biodiversity:**', '* Mortality', '* Habitat loss', '**Influenced By (Stressors):**', '*  Pantanal - Deforestation', '*  Pantanal - Temperature', '*  Pantanal - Changes in Precipitation', '*  Pantanal - Human Activities', '**Influences (Stressors):**', '*  Pantanal - Air Quality', '**Logic Description:** Wildfires exacerbated by human activities and climate.']
@@ -73,6 +77,7 @@ wetlands_pantanal_stressors["Wildfires"]["Impact on Biodiversity"] = '* Mortalit
 wetlands_pantanal_stressors["Wildfires"]["Influenced By"] = ['*  Pantanal - Deforestation', '*  Pantanal - Temperature', '*  Pantanal - Changes in Precipitation', '*  Pantanal - Human Activities', '**Influences (Stressors):**', '*  Pantanal - Air Quality', '**Logic Description:** Wildfires exacerbated by human activities and climate.']
 wetlands_pantanal_stressors["Wildfires"]["Influences"] = ['*  Pantanal - Air Quality', '**Logic Description:** Wildfires exacerbated by human activities and climate.']
 wetlands_pantanal_stressors["Wildfires"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_wetlands_pantanal"
 
 # --- Agricultural Expansion ---
 wetlands_pantanal_stressors["Agricultural Expansion"]["Metric"] = 'Area converted to agriculture'
@@ -81,6 +86,7 @@ wetlands_pantanal_stressors["Agricultural Expansion"]["Impact on Area"] = 'Habit
 wetlands_pantanal_stressors["Agricultural Expansion"]["Influenced By"] = ['* Global Demand', '**Influences (Stressors):**', '* Pantanal - Land-Use Change', '**Logic Description:** Demand for agricultural land.']
 wetlands_pantanal_stressors["Agricultural Expansion"]["Influences"] = ['* Pantanal - Land-Use Change', '**Logic Description:** Demand for agricultural land.']
 wetlands_pantanal_stressors["Agricultural Expansion"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Agricultural Expansion"]["Impact Function"] = "impact_agricultural_expansion_wetlands_pantanal"
 
 # --- Economic Growth ---
 wetlands_pantanal_stressors["Economic Growth"]["Metric"] = 'GDP, etc.'
@@ -90,6 +96,7 @@ wetlands_pantanal_stressors["Economic Growth"]["Impact on Biodiversity"] = '* Ha
 wetlands_pantanal_stressors["Economic Growth"]["Influenced By"] = ['* Global Markets', '**Influences (Stressors):**', '* Pantanal - Land-Use Change', '* Pantanal - Agricultural Expansion', '* Pantanal - Infrastructure Development', '**Logic Description:** Economic development pressures.']
 wetlands_pantanal_stressors["Economic Growth"]["Influences"] = ['* Pantanal - Land-Use Change', '* Pantanal - Agricultural Expansion', '* Pantanal - Infrastructure Development', '**Logic Description:** Economic development pressures.']
 wetlands_pantanal_stressors["Economic Growth"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Economic Growth"]["Impact Function"] = "impact_economic_growth_wetlands_pantanal"
 
 # --- Government Policies ---
 wetlands_pantanal_stressors["Government Policies"]["Metric"] = 'Land use regulations, environmental protections'
@@ -99,12 +106,14 @@ wetlands_pantanal_stressors["Government Policies"]["Impact on Biodiversity"] = '
 wetlands_pantanal_stressors["Government Policies"]["Influenced By"] = ['* Politics', '* Economics', '**Influences (Stressors):**', '*  Pantanal - Land-Use Change', '**Logic Description:** Policy can have positive or negative impacts.']
 wetlands_pantanal_stressors["Government Policies"]["Influences"] = ['*  Pantanal - Land-Use Change', '**Logic Description:** Policy can have positive or negative impacts.']
 wetlands_pantanal_stressors["Government Policies"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Government Policies"]["Impact Function"] = "impact_government_policies_wetlands_pantanal"
 
 # --- Infrastructure Development ---
 wetlands_pantanal_stressors["Infrastructure Development"]["Impact on Area"] = 'Fragmentation'
 wetlands_pantanal_stressors["Infrastructure Development"]["Impact on Biodiversity"] = '* Habitat Loss\n**Influenced By (Stressors):**\n*  Pantanal - Economic Growth\n**Influences (Stressors):**\n* Pantanal - Habitat Fragmentation\n* Pantanal - Land Use Change\n**Logic Description**: Infrastructure projects can damage habitat.'
 wetlands_pantanal_stressors["Infrastructure Development"]["Influenced By"] = ['*  Pantanal - Economic Growth', '**Influences (Stressors):**', '* Pantanal - Habitat Fragmentation', '* Pantanal - Land Use Change', '**Logic Description**: Infrastructure projects can damage habitat.']
 wetlands_pantanal_stressors["Infrastructure Development"]["Influences"] = ['* Pantanal - Habitat Fragmentation', '* Pantanal - Land Use Change', '**Logic Description**: Infrastructure projects can damage habitat.']
+wetlands_pantanal_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_wetlands_pantanal"
 
 # --- Upstream Dam Construction ---
 wetlands_pantanal_stressors["Upstream Dam Construction"]["Metric"] = 'Number and capacity of upstream dams'
@@ -114,6 +123,7 @@ wetlands_pantanal_stressors["Upstream Dam Construction"]["Impact on Biodiversity
 wetlands_pantanal_stressors["Upstream Dam Construction"]["Influenced By"] = ['*  Pantanal - Energy Demand', 'Government Policies (of upstream countries).', '**Influences (Stressors):**', 'Pantanal - Altered Hydrology', "**Logic Description:** Dams built on rivers that feed the Pantanal alter the natural flow regime, impacting the wetland's ecology."]
 wetlands_pantanal_stressors["Upstream Dam Construction"]["Influences"] = ['Pantanal - Altered Hydrology', "**Logic Description:** Dams built on rivers that feed the Pantanal alter the natural flow regime, impacting the wetland's ecology."]
 wetlands_pantanal_stressors["Upstream Dam Construction"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Upstream Dam Construction"]["Impact Function"] = "impact_upstream_dam_construction_wetlands_pantanal"
 
 # --- Deforestation ---
 wetlands_pantanal_stressors["Deforestation"]["Metric"] = 'Area of forest cleared (ha/year).'
@@ -121,6 +131,7 @@ wetlands_pantanal_stressors["Deforestation"]["Data Sources"] = ['* Remote sensin
 wetlands_pantanal_stressors["Deforestation"]["Influenced By"] = ['* Pantanal - Agricultural Expansion', '* Pantanal - Land-Use Change', '**Influences (Stressors):**', '* Pantanal - Altered Hydrology', '* Pantanal - Pollution', '* Pantanal - Wildfires', '**Logic Description:** Deforestation contributes to multiple other stressors.']
 wetlands_pantanal_stressors["Deforestation"]["Influences"] = ['* Pantanal - Altered Hydrology', '* Pantanal - Pollution', '* Pantanal - Wildfires', '**Logic Description:** Deforestation contributes to multiple other stressors.']
 wetlands_pantanal_stressors["Deforestation"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_wetlands_pantanal"
 
 # --- Water Diversion ---
 wetlands_pantanal_stressors["Water Diversion"]["Metric"] = 'Volume of water diverted for irrigation, etc.'
@@ -130,6 +141,7 @@ wetlands_pantanal_stressors["Water Diversion"]["Impact on Biodiversity"] = "* Im
 wetlands_pantanal_stressors["Water Diversion"]["Influenced By"] = ['* Pantanal - Agricultural Expansion', '* Pantanal - Water Demand', '**Influences (Stressors):**', '* Pantanal - Altered Hydrology', "**Logic Description:** Water extraction reduces the Pantanal's flood pulse."]
 wetlands_pantanal_stressors["Water Diversion"]["Influences"] = ['* Pantanal - Altered Hydrology', "**Logic Description:** Water extraction reduces the Pantanal's flood pulse."]
 wetlands_pantanal_stressors["Water Diversion"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Water Diversion"]["Impact Function"] = "impact_water_diversion_wetlands_pantanal"
 
 # --- Mining Activities ---
 wetlands_pantanal_stressors["Mining Activities"]["Metric"] = 'Number of mines, area affected, pollutant levels'
@@ -137,11 +149,13 @@ wetlands_pantanal_stressors["Mining Activities"]["Data Sources"] = ['* Governmen
 wetlands_pantanal_stressors["Mining Activities"]["Influenced By"] = ['* Economic Growth', '**Influences (Stressors):**', '* Pantanal - Pollution', '**Logic Description:** Mining releases pollutants into the environment.']
 wetlands_pantanal_stressors["Mining Activities"]["Influences"] = ['* Pantanal - Pollution', '**Logic Description:** Mining releases pollutants into the environment.']
 wetlands_pantanal_stressors["Mining Activities"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Mining Activities"]["Impact Function"] = "impact_mining_activities_wetlands_pantanal"
 
 # --- Agricultural Runoff ---
 wetlands_pantanal_stressors["Agricultural Runoff"]["Metric"] = 'Nutrient and pesticide concentrations in water.'
 wetlands_pantanal_stressors["Agricultural Runoff"]["Data Sources"] = ['* Water quality monitoring data.', '**Impact on Area**: Water quality degradation.', '**Impact on Biodiversity:**', '* Eutrophication', '* Toxic effects', '**Influenced By (Stressors)**', '* Pantanal - Agricultural Expansion', '**Influences (Stressors)**', '* Pantanal - Pollution', '**Logic Description**: Runoff carries pollutants from agricultural areas']
 wetlands_pantanal_stressors["Agricultural Runoff"]["Impact on Biodiversity"] = '* Eutrophication\n* Toxic effects\n**Influenced By (Stressors)**\n* Pantanal - Agricultural Expansion\n**Influences (Stressors)**\n* Pantanal - Pollution\n**Logic Description**: Runoff carries pollutants from agricultural areas'
+wetlands_pantanal_stressors["Agricultural Runoff"]["Impact Function"] = "impact_agricultural_runoff_wetlands_pantanal"
 
 # --- Wildlife Health ---
 wetlands_pantanal_stressors["Wildlife Health"]["Metric"] = 'Disease prevalence, mortality rates, contaminant levels in wildlife.'
@@ -150,6 +164,7 @@ wetlands_pantanal_stressors["Wildlife Health"]["Impact on Area"] = 'Indirect, th
 wetlands_pantanal_stressors["Wildlife Health"]["Impact on Biodiversity"] = 'Population declines.\n**Influenced By (Stressors):**\nPantanal - Pollution\n**Influences (Stressors):**\nPopulation dynamics\n**Logic Description**: Wildlife health is an indicator of ecosystem health.'
 wetlands_pantanal_stressors["Wildlife Health"]["Influenced By"] = ['Pantanal - Pollution', '**Influences (Stressors):**', 'Population dynamics', '**Logic Description**: Wildlife health is an indicator of ecosystem health.']
 wetlands_pantanal_stressors["Wildlife Health"]["Influences"] = ['Population dynamics', '**Logic Description**: Wildlife health is an indicator of ecosystem health.']
+wetlands_pantanal_stressors["Wildlife Health"]["Impact Function"] = "impact_wildlife_health_wetlands_pantanal"
 
 # --- Temperature ---
 wetlands_pantanal_stressors["Temperature"]["Metric"] = 'Average and extreme temperatures.'
@@ -158,11 +173,13 @@ wetlands_pantanal_stressors["Temperature"]["Impact on Area"] = 'Indirect'
 wetlands_pantanal_stressors["Temperature"]["Impact on Biodiversity"] = '* Species stress\n**Influenced By (Stressors):**\n* Pantanal - Climate Change\n**Influences (Stressors):**\n* Pantanal - Wildfires\n**Logic Description**: Temperature is a key environmental variable.'
 wetlands_pantanal_stressors["Temperature"]["Influenced By"] = ['* Pantanal - Climate Change', '**Influences (Stressors):**', '* Pantanal - Wildfires', '**Logic Description**: Temperature is a key environmental variable.']
 wetlands_pantanal_stressors["Temperature"]["Influences"] = ['* Pantanal - Wildfires', '**Logic Description**: Temperature is a key environmental variable.']
+wetlands_pantanal_stressors["Temperature"]["Impact Function"] = "impact_temperature_wetlands_pantanal"
 
 # --- Changes in Precipitation ---
 wetlands_pantanal_stressors["Changes in Precipitation"]["Metric"] = 'Rainfall amount, seasonality.'
 wetlands_pantanal_stressors["Changes in Precipitation"]["Influenced By"] = ['* Pantanal - Climate Change', '**Influences (Stressors):**', '* Pantanal - Wildfires', '**Logic Description**: Rainfall patterns are critical for wetlands.']
 wetlands_pantanal_stressors["Changes in Precipitation"]["Influences"] = ['* Pantanal - Wildfires', '**Logic Description**: Rainfall patterns are critical for wetlands.']
+wetlands_pantanal_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_wetlands_pantanal"
 
 # --- Human Activities ---
 wetlands_pantanal_stressors["Human Activities"]["Metric"] = 'Varies depending on the specific activity.'
@@ -172,6 +189,7 @@ wetlands_pantanal_stressors["Human Activities"]["Impact on Biodiversity"] = 'Var
 wetlands_pantanal_stressors["Human Activities"]["Influenced By"] = ['* Many', '**Influences (Stressors):**', '* Pantanal - Wildfires', '**Logic Description:** A broad category encompassing many human impacts.']
 wetlands_pantanal_stressors["Human Activities"]["Influences"] = ['* Pantanal - Wildfires', '**Logic Description:** A broad category encompassing many human impacts.']
 wetlands_pantanal_stressors["Human Activities"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Human Activities"]["Impact Function"] = "impact_human_activities_wetlands_pantanal"
 
 # --- Air Quality ---
 wetlands_pantanal_stressors["Air Quality"]["Data Sources"] = ['* Air quality monitoring.', '**Impact on Area:** Air Quality', '**Impact on Biodiversity:**', '* Respiratory issues in wildlife', '**Influenced By (Stressors):**', '* Pantanal - Wildfires', '**Influences (Stressors):**', '* Wildlife Health', '**Logic Description:** Air quality impacts both human and wildlife health.']
@@ -180,11 +198,13 @@ wetlands_pantanal_stressors["Air Quality"]["Impact on Biodiversity"] = '* Respir
 wetlands_pantanal_stressors["Air Quality"]["Influenced By"] = ['* Pantanal - Wildfires', '**Influences (Stressors):**', '* Wildlife Health', '**Logic Description:** Air quality impacts both human and wildlife health.']
 wetlands_pantanal_stressors["Air Quality"]["Influences"] = ['* Wildlife Health', '**Logic Description:** Air quality impacts both human and wildlife health.']
 wetlands_pantanal_stressors["Air Quality"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Air Quality"]["Impact Function"] = "impact_air_quality_wetlands_pantanal"
 
 # --- Habitat Availability ---
 wetlands_pantanal_stressors["Habitat Availability"]["Data Sources"] = ['* Remote Sensing', '* Species distribution models', '**Impact on Area**: N/A', '**Impact on Biodiversity:**', '*  Population sizes.', '**Influenced By (Stressors)**', '* Pantanal - Altered Hydrology', '* Many others', '**Influences (Stressors):**', '* Population dynamics.', '**Logic Description**: The amount of suitable habitat affects populations.']
 wetlands_pantanal_stressors["Habitat Availability"]["Impact on Biodiversity"] = '*  Population sizes.\n**Influenced By (Stressors)**\n* Pantanal - Altered Hydrology\n* Many others\n**Influences (Stressors):**\n* Population dynamics.\n**Logic Description**: The amount of suitable habitat affects populations.'
 wetlands_pantanal_stressors["Habitat Availability"]["Influences"] = ['* Population dynamics.', '**Logic Description**: The amount of suitable habitat affects populations.']
+wetlands_pantanal_stressors["Habitat Availability"]["Impact Function"] = "impact_habitat_availability_wetlands_pantanal"
 
 # --- Water Quality ---
 wetlands_pantanal_stressors["Water Quality"]["Data Sources"] = ['* Monitoring Networks', '**Impact on Area:** Overall aquatic environment', '**Impact on Biodiversity:**', '* Impacts on many species', '**Influenced By (Stressors):**', '* Pantanal - Pollution', '**Influences (Stressors):**', '* Many, varies.', '**Logic Description**: Water quality is fundamental to wetland ecosystems.']
@@ -192,6 +212,7 @@ wetlands_pantanal_stressors["Water Quality"]["Impact on Area"] = 'Overall aquati
 wetlands_pantanal_stressors["Water Quality"]["Impact on Biodiversity"] = '* Impacts on many species\n**Influenced By (Stressors):**\n* Pantanal - Pollution\n**Influences (Stressors):**\n* Many, varies.\n**Logic Description**: Water quality is fundamental to wetland ecosystems.'
 wetlands_pantanal_stressors["Water Quality"]["Influenced By"] = ['* Pantanal - Pollution', '**Influences (Stressors):**', '* Many, varies.', '**Logic Description**: Water quality is fundamental to wetland ecosystems.']
 wetlands_pantanal_stressors["Water Quality"]["Influences"] = ['* Many, varies.', '**Logic Description**: Water quality is fundamental to wetland ecosystems.']
+wetlands_pantanal_stressors["Water Quality"]["Impact Function"] = "impact_water_quality_wetlands_pantanal"
 
 # --- Habitat Fragmentation ---
 wetlands_pantanal_stressors["Habitat Fragmentation"]["Metric"] = 'Patch size, connectivity.'
@@ -200,6 +221,7 @@ wetlands_pantanal_stressors["Habitat Fragmentation"]["Impact on Area"] = 'Isolat
 wetlands_pantanal_stressors["Habitat Fragmentation"]["Impact on Biodiversity"] = '* Reduced gene flow, increased vulnerability.\n**Influenced By (Stressors):**\n* Pantanal - Land-Use Change\n* Pantanal - Infrastructure Development\n**Influences (Stressors):**\n* Exacerbates other stressors.\n**Logic Description**: Fragmentation reduces the viability of habitats'
 wetlands_pantanal_stressors["Habitat Fragmentation"]["Influenced By"] = ['* Pantanal - Land-Use Change', '* Pantanal - Infrastructure Development', '**Influences (Stressors):**', '* Exacerbates other stressors.', '**Logic Description**: Fragmentation reduces the viability of habitats']
 wetlands_pantanal_stressors["Habitat Fragmentation"]["Influences"] = ['* Exacerbates other stressors.', '**Logic Description**: Fragmentation reduces the viability of habitats']
+wetlands_pantanal_stressors["Habitat Fragmentation"]["Impact Function"] = "impact_habitat_fragmentation_wetlands_pantanal"
 
 # --- Global Demand ---
 wetlands_pantanal_stressors["Global Demand"]["Metric"] = 'Prices for agricultural commodities.'
@@ -209,6 +231,7 @@ wetlands_pantanal_stressors["Global Demand"]["Impact on Biodiversity"] = '* Indi
 wetlands_pantanal_stressors["Global Demand"]["Influenced By"] = ['* Global markets', '**Influences (Stressors):**', '* Pantanal - Agricultural Expansion', '**Logic Description:** Global markets drive local land use']
 wetlands_pantanal_stressors["Global Demand"]["Influences"] = ['* Pantanal - Agricultural Expansion', '**Logic Description:** Global markets drive local land use']
 wetlands_pantanal_stressors["Global Demand"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Global Demand"]["Impact Function"] = "impact_global_demand_wetlands_pantanal"
 
 # --- Water Demand ---
 wetlands_pantanal_stressors["Water Demand"]["Metric"] = 'Water usage by different sectors.'
@@ -217,12 +240,14 @@ wetlands_pantanal_stressors["Water Demand"]["Impact on Area"] = 'Water availabil
 wetlands_pantanal_stressors["Water Demand"]["Impact on Biodiversity"] = '* Impacts on aquatic species.\n**Influenced By (Stressors):**\n* Population growth\n* Economic development\n**Influences (Stressors):**\n* Pantanal - Water Diversion\n**Logic Description**: Demand for water resources.'
 wetlands_pantanal_stressors["Water Demand"]["Influenced By"] = ['* Population growth', '* Economic development', '**Influences (Stressors):**', '* Pantanal - Water Diversion', '**Logic Description**: Demand for water resources.']
 wetlands_pantanal_stressors["Water Demand"]["Influences"] = ['* Pantanal - Water Diversion', '**Logic Description**: Demand for water resources.']
+wetlands_pantanal_stressors["Water Demand"]["Impact Function"] = "impact_water_demand_wetlands_pantanal"
 
 # --- Politics ---
 wetlands_pantanal_stressors["Politics"]["Data Sources"] = ['* Government Records', '* News Reports', '**Impact on Area**: Variable', '**Impact on Biodiversity**:', '* Variable', '**Influenced By (Stressors):**', '* Many', '**Influences (Stressors):**', '* Pantanal - Government Policies', '**Logic Description:** Political factors influence policy decisions.']
 wetlands_pantanal_stressors["Politics"]["Influenced By"] = ['* Many', '**Influences (Stressors):**', '* Pantanal - Government Policies', '**Logic Description:** Political factors influence policy decisions.']
 wetlands_pantanal_stressors["Politics"]["Influences"] = ['* Pantanal - Government Policies', '**Logic Description:** Political factors influence policy decisions.']
 wetlands_pantanal_stressors["Politics"]["Logic Description"] = '---'
+wetlands_pantanal_stressors["Politics"]["Impact Function"] = "impact_politics_wetlands_pantanal"
 
 # --- Energy Demand ---
 wetlands_pantanal_stressors["Energy Demand"]["Metric"] = 'Energy consumption and production.'
@@ -230,4 +255,5 @@ wetlands_pantanal_stressors["Energy Demand"]["Data Sources"] = ['* Government St
 wetlands_pantanal_stressors["Energy Demand"]["Impact on Area"] = 'Drivers for dam construction.'
 wetlands_pantanal_stressors["Energy Demand"]["Influenced By"] = ['* Economic Growth', '**Influences (Stressors):**', '* Pantanal - Upstream Dam Construction', '**Logic Description**: Energy needs can influence infrastructure development.']
 wetlands_pantanal_stressors["Energy Demand"]["Influences"] = ['* Pantanal - Upstream Dam Construction', '**Logic Description**: Energy needs can influence infrastructure development.']
+wetlands_pantanal_stressors["Energy Demand"]["Impact Function"] = "impact_energy_demand_wetlands_pantanal"
 

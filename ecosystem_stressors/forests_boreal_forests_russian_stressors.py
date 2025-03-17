@@ -19,6 +19,7 @@ forests_boreal_forests_russian_stressors["Infrastructure Development"]["Impact o
 forests_boreal_forests_russian_stressors["Infrastructure Development"]["Influenced By"] = ['Economic Growth: Resource extraction.', 'Government Policies.', 'Global Commodity Prices.', '**Influences (Stressors):**', '* Deforestation.', 'Wildfires.', '* Pollution', '**Logic Description:** Similar to Canada, but with potentially less stringent environmental regulations and enforcement in some areas. Resource extraction (oil, gas, minerals, timber) is a major driver.']
 forests_boreal_forests_russian_stressors["Infrastructure Development"]["Influences"] = ['* Deforestation.', 'Wildfires.', '* Pollution', '**Logic Description:** Similar to Canada, but with potentially less stringent environmental regulations and enforcement in some areas. Resource extraction (oil, gas, minerals, timber) is a major driver.']
 forests_boreal_forests_russian_stressors["Infrastructure Development"]["Logic Description"] = '---'
+forests_boreal_forests_russian_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_forests_boreal_forests_russian"
 
 # --- Deforestation ---
 forests_boreal_forests_russian_stressors["Deforestation"]["Metric"] = 'Area of forest cleared per year (ha/year).'
@@ -28,6 +29,7 @@ forests_boreal_forests_russian_stressors["Deforestation"]["Impact on Biodiversit
 forests_boreal_forests_russian_stressors["Deforestation"]["Influenced By"] = ['Infrastructure Development.', 'Economic Growth: Demand for timber (legal and illegal logging).', 'Government Policies.', '**Influences (Stressors):**', '* Carbon Cycle', '**Logic Description:** Logging (both legal and illegal) is a major driver of deforestation.']
 forests_boreal_forests_russian_stressors["Deforestation"]["Influences"] = ['* Carbon Cycle', '**Logic Description:** Logging (both legal and illegal) is a major driver of deforestation.']
 forests_boreal_forests_russian_stressors["Deforestation"]["Logic Description"] = '---'
+forests_boreal_forests_russian_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_forests_boreal_forests_russian"
 
 # --- Temperature Increase ---
 forests_boreal_forests_russian_stressors["Temperature Increase"]["Metric"] = 'Average annual temperature increase (°C).'
@@ -37,6 +39,7 @@ forests_boreal_forests_russian_stressors["Temperature Increase"]["Impact on Biod
 forests_boreal_forests_russian_stressors["Temperature Increase"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Wildfires.', 'Changes in Precipitation.', 'Permafrost Thaw.', '* Insect outbreaks', '**Logic Description:** Similar to Canada, with rapid warming and significant impacts from thawing permafrost.']
 forests_boreal_forests_russian_stressors["Temperature Increase"]["Influences"] = ['Wildfires.', 'Changes in Precipitation.', 'Permafrost Thaw.', '* Insect outbreaks', '**Logic Description:** Similar to Canada, with rapid warming and significant impacts from thawing permafrost.']
 forests_boreal_forests_russian_stressors["Temperature Increase"]["Logic Description"] = '---'
+forests_boreal_forests_russian_stressors["Temperature Increase"]["Impact Function"] = "impact_temperature_increase_forests_boreal_forests_russian"
 
 # --- Changes in Precipitation ---
 forests_boreal_forests_russian_stressors["Changes in Precipitation"]["Metric"] = 'Change in annual precipitation (mm/year); changes in snowpack; seasonality.'
@@ -46,6 +49,7 @@ forests_boreal_forests_russian_stressors["Changes in Precipitation"]["Impact on 
 forests_boreal_forests_russian_stressors["Changes in Precipitation"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', '* Wildfires.', '* Permafrost Thaw', '* Water Resources', '**Logic Description:** Similar to Canada.']
 forests_boreal_forests_russian_stressors["Changes in Precipitation"]["Influences"] = ['* Wildfires.', '* Permafrost Thaw', '* Water Resources', '**Logic Description:** Similar to Canada.']
 forests_boreal_forests_russian_stressors["Changes in Precipitation"]["Logic Description"] = '---'
+forests_boreal_forests_russian_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_forests_boreal_forests_russian"
 
 # --- Wildfires ---
 forests_boreal_forests_russian_stressors["Wildfires"]["Metric"] = 'Number of fires; area burned (ha/year).'
@@ -55,6 +59,7 @@ forests_boreal_forests_russian_stressors["Wildfires"]["Impact on Biodiversity"] 
 forests_boreal_forests_russian_stressors["Wildfires"]["Influenced By"] = ['Temperature Increase.', 'Changes in Precipitation.', 'Insect outbreaks.', 'Lightning strikes.', '* Human Activities', '* Inadequate Fire Management', '**Influences (Stressors):**', '* Air quality', '* Future Risk', '* Carbon cycle', '**Logic Description:** Wildfires are a massive and growing problem in the Russian Boreal Forest, driven by climate change and, in some cases, inadequate fire management.']
 forests_boreal_forests_russian_stressors["Wildfires"]["Influences"] = ['* Air quality', '* Future Risk', '* Carbon cycle', '**Logic Description:** Wildfires are a massive and growing problem in the Russian Boreal Forest, driven by climate change and, in some cases, inadequate fire management.']
 forests_boreal_forests_russian_stressors["Wildfires"]["Logic Description"] = '---'
+forests_boreal_forests_russian_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_forests_boreal_forests_russian"
 
 # --- Permafrost Thaw ---
 forests_boreal_forests_russian_stressors["Permafrost Thaw"]["Metric"] = 'Active layer thickness (cm); area of permafrost degradation (ha).'
@@ -64,6 +69,7 @@ forests_boreal_forests_russian_stressors["Permafrost Thaw"]["Impact on Biodivers
 forests_boreal_forests_russian_stressors["Permafrost Thaw"]["Influenced By"] = ['Temperature Increase.', 'Changes in Precipitation (snow cover).', 'Wildfires.', '* Infrastructure development', '**Influences (Stressors):**', 'Climate Change (through greenhouse gas emissions).', '* Hydrology', '* Habitat Loss', '**Logic Description:** Similar to Canada, with vast areas of permafrost and significant potential for greenhouse gas release.']
 forests_boreal_forests_russian_stressors["Permafrost Thaw"]["Influences"] = ['Climate Change (through greenhouse gas emissions).', '* Hydrology', '* Habitat Loss', '**Logic Description:** Similar to Canada, with vast areas of permafrost and significant potential for greenhouse gas release.']
 forests_boreal_forests_russian_stressors["Permafrost Thaw"]["Logic Description"] = '---'
+forests_boreal_forests_russian_stressors["Permafrost Thaw"]["Impact Function"] = "impact_permafrost_thaw_forests_boreal_forests_russian"
 
 # --- Invasive Species ---
 forests_boreal_forests_russian_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance of key invasive species.'
@@ -73,4 +79,5 @@ forests_boreal_forests_russian_stressors["Invasive Species"]["Impact on Biodiver
 forests_boreal_forests_russian_stressors["Invasive Species"]["Influenced By"] = ['* Disturbance.', '* Climate change.', '**Influences (Stressors):**', '* Forest composition', '**Logic Description:** Invasive species impact.']
 forests_boreal_forests_russian_stressors["Invasive Species"]["Influences"] = ['* Forest composition', '**Logic Description:** Invasive species impact.']
 forests_boreal_forests_russian_stressors["Invasive Species"]["Logic Description"] = '---'
+forests_boreal_forests_russian_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_forests_boreal_forests_russian"
 

@@ -19,6 +19,7 @@ forests_boreal_forests_canadian_stressors["Infrastructure Development"]["Impact 
 forests_boreal_forests_canadian_stressors["Infrastructure Development"]["Influenced By"] = ['Economic Growth: Demand for resources (timber, oil, minerals).', 'Government Policies: Resource development plans.', 'Global Commodity Prices.', '**Influences (Stressors):**', 'Deforestation (localized around infrastructure).', 'Wildfires (increased access).', 'Pollution (from mining, oil sands).', '**Logic Description:** Linear infrastructure (roads, pipelines) and resource extraction activities (mining, oil sands, forestry) fragment habitat and lead to direct habitat loss, with significant impacts on wildlife, particularly caribou.']
 forests_boreal_forests_canadian_stressors["Infrastructure Development"]["Influences"] = ['Deforestation (localized around infrastructure).', 'Wildfires (increased access).', 'Pollution (from mining, oil sands).', '**Logic Description:** Linear infrastructure (roads, pipelines) and resource extraction activities (mining, oil sands, forestry) fragment habitat and lead to direct habitat loss, with significant impacts on wildlife, particularly caribou.']
 forests_boreal_forests_canadian_stressors["Infrastructure Development"]["Logic Description"] = '---'
+forests_boreal_forests_canadian_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_forests_boreal_forests_canadian"
 
 # --- Deforestation ---
 forests_boreal_forests_canadian_stressors["Deforestation"]["Metric"] = 'Area of forest cleared per year (ha/year) (often associated with logging and conversion to other land uses).'
@@ -28,6 +29,7 @@ forests_boreal_forests_canadian_stressors["Deforestation"]["Impact on Biodiversi
 forests_boreal_forests_canadian_stressors["Deforestation"]["Influenced By"] = ['Infrastructure Development (roads).', 'Economic Growth: Demand for timber.', 'Government Policies: Forestry regulations.', '**Influences (Stressors):**', '* Carbon Storage and Sequestration', '**Logic Description:** Logging is a major driver of deforestation, impacting forest age structure and biodiversity. Conversion to agriculture is less common than in some other forest types, but resource extraction (oil sands) can result in significant deforestation.']
 forests_boreal_forests_canadian_stressors["Deforestation"]["Influences"] = ['* Carbon Storage and Sequestration', '**Logic Description:** Logging is a major driver of deforestation, impacting forest age structure and biodiversity. Conversion to agriculture is less common than in some other forest types, but resource extraction (oil sands) can result in significant deforestation.']
 forests_boreal_forests_canadian_stressors["Deforestation"]["Logic Description"] = '---'
+forests_boreal_forests_canadian_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_forests_boreal_forests_canadian"
 
 # --- Temperature Increase ---
 forests_boreal_forests_canadian_stressors["Temperature Increase"]["Metric"] = 'Average annual temperature increase (°C) (warming is occurring at a faster rate at higher latitudes).'
@@ -37,6 +39,7 @@ forests_boreal_forests_canadian_stressors["Temperature Increase"]["Impact on Bio
 forests_boreal_forests_canadian_stressors["Temperature Increase"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Wildfires.', 'Changes in Precipitation.', 'Permafrost Thaw.', '* Pest outbreaks', '**Logic Description:** Rapid warming is a major threat, leading to shifts in species distributions, increased pest outbreaks, and thawing permafrost, which has significant impacts on the ecosystem.']
 forests_boreal_forests_canadian_stressors["Temperature Increase"]["Influences"] = ['Wildfires.', 'Changes in Precipitation.', 'Permafrost Thaw.', '* Pest outbreaks', '**Logic Description:** Rapid warming is a major threat, leading to shifts in species distributions, increased pest outbreaks, and thawing permafrost, which has significant impacts on the ecosystem.']
 forests_boreal_forests_canadian_stressors["Temperature Increase"]["Logic Description"] = '---'
+forests_boreal_forests_canadian_stressors["Temperature Increase"]["Impact Function"] = "impact_temperature_increase_forests_boreal_forests_canadian"
 
 # --- Changes in Precipitation ---
 forests_boreal_forests_canadian_stressors["Changes in Precipitation"]["Metric"] = 'Change in annual precipitation (mm/year); changes in snowpack; changes in seasonality.'
@@ -46,6 +49,7 @@ forests_boreal_forests_canadian_stressors["Changes in Precipitation"]["Impact on
 forests_boreal_forests_canadian_stressors["Changes in Precipitation"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Wildfires.', '* Permafrost Thaw', '* Water availability', '**Logic Description:** Changes in precipitation patterns, including changes in snowpack and the timing of precipitation, impact water availability and ecosystem processes.']
 forests_boreal_forests_canadian_stressors["Changes in Precipitation"]["Influences"] = ['Wildfires.', '* Permafrost Thaw', '* Water availability', '**Logic Description:** Changes in precipitation patterns, including changes in snowpack and the timing of precipitation, impact water availability and ecosystem processes.']
 forests_boreal_forests_canadian_stressors["Changes in Precipitation"]["Logic Description"] = '---'
+forests_boreal_forests_canadian_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_forests_boreal_forests_canadian"
 
 # --- Wildfires ---
 forests_boreal_forests_canadian_stressors["Wildfires"]["Metric"] = 'Number of fires; area burned (ha/year).'
@@ -55,6 +59,7 @@ forests_boreal_forests_canadian_stressors["Wildfires"]["Impact on Biodiversity"]
 forests_boreal_forests_canadian_stressors["Wildfires"]["Influenced By"] = ['Temperature Increase (longer fire season, drier conditions).', 'Changes in Precipitation (drought).', 'Insect outbreaks (creating dead trees).', 'Lightning strikes (natural ignition source).', '*  Human Activities', '**Influences (Stressors):**', '* Air Quality', '* Future Fire Risk', '* Carbon cycle', '**Logic Description:** Wildfires are a natural part of the boreal ecosystem, but their frequency and intensity are increasing due to climate change, leading to significant impacts on forest structure, biodiversity, and the carbon cycle.']
 forests_boreal_forests_canadian_stressors["Wildfires"]["Influences"] = ['* Air Quality', '* Future Fire Risk', '* Carbon cycle', '**Logic Description:** Wildfires are a natural part of the boreal ecosystem, but their frequency and intensity are increasing due to climate change, leading to significant impacts on forest structure, biodiversity, and the carbon cycle.']
 forests_boreal_forests_canadian_stressors["Wildfires"]["Logic Description"] = '---'
+forests_boreal_forests_canadian_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_forests_boreal_forests_canadian"
 
 # --- Permafrost Thaw ---
 forests_boreal_forests_canadian_stressors["Permafrost Thaw"]["Metric"] = 'Active layer thickness (depth of soil that thaws each summer) (cm); area of permafrost degradation (ha).'
@@ -64,6 +69,7 @@ forests_boreal_forests_canadian_stressors["Permafrost Thaw"]["Impact on Biodiver
 forests_boreal_forests_canadian_stressors["Permafrost Thaw"]["Influenced By"] = ['Temperature Increase.', 'Changes in Precipitation (snow cover).', 'Wildfires (removing insulating vegetation).', '* Infrastructure Development', '**Influences (Stressors):**', 'Climate Change (through greenhouse gas emissions).', '* Hydrology', '* Habitat availability', '**Logic Description:** Thawing permafrost, driven by warming temperatures, leads to ground instability, altered hydrology, and the release of large amounts of greenhouse gases (methane and carbon dioxide), creating a positive feedback loop that accelerates climate change.']
 forests_boreal_forests_canadian_stressors["Permafrost Thaw"]["Influences"] = ['Climate Change (through greenhouse gas emissions).', '* Hydrology', '* Habitat availability', '**Logic Description:** Thawing permafrost, driven by warming temperatures, leads to ground instability, altered hydrology, and the release of large amounts of greenhouse gases (methane and carbon dioxide), creating a positive feedback loop that accelerates climate change.']
 forests_boreal_forests_canadian_stressors["Permafrost Thaw"]["Logic Description"] = '---'
+forests_boreal_forests_canadian_stressors["Permafrost Thaw"]["Impact Function"] = "impact_permafrost_thaw_forests_boreal_forests_canadian"
 
 # --- Invasive Species ---
 forests_boreal_forests_canadian_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance of key invasive species.'
@@ -73,4 +79,5 @@ forests_boreal_forests_canadian_stressors["Invasive Species"]["Impact on Biodive
 forests_boreal_forests_canadian_stressors["Invasive Species"]["Influenced By"] = ['* Disturbance.', '* Climate change.', '**Influences (Stressors):**', '* Forest composition', '**Logic Description:** Invasive species impact.']
 forests_boreal_forests_canadian_stressors["Invasive Species"]["Influences"] = ['* Forest composition', '**Logic Description:** Invasive species impact.']
 forests_boreal_forests_canadian_stressors["Invasive Species"]["Logic Description"] = '---'
+forests_boreal_forests_canadian_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_forests_boreal_forests_canadian"
 

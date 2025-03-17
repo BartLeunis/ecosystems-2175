@@ -15,6 +15,7 @@ aquatic_rivers_mississippi_stressors["Agricultural Runoff"]["Impact on Biodivers
 aquatic_rivers_mississippi_stressors["Agricultural Runoff"]["Influenced By"] = ['Agricultural Practices: Use of fertilizers in the vast Mississippi River basin.', 'Animal Agriculture: Waste from livestock operations.', 'Lack of Effective Nutrient Management Practices.', '**Influences (Stressors):**', 'Gulf of Mexico Hypoxia (the dominant impact).', 'Water Quality.', '**Logic Description:** Agricultural runoff, carrying excess nutrients (nitrogen and phosphorus) from fertilizers and animal waste, is the *primary* driver of the large hypoxic zone (dead zone) in the Gulf of Mexico, with significant impacts on marine ecosystems and fisheries. This is one of the most well-known and well-studied environmental problems in the United States.']
 aquatic_rivers_mississippi_stressors["Agricultural Runoff"]["Influences"] = ['Gulf of Mexico Hypoxia (the dominant impact).', 'Water Quality.', '**Logic Description:** Agricultural runoff, carrying excess nutrients (nitrogen and phosphorus) from fertilizers and animal waste, is the *primary* driver of the large hypoxic zone (dead zone) in the Gulf of Mexico, with significant impacts on marine ecosystems and fisheries. This is one of the most well-known and well-studied environmental problems in the United States.']
 aquatic_rivers_mississippi_stressors["Agricultural Runoff"]["Logic Description"] = '---'
+aquatic_rivers_mississippi_stressors["Agricultural Runoff"]["Impact Function"] = "impact_agricultural_runoff_aquatic_rivers_mississippi"
 
 # --- Dams and Levees ---
 aquatic_rivers_mississippi_stressors["Dams and Levees"]["Metric"] = 'Number of dams and levees; changes in river flow and sediment transport; loss of floodplain connectivity.'
@@ -24,6 +25,7 @@ aquatic_rivers_mississippi_stressors["Dams and Levees"]["Impact on Biodiversity"
 aquatic_rivers_mississippi_stressors["Dams and Levees"]["Influenced By"] = ['Flood Control: Levees were built to protect communities and agriculture from flooding.', 'Navigation: Dams and locks were built to facilitate barge traffic.', '**Influences (Stressors):**', 'Sediment Transport.', 'Habitat Connectivity.', 'Coastal Wetland Loss (in Louisiana).', "**Logic Description:**  Dams and levees along the Mississippi River, constructed for flood control and navigation, have significantly altered the river's hydrology, reduced sediment delivery to coastal wetlands, and fragmented habitats."]
 aquatic_rivers_mississippi_stressors["Dams and Levees"]["Influences"] = ['Sediment Transport.', 'Habitat Connectivity.', 'Coastal Wetland Loss (in Louisiana).', "**Logic Description:**  Dams and levees along the Mississippi River, constructed for flood control and navigation, have significantly altered the river's hydrology, reduced sediment delivery to coastal wetlands, and fragmented habitats."]
 aquatic_rivers_mississippi_stressors["Dams and Levees"]["Logic Description"] = '---'
+aquatic_rivers_mississippi_stressors["Dams and Levees"]["Impact Function"] = "impact_dams_and_levees_aquatic_rivers_mississippi"
 
 # --- Climate Change ---
 aquatic_rivers_mississippi_stressors["Climate Change"]["Metric"] = 'Changes in precipitation; changes in flow; increased frequency of floods and droughts.'
@@ -32,4 +34,5 @@ aquatic_rivers_mississippi_stressors["Climate Change"]["Impact on Biodiversity"]
 aquatic_rivers_mississippi_stressors["Climate Change"]["Influenced By"] = ['* Global emissions', '**Influences (Stressors):**', '* Floods and droughts.', '* Water quality', '**Logic Description:** Climate change may alter precipitation.']
 aquatic_rivers_mississippi_stressors["Climate Change"]["Influences"] = ['* Floods and droughts.', '* Water quality', '**Logic Description:** Climate change may alter precipitation.']
 aquatic_rivers_mississippi_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_rivers_mississippi_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_rivers_mississippi"
 

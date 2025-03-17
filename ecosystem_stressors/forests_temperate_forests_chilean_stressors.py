@@ -18,6 +18,7 @@ forests_temperate_forests_chilean_stressors["Infrastructure Development"]["Impac
 forests_temperate_forests_chilean_stressors["Infrastructure Development"]["Influenced By"] = ['Economic Growth: Resource extraction (timber, hydropower).', 'Government Policies.', '**Influences (Stressors):**', 'Deforestation.', '* Water quality (Dams)', '**Logic Description:** Infrastructure development, including roads and hydroelectric projects, fragments habitat.']
 forests_temperate_forests_chilean_stressors["Infrastructure Development"]["Influences"] = ['Deforestation.', '* Water quality (Dams)', '**Logic Description:** Infrastructure development, including roads and hydroelectric projects, fragments habitat.']
 forests_temperate_forests_chilean_stressors["Infrastructure Development"]["Logic Description"] = '---'
+forests_temperate_forests_chilean_stressors["Infrastructure Development"]["Impact Function"] = "impact_infrastructure_development_forests_temperate_forests_chilean"
 
 # --- Deforestation ---
 forests_temperate_forests_chilean_stressors["Deforestation"]["Metric"] = 'Area of forest cleared per year (ha/year) (often conversion to plantations).'
@@ -27,6 +28,7 @@ forests_temperate_forests_chilean_stressors["Deforestation"]["Impact on Biodiver
 forests_temperate_forests_chilean_stressors["Deforestation"]["Influenced By"] = ['Infrastructure Development.', 'Economic Growth: Demand for timber and pulp.', 'Government Policies: Forestry regulations.', '**Influences (Stressors):**', '* Carbon Storage', '**Logic Description:** Conversion of native forest to plantations (e.g., eucalyptus, pine) is a major driver of deforestation.']
 forests_temperate_forests_chilean_stressors["Deforestation"]["Influences"] = ['* Carbon Storage', '**Logic Description:** Conversion of native forest to plantations (e.g., eucalyptus, pine) is a major driver of deforestation.']
 forests_temperate_forests_chilean_stressors["Deforestation"]["Logic Description"] = '---'
+forests_temperate_forests_chilean_stressors["Deforestation"]["Impact Function"] = "impact_deforestation_forests_temperate_forests_chilean"
 
 # --- Temperature Increase ---
 forests_temperate_forests_chilean_stressors["Temperature Increase"]["Metric"] = 'Average annual temperature increase (°C).'
@@ -36,6 +38,7 @@ forests_temperate_forests_chilean_stressors["Temperature Increase"]["Impact on B
 forests_temperate_forests_chilean_stressors["Temperature Increase"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Wildfires.', 'Changes in Precipitation.', '**Logic Description:** Climate change impacts.']
 forests_temperate_forests_chilean_stressors["Temperature Increase"]["Influences"] = ['Wildfires.', 'Changes in Precipitation.', '**Logic Description:** Climate change impacts.']
 forests_temperate_forests_chilean_stressors["Temperature Increase"]["Logic Description"] = '---'
+forests_temperate_forests_chilean_stressors["Temperature Increase"]["Impact Function"] = "impact_temperature_increase_forests_temperate_forests_chilean"
 
 # --- Changes in Precipitation ---
 forests_temperate_forests_chilean_stressors["Changes in Precipitation"]["Metric"] = 'Change in annual precipitation (mm/year); changes in seasonality.'
@@ -45,6 +48,7 @@ forests_temperate_forests_chilean_stressors["Changes in Precipitation"]["Impact 
 forests_temperate_forests_chilean_stressors["Changes in Precipitation"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', '* Wildfires (in some areas)', '* Water resources', '**Logic Description:** Changes in precipitation patterns, including potential for increased drought in some areas, impact ecosystems.']
 forests_temperate_forests_chilean_stressors["Changes in Precipitation"]["Influences"] = ['* Wildfires (in some areas)', '* Water resources', '**Logic Description:** Changes in precipitation patterns, including potential for increased drought in some areas, impact ecosystems.']
 forests_temperate_forests_chilean_stressors["Changes in Precipitation"]["Logic Description"] = '---'
+forests_temperate_forests_chilean_stressors["Changes in Precipitation"]["Impact Function"] = "impact_changes_in_precipitation_forests_temperate_forests_chilean"
 
 # --- Wildfires ---
 forests_temperate_forests_chilean_stressors["Wildfires"]["Metric"] = 'Number of fires; area burned (ha/year).'
@@ -54,6 +58,7 @@ forests_temperate_forests_chilean_stressors["Wildfires"]["Impact on Biodiversity
 forests_temperate_forests_chilean_stressors["Wildfires"]["Influenced By"] = ['Temperature Increase.', 'Changes in Precipitation (drier conditions).', 'Land Use Practices (plantations).', 'Human Activities (negligence, arson).', '**Influences (Stressors):**', '* Future fire risk', '**Logic Description:** Wildfires, becoming more frequent and intense due to climate change and land use, are a growing threat.']
 forests_temperate_forests_chilean_stressors["Wildfires"]["Influences"] = ['* Future fire risk', '**Logic Description:** Wildfires, becoming more frequent and intense due to climate change and land use, are a growing threat.']
 forests_temperate_forests_chilean_stressors["Wildfires"]["Logic Description"] = '---'
+forests_temperate_forests_chilean_stressors["Wildfires"]["Impact Function"] = "impact_wildfires_forests_temperate_forests_chilean"
 
 # --- Invasive Species ---
 forests_temperate_forests_chilean_stressors["Invasive Species"]["Metric"] = 'Abundance and distribution of key invasives.'
@@ -62,4 +67,5 @@ forests_temperate_forests_chilean_stressors["Invasive Species"]["Impact on Area"
 forests_temperate_forests_chilean_stressors["Invasive Species"]["Impact on Biodiversity"] = '* Competition.\n* Altered processes.\n**Influenced By (Stressors):**\n* Disturbance.\n* Climate change\n* Global Trade\n**Influences (Stressors):**\n* Forest Composition\n**Logic Description**: Invasive species impacts.'
 forests_temperate_forests_chilean_stressors["Invasive Species"]["Influenced By"] = ['* Disturbance.', '* Climate change', '* Global Trade', '**Influences (Stressors):**', '* Forest Composition', '**Logic Description**: Invasive species impacts.']
 forests_temperate_forests_chilean_stressors["Invasive Species"]["Influences"] = ['* Forest Composition', '**Logic Description**: Invasive species impacts.']
+forests_temperate_forests_chilean_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_forests_temperate_forests_chilean"
 

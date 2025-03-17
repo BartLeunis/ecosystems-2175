@@ -16,6 +16,7 @@ aquatic_hydrothermal_vents_stressors["Bottom Trawling"]["Impact on Biodiversity"
 aquatic_hydrothermal_vents_stressors["Bottom Trawling"]["Influenced By"] = ['Demand for Deep-Sea Fish: (e.g., orange roughy, which often aggregate on seamounts).', 'Fishing Technology.', 'Weak Governance and Enforcement.', '**Influences (Stressors):**', 'Habitat Destruction (primary impact).', '**Logic Description:** Bottom trawling is *extremely* destructive to seamount ecosystems, physically destroying the fragile habitats and the diverse communities they support. Recovery, if possible, takes centuries.']
 aquatic_hydrothermal_vents_stressors["Bottom Trawling"]["Influences"] = ['Habitat Destruction (primary impact).', '**Logic Description:** Bottom trawling is *extremely* destructive to seamount ecosystems, physically destroying the fragile habitats and the diverse communities they support. Recovery, if possible, takes centuries.']
 aquatic_hydrothermal_vents_stressors["Bottom Trawling"]["Logic Description"] = '---'
+aquatic_hydrothermal_vents_stressors["Bottom Trawling"]["Impact Function"] = "impact_bottom_trawling_aquatic_hydrothermal_vents"
 
 # --- Deep-Sea Mining ---
 aquatic_hydrothermal_vents_stressors["Deep-Sea Mining"]["Metric"] = 'Area of seamounts licensed for exploration or exploitation (km²); concentrations of target minerals (e.g., cobalt crusts).'
@@ -25,6 +26,7 @@ aquatic_hydrothermal_vents_stressors["Deep-Sea Mining"]["Impact on Biodiversity"
 aquatic_hydrothermal_vents_stressors["Deep-Sea Mining"]["Influenced By"] = ['Demand for Cobalt and Other Minerals.', 'Technological Advancements.', 'International Regulations.', '**Influences (Stressors):**', '* Habitat destruction', 'Water Quality.', '**Logic Description:** Mining for cobalt crusts on seamounts poses a significant threat, involving the direct removal of the substrate and the diverse communities that live on it.']
 aquatic_hydrothermal_vents_stressors["Deep-Sea Mining"]["Influences"] = ['* Habitat destruction', 'Water Quality.', '**Logic Description:** Mining for cobalt crusts on seamounts poses a significant threat, involving the direct removal of the substrate and the diverse communities that live on it.']
 aquatic_hydrothermal_vents_stressors["Deep-Sea Mining"]["Logic Description"] = '---'
+aquatic_hydrothermal_vents_stressors["Deep-Sea Mining"]["Impact Function"] = "impact_deep_sea_mining_aquatic_hydrothermal_vents"
 
 # --- Climate Change ---
 aquatic_hydrothermal_vents_stressors["Climate Change"]["Metric"] = 'Changes in temperature, ocean currents, oxygen levels, and pH at seamount depths.'
@@ -34,6 +36,7 @@ aquatic_hydrothermal_vents_stressors["Climate Change"]["Impact on Biodiversity"]
 aquatic_hydrothermal_vents_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Ocean Acidification.', '**Logic Description:** While seamounts are less directly impacted by surface warming, changes in ocean currents, oxygen levels, and acidification driven by climate change could still affect seamount ecosystems.']
 aquatic_hydrothermal_vents_stressors["Climate Change"]["Influences"] = ['Ocean Acidification.', '**Logic Description:** While seamounts are less directly impacted by surface warming, changes in ocean currents, oxygen levels, and acidification driven by climate change could still affect seamount ecosystems.']
 aquatic_hydrothermal_vents_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_hydrothermal_vents_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_hydrothermal_vents"
 
 # --- Plastic Pollution ---
 aquatic_hydrothermal_vents_stressors["Plastic Pollution"]["Metric"] = 'Plastic and microplastic abundance.'
@@ -43,4 +46,5 @@ aquatic_hydrothermal_vents_stressors["Plastic Pollution"]["Impact on Biodiversit
 aquatic_hydrothermal_vents_stressors["Plastic Pollution"]["Influenced By"] = ['* Plastic production and disposal.', '**Influences (Stressors):**', '* Marine life.', '**Logic Description:** Plastics reach even remote seamounts.']
 aquatic_hydrothermal_vents_stressors["Plastic Pollution"]["Influences"] = ['* Marine life.', '**Logic Description:** Plastics reach even remote seamounts.']
 aquatic_hydrothermal_vents_stressors["Plastic Pollution"]["Logic Description"] = '---'
+aquatic_hydrothermal_vents_stressors["Plastic Pollution"]["Impact Function"] = "impact_plastic_pollution_aquatic_hydrothermal_vents"
 

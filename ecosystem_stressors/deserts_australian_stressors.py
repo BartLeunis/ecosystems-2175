@@ -16,6 +16,7 @@ deserts_australian_stressors["Invasive Species"]["Impact on Biodiversity"] = 'Fe
 deserts_australian_stressors["Invasive Species"]["Influenced By"] = ['Historical Introductions: Many invasive species were introduced intentionally or accidentally.', 'Lack of Natural Predators or Competitors.', 'Disturbance: Overgrazing, land clearing, and altered fire regimes can create opportunities for invasives.', '* Climate Change', '**Influences (Stressors):**', 'Native Species Populations: A *major* impact.', 'Fire Regimes: (e.g., buffel grass).', 'Ecosystem Functioning.', '**Logic Description:** Invasive species are a *major* threat to the biodiversity of Australian deserts. Feral animals (camels, rabbits, cats, foxes) and invasive plants (e.g., buffel grass) have had devastating impacts on native species and ecosystems.']
 deserts_australian_stressors["Invasive Species"]["Influences"] = ['Native Species Populations: A *major* impact.', 'Fire Regimes: (e.g., buffel grass).', 'Ecosystem Functioning.', '**Logic Description:** Invasive species are a *major* threat to the biodiversity of Australian deserts. Feral animals (camels, rabbits, cats, foxes) and invasive plants (e.g., buffel grass) have had devastating impacts on native species and ecosystems.']
 deserts_australian_stressors["Invasive Species"]["Logic Description"] = '---'
+deserts_australian_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_deserts_australian"
 
 # --- Altered Fire Regimes ---
 deserts_australian_stressors["Altered Fire Regimes"]["Metric"] = 'Fire frequency; fire intensity; area burned; seasonality of fires.'
@@ -25,6 +26,7 @@ deserts_australian_stressors["Altered Fire Regimes"]["Impact on Biodiversity"] =
 deserts_australian_stressors["Altered Fire Regimes"]["Influenced By"] = ['Invasive Grasses: (e.g., buffel grass) can increase fuel loads and fire intensity.', 'Climate Change: Hotter, drier conditions increase fire risk.', 'Changes in Indigenous Land Management Practices: Traditional burning practices played an important role in shaping Australian ecosystems.', '**Influences (Stressors):**', 'Vegetation Structure.', 'Biodiversity.', '**Logic Description:** Changes in fire regimes, often driven by invasive grasses and climate change, can have significant impacts on Australian desert ecosystems.']
 deserts_australian_stressors["Altered Fire Regimes"]["Influences"] = ['Vegetation Structure.', 'Biodiversity.', '**Logic Description:** Changes in fire regimes, often driven by invasive grasses and climate change, can have significant impacts on Australian desert ecosystems.']
 deserts_australian_stressors["Altered Fire Regimes"]["Logic Description"] = '---'
+deserts_australian_stressors["Altered Fire Regimes"]["Impact Function"] = "impact_altered_fire_regimes_deserts_australian"
 
 # --- Climate Change ---
 deserts_australian_stressors["Climate Change"]["Metric"] = 'Temperature increase; changes in rainfall; increased frequency/severity of drought.'
@@ -34,6 +36,7 @@ deserts_australian_stressors["Climate Change"]["Impact on Biodiversity"] = '* In
 deserts_australian_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Water availability', '* Fire regimes', '**Logic Description:** Climate change impacts.']
 deserts_australian_stressors["Climate Change"]["Influences"] = ['* Water availability', '* Fire regimes', '**Logic Description:** Climate change impacts.']
 deserts_australian_stressors["Climate Change"]["Logic Description"] = '---'
+deserts_australian_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_deserts_australian"
 
 # --- Overgrazing ---
 deserts_australian_stressors["Overgrazing"]["Metric"] = 'Livestock and feral herbivore density.'
@@ -43,4 +46,5 @@ deserts_australian_stressors["Overgrazing"]["Impact on Biodiversity"] = '* Impac
 deserts_australian_stressors["Overgrazing"]["Influenced By"] = ['* Land management practices', '**Influences (Stressors):**', '* Desertification.', '**Logic Description:** Overgrazing impacts.']
 deserts_australian_stressors["Overgrazing"]["Influences"] = ['* Desertification.', '**Logic Description:** Overgrazing impacts.']
 deserts_australian_stressors["Overgrazing"]["Logic Description"] = '---'
+deserts_australian_stressors["Overgrazing"]["Impact Function"] = "impact_overgrazing_deserts_australian"
 

@@ -17,6 +17,7 @@ mountains_andes_stressors["Glacier Retreat"]["Impact on Biodiversity"] = 'Loss o
 mountains_andes_stressors["Glacier Retreat"]["Influenced By"] = ['Temperature Increase: The primary driver.', 'Changes in Precipitation (in some areas).', '* Black Carbon', '**Influences (Stressors):**', 'Water Resources: *Critical* for downstream populations and agriculture.', 'Hazard Risks (GLOFs).', '**Logic Description:** The Andes are experiencing *very high* rates of glacier retreat, which is a *critical* issue for water resources in many Andean countries.  This is a major impact of climate change.']
 mountains_andes_stressors["Glacier Retreat"]["Influences"] = ['Water Resources: *Critical* for downstream populations and agriculture.', 'Hazard Risks (GLOFs).', '**Logic Description:** The Andes are experiencing *very high* rates of glacier retreat, which is a *critical* issue for water resources in many Andean countries.  This is a major impact of climate change.']
 mountains_andes_stressors["Glacier Retreat"]["Logic Description"] = '---'
+mountains_andes_stressors["Glacier Retreat"]["Impact Function"] = "impact_glacier_retreat_mountains_andes"
 
 # --- Land-Use Change ---
 mountains_andes_stressors["Land-Use Change"]["Metric"] = 'Area deforested (ha/year); area converted to agriculture and pasture (ha/year).'
@@ -26,6 +27,7 @@ mountains_andes_stressors["Land-Use Change"]["Impact on Biodiversity"] = 'Loss o
 mountains_andes_stressors["Land-Use Change"]["Influenced By"] = ['Agricultural Expansion: Subsistence agriculture and commercial agriculture.', 'Mining Activities.', 'Population Growth.', 'Logging (in some areas).', '**Influences (Stressors):**', 'Soil Erosion.', 'Water Quality.', 'Habitat Fragmentation', '**Logic Description:** Deforestation and land-use change for agriculture and mining are significant threats, particularly given the high levels of endemism in the Andes.']
 mountains_andes_stressors["Land-Use Change"]["Influences"] = ['Soil Erosion.', 'Water Quality.', 'Habitat Fragmentation', '**Logic Description:** Deforestation and land-use change for agriculture and mining are significant threats, particularly given the high levels of endemism in the Andes.']
 mountains_andes_stressors["Land-Use Change"]["Logic Description"] = '---'
+mountains_andes_stressors["Land-Use Change"]["Impact Function"] = "impact_land_use_change_mountains_andes"
 
 # --- Mining ---
 mountains_andes_stressors["Mining"]["Metric"] = 'Area affected by mining operations; water use and pollution from mining.'
@@ -35,6 +37,7 @@ mountains_andes_stressors["Mining"]["Impact on Biodiversity"] = '* Impacts on se
 mountains_andes_stressors["Mining"]["Influenced By"] = ['* Global demand for minerals', '**Influences (Stressors):**', '* Water resources', '* Pollution', '**Logic Description:** Mining is a major economic activity but also a significant environmental stressor.']
 mountains_andes_stressors["Mining"]["Influences"] = ['* Water resources', '* Pollution', '**Logic Description:** Mining is a major economic activity but also a significant environmental stressor.']
 mountains_andes_stressors["Mining"]["Logic Description"] = '---'
+mountains_andes_stressors["Mining"]["Impact Function"] = "impact_mining_mountains_andes"
 
 # --- Overgrazing ---
 mountains_andes_stressors["Overgrazing"]["Metric"] = 'Livestock density.'
@@ -44,6 +47,7 @@ mountains_andes_stressors["Overgrazing"]["Impact on Biodiversity"] = '* Impact o
 mountains_andes_stressors["Overgrazing"]["Influenced By"] = ['Livestock management.', '**Influences (Stressors):**', '* Desertification', '**Logic Description:** Overgrazing impacts vegetation.']
 mountains_andes_stressors["Overgrazing"]["Influences"] = ['* Desertification', '**Logic Description:** Overgrazing impacts vegetation.']
 mountains_andes_stressors["Overgrazing"]["Logic Description"] = '---'
+mountains_andes_stressors["Overgrazing"]["Impact Function"] = "impact_overgrazing_mountains_andes"
 
 # --- Climate Change ---
 mountains_andes_stressors["Climate Change"]["Metric"] = 'Temperature changes, precipitation changes, frequency of extreme events.'
@@ -53,4 +57,5 @@ mountains_andes_stressors["Climate Change"]["Impact on Biodiversity"] = '* Shift
 mountains_andes_stressors["Climate Change"]["Influenced By"] = ['* Global GHG', '**Influences (Stressors):**', '* Water resources.', '**Logic Description:** Climate change is a pervasive stressor.']
 mountains_andes_stressors["Climate Change"]["Influences"] = ['* Water resources.', '**Logic Description:** Climate change is a pervasive stressor.']
 mountains_andes_stressors["Climate Change"]["Logic Description"] = '---'
+mountains_andes_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_mountains_andes"
 

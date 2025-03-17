@@ -13,4 +13,5 @@ deserts_kalahari_stressors["Groundwater Extraction"]["Impact on Biodiversity"] =
 deserts_kalahari_stressors["Groundwater Extraction"]["Influenced By"] = ['* Agriculture, settlements, and mining.', '**Influences (Stressors):**', '* Water availability', '**Logic Description:** Groundwater extraction is a significant issue.']
 deserts_kalahari_stressors["Groundwater Extraction"]["Influences"] = ['* Water availability', '**Logic Description:** Groundwater extraction is a significant issue.']
 deserts_kalahari_stressors["Groundwater Extraction"]["Logic Description"] = '---'
+deserts_kalahari_stressors["Groundwater Extraction"]["Impact Function"] = "impact_groundwater_extraction_deserts_kalahari"
 

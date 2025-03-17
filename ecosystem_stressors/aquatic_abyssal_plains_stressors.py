@@ -15,6 +15,7 @@ aquatic_abyssal_plains_stressors["Deep-Sea Mining"]["Impact on Biodiversity"] = 
 aquatic_abyssal_plains_stressors["Deep-Sea Mining"]["Influenced By"] = ['Demand for Metals: (e.g., manganese, nickel, cobalt, copper).', 'Technological Advancements.', 'International Regulations.', '**Influences (Stressors):**', 'Habitat Destruction (primary impact).', 'Water Quality (sediment plumes).', '**Logic Description:** Mining for polymetallic nodules on the abyssal plains poses a significant threat, involving the removal of a key habitat feature and the creation of large sediment plumes, with potentially widespread and long-lasting impacts on the poorly understood biodiversity of this vast habitat.']
 aquatic_abyssal_plains_stressors["Deep-Sea Mining"]["Influences"] = ['Habitat Destruction (primary impact).', 'Water Quality (sediment plumes).', '**Logic Description:** Mining for polymetallic nodules on the abyssal plains poses a significant threat, involving the removal of a key habitat feature and the creation of large sediment plumes, with potentially widespread and long-lasting impacts on the poorly understood biodiversity of this vast habitat.']
 aquatic_abyssal_plains_stressors["Deep-Sea Mining"]["Logic Description"] = '---'
+aquatic_abyssal_plains_stressors["Deep-Sea Mining"]["Impact Function"] = "impact_deep_sea_mining_aquatic_abyssal_plains"
 
 # --- Plastic Pollution ---
 aquatic_abyssal_plains_stressors["Plastic Pollution"]["Metric"] = 'Concentrations of microplastics and macroplastics in abyssal sediments and water column.'
@@ -24,6 +25,7 @@ aquatic_abyssal_plains_stressors["Plastic Pollution"]["Impact on Biodiversity"] 
 aquatic_abyssal_plains_stressors["Plastic Pollution"]["Influenced By"] = ['Land-Based Sources of Plastic Pollution.', 'Ocean Currents: Transporting plastic to the deep sea.', '**Influences (Stressors):**', 'Potential Impacts on Abyssal Food Webs.', '**Logic Description:** Even the remote abyssal plains are accumulating plastic pollution, with potential, though poorly understood, impacts on the deep-sea ecosystem.']
 aquatic_abyssal_plains_stressors["Plastic Pollution"]["Influences"] = ['Potential Impacts on Abyssal Food Webs.', '**Logic Description:** Even the remote abyssal plains are accumulating plastic pollution, with potential, though poorly understood, impacts on the deep-sea ecosystem.']
 aquatic_abyssal_plains_stressors["Plastic Pollution"]["Logic Description"] = '---'
+aquatic_abyssal_plains_stressors["Plastic Pollution"]["Impact Function"] = "impact_plastic_pollution_aquatic_abyssal_plains"
 
 # --- Climate Change ---
 aquatic_abyssal_plains_stressors["Climate Change"]["Metric"] = 'Changes in deep ocean temperature, currents, oxygen, pH, and food supply.'
@@ -33,4 +35,5 @@ aquatic_abyssal_plains_stressors["Climate Change"]["Impact on Biodiversity"] = '
 aquatic_abyssal_plains_stressors["Climate Change"]["Influenced By"] = ['* Global emissions.', '**Influences (Stressors):**', '* Ocean acidification.', '**Logic Description:** Climate change impacts even the deep abyssal plain.']
 aquatic_abyssal_plains_stressors["Climate Change"]["Influences"] = ['* Ocean acidification.', '**Logic Description:** Climate change impacts even the deep abyssal plain.']
 aquatic_abyssal_plains_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_abyssal_plains_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_abyssal_plains"
 

@@ -15,6 +15,7 @@ aquatic_kelp_forests_australian_stressors["Ocean Warming"]["Impact on Biodiversi
 aquatic_kelp_forests_australian_stressors["Ocean Warming"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', 'Strengthening of the East Australian Current (EAC): Bringing warmer waters further south.', '**Influences (Stressors):**', '* Range shifts', '**Logic Description:** Ocean warming, particularly marine heatwaves, has caused *severe* and widespread kelp forest declines in parts of Australia, leading to significant ecosystem shifts. This is a major area of concern and research.']
 aquatic_kelp_forests_australian_stressors["Ocean Warming"]["Influences"] = ['* Range shifts', '**Logic Description:** Ocean warming, particularly marine heatwaves, has caused *severe* and widespread kelp forest declines in parts of Australia, leading to significant ecosystem shifts. This is a major area of concern and research.']
 aquatic_kelp_forests_australian_stressors["Ocean Warming"]["Logic Description"] = '---'
+aquatic_kelp_forests_australian_stressors["Ocean Warming"]["Impact Function"] = "impact_ocean_warming_aquatic_kelp_forests_australian"
 
 # --- Overgrazing ---
 aquatic_kelp_forests_australian_stressors["Overgrazing"]["Metric"] = 'Sea urchin density; abundance of other herbivorous fish; kelp cover.'
@@ -24,6 +25,7 @@ aquatic_kelp_forests_australian_stressors["Overgrazing"]["Impact on Biodiversity
 aquatic_kelp_forests_australian_stressors["Overgrazing"]["Influenced By"] = ['Overfishing of Urchin Predators: (e.g., rock lobsters).', '* Ocean Warming', '**Influences (Stressors):**', 'Kelp Cover.', '**Logic Description:** Overgrazing by sea urchins (and in some areas, certain fish species) can lead to the formation of urchin barrens, particularly where predator populations have been reduced.']
 aquatic_kelp_forests_australian_stressors["Overgrazing"]["Influences"] = ['Kelp Cover.', '**Logic Description:** Overgrazing by sea urchins (and in some areas, certain fish species) can lead to the formation of urchin barrens, particularly where predator populations have been reduced.']
 aquatic_kelp_forests_australian_stressors["Overgrazing"]["Logic Description"] = '---'
+aquatic_kelp_forests_australian_stressors["Overgrazing"]["Impact Function"] = "impact_overgrazing_aquatic_kelp_forests_australian"
 
 # --- Invasive Species ---
 aquatic_kelp_forests_australian_stressors["Invasive Species"]["Metric"] = 'Distribution and abundance of invasive species (e.g., *Undaria pinnatifida* - Japanese kelp).'
@@ -32,4 +34,5 @@ aquatic_kelp_forests_australian_stressors["Invasive Species"]["Impact on Area"] 
 aquatic_kelp_forests_australian_stressors["Invasive Species"]["Impact on Biodiversity"] = '* Can outcompete native kelp and alter habitat structure.\n**Influenced By (Stressors):**\n* Shipping (ballast water, hull fouling).\n* Aquaculture\n**Influences (Stressors):**\n* Native kelp populations\n**Logic Description**: Invasive species are a threat.'
 aquatic_kelp_forests_australian_stressors["Invasive Species"]["Influenced By"] = ['* Shipping (ballast water, hull fouling).', '* Aquaculture', '**Influences (Stressors):**', '* Native kelp populations', '**Logic Description**: Invasive species are a threat.']
 aquatic_kelp_forests_australian_stressors["Invasive Species"]["Influences"] = ['* Native kelp populations', '**Logic Description**: Invasive species are a threat.']
+aquatic_kelp_forests_australian_stressors["Invasive Species"]["Impact Function"] = "impact_invasive_species_aquatic_kelp_forests_australian"
 

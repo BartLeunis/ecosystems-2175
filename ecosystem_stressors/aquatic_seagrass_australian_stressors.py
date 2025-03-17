@@ -15,6 +15,7 @@ aquatic_seagrass_australian_stressors["Climate Change"]["Impact on Biodiversity"
 aquatic_seagrass_australian_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Marine Heatwaves (a primary driver of recent die-offs).', 'Ocean Acidification.', 'Sea Level Rise.', '**Logic Description:** Climate change, particularly marine heatwaves, has caused significant seagrass die-offs in parts of Australia. Ocean acidification and sea level rise are also long-term threats.']
 aquatic_seagrass_australian_stressors["Climate Change"]["Influences"] = ['Marine Heatwaves (a primary driver of recent die-offs).', 'Ocean Acidification.', 'Sea Level Rise.', '**Logic Description:** Climate change, particularly marine heatwaves, has caused significant seagrass die-offs in parts of Australia. Ocean acidification and sea level rise are also long-term threats.']
 aquatic_seagrass_australian_stressors["Climate Change"]["Logic Description"] = '---'
+aquatic_seagrass_australian_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_aquatic_seagrass_australian"
 
 # --- Water Quality Degradation ---
 aquatic_seagrass_australian_stressors["Water Quality Degradation"]["Metric"] = 'Water clarity (turbidity); nutrient concentrations; concentrations of other pollutants.'
@@ -24,6 +25,7 @@ aquatic_seagrass_australian_stressors["Water Quality Degradation"]["Impact on Bi
 aquatic_seagrass_australian_stressors["Water Quality Degradation"]["Influenced By"] = ['Agricultural Runoff: Nutrients and sediments.', 'Urban Runoff: Pollutants and sediments.', 'Coastal Development.', 'Dredging.', '**Influences (Stressors):**', 'Light Availability.', 'Seagrass Health.', '**Logic Description:** Reduced water quality, due to runoff from agriculture, urban areas, and coastal development, is a significant threat to Australian seagrass meadows.']
 aquatic_seagrass_australian_stressors["Water Quality Degradation"]["Influences"] = ['Light Availability.', 'Seagrass Health.', '**Logic Description:** Reduced water quality, due to runoff from agriculture, urban areas, and coastal development, is a significant threat to Australian seagrass meadows.']
 aquatic_seagrass_australian_stressors["Water Quality Degradation"]["Logic Description"] = '---'
+aquatic_seagrass_australian_stressors["Water Quality Degradation"]["Impact Function"] = "impact_water_quality_degradation_aquatic_seagrass_australian"
 
 # --- Physical Damage ---
 aquatic_seagrass_australian_stressors["Physical Damage"]["Metric"] = 'Area damaged'
@@ -33,4 +35,5 @@ aquatic_seagrass_australian_stressors["Physical Damage"]["Impact on Biodiversity
 aquatic_seagrass_australian_stressors["Physical Damage"]["Influenced By"] = ['* Coastal development, boating, dredging', '**Influences (Stressors):**', '* Habitat Fragmentation', '**Logic Description:** Physical damage.']
 aquatic_seagrass_australian_stressors["Physical Damage"]["Influences"] = ['* Habitat Fragmentation', '**Logic Description:** Physical damage.']
 aquatic_seagrass_australian_stressors["Physical Damage"]["Logic Description"] = '---'
+aquatic_seagrass_australian_stressors["Physical Damage"]["Impact Function"] = "impact_physical_damage_aquatic_seagrass_australian"
 

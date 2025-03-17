@@ -17,6 +17,7 @@ reefs_coral_triangle_stressors["Destructive Fishing Practices"]["Impact on Biodi
 reefs_coral_triangle_stressors["Destructive Fishing Practices"]["Influenced By"] = ['Poverty and Lack of Economic Opportunities.', 'Weak Law Enforcement.', 'Demand for Reef Fish (food and aquarium trade).', 'Lack of Awareness: Of the impacts of these practices.', '**Influences (Stressors):**', 'Coral Reef Structure and Health.', '**Logic Description:** Destructive fishing practices, including blast fishing (using explosives) and cyanide fishing, are *widespread* in the Coral Triangle and cause severe damage to coral reefs and their associated biodiversity.']
 reefs_coral_triangle_stressors["Destructive Fishing Practices"]["Influences"] = ['Coral Reef Structure and Health.', '**Logic Description:** Destructive fishing practices, including blast fishing (using explosives) and cyanide fishing, are *widespread* in the Coral Triangle and cause severe damage to coral reefs and their associated biodiversity.']
 reefs_coral_triangle_stressors["Destructive Fishing Practices"]["Logic Description"] = '---'
+reefs_coral_triangle_stressors["Destructive Fishing Practices"]["Impact Function"] = "impact_destructive_fishing_practices_reefs_coral_triangle"
 
 # --- Overfishing ---
 reefs_coral_triangle_stressors["Overfishing"]["Metric"] = 'Fish biomass, size structure, and abundance of target species; catch per unit effort.'
@@ -26,6 +27,7 @@ reefs_coral_triangle_stressors["Overfishing"]["Impact on Biodiversity"] = 'Decli
 reefs_coral_triangle_stressors["Overfishing"]["Influenced By"] = ['High Fishing Pressure: Due to large coastal populations and dependence on fishing.', 'Weak Enforcement of Fisheries Regulations.', 'Lack of Alternative Livelihoods.', '**Influences (Stressors):**', 'Algal Overgrowth.', 'Coral Reef Health.', '* Food web', '**Logic Description:** Overfishing is a major and widespread threat in the Coral Triangle, depleting fish populations and disrupting the ecological balance of reef ecosystems.']
 reefs_coral_triangle_stressors["Overfishing"]["Influences"] = ['Algal Overgrowth.', 'Coral Reef Health.', '* Food web', '**Logic Description:** Overfishing is a major and widespread threat in the Coral Triangle, depleting fish populations and disrupting the ecological balance of reef ecosystems.']
 reefs_coral_triangle_stressors["Overfishing"]["Logic Description"] = '---'
+reefs_coral_triangle_stressors["Overfishing"]["Impact Function"] = "impact_overfishing_reefs_coral_triangle"
 
 # --- Water Pollution ---
 reefs_coral_triangle_stressors["Water Pollution"]["Metric"] = 'Concentrations of nutrients, sediments, and pollutants in coastal waters.'
@@ -35,6 +37,7 @@ reefs_coral_triangle_stressors["Water Pollution"]["Impact on Biodiversity"] = 'A
 reefs_coral_triangle_stressors["Water Pollution"]["Influenced By"] = ['Agricultural Runoff: Fertilizers and pesticides.', 'Deforestation: Increased sediment runoff.', 'Urban Runoff: Sewage and industrial effluent.', 'Mining Activities: Release of heavy metals and other pollutants.', 'Inadequate Waste Management.', '**Influences (Stressors):**', 'Coral Reef Health.', 'Algal Blooms.', '**Logic Description:** Pollution from various sources, including agriculture, deforestation, urbanization, and mining, degrades water quality and impacts coral reefs.']
 reefs_coral_triangle_stressors["Water Pollution"]["Influences"] = ['Coral Reef Health.', 'Algal Blooms.', '**Logic Description:** Pollution from various sources, including agriculture, deforestation, urbanization, and mining, degrades water quality and impacts coral reefs.']
 reefs_coral_triangle_stressors["Water Pollution"]["Logic Description"] = '---'
+reefs_coral_triangle_stressors["Water Pollution"]["Impact Function"] = "impact_water_pollution_reefs_coral_triangle"
 
 # --- Coastal Development ---
 reefs_coral_triangle_stressors["Coastal Development"]["Metric"] = 'Area of coastline developed (km or ha); population density in coastal areas.'
@@ -44,6 +47,7 @@ reefs_coral_triangle_stressors["Coastal Development"]["Impact on Biodiversity"] 
 reefs_coral_triangle_stressors["Coastal Development"]["Influenced By"] = ['Population Growth: Rapid population growth in many coastal areas.', 'Tourism Development.', 'Urbanization.', 'Infrastructure Development.', '**Influences (Stressors):**', 'Water Quality.', 'Sedimentation.', 'Habitat Loss.', '**Logic Description:** Rapid population growth and coastal development are leading to habitat loss, increased sedimentation, and pollution, impacting coral reefs.']
 reefs_coral_triangle_stressors["Coastal Development"]["Influences"] = ['Water Quality.', 'Sedimentation.', 'Habitat Loss.', '**Logic Description:** Rapid population growth and coastal development are leading to habitat loss, increased sedimentation, and pollution, impacting coral reefs.']
 reefs_coral_triangle_stressors["Coastal Development"]["Logic Description"] = '---'
+reefs_coral_triangle_stressors["Coastal Development"]["Impact Function"] = "impact_coastal_development_reefs_coral_triangle"
 
 # --- Climate Change ---
 reefs_coral_triangle_stressors["Climate Change"]["Metric"] = 'Sea surface temperature (SST) (°C); ocean acidification (pH); frequency and intensity of tropical cyclones.'
@@ -53,4 +57,5 @@ reefs_coral_triangle_stressors["Climate Change"]["Impact on Biodiversity"] = 'Co
 reefs_coral_triangle_stressors["Climate Change"]["Influenced By"] = ['Global Greenhouse Gas Emissions.', '**Influences (Stressors):**', 'Coral Bleaching.', 'Ocean Acidification.', 'Storm Damage.', '**Logic Description:** Climate change, including warming waters, ocean acidification, and potentially increased storm intensity, poses a significant threat to coral reefs in the Coral Triangle.']
 reefs_coral_triangle_stressors["Climate Change"]["Influences"] = ['Coral Bleaching.', 'Ocean Acidification.', 'Storm Damage.', '**Logic Description:** Climate change, including warming waters, ocean acidification, and potentially increased storm intensity, poses a significant threat to coral reefs in the Coral Triangle.']
 reefs_coral_triangle_stressors["Climate Change"]["Logic Description"] = '---'
+reefs_coral_triangle_stressors["Climate Change"]["Impact Function"] = "impact_climate_change_reefs_coral_triangle"
 
