@@ -3,8 +3,8 @@ import numpy as np
 import scipy.stats as stats
 import matplotlib.pyplot as plt
 import copy
-from ecosystem_parameters import ecosystems, ecosystem_areas, biodiversity_density_ratios, initial_biodiversity
-from simulation_parameters import final_baselines, original_consensus_loss, adjusted_loss_potentials, transform_targets, cascade_effects, logistic_params
+from archive_ignored.ecosystem_parameters import ecosystems, ecosystem_areas, biodiversity_density_ratios, initial_biodiversity
+from archive_ignored.simulation_parameters import final_baselines, original_consensus_loss, adjusted_loss_potentials, transform_targets, cascade_effects, logistic_params
 
 # Define model parameters
 years = np.arange(2025, 2176, 5)
